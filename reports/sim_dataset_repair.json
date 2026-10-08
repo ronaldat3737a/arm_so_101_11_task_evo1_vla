@@ -1,0 +1,22 @@
+{
+  "root": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/sim_so101",
+  "kept_episodes": 80,
+  "kept_frames": 23138,
+  "data_files": {
+    "data/chunk-000/file-000.parquet": {
+      "rows_before": 23356,
+      "rows_removed": 218
+    }
+  },
+  "verified_frames": 240,
+  "bad_frames": 0,
+  "tasks": [
+    "Pick up the red cube and place it into the steel pot.",
+    "Pick up the blue cube and place it next to the blue cube.",
+    "Pick up the blue cube and place it into the steel pot",
+    "Take the banana and place it into the steel pot then close the lid.",
+    "Take the blue cube out of the steel pot and place it on the blue cube."
+  ],
+  "backup": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/sim_so101_repair_backup",
+  "status": "PASS"
+}

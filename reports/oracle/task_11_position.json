@@ -1,0 +1,331 @@
+{
+  "task": "task_11",
+  "profile": "position",
+  "splits": {
+    "train": {
+      "episodes": 5,
+      "success": 3,
+      "success_rate": 0.6,
+      "rows": [
+        {
+          "seed": 0,
+          "success": true,
+          "steps": 493,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1194,
+              0.1866,
+              154.2676
+            ]
+          },
+          "layout_split": {
+            "sorter": "train"
+          },
+          "sim_ms_per_step": 24.176895981144472,
+          "oracle_error": null
+        },
+        {
+          "seed": 1,
+          "success": false,
+          "steps": 560,
+          "failure_reason": null,
+          "unmet": "1 blocks still in the box",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1082,
+              0.1766,
+              161.9734
+            ]
+          },
+          "layout_split": {
+            "sorter": "train"
+          },
+          "sim_ms_per_step": 20.403144189289637,
+          "oracle_error": null
+        },
+        {
+          "seed": 2,
+          "success": true,
+          "steps": 453,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1306,
+              0.1663,
+              128.5112
+            ]
+          },
+          "layout_split": {
+            "sorter": "train"
+          },
+          "sim_ms_per_step": 21.894745479356374,
+          "oracle_error": null
+        },
+        {
+          "seed": 3,
+          "success": false,
+          "steps": 484,
+          "failure_reason": "wrong_order: ['blue_short', 'blue_tall']",
+          "unmet": "1 blocks still in the box",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1494,
+              0.1628,
+              135.4587
+            ]
+          },
+          "layout_split": {
+            "sorter": "train"
+          },
+          "sim_ms_per_step": 23.065592631820802,
+          "oracle_error": null
+        },
+        {
+          "seed": 4,
+          "success": true,
+          "steps": 477,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1599,
+              0.1618,
+              122.7649
+            ]
+          },
+          "layout_split": {
+            "sorter": "train"
+          },
+          "sim_ms_per_step": 24.18500422431738,
+          "oracle_error": null
+        }
+      ]
+    },
+    "val": {
+      "episodes": 5,
+      "success": 3,
+      "success_rate": 0.6,
+      "rows": [
+        {
+          "seed": 0,
+          "success": true,
+          "steps": 516,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1443,
+              0.1331,
+              121.4091
+            ]
+          },
+          "layout_split": {
+            "sorter": "val"
+          },
+          "sim_ms_per_step": 20.896437094193093,
+          "oracle_error": null
+        },
+        {
+          "seed": 1,
+          "success": false,
+          "steps": 513,
+          "failure_reason": "wrong_order: ['blue_short', 'blue_tall']",
+          "unmet": "1 blocks still in the box",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1447,
+              0.1336,
+              129.9758
+            ]
+          },
+          "layout_split": {
+            "sorter": "val"
+          },
+          "sim_ms_per_step": 21.497805913289387,
+          "oracle_error": null
+        },
+        {
+          "seed": 2,
+          "success": true,
+          "steps": 528,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1511,
+              0.1222,
+              116.7122
+            ]
+          },
+          "layout_split": {
+            "sorter": "val"
+          },
+          "sim_ms_per_step": 21.674703467975963,
+          "oracle_error": null
+        },
+        {
+          "seed": 3,
+          "success": true,
+          "steps": 529,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1355,
+              0.1263,
+              122.786
+            ]
+          },
+          "layout_split": {
+            "sorter": "val"
+          },
+          "sim_ms_per_step": 21.615325390503852,
+          "oracle_error": null
+        },
+        {
+          "seed": 4,
+          "success": false,
+          "steps": 353,
+          "failure_reason": "wrong_order: ['blue_short', 'blue_tall']",
+          "unmet": "1 blocks still in the box",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1464,
+              0.1455,
+              148.5661
+            ]
+          },
+          "layout_split": {
+            "sorter": "val"
+          },
+          "sim_ms_per_step": 19.707824960984183,
+          "oracle_error": null
+        }
+      ]
+    },
+    "test": {
+      "episodes": 5,
+      "success": 5,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 0,
+          "success": true,
+          "steps": 496,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1678,
+              0.1315,
+              113.5894
+            ]
+          },
+          "layout_split": {
+            "sorter": "test"
+          },
+          "sim_ms_per_step": 21.431181699998916,
+          "oracle_error": null
+        },
+        {
+          "seed": 1,
+          "success": true,
+          "steps": 429,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1644,
+              0.1495,
+              118.1027
+            ]
+          },
+          "layout_split": {
+            "sorter": "test"
+          },
+          "sim_ms_per_step": 22.496060613707783,
+          "oracle_error": null
+        },
+        {
+          "seed": 2,
+          "success": true,
+          "steps": 513,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1582,
+              0.1434,
+              134.9996
+            ]
+          },
+          "layout_split": {
+            "sorter": "test"
+          },
+          "sim_ms_per_step": 21.782207674915096,
+          "oracle_error": null
+        },
+        {
+          "seed": 3,
+          "success": true,
+          "steps": 507,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1684,
+              0.1353,
+              142.9854
+            ]
+          },
+          "layout_split": {
+            "sorter": "test"
+          },
+          "sim_ms_per_step": 21.436914654643346,
+          "oracle_error": null
+        },
+        {
+          "seed": 4,
+          "success": true,
+          "steps": 477,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1932,
+              0.1228,
+              118.7197
+            ]
+          },
+          "layout_split": {
+            "sorter": "test"
+          },
+          "sim_ms_per_step": 22.66878901787524,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 0.92,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

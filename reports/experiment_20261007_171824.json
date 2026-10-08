@@ -1,0 +1,109 @@
+{
+  "timestamp": "20261007_171824",
+  "config_file": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/configs/act_baseline.yaml",
+  "config": {
+    "name": "act_task01",
+    "tasks": [
+      "task_01"
+    ],
+    "output_root": "outputs",
+    "video_backend": "pyav",
+    "wandb": false,
+    "lerobot_args": {
+      "policy.type": "act",
+      "policy.device": "cuda",
+      "policy.use_amp": true,
+      "batch_size": 8,
+      "steps": 200,
+      "num_workers": 0,
+      "save_freq": 200,
+      "log_freq": 100,
+      "seed": 1000
+    }
+  },
+  "command": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/.venv/bin/lerobot-train --dataset.repo_id=local/so101_11tasks --dataset.root=/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/so101_11tasks '--dataset.episodes=[0,1,5,6,7,8,9,10,11,12,13,14,15,16,17,19,21,22,25,27,28,29,30,31,32,33,35,37,38,39,40,41,42,43,44,45,46,47,48,49]' --dataset.video_backend=pyav --output_dir=/home/ncd/Desktop/VRB/task_week_2/so101_evo1/outputs/act_task01_20261007_171824 --job_name=act_task01_20261007_171824 --wandb.enable=false --policy.push_to_hub=false --save_checkpoint=true --policy.type=act --policy.device=cuda --policy.use_amp=true --batch_size=8 --steps=200 --num_workers=0 --save_freq=200 --log_freq=100 --seed=1000",
+  "n_train_episodes": 40,
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "lerobot": "0.6.1",
+    "transformers": "5.5.4",
+    "git_commit": "not a git repository",
+    "dataset_revisions": {
+      "hungho77/so101_left_arm_pick_red_cube_into_pot": "62d3cb12cc705fd39c851833853ec49b2ca20fe4",
+      "hungho77/so101_left_arm_blue_cube_next_to_blue_cube": "1d32c7fa37f245c6acc9dce944515beba65867db",
+      "hungho77/so101_left_arm_pick_blue_cube_into_pot": "98192ba8b697e80f811f68137c7ed2e042ddd64c",
+      "hungho77/so101_left_arm_pick_banana_close_lid": "63a2c9016f3d15ec3ef5de244f0ecd677afc27ce",
+      "hungho77/so101_left_arm_blue_cube_out_of_pot_onto_blue_cube": "ace616ca5651dbcd2a6b90c356dfbbe83e75c89d",
+      "hungho77/so101_left_arm_red_cube_out_of_pot_onto_red_cube": "9363738dafae5bd65f9a7cd73d63fc04c0c0ff66",
+      "hungho77/so101_left_arm_stack_yellow_on_orange_cube": "ef6cb56c979b4c60c50f9582e2c055df1b2f7a92",
+      "hungho77/so101_left_arm_balance_red_blue_on_wooden_board": "460f5d1a012109e1ecaef7f24f852c8abd0a3b74",
+      "hungho77/so101_left_arm_red_cube_into_orange_hollow_cube": "cf2c68df347b69612da0a0efd1f294b08ebf6533",
+      "hungho77/so101_left_arm_stack_orange_blocks": "b932726e629f81cb142c4545d9d958340d28ec31",
+      "hungho77/so101_left_arm_blue_cubes_shortest_to_tallest": "629eba595368fb7040db4ee8ea0b3da382ffde03"
+    },
+    "aggregated_dataset": {
+      "aggr_repo_id": "local/so101_11tasks",
+      "aggr_root": "datasets/so101_11tasks",
+      "sources": [
+        {
+          "repo_id": "hungho77/so101_left_arm_pick_red_cube_into_pot",
+          "revision": "62d3cb12cc705fd39c851833853ec49b2ca20fe4"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_blue_cube_next_to_blue_cube",
+          "revision": "1d32c7fa37f245c6acc9dce944515beba65867db"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_pick_blue_cube_into_pot",
+          "revision": "98192ba8b697e80f811f68137c7ed2e042ddd64c"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_pick_banana_close_lid",
+          "revision": "63a2c9016f3d15ec3ef5de244f0ecd677afc27ce"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_blue_cube_out_of_pot_onto_blue_cube",
+          "revision": "ace616ca5651dbcd2a6b90c356dfbbe83e75c89d"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_red_cube_out_of_pot_onto_red_cube",
+          "revision": "9363738dafae5bd65f9a7cd73d63fc04c0c0ff66"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_stack_yellow_on_orange_cube",
+          "revision": "ef6cb56c979b4c60c50f9582e2c055df1b2f7a92"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_balance_red_blue_on_wooden_board",
+          "revision": "460f5d1a012109e1ecaef7f24f852c8abd0a3b74"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_red_cube_into_orange_hollow_cube",
+          "revision": "cf2c68df347b69612da0a0efd1f294b08ebf6533"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_stack_orange_blocks",
+          "revision": "b932726e629f81cb142c4545d9d958340d28ec31"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_blue_cubes_shortest_to_tallest",
+          "revision": "629eba595368fb7040db4ee8ea0b3da382ffde03"
+        }
+      ],
+      "concatenate_videos": false,
+      "concatenate_data": false,
+      "elapsed_s": 9.6,
+      "peak_rss_gb": 0.9593162536621094,
+      "split_manifest": "reports/split_manifest.json"
+    }
+  },
+  "return_code": 0,
+  "wall_time_s": 114.3,
+  "peak_rss_gb_process_tree": 2.695,
+  "peak_vram_used_gb_nvidia_smi": 4.008,
+  "log": "outputs/act_task01_20261007_171824.log",
+  "output_dir": "outputs/act_task01_20261007_171824"
+}

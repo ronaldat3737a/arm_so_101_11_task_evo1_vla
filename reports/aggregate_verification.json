@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "check": "total episodes",
+      "status": "PASS",
+      "detail": "551 vs 551"
+    },
+    {
+      "check": "total frames",
+      "status": "PASS",
+      "detail": "253745 vs 253745"
+    },
+    {
+      "check": "fps",
+      "status": "PASS",
+      "detail": "30"
+    },
+    {
+      "check": "tasks",
+      "status": "PASS",
+      "detail": "11"
+    },
+    {
+      "check": "camera keys",
+      "status": "PASS",
+      "detail": "['observation.images.wrist', 'observation.images.top']"
+    },
+    {
+      "check": "action feature",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "observation.state feature",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "meta/stats.json is train-only stats",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "all 551 global episodes map to source (task, length, first/last action+state exact)",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "decoded frames pixel-identical to source (both cameras)",
+      "status": "PASS",
+      "detail": "66 frames x 2 cams; []"
+    },
+    {
+      "check": "train subset episode count",
+      "status": "PASS",
+      "detail": "432"
+    },
+    {
+      "check": "train subset returns action chunk (50, 6) + action_is_pad + both cameras uint8",
+      "status": "PASS",
+      "detail": "{'observation.images.wrist': (3, 480, 640), 'observation.images.top': (3, 360, 640), 'action': (50, 6), 'observation.state': (1, 6), 'timestamp': (), 'frame_index': (), 'episode_index': (), 'index': (), 'task_index': (), 'action_is_pad': (50,), 'observation.state_is_pad': (1,)}"
+    },
+    {
+      "check": "train subset never yields held-out episodes",
+      "status": "PASS",
+      "detail": "200 episodes sampled"
+    },
+    {
+      "check": "peak RAM during verification < 6 GB",
+      "status": "PASS",
+      "detail": "1.23 GB"
+    }
+  ],
+  "verdict": "PASS",
+  "resources": {
+    "peak_rss_gb": 1.228,
+    "peak_vram_alloc_gb": 0.0
+  },
+  "decode_ms_p50": 15.198588371276855,
+  "decode_ms_p95": 22.75162935256958
+}

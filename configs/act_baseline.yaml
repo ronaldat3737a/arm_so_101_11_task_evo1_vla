@@ -1,0 +1,17 @@
+# ACT baseline (Phase 9): verifies dataset -> action mapping -> simulator -> evaluator. Not the final policy.
+# ACT has no language input, so it is trained on ONE task (task_01) only.
+name: act_task01
+tasks: [task_01]
+output_root: outputs
+video_backend: pyav
+wandb: false
+lerobot_args:
+  policy.type: act
+  policy.device: cuda
+  policy.use_amp: true
+  batch_size: 8
+  steps: 20000
+  num_workers: 0
+  save_freq: 5000
+  log_freq: 100
+  seed: 1000

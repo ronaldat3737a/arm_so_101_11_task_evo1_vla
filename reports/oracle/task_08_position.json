@@ -1,0 +1,511 @@
+{
+  "task": "task_08",
+  "profile": "position",
+  "splits": {
+    "train": {
+      "episodes": 5,
+      "success": 5,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 0,
+          "success": true,
+          "steps": 208,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.158,
+              0.1691,
+              4.2654
+            ],
+            "table_red": [
+              0.2153,
+              -0.1136,
+              17.4029
+            ],
+            "table_blue": [
+              0.1685,
+              -0.1758,
+              14.5272
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "table_red": "train",
+            "table_blue": "train"
+          },
+          "sim_ms_per_step": 23.918471657312832,
+          "oracle_error": null
+        },
+        {
+          "seed": 1,
+          "success": true,
+          "steps": 373,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.1445,
+              0.162,
+              -14.2336
+            ],
+            "table_red": [
+              0.2049,
+              -0.1683,
+              -3.0669
+            ],
+            "table_blue": [
+              0.1329,
+              -0.1804,
+              10.1405
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "table_red": "train",
+            "table_blue": "train"
+          },
+          "sim_ms_per_step": 10.223919840344795,
+          "oracle_error": null
+        },
+        {
+          "seed": 2,
+          "success": true,
+          "steps": 231,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.1404,
+              0.1524,
+              -1.1636
+            ],
+            "table_red": [
+              0.1552,
+              -0.1827,
+              -15.8183
+            ],
+            "table_blue": [
+              0.1991,
+              -0.0942,
+              14.4847
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "table_red": "train",
+            "table_blue": "train"
+          },
+          "sim_ms_per_step": 22.039229735667572,
+          "oracle_error": null
+        },
+        {
+          "seed": 3,
+          "success": true,
+          "steps": 260,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "board": [
+              0.1511,
+              0.1706,
+              -8.632
+            ],
+            "table_red": [
+              0.2205,
+              -0.0811,
+              -8.2912
+            ],
+            "table_blue": [
+              0.1295,
+              -0.1568,
+              6.42
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "table_red": "train",
+            "table_blue": "train"
+          },
+          "sim_ms_per_step": 16.867876052856445,
+          "oracle_error": null
+        },
+        {
+          "seed": 4,
+          "success": true,
+          "steps": 203,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "board": [
+              0.1611,
+              0.176,
+              -12.8923
+            ],
+            "table_red": [
+              0.217,
+              -0.078,
+              17.7121
+            ],
+            "table_blue": [
+              0.1574,
+              -0.1768,
+              -0.0853
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "table_red": "train",
+            "table_blue": "train"
+          },
+          "sim_ms_per_step": 12.379709722960524,
+          "oracle_error": null
+        }
+      ]
+    },
+    "val": {
+      "episodes": 5,
+      "success": 5,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 0,
+          "success": true,
+          "steps": 228,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.1507,
+              0.1276,
+              1.0142
+            ],
+            "table_red": [
+              0.1679,
+              -0.0997,
+              15.5795
+            ],
+            "table_blue": [
+              0.1587,
+              -0.2037,
+              -6.5553
+            ]
+          },
+          "layout_split": {
+            "board": "val",
+            "table_red": "val",
+            "table_blue": "val"
+          },
+          "sim_ms_per_step": 16.50148211864003,
+          "oracle_error": null
+        },
+        {
+          "seed": 1,
+          "success": true,
+          "steps": 224,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.153,
+              0.1407,
+              -7.8722
+            ],
+            "table_red": [
+              0.1468,
+              -0.1459,
+              -9.5075
+            ],
+            "table_blue": [
+              0.1489,
+              -0.089,
+              15.7886
+            ]
+          },
+          "layout_split": {
+            "board": "val",
+            "table_red": "val",
+            "table_blue": "val"
+          },
+          "sim_ms_per_step": 14.041709048407418,
+          "oracle_error": null
+        },
+        {
+          "seed": 2,
+          "success": true,
+          "steps": 237,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.1615,
+              0.1262,
+              2.4906
+            ],
+            "table_red": [
+              0.1448,
+              -0.0954,
+              6.7719
+            ],
+            "table_blue": [
+              0.1527,
+              -0.198,
+              19.0655
+            ]
+          },
+          "layout_split": {
+            "board": "val",
+            "table_red": "val",
+            "table_blue": "val"
+          },
+          "sim_ms_per_step": 15.062006213996984,
+          "oracle_error": null
+        },
+        {
+          "seed": 3,
+          "success": true,
+          "steps": 233,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.1626,
+              0.1256,
+              7.8486
+            ],
+            "table_red": [
+              0.2419,
+              -0.0473,
+              -15.9072
+            ],
+            "table_blue": [
+              0.1759,
+              -0.1856,
+              18.5743
+            ]
+          },
+          "layout_split": {
+            "board": "val",
+            "table_red": "val",
+            "table_blue": "val"
+          },
+          "sim_ms_per_step": 14.814544644990193,
+          "oracle_error": null
+        },
+        {
+          "seed": 4,
+          "success": true,
+          "steps": 184,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "board": [
+              0.1505,
+              0.1416,
+              -15.7011
+            ],
+            "table_red": [
+              0.1754,
+              -0.1052,
+              -15.5063
+            ],
+            "table_blue": [
+              0.2345,
+              -0.0553,
+              -4.3286
+            ]
+          },
+          "layout_split": {
+            "board": "val",
+            "table_red": "val",
+            "table_blue": "val"
+          },
+          "sim_ms_per_step": 17.755140428957734,
+          "oracle_error": null
+        }
+      ]
+    },
+    "test": {
+      "episodes": 5,
+      "success": 5,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 0,
+          "success": true,
+          "steps": 225,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "board": [
+              0.1685,
+              0.1441,
+              1.745
+            ],
+            "table_red": [
+              0.2558,
+              -0.0648,
+              -19.8905
+            ],
+            "table_blue": [
+              0.1876,
+              -0.1354,
+              19.8884
+            ]
+          },
+          "layout_split": {
+            "board": "test",
+            "table_red": "test",
+            "table_blue": "test"
+          },
+          "sim_ms_per_step": 13.130219777425129,
+          "oracle_error": null
+        },
+        {
+          "seed": 1,
+          "success": true,
+          "steps": 190,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.19,
+              0.1273,
+              -6.8107
+            ],
+            "table_red": [
+              0.1916,
+              -0.1598,
+              -1.8601
+            ],
+            "table_blue": [
+              0.2506,
+              -0.053,
+              15.0615
+            ]
+          },
+          "layout_split": {
+            "board": "test",
+            "table_red": "test",
+            "table_blue": "test"
+          },
+          "sim_ms_per_step": 15.927924607929432,
+          "oracle_error": null
+        },
+        {
+          "seed": 2,
+          "success": true,
+          "steps": 191,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.1683,
+              0.1438,
+              -12.484
+            ],
+            "table_red": [
+              0.1969,
+              -0.1321,
+              5.3274
+            ],
+            "table_blue": [
+              0.2534,
+              -0.0596,
+              -4.5962
+            ]
+          },
+          "layout_split": {
+            "board": "test",
+            "table_red": "test",
+            "table_blue": "test"
+          },
+          "sim_ms_per_step": 19.49461217950152,
+          "oracle_error": null
+        },
+        {
+          "seed": 3,
+          "success": true,
+          "steps": 230,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.1883,
+              0.1337,
+              -16.2349
+            ],
+            "table_red": [
+              0.1804,
+              -0.1086,
+              -13.6104
+            ],
+            "table_blue": [
+              0.1744,
+              -0.1688,
+              13.1955
+            ]
+          },
+          "layout_split": {
+            "board": "test",
+            "table_red": "test",
+            "table_blue": "test"
+          },
+          "sim_ms_per_step": 15.287297704945441,
+          "oracle_error": null
+        },
+        {
+          "seed": 4,
+          "success": true,
+          "steps": 162,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.1994,
+              0.129,
+              19.0497
+            ],
+            "table_red": [
+              0.18,
+              -0.119,
+              11.5579
+            ],
+            "table_blue": [
+              0.2641,
+              -0.0397,
+              -12.8923
+            ]
+          },
+          "layout_split": {
+            "board": "test",
+            "table_red": "test",
+            "table_blue": "test"
+          },
+          "sim_ms_per_step": 13.914972175786525,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 1.068,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "task": "task_09",
+  "profile": "position",
+  "splits": {
+    "train": {
+      "episodes": 5,
+      "success": 5,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 0,
+          "success": true,
+          "steps": 390,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.1651,
+              0.1741,
+              4.2654
+            ],
+            "hollow_cube": [
+              0.217,
+              -0.0913,
+              17.4029
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "hollow_cube": "train"
+          },
+          "sim_ms_per_step": 18.80996104998466,
+          "oracle_error": null
+        },
+        {
+          "seed": 1,
+          "success": true,
+          "steps": 405,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.149,
+              0.1656,
+              -14.2336
+            ],
+            "hollow_cube": [
+              0.2108,
+              -0.1444,
+              -3.0669
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "hollow_cube": "train"
+          },
+          "sim_ms_per_step": 20.557919255009402,
+          "oracle_error": null
+        },
+        {
+          "seed": 2,
+          "success": true,
+          "steps": 434,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.144,
+              0.1542,
+              -1.1636
+            ],
+            "hollow_cube": [
+              0.1266,
+              -0.1058,
+              15.378
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "hollow_cube": "train"
+          },
+          "sim_ms_per_step": 17.32812444185881,
+          "oracle_error": null
+        },
+        {
+          "seed": 3,
+          "success": true,
+          "steps": 441,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.157,
+              0.1759,
+              -8.632
+            ],
+            "hollow_cube": [
+              0.1216,
+              -0.1446,
+              18.9384
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "hollow_cube": "train"
+          },
+          "sim_ms_per_step": 18.209845030388863,
+          "oracle_error": null
+        },
+        {
+          "seed": 4,
+          "success": true,
+          "steps": 358,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.1689,
+              0.1821,
+              -12.8923
+            ],
+            "hollow_cube": [
+              0.2162,
+              -0.1378,
+              -11.0492
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "hollow_cube": "train"
+          },
+          "sim_ms_per_step": 24.202773690889668,
+          "oracle_error": null
+        }
+      ]
+    },
+    "val": {
+      "episodes": 5,
+      "success": 4,
+      "success_rate": 0.8,
+      "rows": [
+        {
+          "seed": 0,
+          "success": false,
+          "steps": 407,
+          "failure_reason": null,
+          "unmet": "red cube not inside the hollow cube",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.1551,
+              0.125,
+              1.0142
+            ],
+            "hollow_cube": [
+              0.1675,
+              -0.0984,
+              15.611
+            ]
+          },
+          "layout_split": {
+            "board": "val",
+            "hollow_cube": "val"
+          },
+          "sim_ms_per_step": 14.65023237598616,
+          "oracle_error": null
+        },
+        {
+          "seed": 1,
+          "success": true,
+          "steps": 350,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.1468,
+              0.1359,
+              7.3315
+            ],
+            "hollow_cube": [
+              0.2462,
+              -0.0266,
+              -1.1236
+            ]
+          },
+          "layout_split": {
+            "board": "val",
+            "hollow_cube": "val"
+          },
+          "sim_ms_per_step": 14.565679005214147,
+          "oracle_error": null
+        },
+        {
+          "seed": 2,
+          "success": true,
+          "steps": 380,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.1678,
+              0.1233,
+              2.4906
+            ],
+            "hollow_cube": [
+              0.148,
+              -0.095,
+              0.4426
+            ]
+          },
+          "layout_split": {
+            "board": "val",
+            "hollow_cube": "val"
+          },
+          "sim_ms_per_step": 16.946187144831608,
+          "oracle_error": null
+        },
+        {
+          "seed": 3,
+          "success": true,
+          "steps": 374,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.1691,
+              0.1226,
+              7.8486
+            ],
+            "hollow_cube": [
+              0.1337,
+              -0.1162,
+              9.8744
+            ]
+          },
+          "layout_split": {
+            "board": "val",
+            "hollow_cube": "val"
+          },
+          "sim_ms_per_step": 16.11032460462601,
+          "oracle_error": null
+        },
+        {
+          "seed": 4,
+          "success": true,
+          "steps": 371,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.1536,
+              0.12,
+              1.069
+            ],
+            "hollow_cube": [
+              0.1532,
+              -0.1089,
+              -3.3873
+            ]
+          },
+          "layout_split": {
+            "board": "val",
+            "hollow_cube": "val"
+          },
+          "sim_ms_per_step": 16.147389244840472,
+          "oracle_error": null
+        }
+      ]
+    },
+    "test": {
+      "episodes": 5,
+      "success": 5,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 0,
+          "success": true,
+          "steps": 336,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.177,
+              0.1442,
+              1.745
+            ],
+            "hollow_cube": [
+              0.251,
+              -0.0407,
+              -19.8905
+            ]
+          },
+          "layout_split": {
+            "board": "test",
+            "hollow_cube": "test"
+          },
+          "sim_ms_per_step": 17.10858302456992,
+          "oracle_error": null
+        },
+        {
+          "seed": 1,
+          "success": true,
+          "steps": 374,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.2017,
+              0.1237,
+              -6.8107
+            ],
+            "hollow_cube": [
+              0.1978,
+              -0.1377,
+              -1.8601
+            ]
+          },
+          "layout_split": {
+            "board": "test",
+            "hollow_cube": "test"
+          },
+          "sim_ms_per_step": 17.78413586438021,
+          "oracle_error": null
+        },
+        {
+          "seed": 2,
+          "success": true,
+          "steps": 383,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.1768,
+              0.1439,
+              -12.484
+            ],
+            "hollow_cube": [
+              0.1991,
+              -0.1169,
+              -12.5099
+            ]
+          },
+          "layout_split": {
+            "board": "test",
+            "hollow_cube": "test"
+          },
+          "sim_ms_per_step": 17.375804114279486,
+          "oracle_error": null
+        },
+        {
+          "seed": 3,
+          "success": true,
+          "steps": 379,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.2,
+              0.1313,
+              -16.2349
+            ],
+            "hollow_cube": [
+              0.1993,
+              -0.1211,
+              -16.3659
+            ]
+          },
+          "layout_split": {
+            "board": "test",
+            "hollow_cube": "test"
+          },
+          "sim_ms_per_step": 19.01793731548541,
+          "oracle_error": null
+        },
+        {
+          "seed": 4,
+          "success": true,
+          "steps": 371,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "board": [
+              0.2129,
+              0.1252,
+              19.0497
+            ],
+            "hollow_cube": [
+              0.1772,
+              -0.1317,
+              17.191
+            ]
+          },
+          "layout_split": {
+            "board": "test",
+            "hollow_cube": "test"
+          },
+          "sim_ms_per_step": 17.945244627178838,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 1.068,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

@@ -1,0 +1,20 @@
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# large artifacts
+datasets/
+checkpoints/
+outputs/
+wandb/
+reports/videos/
+simulation/assets/**/*.usd
+simulation/assets/**/*.usdz
+
+.env
+# official SO-101 MJCF + meshes: fetched by scripts/download_so101_model.py (pinned commit), not redistributed
+simulation/assets/so101/
+datasets/evo1_feature_cache/

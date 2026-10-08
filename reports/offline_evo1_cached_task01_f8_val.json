@@ -1,0 +1,37 @@
+{
+  "checkpoint": "checkpoints/evo1_so101/best",
+  "policy_type": "evo1",
+  "split": "val",
+  "horizon": 50,
+  "frames_per_episode": 8,
+  "per_task": {
+    "task_01": {
+      "samples": 40,
+      "action_mae": 11.06509017944336,
+      "joint_mae": {
+        "shoulder_pan": 7.745999813079834,
+        "shoulder_lift": 13.657999992370605,
+        "elbow_flex": 15.39799976348877,
+        "wrist_flex": 9.949000358581543,
+        "wrist_roll": 10.368000030517578,
+        "gripper": 9.272000312805176
+      },
+      "first_step_mae": 6.21997594833374,
+      "gripper_mae": 9.272073745727539,
+      "delta_cosine": 0.6146606969647109,
+      "pred_smoothness": 6.018519401550293,
+      "hold_state_baseline_mae": 11.149617195129395
+    }
+  },
+  "mean_action_mae": 11.06509017944336,
+  "mean_hold_state_baseline_mae": 11.149617195129395,
+  "latency_ms": {
+    "p50": 794.8403895024967,
+    "p95": 799.472043003334,
+    "n": 40
+  },
+  "resources": {
+    "peak_rss_gb": 3.271,
+    "peak_vram_alloc_gb": 3.366
+  }
+}

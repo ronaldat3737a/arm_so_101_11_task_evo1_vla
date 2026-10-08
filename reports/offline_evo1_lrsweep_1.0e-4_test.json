@@ -1,0 +1,71 @@
+{
+  "checkpoint": "outputs/evo1_lrsweep_1.0e-4_20261007_235928/checkpoints/best/pretrained_model",
+  "policy_type": "evo1",
+  "split": "test",
+  "horizon": 50,
+  "frames_per_episode": 4,
+  "per_task": {
+    "task_01": {
+      "samples": 20,
+      "action_mae": 45.91722106933594,
+      "joint_mae": {
+        "shoulder_pan": 37.150001525878906,
+        "shoulder_lift": 50.222999572753906,
+        "elbow_flex": 56.63399887084961,
+        "wrist_flex": 47.606998443603516,
+        "wrist_roll": 60.494998931884766,
+        "gripper": 23.395000457763672
+      },
+      "first_step_mae": 41.517921447753906,
+      "gripper_mae": 23.3947811126709,
+      "delta_cosine": 0.06701711546629667,
+      "pred_smoothness": 93.5915756225586,
+      "hold_state_baseline_mae": 8.920653343200684
+    },
+    "task_05": {
+      "samples": 20,
+      "action_mae": 46.87971115112305,
+      "joint_mae": {
+        "shoulder_pan": 35.13100051879883,
+        "shoulder_lift": 56.290000915527344,
+        "elbow_flex": 57.44200134277344,
+        "wrist_flex": 51.11399841308594,
+        "wrist_roll": 59.316001892089844,
+        "gripper": 21.985000610351562
+      },
+      "first_step_mae": 43.45835876464844,
+      "gripper_mae": 21.985280990600586,
+      "delta_cosine": -0.009774898481555282,
+      "pred_smoothness": 94.25529479980469,
+      "hold_state_baseline_mae": 11.223881721496582
+    },
+    "task_10": {
+      "samples": 20,
+      "action_mae": 47.64445114135742,
+      "joint_mae": {
+        "shoulder_pan": 35.22999954223633,
+        "shoulder_lift": 57.222999572753906,
+        "elbow_flex": 61.367000579833984,
+        "wrist_flex": 50.0359992980957,
+        "wrist_roll": 58.02899932861328,
+        "gripper": 23.98200035095215
+      },
+      "first_step_mae": 46.12055587768555,
+      "gripper_mae": 23.981822967529297,
+      "delta_cosine": 0.07829427943797782,
+      "pred_smoothness": 92.9467544555664,
+      "hold_state_baseline_mae": 14.428674697875977
+    }
+  },
+  "mean_action_mae": 46.813794453938804,
+  "mean_hold_state_baseline_mae": 11.52440325419108,
+  "latency_ms": {
+    "p50": 796.9509254999139,
+    "p95": 809.6633338999709,
+    "n": 60
+  },
+  "resources": {
+    "peak_rss_gb": 2.946,
+    "peak_vram_alloc_gb": 3.366
+  }
+}

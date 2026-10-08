@@ -1,0 +1,37 @@
+{
+  "checkpoint": "outputs/evo1_smoke_20261007_200910/checkpoints/best/pretrained_model",
+  "policy_type": "evo1",
+  "split": "test",
+  "horizon": 50,
+  "frames_per_episode": 2,
+  "per_task": {
+    "task_01": {
+      "samples": 10,
+      "action_mae": 62.63136672973633,
+      "joint_mae": {
+        "shoulder_pan": 38.11800003051758,
+        "shoulder_lift": 86.5,
+        "elbow_flex": 87.1259994506836,
+        "wrist_flex": 65.22799682617188,
+        "wrist_roll": 59.604000091552734,
+        "gripper": 39.2130012512207
+      },
+      "first_step_mae": 60.25434494018555,
+      "gripper_mae": 39.21283721923828,
+      "delta_cosine": -0.1375930890440941,
+      "pred_smoothness": 106.2190933227539,
+      "hold_state_baseline_mae": 5.141895771026611
+    }
+  },
+  "mean_action_mae": 62.63136672973633,
+  "mean_hold_state_baseline_mae": 5.141895771026611,
+  "latency_ms": {
+    "p50": 816.1976115000016,
+    "p95": 1087.2136062500085,
+    "n": 10
+  },
+  "resources": {
+    "peak_rss_gb": 3.413,
+    "peak_vram_alloc_gb": 3.366
+  }
+}

@@ -1,0 +1,31 @@
+[project]
+name = "so101-evo1"
+version = "0.1.0"
+description = "Fine-tune Evo-1 (via official LeRobot integration) on 11 SO-101 tasks, evaluate in simulation, deploy on real SO-101."
+readme = "README.md"
+# lerobot 0.6.1 requires Python >= 3.12 (see wheel METADATA: Requires-Python: >=3.12).
+# The Isaac Sim / IsaacLab / LeIsaac stack requires Python 3.11 and therefore lives in a
+# SEPARATE environment (see docs/simulation_env.md). Do not try to merge the two.
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # Official framework. 0.6.1 is the first PyPI release that ships lerobot.policies.evo1
+    # and reads LeRobotDataset codebase_version v3.0 (the format of all 11 datasets).
+    "lerobot[training,evo1,feetech]==0.6.1",
+    "pyyaml>=6.0",
+    "psutil>=5.9",
+    "mujoco>=3.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"

@@ -1,0 +1,25 @@
+# Real SO-101 deployment (scripts/deploy_so101.py). Safety defaults are conservative; never raise them before a
+# successful low-speed run.
+robot:
+  type: so101_follower
+  port: /dev/ttyACM0                 # lerobot-find-port
+  id: my_so101_follower              # calibration file: $HF_LEROBOT_CALIBRATION/robots/so_follower/<id>.json
+  max_relative_target: 8.0           # LeRobot's own per-command cap (degrees), second safety layer
+  disable_torque_on_disconnect: true
+control:
+  fps: 30
+  speed_scale: 0.1                   # fraction of max_joint_delta per step; default LOW
+  max_joint_delta_deg: 5.0           # per step at speed_scale 1.0
+  max_gripper_delta: 10.0
+  data_envelope_margin_deg: 5.0      # joint box = calibration range ∩ (train action envelope ± margin)
+  workspace_low: [-0.05, -0.35, -0.005]   # gripper point in the robot base frame (m)
+  workspace_high: [0.40, 0.35, 0.40]
+  inference_timeout_s: 0.5
+  communication_timeout_s: 0.2
+  max_episode_s: 40
+  rest_pose: [0.0, -100.0, 95.0, 55.0, 0.0, 10.0]   # safe reset target (canonical), reached at reset speed
+  reset_speed_scale: 0.05
+safety:
+  stop_file: /tmp/so101_STOP           # `touch /tmp/so101_STOP` = emergency stop
+  dry_run_pass_file: reports/dryrun_pass.json
+  dry_run_max_age_hours: 24

@@ -1,0 +1,17 @@
+[oracle] task_01 position train: 5/5
+[oracle] task_01 position val: 5/5
+[oracle] task_01 position test: 5/5
+[oracle] task_02 position train: 4/5
+[oracle] task_02 position val: 5/5
+[oracle] task_02 position test: 5/5
+[oracle] task_03 position train: 5/5
+[oracle] task_03 position val: 5/5
+[oracle] task_03 position test: 5/5
+[oracle] task_04 position train: 4/5
+[oracle] task_04 position val: 3/5
+[oracle] task_04 position test: 3/5
+[oracle] task_05 position train: 5/5
+[oracle] task_05 position val: 5/5
+[oracle] task_05 position test: 4/5
+[oracle] task_06 position train: 4/5
+[oracle] task_06 position val: 5/5

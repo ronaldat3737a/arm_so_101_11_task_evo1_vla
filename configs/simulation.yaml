@@ -1,0 +1,55 @@
+# MuJoCo simulation of the 11 SO-101 tasks (Isaac Sim not used on this machine: below its minimum spec).
+# Robot model: TheRobotStudio/SO-ARM100 Simulation/SO101/so101_new_calib_camera.xml @ a758567 (scripts/download_so101_model.py)
+# Frames: robot base at origin, +x forward, +y robot-left, table top z = 0. Units: metres, degrees.
+
+control:
+  fps: 30                 # dataset fps; one env.step = one dataset action
+  physics_timestep: 0.0016666667  # 1/600 s -> 20 substeps per step
+  action: canonical_degrees      # LeRobot so_follower use_degrees=True; src/simulation/action_adapter.py
+
+cameras:
+  # Names/resolutions match the dataset keys observation.images.top / observation.images.wrist.
+  top:   {width: 640, height: 360, fovy: 68, pos: [-0.10, -0.20, 0.42], target: [0.24, -0.16, 0.0]}
+  wrist: {width: 640, height: 480, fovy: 75, body: wrist_camera, pos: [0.0, 0.0, 0.025], quat: [0, 1, 0, 0]}
+
+# Spatial split of object positions (applies to the randomized objects of every task).
+# Polar grid around the robot base (r in m, theta in deg, 0 = straight ahead, + = robot left).
+# Cell (i, j) label = (i + 2*j) mod 5: {0,1,2} -> train, 3 -> val, 4 -> test. Test cells are interleaved with
+# train cells (inside the training envelope) but no test position ever falls in a training cell.
+position_split:
+  cell_dr: 0.04
+  cell_dtheta: 15.0
+  labels: {train: [0, 1, 2], val: [3], test: [4]}
+
+workspace:
+  r_min: 0.13
+  r_max: 0.29
+  theta_min: -60.0
+  theta_max: 70.0
+  min_separation: 0.015   # minimum gap between object footprints
+  # The start (rest) pose puts the folded gripper on the table around x=0.10..0.20, y=0. Objects must not start there.
+  keepout: {x: [0.07, 0.215], y: [-0.06, 0.06]}
+
+profiles:
+  fixed:            # nominal layout per task, no randomization (baseline, deterministic)
+    randomize_positions: false
+    yaw_range_deg: 0
+    visual: false
+  position:         # positions + small yaw randomized inside the split's region
+    randomize_positions: true
+    yaw_range_deg: 20
+    visual: false
+  position_visual:  # moderate visual randomization on top
+    randomize_positions: true
+    yaw_range_deg: 20
+    visual: true
+    light_intensity_scale: [0.75, 1.25]
+    table_color_jitter: 0.06
+    object_color_jitter: 0.05
+    camera_pos_noise: 0.01   # m
+    camera_fovy_noise: 2.0   # deg
+    image_noise_std: 2.0     # uint8 units
+
+episode:
+  max_seconds: 30           # longest training episodes are 29.9 s
+  success_hold_steps: 10    # success condition must hold this many consecutive steps

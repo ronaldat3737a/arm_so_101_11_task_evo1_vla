@@ -1,0 +1,37 @@
+{
+  "checkpoint": "outputs/act_task01_20261007_172212/checkpoints/010000/pretrained_model",
+  "policy_type": "act",
+  "split": "test",
+  "horizon": 50,
+  "frames_per_episode": 8,
+  "per_task": {
+    "task_01": {
+      "samples": 40,
+      "action_mae": 8.860033988952637,
+      "joint_mae": {
+        "shoulder_pan": 7.824999809265137,
+        "shoulder_lift": 12.364999771118164,
+        "elbow_flex": 12.213000297546387,
+        "wrist_flex": 7.01800012588501,
+        "wrist_roll": 6.9770002365112305,
+        "gripper": 6.763000011444092
+      },
+      "first_step_mae": 4.960838317871094,
+      "gripper_mae": 6.762717247009277,
+      "delta_cosine": 0.7723765562288463,
+      "pred_smoothness": 0.8408504724502563,
+      "hold_state_baseline_mae": 11.120811462402344
+    }
+  },
+  "mean_action_mae": 8.860033988952637,
+  "mean_hold_state_baseline_mae": 11.120811462402344,
+  "latency_ms": {
+    "p50": 23.675682496104855,
+    "p95": 26.585100500960827,
+    "n": 40
+  },
+  "resources": {
+    "peak_rss_gb": 1.714,
+    "peak_vram_alloc_gb": 0.271
+  }
+}

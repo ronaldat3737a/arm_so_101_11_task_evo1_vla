@@ -1,0 +1,43 @@
+{
+  "task": "task_10",
+  "profile": "fixed",
+  "splits": {
+    "test": {
+      "episodes": 1,
+      "success": 1,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 0,
+          "success": true,
+          "steps": 177,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "orange_block_a": [
+              0.22,
+              -0.07,
+              0.0
+            ],
+            "orange_block_b": [
+              0.23,
+              0.08,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "orange_block_a": "train",
+            "orange_block_b": "train"
+          },
+          "sim_ms_per_step": 27.046239982217042,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 0.996,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

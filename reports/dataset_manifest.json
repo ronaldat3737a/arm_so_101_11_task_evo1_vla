@@ -1,0 +1,250 @@
+{
+  "generated_at": "2026-10-07T04:24:53.583671+00:00",
+  "num_tasks": 11,
+  "total_episodes": 551,
+  "total_usable_episodes": 542,
+  "total_frames": 253745,
+  "fps": 30,
+  "robot_type": "so_follower",
+  "codebase_version": "v3.0",
+  "cameras": {
+    "observation.images.wrist": {
+      "height": 480,
+      "width": 640,
+      "codec": "av1"
+    },
+    "observation.images.top": {
+      "height": 360,
+      "width": 640,
+      "codec": "av1"
+    }
+  },
+  "state": {
+    "key": "observation.state",
+    "dtype": "float32",
+    "shape": [
+      6
+    ],
+    "names": [
+      "shoulder_pan.pos",
+      "shoulder_lift.pos",
+      "elbow_flex.pos",
+      "wrist_flex.pos",
+      "wrist_roll.pos",
+      "gripper.pos"
+    ]
+  },
+  "action": {
+    "key": "action",
+    "dtype": "float32",
+    "shape": [
+      6
+    ],
+    "names": [
+      "shoulder_pan.pos",
+      "shoulder_lift.pos",
+      "elbow_flex.pos",
+      "wrist_flex.pos",
+      "wrist_roll.pos",
+      "gripper.pos"
+    ]
+  },
+  "action_dim": 6,
+  "state_dim": 6,
+  "split_counts_total": {
+    "train": 432,
+    "val": 55,
+    "test": 55,
+    "excluded": 9
+  },
+  "split_manifest": "reports/split_manifest.json",
+  "datasets": [
+    {
+      "task_id": "task_01",
+      "repo_id": "hungho77/so101_left_arm_pick_red_cube_into_pot",
+      "revision": "62d3cb12cc705fd39c851833853ec49b2ca20fe4",
+      "instruction": "Pick up the red cube and place it into the steel pot.",
+      "num_episodes": 50,
+      "num_frames": 37536,
+      "usable_episodes": 50,
+      "split_counts": {
+        "train": 40,
+        "val": 5,
+        "test": 5,
+        "excluded": 0,
+        "unused": 0
+      },
+      "local_path": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/hf_cache/datasets--hungho77--so101_left_arm_pick_red_cube_into_pot/snapshots/62d3cb12cc705fd39c851833853ec49b2ca20fe4"
+    },
+    {
+      "task_id": "task_02",
+      "repo_id": "hungho77/so101_left_arm_blue_cube_next_to_blue_cube",
+      "revision": "1d32c7fa37f245c6acc9dce944515beba65867db",
+      "instruction": "Pick up the blue cube and place it next to the blue cube.",
+      "num_episodes": 50,
+      "num_frames": 14841,
+      "usable_episodes": 49,
+      "split_counts": {
+        "train": 39,
+        "val": 5,
+        "test": 5,
+        "excluded": 1,
+        "unused": 0
+      },
+      "local_path": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/hf_cache/datasets--hungho77--so101_left_arm_blue_cube_next_to_blue_cube/snapshots/1d32c7fa37f245c6acc9dce944515beba65867db"
+    },
+    {
+      "task_id": "task_03",
+      "repo_id": "hungho77/so101_left_arm_pick_blue_cube_into_pot",
+      "revision": "98192ba8b697e80f811f68137c7ed2e042ddd64c",
+      "instruction": "Pick up the blue cube and place it into the steel pot",
+      "num_episodes": 50,
+      "num_frames": 29688,
+      "usable_episodes": 49,
+      "split_counts": {
+        "train": 39,
+        "val": 5,
+        "test": 5,
+        "excluded": 1,
+        "unused": 0
+      },
+      "local_path": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/hf_cache/datasets--hungho77--so101_left_arm_pick_blue_cube_into_pot/snapshots/98192ba8b697e80f811f68137c7ed2e042ddd64c"
+    },
+    {
+      "task_id": "task_04",
+      "repo_id": "hungho77/so101_left_arm_pick_banana_close_lid",
+      "revision": "63a2c9016f3d15ec3ef5de244f0ecd677afc27ce",
+      "instruction": "Take the banana and place it into the steel pot then close the lid.",
+      "num_episodes": 50,
+      "num_frames": 22278,
+      "usable_episodes": 49,
+      "split_counts": {
+        "train": 39,
+        "val": 5,
+        "test": 5,
+        "excluded": 1,
+        "unused": 0
+      },
+      "local_path": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/hf_cache/datasets--hungho77--so101_left_arm_pick_banana_close_lid/snapshots/63a2c9016f3d15ec3ef5de244f0ecd677afc27ce"
+    },
+    {
+      "task_id": "task_05",
+      "repo_id": "hungho77/so101_left_arm_blue_cube_out_of_pot_onto_blue_cube",
+      "revision": "ace616ca5651dbcd2a6b90c356dfbbe83e75c89d",
+      "instruction": "Take the blue cube out of the steel pot and place it on the blue cube.",
+      "num_episodes": 51,
+      "num_frames": 23103,
+      "usable_episodes": 48,
+      "split_counts": {
+        "train": 38,
+        "val": 5,
+        "test": 5,
+        "excluded": 3,
+        "unused": 0
+      },
+      "local_path": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/hf_cache/datasets--hungho77--so101_left_arm_blue_cube_out_of_pot_onto_blue_cube/snapshots/ace616ca5651dbcd2a6b90c356dfbbe83e75c89d"
+    },
+    {
+      "task_id": "task_06",
+      "repo_id": "hungho77/so101_left_arm_red_cube_out_of_pot_onto_red_cube",
+      "revision": "9363738dafae5bd65f9a7cd73d63fc04c0c0ff66",
+      "instruction": "Take the red cube out of the steel pot and place it on the red cube",
+      "num_episodes": 50,
+      "num_frames": 21837,
+      "usable_episodes": 50,
+      "split_counts": {
+        "train": 40,
+        "val": 5,
+        "test": 5,
+        "excluded": 0,
+        "unused": 0
+      },
+      "local_path": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/hf_cache/datasets--hungho77--so101_left_arm_red_cube_out_of_pot_onto_red_cube/snapshots/9363738dafae5bd65f9a7cd73d63fc04c0c0ff66"
+    },
+    {
+      "task_id": "task_07",
+      "repo_id": "hungho77/so101_left_arm_stack_yellow_on_orange_cube",
+      "revision": "ef6cb56c979b4c60c50f9582e2c055df1b2f7a92",
+      "instruction": "Stack the yellow cube on top of the orange cube.",
+      "num_episodes": 50,
+      "num_frames": 23691,
+      "usable_episodes": 49,
+      "split_counts": {
+        "train": 39,
+        "val": 5,
+        "test": 5,
+        "excluded": 1,
+        "unused": 0
+      },
+      "local_path": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/hf_cache/datasets--hungho77--so101_left_arm_stack_yellow_on_orange_cube/snapshots/ef6cb56c979b4c60c50f9582e2c055df1b2f7a92"
+    },
+    {
+      "task_id": "task_08",
+      "repo_id": "hungho77/so101_left_arm_balance_red_blue_on_wooden_board",
+      "revision": "460f5d1a012109e1ecaef7f24f852c8abd0a3b74",
+      "instruction": "Pick up the cube that makes the number of red and blue cubes on the wooden board equal, and place it in the empty corner of the wooden board.",
+      "num_episodes": 50,
+      "num_frames": 14217,
+      "usable_episodes": 50,
+      "split_counts": {
+        "train": 40,
+        "val": 5,
+        "test": 5,
+        "excluded": 0,
+        "unused": 0
+      },
+      "local_path": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/hf_cache/datasets--hungho77--so101_left_arm_balance_red_blue_on_wooden_board/snapshots/460f5d1a012109e1ecaef7f24f852c8abd0a3b74"
+    },
+    {
+      "task_id": "task_09",
+      "repo_id": "hungho77/so101_left_arm_red_cube_into_orange_hollow_cube",
+      "revision": "cf2c68df347b69612da0a0efd1f294b08ebf6533",
+      "instruction": "Pick up the red cube from the wooden board, put it into the orange hollow cube, then pick up the orange hollow cube and place it on the wooden board",
+      "num_episodes": 50,
+      "num_frames": 20642,
+      "usable_episodes": 49,
+      "split_counts": {
+        "train": 39,
+        "val": 5,
+        "test": 5,
+        "excluded": 1,
+        "unused": 0
+      },
+      "local_path": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/hf_cache/datasets--hungho77--so101_left_arm_red_cube_into_orange_hollow_cube/snapshots/cf2c68df347b69612da0a0efd1f294b08ebf6533"
+    },
+    {
+      "task_id": "task_10",
+      "repo_id": "hungho77/so101_left_arm_stack_orange_blocks",
+      "revision": "b932726e629f81cb142c4545d9d958340d28ec31",
+      "instruction": "Pick up one orange block and stack it neatly on top of the other orange block",
+      "num_episodes": 50,
+      "num_frames": 15682,
+      "usable_episodes": 50,
+      "split_counts": {
+        "train": 40,
+        "val": 5,
+        "test": 5,
+        "excluded": 0,
+        "unused": 0
+      },
+      "local_path": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/hf_cache/datasets--hungho77--so101_left_arm_stack_orange_blocks/snapshots/b932726e629f81cb142c4545d9d958340d28ec31"
+    },
+    {
+      "task_id": "task_11",
+      "repo_id": "hungho77/so101_left_arm_blue_cubes_shortest_to_tallest",
+      "revision": "629eba595368fb7040db4ee8ea0b3da382ffde03",
+      "instruction": "Take out the blue cubes from shortest to tallest and place it on the table",
+      "num_episodes": 50,
+      "num_frames": 30230,
+      "usable_episodes": 49,
+      "split_counts": {
+        "train": 39,
+        "val": 5,
+        "test": 5,
+        "excluded": 1,
+        "unused": 0
+      },
+      "local_path": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/datasets/hf_cache/datasets--hungho77--so101_left_arm_blue_cubes_shortest_to_tallest/snapshots/629eba595368fb7040db4ee8ea0b3da382ffde03"
+    }
+  ]
+}

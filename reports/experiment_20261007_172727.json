@@ -1,0 +1,118 @@
+{
+  "steps": 3,
+  "grad_accum_steps": 2,
+  "batch_size": 2,
+  "effective_batch": 4,
+  "wall_time_s": 16.0,
+  "samples_per_s": 0.752,
+  "best_val_loss": 0.9146191477775574,
+  "peak_vram_alloc_gb": 0.0,
+  "peak_rss_gb": 2.751,
+  "trainable_params": 51556230,
+  "total_params": 51556230,
+  "n_train_episodes": 40,
+  "n_val_episodes": 5,
+  "run_dir": "outputs/trainer_smoke_act_cpu_20261007_172727",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "lerobot": "0.6.1",
+    "transformers": "5.5.4",
+    "git_commit": "not a git repository",
+    "dataset_revisions": {
+      "hungho77/so101_left_arm_pick_red_cube_into_pot": "62d3cb12cc705fd39c851833853ec49b2ca20fe4",
+      "hungho77/so101_left_arm_blue_cube_next_to_blue_cube": "1d32c7fa37f245c6acc9dce944515beba65867db",
+      "hungho77/so101_left_arm_pick_blue_cube_into_pot": "98192ba8b697e80f811f68137c7ed2e042ddd64c",
+      "hungho77/so101_left_arm_pick_banana_close_lid": "63a2c9016f3d15ec3ef5de244f0ecd677afc27ce",
+      "hungho77/so101_left_arm_blue_cube_out_of_pot_onto_blue_cube": "ace616ca5651dbcd2a6b90c356dfbbe83e75c89d",
+      "hungho77/so101_left_arm_red_cube_out_of_pot_onto_red_cube": "9363738dafae5bd65f9a7cd73d63fc04c0c0ff66",
+      "hungho77/so101_left_arm_stack_yellow_on_orange_cube": "ef6cb56c979b4c60c50f9582e2c055df1b2f7a92",
+      "hungho77/so101_left_arm_balance_red_blue_on_wooden_board": "460f5d1a012109e1ecaef7f24f852c8abd0a3b74",
+      "hungho77/so101_left_arm_red_cube_into_orange_hollow_cube": "cf2c68df347b69612da0a0efd1f294b08ebf6533",
+      "hungho77/so101_left_arm_stack_orange_blocks": "b932726e629f81cb142c4545d9d958340d28ec31",
+      "hungho77/so101_left_arm_blue_cubes_shortest_to_tallest": "629eba595368fb7040db4ee8ea0b3da382ffde03"
+    },
+    "aggregated_dataset": {
+      "aggr_repo_id": "local/so101_11tasks",
+      "aggr_root": "datasets/so101_11tasks",
+      "sources": [
+        {
+          "repo_id": "hungho77/so101_left_arm_pick_red_cube_into_pot",
+          "revision": "62d3cb12cc705fd39c851833853ec49b2ca20fe4"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_blue_cube_next_to_blue_cube",
+          "revision": "1d32c7fa37f245c6acc9dce944515beba65867db"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_pick_blue_cube_into_pot",
+          "revision": "98192ba8b697e80f811f68137c7ed2e042ddd64c"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_pick_banana_close_lid",
+          "revision": "63a2c9016f3d15ec3ef5de244f0ecd677afc27ce"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_blue_cube_out_of_pot_onto_blue_cube",
+          "revision": "ace616ca5651dbcd2a6b90c356dfbbe83e75c89d"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_red_cube_out_of_pot_onto_red_cube",
+          "revision": "9363738dafae5bd65f9a7cd73d63fc04c0c0ff66"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_stack_yellow_on_orange_cube",
+          "revision": "ef6cb56c979b4c60c50f9582e2c055df1b2f7a92"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_balance_red_blue_on_wooden_board",
+          "revision": "460f5d1a012109e1ecaef7f24f852c8abd0a3b74"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_red_cube_into_orange_hollow_cube",
+          "revision": "cf2c68df347b69612da0a0efd1f294b08ebf6533"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_stack_orange_blocks",
+          "revision": "b932726e629f81cb142c4545d9d958340d28ec31"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_blue_cubes_shortest_to_tallest",
+          "revision": "629eba595368fb7040db4ee8ea0b3da382ffde03"
+        }
+      ],
+      "concatenate_videos": false,
+      "concatenate_data": false,
+      "elapsed_s": 9.6,
+      "peak_rss_gb": 0.9593162536621094,
+      "split_manifest": "reports/split_manifest.json"
+    }
+  },
+  "config": {
+    "name": "trainer_smoke_act_cpu",
+    "tasks": [
+      "task_01"
+    ],
+    "output_root": "outputs",
+    "video_backend": "pyav",
+    "policy": {
+      "type": "act",
+      "device": "cpu",
+      "chunk_size": 20,
+      "n_action_steps": 20
+    },
+    "training": {
+      "batch_size": 2,
+      "grad_accum_steps": 2,
+      "max_steps": 3,
+      "num_workers": 0,
+      "log_interval": 1,
+      "val_interval": 3,
+      "val_samples": 2,
+      "ckpt_interval": 3,
+      "seed": 0
+    }
+  }
+}

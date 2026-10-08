@@ -1,0 +1,31 @@
+[oracle] task_01 fixed test: 1/1
+[oracle] task_02 fixed test: 1/1
+[oracle] task_03 fixed test: 1/1
+[oracle] task_04 fixed test: 1/1
+[oracle] task_05 fixed test: 1/1
+[oracle] task_06 fixed test: 1/1
+[oracle] task_07 fixed test: 1/1
+[oracle] task_08 fixed test: 1/1
+[oracle] task_09 fixed test: 1/1
+[oracle] task_10 fixed test: 1/1
+[oracle] task_11 fixed test: 1/1
+# Oracle (scripted expert) success in MuJoCo
+
+Proves task solvability at train / val / test (unseen) positions. Not a policy result.
+
+| task | profile | train | val | test | main failure reasons |
+|---|---|---|---|---|---|
+| task_01 | fixed | - | - | 1/1 |  |
+| task_01 | position | 20/20 | 20/20 | 18/20 |  (2) |
+| task_02 | fixed | - | - | 1/1 |  |
+| task_03 | fixed | - | - | 1/1 |  |
+| task_04 | fixed | - | - | 1/1 |  |
+| task_05 | fixed | - | - | 1/1 |  |
+| task_06 | fixed | - | - | 1/1 |  |
+| task_07 | fixed | - | - | 1/1 |  |
+| task_08 | fixed | - | - | 1/1 |  |
+| task_09 | fixed | - | - | 1/1 |  |
+| task_10 | fixed | - | - | 1/1 |  |
+| task_11 | fixed | - | - | 1/1 |  |
+
+Peak RSS of the last run: 0.996 GB

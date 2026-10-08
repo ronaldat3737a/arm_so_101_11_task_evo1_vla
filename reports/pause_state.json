@@ -1,0 +1,79 @@
+{
+  "paused_at": "2026-10-08T12:21",
+  "running_processes_at_pause": "none (training stopped with SIGINT right after the step-1000 checkpoint; GPU 12 MiB = idle)",
+  "current_phase": "Phase 10: Evo-1 stage1, cached-feature training run 2 (run 1 complete)",
+  "feature_cache": {
+    "root": "datasets/evo1_feature_cache (39 GB)",
+    "status": "COMPLETE",
+    "parts": {
+      "train_s10_o0": {
+        "shards": "79/79",
+        "frames": 20213
+      },
+      "train_s10_o5": {
+        "shards": "79/79",
+        "frames": 20007
+      },
+      "val_s30_o0": {
+        "shards": "4/4",
+        "frames": 871
+      }
+    },
+    "note": "do NOT recompute; all shards complete and verified readable"
+  },
+  "training_run_2": {
+    "run_dir": "outputs/evo1_stage1_cached_r2_20261008_121256",
+    "log": "outputs/evo1_cached_train_r2.log",
+    "script": "scripts/train_evo1_cached.py",
+    "current_step": "1000 of 20000 (process stopped during step 1001; that partial step is discarded)",
+    "latest_complete_checkpoint": "outputs/evo1_stage1_cached_r2_20261008_121256/checkpoints/latest (step 1000: pretrained_model + training_state.pt with optimizer, scheduler, RNG, data stream position epoch 0 / shard_pos 125 / sample_pos 228)",
+    "best_checkpoint": "outputs/evo1_stage1_cached_r2_20261008_121256/checkpoints/best (step 1000, val loss 0.0465)",
+    "val_loss_history": {
+      "0": 0.0352,
+      "1000": 0.0465
+    },
+    "init": "checkpoints/evo1_so101_stage1_cached_r1/best",
+    "data": "cached parts train_s10_o0 + train_s10_o5 = 158 shards / 40,220 frames (real train episodes, 11 tasks, REAL_ONLY); validation val_s30_o0 = 871 frames of real val episodes",
+    "config": "outputs/evo1_stage1_cached_r2_20261008_121256/args.json: steps 20000, batch 32 (effective batch 32, no grad accumulation), lr 1e-5, warmup 500, cosine, val/ckpt every 1000, seed 1000, export evo1_so101",
+    "precision": "frozen VLM tokens cached in bf16; action head trained with Evo-1 internal bf16 autocast (use_amp=true), fp32 master weights, fp32 loss",
+    "resume_command": "uv run python scripts/train_evo1_cached.py --resume outputs/evo1_stage1_cached_r2_20261008_121256",
+    "after_training": "uv run python scripts/evaluate_offline.py --checkpoint checkpoints/evo1_so101/best --task all --split test --frames-per-episode 4 --name evo1_stage1_cached_r2"
+  },
+  "evo1_checkpoints": {
+    "checkpoints/evo1_so101": "= cached run 1 (export happens only when run 2 finishes)",
+    "checkpoints/evo1_so101_stage1_cached_r1": "cached run 1 backup (step 20000, val 0.0352, offline test MAE 15.0)",
+    "checkpoints/evo1_so101_stage1_e2e_3000": "end-to-end stage1 run (3000 updates)"
+  },
+  "act_baseline": {
+    "run_dir": "outputs/act_task01_20261007_172212",
+    "log": "outputs/act_task01_20261007_172212.log",
+    "planned_steps": 20000,
+    "reached_step_approx": 10050,
+    "latest_complete_checkpoint": "outputs/act_task01_20261007_172212/checkpoints/010000 (pretrained_model + training_state, step 10000; 'last' -> 010000)",
+    "other_checkpoints": [
+      "005000"
+    ],
+    "stopped_with": "SIGINT after checkpoint 010000 was fully written (steps 10001..~10050 not saved)",
+    "resume_command": "uv run lerobot-train --config_path=outputs/act_task01_20261007_172212/checkpoints/last/pretrained_model/train_config.json --resume=true",
+    "note": "Plan before the pause was to stop ACT at 10k anyway to free the GPU for Evo-1; evaluate checkpoint 010000 first, resume to 20k only if needed."
+  },
+  "simulation_datasets": {
+    "sim_all": "datasets/sim_so101_all (220 episodes, 62998 frames, 20/task, train-region, verified) - FINAL, do not regenerate",
+    "parts": [
+      "datasets/sim_so101 (task_01-04, repaired, 80 eps)",
+      "datasets/sim_so101_part2 (task_05-11, 140 eps)"
+    ],
+    "mixture": "datasets/mixtures/REAL_PLUS_SIM (652 train episodes = 432 real + 220 sim; reports/mixture_REAL_PLUS_SIM.json)"
+  },
+  "next_steps_in_order": [
+    "1. resume run 2: uv run python scripts/train_evo1_cached.py --resume outputs/evo1_stage1_cached_r2_20261008_121256",
+    "2. offline eval of checkpoints/evo1_so101/best (all tasks, test split) and compare with run 1 (15.0 deg) and hold-state",
+    "3. then: stage-2-lite profiles, sim evaluation, CKA/CLP, quantization"
+  ],
+  "do_not": [
+    "recompute cache shards",
+    "retrain from scratch",
+    "regenerate simulation data",
+    "reset the project"
+  ]
+}

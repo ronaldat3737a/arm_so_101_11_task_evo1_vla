@@ -1,0 +1,43 @@
+{
+  "task": "task_06",
+  "profile": "fixed",
+  "splits": {
+    "test": {
+      "episodes": 1,
+      "success": 1,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 0,
+          "success": true,
+          "steps": 177,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.19,
+              0.15,
+              0.0
+            ],
+            "red_cube_base": [
+              0.24,
+              -0.06,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "red_cube_base": "val"
+          },
+          "sim_ms_per_step": 49.78170906756557,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 0.996,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

@@ -1,0 +1,20 @@
+# Real cameras. Names MUST be `top` and `wrist` (dataset keys observation.images.top / .wrist) and resolutions must
+# match the training data: top 640x360, wrist 640x480, 30 fps. Find devices with: lerobot-find-cameras opencv
+# Do not rely on index 0: use stable /dev/v4l/by-id/... paths.
+cameras:
+  top:
+    camera_id: top
+    device: /dev/v4l/by-id/REPLACE_WITH_TOP_CAMERA-video-index0
+    width: 640
+    height: 360
+    fps: 30
+    exposure: null        # e.g. 156. Not an OpenCVCameraConfig field: applied with `v4l2-ctl -c <exposure_ctrl>=<value>` before opening
+    exposure_ctrl: exposure_time_absolute
+  wrist:
+    camera_id: wrist
+    device: /dev/v4l/by-id/REPLACE_WITH_WRIST_CAMERA-video-index0
+    width: 640
+    height: 480
+    fps: 30
+    exposure: null
+    exposure_ctrl: exposure_time_absolute

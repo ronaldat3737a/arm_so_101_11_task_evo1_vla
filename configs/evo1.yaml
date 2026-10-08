@@ -1,0 +1,51 @@
+# Evo-1 fine-tuning on the 11 SO-101 tasks (official lerobot.policies.evo1, LeRobot 0.6.1).
+# Local profile for RTX 3050 6 GB / 12 GB RAM. Every field under `policy` is a real Evo1Config field
+# (unknown fields are rejected by src/training/trainer.py).
+name: evo1_so101_stage1
+export_name: evo1_so101            # -> checkpoints/evo1_so101/{best,latest,config.yaml,norm_stats.json,training_summary.json}
+tasks: all
+mixture: REAL_ONLY                 # REAL_ONLY | SIM_ONLY | REAL_PLUS_SIM (configs/data_mixture.yaml)
+output_root: outputs
+video_backend: pyav
+init_from: null                    # stage2: path to a stage1 pretrained_model
+
+policy:
+  type: evo1
+  device: cuda
+  training_stage: stage1           # VLM frozen; integration + flow-matching action head trained
+  vlm_model_name: OpenGVLab/InternVL3-1B-hf   # pretrained VLM (Evo-1 has no robot-data pretraining)
+  vlm_revision: 014c0583a0d4bedf29fbe2dbff4f865eb998e171   # revision used in the LeRobot Evo-1 docs (sha256-verified)
+  vlm_num_layers: 14
+  vlm_dtype: bfloat16
+  use_amp: true                    # Evo-1 wraps its forward in bf16 autocast itself
+  use_flash_attn: false            # flash-attn not installed; Evo-1 falls back to standard attention
+  enable_gradient_checkpointing: true
+  gradient_checkpointing_use_reentrant: false
+  image_resolution: [448, 448]     # MUST equal the InternVL3 native size: lerobot evo1 rejects 256 (image_seq_length is tied to 448)
+  chunk_size: 50                   # action horizon
+  n_action_steps: 50
+  max_state_dim: 24
+  max_action_dim: 24
+  max_views: 3                     # top + wrist used; no empty camera
+  binarize_gripper: false          # SO-101 gripper is continuous 0..100
+  task_field: task
+  dropout: 0.2
+  optimizer_lr: 1.0e-5
+  optimizer_weight_decay: 1.0e-3
+  optimizer_grad_clip_norm: 1.0
+  scheduler_warmup_steps: 300
+
+training:
+  # sweep 2026-10-07 (reports/evo1_sweep.md): batch 4 OOM; batch 2 fastest (~1.7 samples/s, 3.65 GB alloc);
+  # gradient checkpointing has no effect in stage1 (frozen VLM runs under no_grad)
+  batch_size: 2
+  grad_accum_steps: 4              # effective batch 8
+  max_steps: 3000                  # optimizer updates (~24k samples, ~4 h)
+  num_workers: 0
+  log_interval: 10
+  val_interval: 250
+  val_samples: 64
+  ckpt_interval: 250               # full resumable state (weights, optimizer, scheduler, RNG, data position)
+  seed: 1000
+  max_wall_minutes: null
+wandb: false

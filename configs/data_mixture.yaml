@@ -1,0 +1,18 @@
+# Data mixtures. Default REAL_ONLY (baseline); REAL_PLUS_SIM is the generalization experiment.
+# Sim data only covers TRAIN-region object positions (scripts/generate_sim_data.py), so val/test positions remain unseen.
+default: REAL_ONLY
+mixtures:
+  REAL_ONLY:
+    datasets: [real]
+  SIM_ONLY:
+    datasets: [sim]
+  REAL_PLUS_SIM:
+    datasets: [real, sim]
+sources:
+  real:
+    root: datasets/so101_11tasks        # merged real data (train episodes selected via reports/split_manifest.json)
+    episodes: train_split
+  sim:
+    root: datasets/sim_so101_all        # parts 1 (task_01-04) + 2 (task_05-11), official aggregate; train-region only
+    episodes: all
+output_root: datasets/mixtures          # datasets/mixtures/<MIXTURE>

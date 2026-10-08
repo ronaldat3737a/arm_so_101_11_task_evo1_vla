@@ -1,0 +1,144 @@
+{
+  "steps": 5,
+  "grad_accum_steps": 1,
+  "batch_size": 1,
+  "effective_batch": 1,
+  "wall_time_s": 7.6,
+  "samples_per_s": 0.654,
+  "best_val_loss": 0.6811852753162384,
+  "peak_vram_alloc_gb": 3.523,
+  "peak_rss_gb": 2.146,
+  "trainable_params": 122029360,
+  "total_params": 775198640,
+  "n_train_episodes": 432,
+  "n_val_episodes": 55,
+  "run_dir": "outputs/evo1_sweep_b1_gctrue_20261007_201023",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "lerobot": "0.6.1",
+    "transformers": "5.5.4",
+    "git_commit": "not a git repository",
+    "dataset_revisions": {
+      "hungho77/so101_left_arm_pick_red_cube_into_pot": "62d3cb12cc705fd39c851833853ec49b2ca20fe4",
+      "hungho77/so101_left_arm_blue_cube_next_to_blue_cube": "1d32c7fa37f245c6acc9dce944515beba65867db",
+      "hungho77/so101_left_arm_pick_blue_cube_into_pot": "98192ba8b697e80f811f68137c7ed2e042ddd64c",
+      "hungho77/so101_left_arm_pick_banana_close_lid": "63a2c9016f3d15ec3ef5de244f0ecd677afc27ce",
+      "hungho77/so101_left_arm_blue_cube_out_of_pot_onto_blue_cube": "ace616ca5651dbcd2a6b90c356dfbbe83e75c89d",
+      "hungho77/so101_left_arm_red_cube_out_of_pot_onto_red_cube": "9363738dafae5bd65f9a7cd73d63fc04c0c0ff66",
+      "hungho77/so101_left_arm_stack_yellow_on_orange_cube": "ef6cb56c979b4c60c50f9582e2c055df1b2f7a92",
+      "hungho77/so101_left_arm_balance_red_blue_on_wooden_board": "460f5d1a012109e1ecaef7f24f852c8abd0a3b74",
+      "hungho77/so101_left_arm_red_cube_into_orange_hollow_cube": "cf2c68df347b69612da0a0efd1f294b08ebf6533",
+      "hungho77/so101_left_arm_stack_orange_blocks": "b932726e629f81cb142c4545d9d958340d28ec31",
+      "hungho77/so101_left_arm_blue_cubes_shortest_to_tallest": "629eba595368fb7040db4ee8ea0b3da382ffde03"
+    },
+    "aggregated_dataset": {
+      "aggr_repo_id": "local/so101_11tasks",
+      "aggr_root": "datasets/so101_11tasks",
+      "sources": [
+        {
+          "repo_id": "hungho77/so101_left_arm_pick_red_cube_into_pot",
+          "revision": "62d3cb12cc705fd39c851833853ec49b2ca20fe4"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_blue_cube_next_to_blue_cube",
+          "revision": "1d32c7fa37f245c6acc9dce944515beba65867db"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_pick_blue_cube_into_pot",
+          "revision": "98192ba8b697e80f811f68137c7ed2e042ddd64c"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_pick_banana_close_lid",
+          "revision": "63a2c9016f3d15ec3ef5de244f0ecd677afc27ce"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_blue_cube_out_of_pot_onto_blue_cube",
+          "revision": "ace616ca5651dbcd2a6b90c356dfbbe83e75c89d"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_red_cube_out_of_pot_onto_red_cube",
+          "revision": "9363738dafae5bd65f9a7cd73d63fc04c0c0ff66"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_stack_yellow_on_orange_cube",
+          "revision": "ef6cb56c979b4c60c50f9582e2c055df1b2f7a92"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_balance_red_blue_on_wooden_board",
+          "revision": "460f5d1a012109e1ecaef7f24f852c8abd0a3b74"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_red_cube_into_orange_hollow_cube",
+          "revision": "cf2c68df347b69612da0a0efd1f294b08ebf6533"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_stack_orange_blocks",
+          "revision": "b932726e629f81cb142c4545d9d958340d28ec31"
+        },
+        {
+          "repo_id": "hungho77/so101_left_arm_blue_cubes_shortest_to_tallest",
+          "revision": "629eba595368fb7040db4ee8ea0b3da382ffde03"
+        }
+      ],
+      "concatenate_videos": false,
+      "concatenate_data": false,
+      "elapsed_s": 9.6,
+      "peak_rss_gb": 0.9593162536621094,
+      "split_manifest": "reports/split_manifest.json"
+    }
+  },
+  "config": {
+    "name": "evo1_sweep_b1_gctrue",
+    "export_name": null,
+    "tasks": "all",
+    "mixture": "REAL_ONLY",
+    "output_root": "outputs",
+    "video_backend": "pyav",
+    "init_from": null,
+    "policy": {
+      "type": "evo1",
+      "device": "cuda",
+      "training_stage": "stage1",
+      "vlm_model_name": "OpenGVLab/InternVL3-1B-hf",
+      "vlm_revision": "014c0583a0d4bedf29fbe2dbff4f865eb998e171",
+      "vlm_num_layers": 14,
+      "vlm_dtype": "bfloat16",
+      "use_amp": true,
+      "use_flash_attn": false,
+      "enable_gradient_checkpointing": true,
+      "gradient_checkpointing_use_reentrant": false,
+      "image_resolution": [
+        448,
+        448
+      ],
+      "chunk_size": 50,
+      "n_action_steps": 50,
+      "max_state_dim": 24,
+      "max_action_dim": 24,
+      "max_views": 3,
+      "binarize_gripper": false,
+      "task_field": "task",
+      "dropout": 0.2,
+      "optimizer_lr": 1e-05,
+      "optimizer_weight_decay": 0.001,
+      "optimizer_grad_clip_norm": 1.0,
+      "scheduler_warmup_steps": 300
+    },
+    "training": {
+      "batch_size": 1,
+      "grad_accum_steps": 1,
+      "max_steps": 5,
+      "num_workers": 0,
+      "log_interval": 5,
+      "val_interval": 1000,
+      "val_samples": 2,
+      "ckpt_interval": 1000,
+      "seed": 1000,
+      "max_wall_minutes": null
+    },
+    "wandb": false
+  }
+}

@@ -1,0 +1,60 @@
+[oracle] task_02 position train: 4/5
+[oracle] task_02 position val: 5/5
+[oracle] task_02 position test: 5/5
+[oracle] task_03 position train: 5/5
+[oracle] task_03 position val: 5/5
+[oracle] task_03 position test: 5/5
+[oracle] task_04 position train: 4/5
+[oracle] task_04 position val: 3/5
+[oracle] task_04 position test: 3/5
+[oracle] task_05 position train: 5/5
+[oracle] task_05 position val: 5/5
+[oracle] task_05 position test: 4/5
+[oracle] task_06 position train: 4/5
+[oracle] task_06 position val: 5/5
+[oracle] task_06 position test: 5/5
+[oracle] task_07 position train: 4/5
+[oracle] task_07 position val: 5/5
+[oracle] task_07 position test: 5/5
+[oracle] task_08 position train: 5/5
+[oracle] task_08 position val: 5/5
+[oracle] task_08 position test: 5/5
+[oracle] task_09 position train: 5/5
+[oracle] task_09 position val: 4/5
+[oracle] task_09 position test: 5/5
+[oracle] task_10 position train: 5/5
+[oracle] task_10 position val: 5/5
+[oracle] task_10 position test: 5/5
+[oracle] task_11 position train: 1/5
+[oracle] task_11 position val: 2/5
+[oracle] task_11 position test: 1/5
+# Oracle (scripted expert) success in MuJoCo
+
+Proves task solvability at train / val / test (unseen) positions. Not a policy result.
+
+| task | profile | train | val | test | main failure reasons |
+|---|---|---|---|---|---|
+| task_01 | fixed | - | - | 1/1 |  |
+| task_01 | position | 20/20 | 20/20 | 18/20 |  (2) |
+| task_02 | fixed | - | - | 1/1 |  |
+| task_02 | position | 4/5 | 5/5 | 5/5 |  (1) |
+| task_03 | fixed | - | - | 1/1 |  |
+| task_03 | position | 5/5 | 5/5 | 5/5 |  |
+| task_04 | fixed | - | - | 1/1 |  |
+| task_04 | position | 4/5 | 3/5 | 3/5 |  (5) |
+| task_05 | fixed | - | - | 1/1 |  |
+| task_05 | position | 5/5 | 5/5 | 4/5 |  (1) |
+| task_06 | fixed | - | - | 1/1 |  |
+| task_06 | position | 4/5 | 5/5 | 5/5 | pot_tipped_over (1) |
+| task_07 | fixed | - | - | 1/1 |  |
+| task_07 | position | 4/5 | 5/5 | 5/5 |  (1) |
+| task_08 | fixed | - | - | 1/1 |  |
+| task_08 | position | 5/5 | 5/5 | 5/5 |  |
+| task_09 | fixed | - | - | 1/1 |  |
+| task_09 | position | 5/5 | 4/5 | 5/5 |  (1) |
+| task_10 | fixed | - | - | 1/1 |  |
+| task_10 | position | 5/5 | 5/5 | 5/5 |  |
+| task_11 | fixed | - | - | 1/1 |  |
+| task_11 | position | 1/5 | 2/5 | 1/5 |  (6), wrong_order (4), oracle_error (1) |
+
+Peak RSS of the last run: 1.068 GB

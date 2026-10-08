@@ -1,0 +1,98 @@
+# Task conditioning for the 11-task policy.
+#
+# instruction: EXACT string stored in the dataset (meta/tasks.parquet, single task per dataset), verified by
+#              scripts/inspect_datasets.py (reports/dataset_audit.json -> datasets.<repo>.tasks). It is the prompt
+#              Evo-1 is trained with (LeRobot `task` field), so it must not be paraphrased. Trailing-period
+#              inconsistencies in the source data are kept as-is (tests check exact equality with the audit).
+# objects / expected_behavior: derived from the instruction text ONLY. verified_from_video=false until the
+#              scene layout has been checked on actual video frames (needed for simulation, Phase 7).
+# excluded_episodes: episodes with no motion found by the audit (action range < 1 deg on every joint).
+
+tasks:
+  - task_id: task_01
+    dataset: hungho77/so101_left_arm_pick_red_cube_into_pot
+    instruction: "Pick up the red cube and place it into the steel pot."
+    objects: [red cube, steel pot]
+    expected_behavior: grasp the red cube, release it inside the steel pot
+    excluded_episodes: []
+    verified_from_video: false
+
+  - task_id: task_02
+    dataset: hungho77/so101_left_arm_blue_cube_next_to_blue_cube
+    instruction: "Pick up the blue cube and place it next to the blue cube."
+    objects: [blue cube (moved), blue cube (reference)]
+    expected_behavior: grasp one blue cube, place it on the table adjacent to the other blue cube
+    excluded_episodes: [21]
+    verified_from_video: false
+
+  - task_id: task_03
+    dataset: hungho77/so101_left_arm_pick_blue_cube_into_pot
+    instruction: "Pick up the blue cube and place it into the steel pot"
+    objects: [blue cube, steel pot]
+    expected_behavior: grasp the blue cube, release it inside the steel pot
+    excluded_episodes: [25]
+    verified_from_video: false
+
+  - task_id: task_04
+    dataset: hungho77/so101_left_arm_pick_banana_close_lid
+    instruction: "Take the banana and place it into the steel pot then close the lid."
+    objects: [banana, steel pot, lid]
+    expected_behavior: place the banana inside the pot, then put the lid on the pot (two-stage task)
+    excluded_episodes: [3]
+    verified_from_video: false
+
+  - task_id: task_05
+    dataset: hungho77/so101_left_arm_blue_cube_out_of_pot_onto_blue_cube
+    instruction: "Take the blue cube out of the steel pot and place it on the blue cube."
+    objects: [blue cube (in pot), steel pot, blue cube (on table)]
+    expected_behavior: pick the blue cube from inside the pot, stack it on top of the other blue cube
+    excluded_episodes: [12, 28, 47]
+    verified_from_video: false
+
+  - task_id: task_06
+    dataset: hungho77/so101_left_arm_red_cube_out_of_pot_onto_red_cube
+    instruction: "Take the red cube out of the steel pot and place it on the red cube"
+    objects: [red cube (in pot), steel pot, red cube (on table)]
+    expected_behavior: pick the red cube from inside the pot, stack it on top of the other red cube
+    excluded_episodes: []
+    verified_from_video: false
+
+  - task_id: task_07
+    dataset: hungho77/so101_left_arm_stack_yellow_on_orange_cube
+    instruction: "Stack the yellow cube on top of the orange cube."
+    objects: [yellow cube, orange cube]
+    expected_behavior: yellow cube resting on top of the orange cube
+    excluded_episodes: [2]
+    verified_from_video: false
+
+  - task_id: task_08
+    dataset: hungho77/so101_left_arm_balance_red_blue_on_wooden_board
+    instruction: "Pick up the cube that makes the number of red and blue cubes on the wooden board equal, and place it in the empty corner of the wooden board."
+    objects: [red cubes, blue cubes, wooden board]
+    expected_behavior: choose the cube whose color balances the red/blue count on the board, place it in the empty corner (requires reasoning over the scene)
+    excluded_episodes: []
+    verified_from_video: false
+
+  - task_id: task_09
+    dataset: hungho77/so101_left_arm_red_cube_into_orange_hollow_cube
+    instruction: "Pick up the red cube from the wooden board, put it into the orange hollow cube, then pick up the orange hollow cube and place it on the wooden board"
+    objects: [red cube, wooden board, orange hollow cube]
+    expected_behavior: red cube inside the hollow cube, then the hollow cube (containing it) placed on the board (two-stage task)
+    excluded_episodes: [22]
+    verified_from_video: false
+
+  - task_id: task_10
+    dataset: hungho77/so101_left_arm_stack_orange_blocks
+    instruction: "Pick up one orange block and stack it neatly on top of the other orange block"
+    objects: [orange block x2]
+    expected_behavior: one orange block aligned on top of the other
+    excluded_episodes: []
+    verified_from_video: false
+
+  - task_id: task_11
+    dataset: hungho77/so101_left_arm_blue_cubes_shortest_to_tallest
+    instruction: "Take out the blue cubes from shortest to tallest and place it on the table"
+    objects: [blue cubes / stacks of different heights, container (unknown, verify from video)]
+    expected_behavior: move the blue cubes out one by one in order of increasing height onto the table (multi-step; exact layout must be verified from video)
+    excluded_episodes: [26]
+    verified_from_video: false

@@ -1,0 +1,49 @@
+{
+  "task": "task_08",
+  "profile": "fixed",
+  "splits": {
+    "test": {
+      "episodes": 1,
+      "success": 1,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 0,
+          "success": true,
+          "steps": 176,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "board": [
+              0.21,
+              0.11,
+              0.0
+            ],
+            "table_red": [
+              0.21,
+              -0.07,
+              0.0
+            ],
+            "table_blue": [
+              0.25,
+              -0.13,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "table_red": "train",
+            "table_blue": "train"
+          },
+          "sim_ms_per_step": 52.013138478452504,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 0.996,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

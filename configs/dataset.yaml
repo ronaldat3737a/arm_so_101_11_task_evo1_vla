@@ -1,0 +1,39 @@
+# Source datasets for the project. Order defines task_01 .. task_11.
+# Source: https://huggingface.co/collections/hungho77/so101-leftarmonly-task
+collection: hungho77/so101-leftarmonly-task-6ac4b58bcea46f327127da54
+
+# Local Hub cache for metadata/parquet/video downloads (git-ignored).
+cache_dir: datasets/hf_cache
+
+# Pinned revisions are written by scripts/inspect_datasets.py into reports/dataset_audit.json.
+# Downstream scripts read the revision from there so every run uses the audited snapshot.
+repos:
+  - hungho77/so101_left_arm_pick_red_cube_into_pot
+  - hungho77/so101_left_arm_blue_cube_next_to_blue_cube
+  - hungho77/so101_left_arm_pick_blue_cube_into_pot
+  - hungho77/so101_left_arm_pick_banana_close_lid
+  - hungho77/so101_left_arm_blue_cube_out_of_pot_onto_blue_cube
+  - hungho77/so101_left_arm_red_cube_out_of_pot_onto_red_cube
+  - hungho77/so101_left_arm_stack_yellow_on_orange_cube
+  - hungho77/so101_left_arm_balance_red_blue_on_wooden_board
+  - hungho77/so101_left_arm_red_cube_into_orange_hollow_cube
+  - hungho77/so101_left_arm_stack_orange_blocks
+  - hungho77/so101_left_arm_blue_cubes_shortest_to_tallest
+
+# Expected robot convention (LeRobot so_follower, use_degrees=True). Used only for CHECKING.
+expected:
+  robot_type: so_follower
+  joint_names:
+    - shoulder_pan.pos
+    - shoulder_lift.pos
+    - elbow_flex.pos
+    - wrist_flex.pos
+    - wrist_roll.pos
+    - gripper.pos
+
+# Episode-level split (per task). Applied by scripts/validate_datasets.py.
+split:
+  seed: 0
+  train: 40
+  val: 5
+  test: 5
