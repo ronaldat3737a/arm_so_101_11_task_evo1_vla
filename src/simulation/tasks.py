@@ -50,7 +50,8 @@ class Task:
             try:
                 for item in self.randomized():
                     rad = info[item["name"]]["footprint_radius"]
-                    x, y = sample_xy(rng, grid, split if item.get("split", True) else None, placed, rad, min_sep, item.get("r"), item.get("th"), max_tries=300)
+                    r_rng, th_rng = _widened(item, grid, getattr(self, "widen", None))
+                    x, y = sample_xy(rng, grid, split if item.get("split", True) else None, placed, rad, min_sep, r_rng, th_rng, max_tries=300)
                     yaw = float(rng.uniform(-yaw_range, yaw_range)) if item.get("yaw", True) else 0.0
                     layout[item["name"]] = (x, y, yaw)
                     placed.append((x, y, rad))
@@ -93,6 +94,31 @@ def _resting(env, obj: str) -> tuple[bool, str]:
     if np.linalg.norm(env.body_linvel(obj)) > 0.05:
         return False, f"{obj} still moving"
     return True, ""
+
+
+def _drop_height(env) -> float:
+    """Release height of the grasp point above a container rim (tasks 01 / 03). Default 2 cm (v1 / v2 data);
+    env.oracle_opts["drop_height"] = (lo, hi) samples it from the oracle's own rng (safe-drop demos, v3)."""
+    o = getattr(env, "oracle_opts", None) or {}
+    if "drop_height" in o and getattr(env, "oracle_rng", None) is not None:
+        return float(env.oracle_rng.uniform(*o["drop_height"]))
+    return 0.02
+
+
+def _widened(item: dict, grid: SplitGrid, widen: dict | None) -> tuple:
+    """Per-object (r, theta) sampling ranges. `widen` (profile option, e.g. position_wide) extends them by dr / dth,
+    clipped to the workspace; pots keep r <= container_r_max because the oracle needs a vertical gripper above them.
+    None = the original ranges (v1/v2 data reproduce exactly)."""
+    r, th = item.get("r"), item.get("th")
+    if not widen:
+        return r, th
+    r0, r1 = r or (grid.r_min, grid.r_max)
+    t0, t1 = th or (grid.theta_min_deg, grid.theta_max_deg)
+    r0, r1 = max(grid.r_min, r0 - widen["dr"]), min(grid.r_max, r1 + widen["dr"])
+    if "pot" in item["name"]:
+        r1 = min(r1, widen.get("container_r_max", r1))
+    t0, t1 = max(grid.theta_min_deg, t0 - widen["dth"]), min(grid.theta_max_deg, t1 + widen["dth"])
+    return (r0, r1), (t0, t1)
 
 
 def _upright(env, name: str, max_tilt_deg: float = 30.0) -> bool:
@@ -149,7 +175,7 @@ class Task01(Task):
 
         pot = env.body_pos("pot")
         # release the cube ~1 cm above the rim: higher drops make it bounce out of the pot
-        return pick_place_waypoints(env, "red_cube", CUBE / 2, (pot[0], pot[1], env.obj_info["pot"]["height"] + 0.02), yaw_obj_deg=env.layout["red_cube"][2])
+        return pick_place_waypoints(env, "red_cube", CUBE / 2, (pot[0], pot[1], env.obj_info["pot"]["height"] + _drop_height(env)), yaw_obj_deg=env.layout["red_cube"][2])
 
 
 
@@ -265,7 +291,8 @@ class _CubeIntoContainer(Task):
         from .oracle import pick_place_waypoints
 
         c = env.body_pos(self.container)
-        return pick_place_waypoints(env, self.target, CUBE / 2, (c[0], c[1], env.obj_info[self.container]["height"] + 0.02), yaw_obj_deg=env.layout[self.target][2])
+        return pick_place_waypoints(env, self.target, CUBE / 2, (c[0], c[1], env.obj_info[self.container]["height"] + _drop_height(env)),
+                                    yaw_obj_deg=env.layout[self.target][2])
 
 
 class Task03(_CubeIntoContainer):
@@ -397,7 +424,8 @@ class _CubeOutOfContainerOntoCube(Task):
         q = env.data.body(self.moving).xquat
         yaw = math.degrees(2 * math.atan2(q[3], q[0]))
         return pick_place_waypoints(env, self.moving, CUBE / 2, _place_target_on(env, self.base, CUBE / 2), yaw_obj_deg=yaw,
-                                    pre_grasp_height=env.obj_info["pot"]["height"] + 0.05 - p[2], open_pct=25.0)
+                                    pre_grasp_height=env.obj_info["pot"]["height"] + 0.05 - p[2], open_pct=25.0,
+                                    pre_grasp_hold=int((getattr(env, "oracle_opts", None) or {}).get("hover_steps", 0)))
 
 
 class Task05(_CubeOutOfContainerOntoCube):

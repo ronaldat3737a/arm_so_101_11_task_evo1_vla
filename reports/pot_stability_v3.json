@@ -1,0 +1,52 @@
+{
+  "sim_config": "configs/simulation_v3.yaml",
+  "fmax_N": 10.0,
+  "ramp_s": 2.0,
+  "results": [
+    {
+      "task": "task_01",
+      "pot_mass_kg": 0.5,
+      "com_height_m": 0.0162,
+      "pot_height_m": 0.065,
+      "event": "slide",
+      "force_N": 3.11,
+      "final_tilt_deg": 0.1
+    },
+    {
+      "task": "task_03",
+      "pot_mass_kg": 0.5,
+      "com_height_m": 0.0151,
+      "pot_height_m": 0.06,
+      "event": "slide",
+      "force_N": 3.11,
+      "final_tilt_deg": 0.1
+    },
+    {
+      "task": "task_04",
+      "pot_mass_kg": 0.5999999999999999,
+      "com_height_m": 0.0174,
+      "pot_height_m": 0.07,
+      "event": "slide",
+      "force_N": 3.56,
+      "final_tilt_deg": 0.1
+    },
+    {
+      "task": "task_05",
+      "pot_mass_kg": 0.5999999999999999,
+      "com_height_m": 0.0174,
+      "pot_height_m": 0.07,
+      "event": "slide",
+      "force_N": 3.65,
+      "final_tilt_deg": 0.0
+    },
+    {
+      "task": "task_06",
+      "pot_mass_kg": 0.2999999999999999,
+      "com_height_m": 0.014,
+      "pot_height_m": 0.055,
+      "event": "slide",
+      "force_N": 2.24,
+      "final_tilt_deg": 0.5
+    }
+  ]
+}

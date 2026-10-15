@@ -87,14 +87,15 @@ def save_video(frames: list[dict], path: Path, instruction: str, success: bool) 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--task", default="all")
-    ap.add_argument("--profile", default="position", choices=["fixed", "position", "position_visual"])
+    ap.add_argument("--profile", default="position", choices=["fixed", "position", "position_visual", "position_wide"])
     ap.add_argument("--splits", default="train,val,test")
     ap.add_argument("--episodes", type=int, default=20)
     ap.add_argument("--seed0", type=int, default=0)
     ap.add_argument("--video", action="store_true")
+    ap.add_argument("--outdir", default=None, help="report directory (default reports/oracle)")
     args = ap.parse_args()
     tasks = sorted(TASKS) if args.task == "all" else args.task.split(",")
-    outdir = ROOT / "reports" / "oracle"
+    outdir = Path(args.outdir) if args.outdir else ROOT / "reports" / "oracle"
     outdir.mkdir(parents=True, exist_ok=True)
     mon = ResourceMonitor()
     with mon:

@@ -1,0 +1,3848 @@
+{
+  "oracle_opts": {
+    "dart_prob": 0.5,
+    "dart_dxy": [
+      0.02,
+      0.04
+    ],
+    "dart_dyaw": 15.0,
+    "dart_steps": [
+      15,
+      25
+    ],
+    "hover_steps": 15,
+    "drop_height": [
+      0.02,
+      0.03
+    ]
+  },
+  "sim_config": "configs/simulation_v3.yaml",
+  "profile": "position_wide",
+  "split": "train",
+  "seed0": 300000,
+  "tasks": {
+    "task_03": {
+      "instruction": "Pick up the blue cube and place it into the steel pot",
+      "kept": 84,
+      "attempted": 89,
+      "oracle_success_rate": 0.9438202247191011,
+      "attempts": [
+        {
+          "seed": 303000,
+          "success": true,
+          "steps": 164,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1517,
+              0.1591,
+              0.0
+            ],
+            "blue_cube": [
+              0.2531,
+              -0.0831,
+              -21.6439
+            ],
+            "red_cube_1": [
+              0.2441,
+              -0.0114,
+              -21.3225
+            ],
+            "red_cube_2": [
+              0.2607,
+              0.1044,
+              -24.8034
+            ],
+            "orange_cube": [
+              0.1309,
+              -0.1775,
+              26.5824
+            ],
+            "yellow_cube": [
+              0.1848,
+              -0.108,
+              42.8565
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303001,
+          "success": true,
+          "steps": 184,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1283,
+              0.1301,
+              0.0
+            ],
+            "blue_cube": [
+              0.1735,
+              -0.0893,
+              -20.114
+            ],
+            "red_cube_1": [
+              0.1828,
+              -0.2236,
+              0.8848
+            ],
+            "red_cube_2": [
+              0.2623,
+              0.1006,
+              -3.947
+            ],
+            "orange_cube": [
+              0.2592,
+              -0.0203,
+              -43.6435
+            ],
+            "yellow_cube": [
+              0.121,
+              -0.1658,
+              13.6147
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303002,
+          "success": true,
+          "steps": 215,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1343,
+              0.163,
+              0.0
+            ],
+            "blue_cube": [
+              0.1395,
+              -0.1562,
+              12.485
+            ],
+            "red_cube_1": [
+              0.2472,
+              -0.126,
+              -5.2604
+            ],
+            "red_cube_2": [
+              0.1794,
+              -0.201,
+              30.2661
+            ],
+            "orange_cube": [
+              0.1614,
+              -0.1022,
+              32.208
+            ],
+            "yellow_cube": [
+              0.2634,
+              -0.018,
+              36.7056
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303003,
+          "success": true,
+          "steps": 401,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1059,
+              0.1388,
+              0.0
+            ],
+            "blue_cube": [
+              0.2216,
+              -0.1673,
+              -35.1024
+            ],
+            "red_cube_1": [
+              0.2759,
+              0.0181,
+              -18.4233
+            ],
+            "red_cube_2": [
+              0.2341,
+              -0.118,
+              -14.377
+            ],
+            "orange_cube": [
+              0.1097,
+              -0.1863,
+              27.6642
+            ],
+            "yellow_cube": [
+              0.1627,
+              -0.2085,
+              -25.1034
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.28,
+              "dir_deg": 79.0,
+              "dyaw_deg": -7.1,
+              "steps": 20,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 303004,
+          "success": false,
+          "steps": 289,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.069,
+              0.1495,
+              0.0
+            ],
+            "blue_cube": [
+              0.0841,
+              -0.1076,
+              13.0331
+            ],
+            "red_cube_1": [
+              0.2506,
+              -0.145,
+              44.8336
+            ],
+            "red_cube_2": [
+              0.2227,
+              0.0858,
+              42.3917
+            ],
+            "orange_cube": [
+              0.2126,
+              -0.0934,
+              -9.7414
+            ],
+            "yellow_cube": [
+              0.1706,
+              -0.1221,
+              -18.1784
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.82,
+              "dir_deg": 31.6,
+              "dyaw_deg": -13.6,
+              "steps": 19,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 303005,
+          "success": true,
+          "steps": 160,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1112,
+              0.1818,
+              0.0
+            ],
+            "blue_cube": [
+              0.1716,
+              0.0798,
+              44.0286
+            ],
+            "red_cube_1": [
+              0.2583,
+              0.1056,
+              32.5293
+            ],
+            "red_cube_2": [
+              0.2211,
+              -0.0892,
+              31.7164
+            ],
+            "orange_cube": [
+              0.1317,
+              -0.1292,
+              -24.6478
+            ],
+            "yellow_cube": [
+              0.1086,
+              -0.082,
+              13.0721
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303006,
+          "success": true,
+          "steps": 345,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0895,
+              0.1761,
+              0.0
+            ],
+            "blue_cube": [
+              0.1409,
+              -0.1708,
+              34.414
+            ],
+            "red_cube_1": [
+              0.2088,
+              0.1337,
+              -38.4941
+            ],
+            "red_cube_2": [
+              0.1789,
+              -0.1005,
+              -19.957
+            ],
+            "orange_cube": [
+              0.2052,
+              -0.1578,
+              -13.5386
+            ],
+            "yellow_cube": [
+              0.2774,
+              0.0376,
+              -2.6693
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303007,
+          "success": true,
+          "steps": 233,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0813,
+              0.1617,
+              0.0
+            ],
+            "blue_cube": [
+              0.1965,
+              -0.1624,
+              -4.5022
+            ],
+            "red_cube_1": [
+              0.0957,
+              -0.1129,
+              25.1025
+            ],
+            "red_cube_2": [
+              0.2562,
+              0.0944,
+              2.4286
+            ],
+            "orange_cube": [
+              0.2496,
+              0.0173,
+              36.4175
+            ],
+            "yellow_cube": [
+              0.2676,
+              -0.0775,
+              40.2516
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.31,
+              "dir_deg": 220.5,
+              "dyaw_deg": 14.7,
+              "steps": 18,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 303008,
+          "success": true,
+          "steps": 188,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1598,
+              0.1911,
+              0.0
+            ],
+            "blue_cube": [
+              0.2588,
+              -0.0713,
+              -11.028
+            ],
+            "red_cube_1": [
+              0.2344,
+              0.0773,
+              27.8012
+            ],
+            "red_cube_2": [
+              0.1806,
+              -0.1951,
+              -37.4889
+            ],
+            "orange_cube": [
+              0.1254,
+              -0.1893,
+              42.0398
+            ],
+            "yellow_cube": [
+              0.0758,
+              -0.1305,
+              21.4813
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.92,
+              "dir_deg": 226.4,
+              "dyaw_deg": -6.1,
+              "steps": 19,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 303009,
+          "success": true,
+          "steps": 217,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1302,
+              0.1872,
+              0.0
+            ],
+            "blue_cube": [
+              0.1798,
+              -0.0825,
+              -12.7116
+            ],
+            "red_cube_1": [
+              0.0966,
+              -0.1024,
+              1.3543
+            ],
+            "red_cube_2": [
+              0.264,
+              0.0455,
+              24.2299
+            ],
+            "orange_cube": [
+              0.2614,
+              -0.079,
+              42.0812
+            ],
+            "yellow_cube": [
+              0.141,
+              -0.2369,
+              34.5371
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.15,
+              "dir_deg": 158.3,
+              "dyaw_deg": 13.6,
+              "steps": 20,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 303010,
+          "success": true,
+          "steps": 202,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0932,
+              0.1754,
+              0.0
+            ],
+            "blue_cube": [
+              0.2492,
+              -0.1257,
+              14.7791
+            ],
+            "red_cube_1": [
+              0.2512,
+              0.0104,
+              -31.166
+            ],
+            "red_cube_2": [
+              0.1708,
+              -0.1151,
+              -25.6602
+            ],
+            "orange_cube": [
+              0.098,
+              -0.1688,
+              33.7024
+            ],
+            "yellow_cube": [
+              0.2432,
+              0.066,
+              24.6425
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303011,
+          "success": true,
+          "steps": 210,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0923,
+              0.1683,
+              0.0
+            ],
+            "blue_cube": [
+              0.1215,
+              -0.1111,
+              0.285
+            ],
+            "red_cube_1": [
+              0.2568,
+              -0.0884,
+              39.7195
+            ],
+            "red_cube_2": [
+              0.285,
+              -0.0226,
+              14.8749
+            ],
+            "orange_cube": [
+              0.2028,
+              0.0969,
+              -35.1966
+            ],
+            "yellow_cube": [
+              0.2813,
+              0.0585,
+              -29.9255
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303012,
+          "success": true,
+          "steps": 225,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1298,
+              0.1828,
+              0.0
+            ],
+            "blue_cube": [
+              0.152,
+              -0.1667,
+              5.8853
+            ],
+            "red_cube_1": [
+              0.2354,
+              0.0035,
+              -36.0766
+            ],
+            "red_cube_2": [
+              0.2423,
+              0.0606,
+              8.7156
+            ],
+            "orange_cube": [
+              0.1638,
+              -0.1108,
+              -1.4701
+            ],
+            "yellow_cube": [
+              0.2329,
+              -0.1475,
+              25.2073
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303013,
+          "success": false,
+          "steps": 273,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1436,
+              0.1817,
+              0.0
+            ],
+            "blue_cube": [
+              0.0706,
+              -0.1221,
+              -1.8341
+            ],
+            "red_cube_1": [
+              0.2544,
+              0.0913,
+              -12.9591
+            ],
+            "red_cube_2": [
+              0.1976,
+              -0.0947,
+              11.5147
+            ],
+            "orange_cube": [
+              0.131,
+              -0.0844,
+              12.5815
+            ],
+            "yellow_cube": [
+              0.1794,
+              -0.1536,
+              26.117
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.27,
+              "dir_deg": 203.2,
+              "dyaw_deg": -4.9,
+              "steps": 20,
+              "t_start": 48
+            }
+          ]
+        },
+        {
+          "seed": 303014,
+          "success": true,
+          "steps": 302,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1369,
+              0.1948,
+              0.0
+            ],
+            "blue_cube": [
+              0.1385,
+              -0.1612,
+              -36.0749
+            ],
+            "red_cube_1": [
+              0.2816,
+              0.0233,
+              3.1247
+            ],
+            "red_cube_2": [
+              0.2169,
+              -0.1583,
+              -28.3528
+            ],
+            "orange_cube": [
+              0.2448,
+              -0.0663,
+              -43.4619
+            ],
+            "yellow_cube": [
+              0.197,
+              -0.087,
+              13.5224
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.33,
+              "dir_deg": 134.0,
+              "dyaw_deg": 14.4,
+              "steps": 17,
+              "t_start": 47
+            }
+          ]
+        },
+        {
+          "seed": 303015,
+          "success": true,
+          "steps": 622,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1124,
+              0.1396,
+              0.0
+            ],
+            "blue_cube": [
+              0.1185,
+              -0.1746,
+              -28.5244
+            ],
+            "red_cube_1": [
+              0.1884,
+              -0.2063,
+              22.5436
+            ],
+            "red_cube_2": [
+              0.2452,
+              0.0835,
+              -41.0863
+            ],
+            "orange_cube": [
+              0.1539,
+              -0.2432,
+              1.7662
+            ],
+            "yellow_cube": [
+              0.2467,
+              -0.0619,
+              -3.2579
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.97,
+              "dir_deg": 135.2,
+              "dyaw_deg": -1.8,
+              "steps": 25,
+              "t_start": 47
+            }
+          ]
+        },
+        {
+          "seed": 303016,
+          "success": true,
+          "steps": 189,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1187,
+              0.1345,
+              0.0
+            ],
+            "blue_cube": [
+              0.261,
+              -0.0815,
+              -23.6586
+            ],
+            "red_cube_1": [
+              0.1424,
+              -0.1123,
+              -15.8552
+            ],
+            "red_cube_2": [
+              0.2385,
+              0.1437,
+              40.3688
+            ],
+            "orange_cube": [
+              0.2725,
+              0.0809,
+              27.9947
+            ],
+            "yellow_cube": [
+              0.2426,
+              -0.012,
+              0.1291
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303017,
+          "success": true,
+          "steps": 522,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.119,
+              0.177,
+              0.0
+            ],
+            "blue_cube": [
+              0.2193,
+              -0.1493,
+              -23.5237
+            ],
+            "red_cube_1": [
+              0.2505,
+              -0.0214,
+              -4.3827
+            ],
+            "red_cube_2": [
+              0.1308,
+              -0.1107,
+              -10.9781
+            ],
+            "orange_cube": [
+              0.0669,
+              -0.1119,
+              31.0134
+            ],
+            "yellow_cube": [
+              0.2537,
+              0.0906,
+              43.2987
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303018,
+          "success": true,
+          "steps": 207,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0904,
+              0.1475,
+              0.0
+            ],
+            "blue_cube": [
+              0.2059,
+              -0.1513,
+              -14.8679
+            ],
+            "red_cube_1": [
+              0.2663,
+              -0.0986,
+              29.3639
+            ],
+            "red_cube_2": [
+              0.1517,
+              -0.2332,
+              -18.0173
+            ],
+            "orange_cube": [
+              0.0881,
+              -0.1116,
+              27.6087
+            ],
+            "yellow_cube": [
+              0.2592,
+              -0.0159,
+              -1.7316
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303019,
+          "success": true,
+          "steps": 225,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0923,
+              0.1537,
+              0.0
+            ],
+            "blue_cube": [
+              0.2021,
+              -0.1852,
+              28.9437
+            ],
+            "red_cube_1": [
+              0.2501,
+              -0.0085,
+              19.5
+            ],
+            "red_cube_2": [
+              0.2268,
+              -0.1402,
+              24.84
+            ],
+            "orange_cube": [
+              0.2493,
+              -0.0694,
+              -14.3875
+            ],
+            "yellow_cube": [
+              0.1284,
+              -0.1778,
+              26.802
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303020,
+          "success": true,
+          "steps": 505,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1362,
+              0.1534,
+              0.0
+            ],
+            "blue_cube": [
+              0.1962,
+              -0.1059,
+              -31.3669
+            ],
+            "red_cube_1": [
+              0.2489,
+              -0.1045,
+              -33.8879
+            ],
+            "red_cube_2": [
+              0.2656,
+              0.0103,
+              -28.4735
+            ],
+            "orange_cube": [
+              0.2362,
+              -0.1631,
+              1.4056
+            ],
+            "yellow_cube": [
+              0.1424,
+              -0.149,
+              -21.5991
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303021,
+          "success": true,
+          "steps": 194,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0918,
+              0.1696,
+              0.0
+            ],
+            "blue_cube": [
+              0.2307,
+              -0.0942,
+              -12.6306
+            ],
+            "red_cube_1": [
+              0.2018,
+              -0.1881,
+              -40.566
+            ],
+            "red_cube_2": [
+              0.1697,
+              -0.1109,
+              -26.1222
+            ],
+            "orange_cube": [
+              0.2821,
+              0.0051,
+              -11.9173
+            ],
+            "yellow_cube": [
+              0.1537,
+              -0.1955,
+              12.5663
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303022,
+          "success": true,
+          "steps": 601,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1444,
+              0.1537,
+              0.0
+            ],
+            "blue_cube": [
+              0.1403,
+              -0.1986,
+              29.3135
+            ],
+            "red_cube_1": [
+              0.2586,
+              0.0946,
+              -44.7179
+            ],
+            "red_cube_2": [
+              0.2439,
+              -0.1234,
+              21.6135
+            ],
+            "orange_cube": [
+              0.2112,
+              -0.1923,
+              30.1486
+            ],
+            "yellow_cube": [
+              0.2802,
+              -0.0222,
+              -10.7942
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.59,
+              "dir_deg": 99.0,
+              "dyaw_deg": -13.3,
+              "steps": 15,
+              "t_start": 49
+            }
+          ]
+        },
+        {
+          "seed": 303023,
+          "success": true,
+          "steps": 447,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0784,
+              0.1579,
+              0.0
+            ],
+            "blue_cube": [
+              0.0984,
+              -0.1602,
+              29.6186
+            ],
+            "red_cube_1": [
+              0.2039,
+              0.1554,
+              -10.6934
+            ],
+            "red_cube_2": [
+              0.2069,
+              0.095,
+              -43.3335
+            ],
+            "orange_cube": [
+              0.1485,
+              -0.2085,
+              -5.1139
+            ],
+            "yellow_cube": [
+              0.2422,
+              -0.038,
+              -13.4744
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303024,
+          "success": true,
+          "steps": 577,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1298,
+              0.1758,
+              0.0
+            ],
+            "blue_cube": [
+              0.1394,
+              -0.1403,
+              44.9675
+            ],
+            "red_cube_1": [
+              0.2592,
+              -0.0432,
+              16.871
+            ],
+            "red_cube_2": [
+              0.2588,
+              -0.1294,
+              1.9887
+            ],
+            "orange_cube": [
+              0.0851,
+              -0.1083,
+              38.281
+            ],
+            "yellow_cube": [
+              0.2094,
+              -0.1944,
+              -17.689
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.81,
+              "dir_deg": 115.6,
+              "dyaw_deg": 4.9,
+              "steps": 22,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 303025,
+          "success": true,
+          "steps": 367,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1493,
+              0.1862,
+              0.0
+            ],
+            "blue_cube": [
+              0.1153,
+              -0.1703,
+              37.8068
+            ],
+            "red_cube_1": [
+              0.1055,
+              -0.0822,
+              -25.8003
+            ],
+            "red_cube_2": [
+              0.1741,
+              -0.0857,
+              27.9828
+            ],
+            "orange_cube": [
+              0.2837,
+              -0.0068,
+              18.686
+            ],
+            "yellow_cube": [
+              0.2324,
+              -0.018,
+              35.8668
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.55,
+              "dir_deg": 315.3,
+              "dyaw_deg": -10.0,
+              "steps": 24,
+              "t_start": 50
+            }
+          ]
+        },
+        {
+          "seed": 303026,
+          "success": true,
+          "steps": 195,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1422,
+              0.176,
+              0.0
+            ],
+            "blue_cube": [
+              0.2176,
+              -0.161,
+              -3.854
+            ],
+            "red_cube_1": [
+              0.1443,
+              -0.1584,
+              26.9631
+            ],
+            "red_cube_2": [
+              0.2706,
+              0.0913,
+              -19.4653
+            ],
+            "orange_cube": [
+              0.238,
+              -0.1011,
+              16.0996
+            ],
+            "yellow_cube": [
+              0.1295,
+              -0.0874,
+              39.0097
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303027,
+          "success": true,
+          "steps": 215,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0884,
+              0.1536,
+              0.0
+            ],
+            "blue_cube": [
+              0.2126,
+              -0.0916,
+              -14.2597
+            ],
+            "red_cube_1": [
+              0.2066,
+              0.1757,
+              -32.0414
+            ],
+            "red_cube_2": [
+              0.1324,
+              -0.1683,
+              -28.1626
+            ],
+            "orange_cube": [
+              0.2031,
+              0.0795,
+              24.5155
+            ],
+            "yellow_cube": [
+              0.0827,
+              -0.1419,
+              -5.1034
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.75,
+              "dir_deg": 81.9,
+              "dyaw_deg": -1.3,
+              "steps": 24,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 303028,
+          "success": true,
+          "steps": 197,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1445,
+              0.1523,
+              0.0
+            ],
+            "blue_cube": [
+              0.2057,
+              -0.0958,
+              12.6142
+            ],
+            "red_cube_1": [
+              0.1001,
+              -0.1609,
+              16.9919
+            ],
+            "red_cube_2": [
+              0.141,
+              -0.2394,
+              30.1426
+            ],
+            "orange_cube": [
+              0.2524,
+              0.0157,
+              -7.2881
+            ],
+            "yellow_cube": [
+              0.1531,
+              -0.0793,
+              22.3219
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303029,
+          "success": true,
+          "steps": 193,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0685,
+              0.1763,
+              0.0
+            ],
+            "blue_cube": [
+              0.2159,
+              0.0869,
+              38.3216
+            ],
+            "red_cube_1": [
+              0.1566,
+              -0.1763,
+              -17.269
+            ],
+            "red_cube_2": [
+              0.1916,
+              -0.0851,
+              -4.0639
+            ],
+            "orange_cube": [
+              0.2691,
+              0.1023,
+              -25.3261
+            ],
+            "yellow_cube": [
+              0.2398,
+              0.1473,
+              -4.6968
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.37,
+              "dir_deg": 297.3,
+              "dyaw_deg": 11.3,
+              "steps": 23,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 303030,
+          "success": true,
+          "steps": 175,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.143,
+              0.1685,
+              0.0
+            ],
+            "blue_cube": [
+              0.249,
+              0.0352,
+              -25.7977
+            ],
+            "red_cube_1": [
+              0.1968,
+              -0.099,
+              -10.4158
+            ],
+            "red_cube_2": [
+              0.1921,
+              -0.1911,
+              -32.8766
+            ],
+            "orange_cube": [
+              0.2531,
+              -0.0632,
+              44.5622
+            ],
+            "yellow_cube": [
+              0.1023,
+              -0.1219,
+              -36.4409
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.73,
+              "dir_deg": 99.1,
+              "dyaw_deg": -10.0,
+              "steps": 25,
+              "t_start": 34
+            }
+          ]
+        },
+        {
+          "seed": 303031,
+          "success": true,
+          "steps": 202,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0719,
+              0.172,
+              0.0
+            ],
+            "blue_cube": [
+              0.2394,
+              -0.0983,
+              8.2007
+            ],
+            "red_cube_1": [
+              0.1026,
+              -0.1215,
+              -7.5207
+            ],
+            "red_cube_2": [
+              0.1379,
+              -0.2378,
+              -37.7044
+            ],
+            "orange_cube": [
+              0.2384,
+              0.0119,
+              26.6243
+            ],
+            "yellow_cube": [
+              0.2196,
+              -0.1728,
+              -13.3454
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303032,
+          "success": false,
+          "steps": 900,
+          "failure_reason": "timeout: blue_cube not above pot (dxy=0.301 > 0.050)",
+          "layout": {
+            "pot": [
+              0.0632,
+              0.1731,
+              0.0
+            ],
+            "blue_cube": [
+              0.1036,
+              -0.1477,
+              22.5569
+            ],
+            "red_cube_1": [
+              0.2158,
+              -0.1612,
+              -34.4451
+            ],
+            "red_cube_2": [
+              0.2322,
+              -0.0976,
+              -34.7945
+            ],
+            "orange_cube": [
+              0.1967,
+              0.1627,
+              23.4975
+            ],
+            "yellow_cube": [
+              0.2847,
+              0.0432,
+              -42.7515
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.71,
+              "dir_deg": 60.4,
+              "dyaw_deg": -2.6,
+              "steps": 17,
+              "t_start": 42
+            }
+          ]
+        },
+        {
+          "seed": 303033,
+          "success": true,
+          "steps": 299,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.074,
+              0.17,
+              0.0
+            ],
+            "blue_cube": [
+              0.2144,
+              -0.1623,
+              -37.1733
+            ],
+            "red_cube_1": [
+              0.2138,
+              0.106,
+              24.0734
+            ],
+            "red_cube_2": [
+              0.2285,
+              0.1605,
+              -19.0075
+            ],
+            "orange_cube": [
+              0.2686,
+              -0.0504,
+              13.4096
+            ],
+            "yellow_cube": [
+              0.1373,
+              -0.1786,
+              -21.5488
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.26,
+              "dir_deg": 73.9,
+              "dyaw_deg": -7.5,
+              "steps": 23,
+              "t_start": 42
+            }
+          ]
+        },
+        {
+          "seed": 303034,
+          "success": true,
+          "steps": 351,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1291,
+              0.1868,
+              0.0
+            ],
+            "blue_cube": [
+              0.2534,
+              -0.1158,
+              -33.344
+            ],
+            "red_cube_1": [
+              0.1253,
+              -0.1727,
+              -17.9509
+            ],
+            "red_cube_2": [
+              0.235,
+              0.097,
+              -2.1203
+            ],
+            "orange_cube": [
+              0.2848,
+              -0.0467,
+              -2.6381
+            ],
+            "yellow_cube": [
+              0.0857,
+              -0.1333,
+              -42.3737
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303035,
+          "success": true,
+          "steps": 160,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1301,
+              0.1569,
+              0.0
+            ],
+            "blue_cube": [
+              0.2791,
+              0.0202,
+              43.6703
+            ],
+            "red_cube_1": [
+              0.112,
+              -0.1577,
+              -23.6615
+            ],
+            "red_cube_2": [
+              0.1661,
+              -0.2341,
+              1.9733
+            ],
+            "orange_cube": [
+              0.0848,
+              -0.1099,
+              3.1858
+            ],
+            "yellow_cube": [
+              0.2396,
+              -0.0941,
+              3.7376
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303036,
+          "success": true,
+          "steps": 196,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1545,
+              0.1754,
+              0.0
+            ],
+            "blue_cube": [
+              0.1825,
+              -0.096,
+              -14.5619
+            ],
+            "red_cube_1": [
+              0.2726,
+              0.0893,
+              34.4644
+            ],
+            "red_cube_2": [
+              0.1509,
+              -0.1486,
+              9.7311
+            ],
+            "orange_cube": [
+              0.2766,
+              -0.065,
+              44.8073
+            ],
+            "yellow_cube": [
+              0.1028,
+              -0.1259,
+              -18.705
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303037,
+          "success": true,
+          "steps": 240,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1387,
+              0.1915,
+              0.0
+            ],
+            "blue_cube": [
+              0.1251,
+              -0.1024,
+              -16.8251
+            ],
+            "red_cube_1": [
+              0.2662,
+              0.0323,
+              -25.8694
+            ],
+            "red_cube_2": [
+              0.217,
+              -0.0994,
+              21.7997
+            ],
+            "orange_cube": [
+              0.1117,
+              -0.1691,
+              25.1898
+            ],
+            "yellow_cube": [
+              0.1858,
+              -0.1898,
+              -12.7271
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.65,
+              "dir_deg": 89.7,
+              "dyaw_deg": -5.5,
+              "steps": 21,
+              "t_start": 31
+            }
+          ]
+        },
+        {
+          "seed": 303038,
+          "success": true,
+          "steps": 161,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.2186,
+              0.1203,
+              0.0
+            ],
+            "blue_cube": [
+              0.2336,
+              -0.1084,
+              3.6998
+            ],
+            "red_cube_1": [
+              0.1308,
+              0.2042,
+              0.7469
+            ],
+            "red_cube_2": [
+              0.105,
+              0.2663,
+              -16.6001
+            ],
+            "orange_cube": [
+              0.2756,
+              -0.0474,
+              6.4769
+            ],
+            "yellow_cube": [
+              0.0922,
+              0.1282,
+              -44.9345
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303039,
+          "success": true,
+          "steps": 381,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1654,
+              0.1747,
+              0.0
+            ],
+            "blue_cube": [
+              0.2715,
+              0.0216,
+              -35.7827
+            ],
+            "red_cube_1": [
+              0.1926,
+              -0.1354,
+              38.3112
+            ],
+            "red_cube_2": [
+              0.2527,
+              -0.0692,
+              -43.0386
+            ],
+            "orange_cube": [
+              0.1346,
+              -0.1466,
+              -35.8072
+            ],
+            "yellow_cube": [
+              0.1734,
+              -0.2199,
+              31.4895
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.72,
+              "dir_deg": 244.0,
+              "dyaw_deg": -1.2,
+              "steps": 18,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 303040,
+          "success": true,
+          "steps": 196,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0979,
+              0.1853,
+              0.0
+            ],
+            "blue_cube": [
+              0.1803,
+              -0.0823,
+              43.5504
+            ],
+            "red_cube_1": [
+              0.0793,
+              -0.1216,
+              26.3303
+            ],
+            "red_cube_2": [
+              0.2418,
+              -0.0033,
+              -31.4164
+            ],
+            "orange_cube": [
+              0.1837,
+              -0.1359,
+              -17.2959
+            ],
+            "yellow_cube": [
+              0.1583,
+              -0.2401,
+              -12.1127
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303041,
+          "success": false,
+          "steps": 261,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1499,
+              0.151,
+              0.0
+            ],
+            "blue_cube": [
+              0.1128,
+              -0.0872,
+              27.9894
+            ],
+            "red_cube_1": [
+              0.1458,
+              -0.2277,
+              31.1646
+            ],
+            "red_cube_2": [
+              0.2542,
+              -0.0777,
+              35.9101
+            ],
+            "orange_cube": [
+              0.2625,
+              0.0238,
+              29.8638
+            ],
+            "yellow_cube": [
+              0.201,
+              -0.1177,
+              -43.0028
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.01,
+              "dir_deg": 117.8,
+              "dyaw_deg": 7.1,
+              "steps": 24,
+              "t_start": 31
+            }
+          ]
+        },
+        {
+          "seed": 303042,
+          "success": true,
+          "steps": 413,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1076,
+              0.1791,
+              0.0
+            ],
+            "blue_cube": [
+              0.1085,
+              -0.1747,
+              -32.9397
+            ],
+            "red_cube_1": [
+              0.2423,
+              0.0668,
+              39.2073
+            ],
+            "red_cube_2": [
+              0.1751,
+              -0.2281,
+              20.5454
+            ],
+            "orange_cube": [
+              0.2808,
+              -0.0094,
+              1.4498
+            ],
+            "yellow_cube": [
+              0.1556,
+              -0.1519,
+              35.2114
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.19,
+              "dir_deg": 250.3,
+              "dyaw_deg": -0.1,
+              "steps": 20,
+              "t_start": 47
+            }
+          ]
+        },
+        {
+          "seed": 303043,
+          "success": true,
+          "steps": 357,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0871,
+              0.1496,
+              0.0
+            ],
+            "blue_cube": [
+              0.242,
+              -0.0655,
+              -26.1258
+            ],
+            "red_cube_1": [
+              0.197,
+              0.0799,
+              32.22
+            ],
+            "red_cube_2": [
+              0.2031,
+              -0.1898,
+              -2.8173
+            ],
+            "orange_cube": [
+              0.2593,
+              0.0819,
+              11.9856
+            ],
+            "yellow_cube": [
+              0.2589,
+              0.0092,
+              -12.4505
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303044,
+          "success": true,
+          "steps": 365,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0708,
+              0.1864,
+              0.0
+            ],
+            "blue_cube": [
+              0.2371,
+              0.0323,
+              -41.8063
+            ],
+            "red_cube_1": [
+              0.2114,
+              -0.0856,
+              33.6384
+            ],
+            "red_cube_2": [
+              0.2037,
+              0.1389,
+              -9.9066
+            ],
+            "orange_cube": [
+              0.282,
+              -0.0095,
+              -44.465
+            ],
+            "yellow_cube": [
+              0.1881,
+              0.2004,
+              -28.4318
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.59,
+              "dir_deg": 97.1,
+              "dyaw_deg": -12.5,
+              "steps": 20,
+              "t_start": 30
+            }
+          ]
+        },
+        {
+          "seed": 303045,
+          "success": true,
+          "steps": 209,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1553,
+              0.1618,
+              0.0
+            ],
+            "blue_cube": [
+              0.1922,
+              -0.0898,
+              8.5511
+            ],
+            "red_cube_1": [
+              0.0774,
+              -0.1195,
+              8.0499
+            ],
+            "red_cube_2": [
+              0.1883,
+              -0.1672,
+              -9.5769
+            ],
+            "orange_cube": [
+              0.2602,
+              -0.0321,
+              -27.1938
+            ],
+            "yellow_cube": [
+              0.1246,
+              -0.1908,
+              25.9759
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.36,
+              "dir_deg": 288.9,
+              "dyaw_deg": -13.1,
+              "steps": 21,
+              "t_start": 32
+            }
+          ]
+        },
+        {
+          "seed": 303046,
+          "success": true,
+          "steps": 194,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1424,
+              0.148,
+              0.0
+            ],
+            "blue_cube": [
+              0.2355,
+              -0.1079,
+              -13.5867
+            ],
+            "red_cube_1": [
+              0.1995,
+              -0.2089,
+              -36.7742
+            ],
+            "red_cube_2": [
+              0.234,
+              0.0031,
+              -5.1243
+            ],
+            "orange_cube": [
+              0.1222,
+              -0.1465,
+              -28.2744
+            ],
+            "yellow_cube": [
+              0.1928,
+              -0.1347,
+              -3.4963
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303047,
+          "success": true,
+          "steps": 222,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0904,
+              0.1443,
+              0.0
+            ],
+            "blue_cube": [
+              0.203,
+              -0.1162,
+              41.2629
+            ],
+            "red_cube_1": [
+              0.1701,
+              -0.2065,
+              -28.8
+            ],
+            "red_cube_2": [
+              0.1426,
+              -0.1302,
+              -19.5558
+            ],
+            "orange_cube": [
+              0.207,
+              0.1233,
+              22.9689
+            ],
+            "yellow_cube": [
+              0.0737,
+              -0.11,
+              -7.0069
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.17,
+              "dir_deg": 216.9,
+              "dyaw_deg": -6.1,
+              "steps": 23,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 303048,
+          "success": true,
+          "steps": 193,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0922,
+              0.1615,
+              0.0
+            ],
+            "blue_cube": [
+              0.1996,
+              -0.1028,
+              15.5903
+            ],
+            "red_cube_1": [
+              0.2609,
+              -0.0754,
+              -23.4919
+            ],
+            "red_cube_2": [
+              0.2446,
+              -0.0246,
+              -10.2058
+            ],
+            "orange_cube": [
+              0.2056,
+              0.1107,
+              42.7738
+            ],
+            "yellow_cube": [
+              0.1085,
+              -0.0868,
+              2.4464
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303049,
+          "success": true,
+          "steps": 195,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1401,
+              0.1671,
+              0.0
+            ],
+            "blue_cube": [
+              0.2351,
+              -0.1262,
+              19.5908
+            ],
+            "red_cube_1": [
+              0.2481,
+              0.0205,
+              -38.8068
+            ],
+            "red_cube_2": [
+              0.1252,
+              -0.1625,
+              -41.021
+            ],
+            "orange_cube": [
+              0.0948,
+              -0.12,
+              -4.8002
+            ],
+            "yellow_cube": [
+              0.2521,
+              -0.0798,
+              -35.5505
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303050,
+          "success": true,
+          "steps": 182,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1326,
+              0.1572,
+              0.0
+            ],
+            "blue_cube": [
+              0.2757,
+              0.0356,
+              33.7702
+            ],
+            "red_cube_1": [
+              0.1912,
+              -0.1199,
+              -10.0459
+            ],
+            "red_cube_2": [
+              0.2708,
+              -0.0775,
+              -35.6658
+            ],
+            "orange_cube": [
+              0.0954,
+              -0.1398,
+              -38.3367
+            ],
+            "yellow_cube": [
+              0.1599,
+              -0.2218,
+              17.1652
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.25,
+              "dir_deg": 121.0,
+              "dyaw_deg": 13.0,
+              "steps": 22,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 303051,
+          "success": true,
+          "steps": 177,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1461,
+              0.1939,
+              0.0
+            ],
+            "blue_cube": [
+              0.2576,
+              0.0522,
+              14.3742
+            ],
+            "red_cube_1": [
+              0.2112,
+              -0.1259,
+              12.1087
+            ],
+            "red_cube_2": [
+              0.1621,
+              -0.1722,
+              40.0285
+            ],
+            "orange_cube": [
+              0.1272,
+              -0.131,
+              -30.0969
+            ],
+            "yellow_cube": [
+              0.2321,
+              -0.0492,
+              18.3166
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.1,
+              "dir_deg": 116.8,
+              "dyaw_deg": 8.9,
+              "steps": 22,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 303052,
+          "success": true,
+          "steps": 338,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1278,
+              0.1716,
+              0.0
+            ],
+            "blue_cube": [
+              0.2545,
+              0.0172,
+              -33.8345
+            ],
+            "red_cube_1": [
+              0.2618,
+              -0.1079,
+              12.7144
+            ],
+            "red_cube_2": [
+              0.2122,
+              -0.1283,
+              -37.4521
+            ],
+            "orange_cube": [
+              0.1479,
+              -0.1544,
+              -40.2562
+            ],
+            "yellow_cube": [
+              0.0909,
+              -0.1244,
+              13.0418
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.79,
+              "dir_deg": 37.2,
+              "dyaw_deg": -1.2,
+              "steps": 15,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 303053,
+          "success": true,
+          "steps": 177,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0766,
+              0.1616,
+              0.0
+            ],
+            "blue_cube": [
+              0.2549,
+              0.0167,
+              22.7028
+            ],
+            "red_cube_1": [
+              0.2534,
+              0.1212,
+              24.1351
+            ],
+            "red_cube_2": [
+              0.144,
+              -0.2042,
+              29.9185
+            ],
+            "orange_cube": [
+              0.1325,
+              -0.1057,
+              -7.0715
+            ],
+            "yellow_cube": [
+              0.1857,
+              -0.1206,
+              -8.8445
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303054,
+          "success": true,
+          "steps": 177,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0761,
+              0.1625,
+              0.0
+            ],
+            "blue_cube": [
+              0.2584,
+              0.0291,
+              39.7454
+            ],
+            "red_cube_1": [
+              0.2038,
+              0.1967,
+              24.616
+            ],
+            "red_cube_2": [
+              0.2091,
+              -0.1497,
+              -12.9448
+            ],
+            "orange_cube": [
+              0.1445,
+              -0.1697,
+              -24.2748
+            ],
+            "yellow_cube": [
+              0.1315,
+              -0.1164,
+              -37.8895
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303055,
+          "success": true,
+          "steps": 252,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1445,
+              0.2015,
+              0.0
+            ],
+            "blue_cube": [
+              0.0983,
+              -0.1596,
+              -5.7281
+            ],
+            "red_cube_1": [
+              0.219,
+              0.0867,
+              -3.5919
+            ],
+            "red_cube_2": [
+              0.1726,
+              -0.223,
+              -9.6157
+            ],
+            "orange_cube": [
+              0.2892,
+              0.008,
+              -14.3424
+            ],
+            "yellow_cube": [
+              0.2208,
+              -0.1259,
+              -3.9926
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.15,
+              "dir_deg": 328.7,
+              "dyaw_deg": -9.0,
+              "steps": 16,
+              "t_start": 48
+            }
+          ]
+        },
+        {
+          "seed": 303056,
+          "success": true,
+          "steps": 224,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0696,
+              0.1758,
+              0.0
+            ],
+            "blue_cube": [
+              0.184,
+              -0.1707,
+              13.2642
+            ],
+            "red_cube_1": [
+              0.1084,
+              -0.0965,
+              16.6584
+            ],
+            "red_cube_2": [
+              0.2348,
+              0.1397,
+              44.0774
+            ],
+            "orange_cube": [
+              0.2373,
+              0.0312,
+              16.201
+            ],
+            "yellow_cube": [
+              0.1871,
+              0.0997,
+              -17.5544
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303057,
+          "success": true,
+          "steps": 221,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0879,
+              0.163,
+              0.0
+            ],
+            "blue_cube": [
+              0.1818,
+              -0.0929,
+              19.0102
+            ],
+            "red_cube_1": [
+              0.2086,
+              -0.1988,
+              -8.3435
+            ],
+            "red_cube_2": [
+              0.1579,
+              -0.1974,
+              28.1479
+            ],
+            "orange_cube": [
+              0.2414,
+              -0.1302,
+              3.0969
+            ],
+            "yellow_cube": [
+              0.2699,
+              -0.0835,
+              28.1142
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.51,
+              "dir_deg": 31.9,
+              "dyaw_deg": -8.7,
+              "steps": 20,
+              "t_start": 32
+            }
+          ]
+        },
+        {
+          "seed": 303058,
+          "success": true,
+          "steps": 338,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0748,
+              0.191,
+              0.0
+            ],
+            "blue_cube": [
+              0.2015,
+              0.0794,
+              -14.4422
+            ],
+            "red_cube_1": [
+              0.2336,
+              -0.1634,
+              2.4975
+            ],
+            "red_cube_2": [
+              0.1417,
+              -0.1062,
+              28.6308
+            ],
+            "orange_cube": [
+              0.0905,
+              -0.1012,
+              44.6085
+            ],
+            "yellow_cube": [
+              0.2545,
+              0.1271,
+              36.8399
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303059,
+          "success": true,
+          "steps": 379,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.124,
+              0.1531,
+              0.0
+            ],
+            "blue_cube": [
+              0.1128,
+              -0.0792,
+              -42.9058
+            ],
+            "red_cube_1": [
+              0.2599,
+              0.1277,
+              5.1907
+            ],
+            "red_cube_2": [
+              0.2603,
+              -0.1258,
+              -43.5474
+            ],
+            "orange_cube": [
+              0.1201,
+              -0.1355,
+              0.2912
+            ],
+            "yellow_cube": [
+              0.1954,
+              -0.121,
+              -44.2166
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303060,
+          "success": true,
+          "steps": 345,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1458,
+              0.1694,
+              0.0
+            ],
+            "blue_cube": [
+              0.2555,
+              0.0138,
+              -42.6009
+            ],
+            "red_cube_1": [
+              0.147,
+              -0.1966,
+              -28.3947
+            ],
+            "red_cube_2": [
+              0.1059,
+              -0.123,
+              9.324
+            ],
+            "orange_cube": [
+              0.265,
+              -0.068,
+              34.5694
+            ],
+            "yellow_cube": [
+              0.2025,
+              -0.1325,
+              -35.7602
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.99,
+              "dir_deg": 45.5,
+              "dyaw_deg": 0.5,
+              "steps": 23,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 303061,
+          "success": true,
+          "steps": 337,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1215,
+              0.1243,
+              0.0
+            ],
+            "blue_cube": [
+              0.2526,
+              0.0436,
+              -37.6003
+            ],
+            "red_cube_1": [
+              0.2074,
+              -0.1811,
+              34.2504
+            ],
+            "red_cube_2": [
+              0.1645,
+              -0.0971,
+              -7.7514
+            ],
+            "orange_cube": [
+              0.259,
+              0.1103,
+              -6.7706
+            ],
+            "yellow_cube": [
+              0.0867,
+              -0.138,
+              -40.8819
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.83,
+              "dir_deg": 4.7,
+              "dyaw_deg": 0.5,
+              "steps": 21,
+              "t_start": 34
+            }
+          ]
+        },
+        {
+          "seed": 303062,
+          "success": true,
+          "steps": 448,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1571,
+              0.1804,
+              0.0
+            ],
+            "blue_cube": [
+              0.1315,
+              -0.141,
+              43.4544
+            ],
+            "red_cube_1": [
+              0.2486,
+              0.0208,
+              21.3281
+            ],
+            "red_cube_2": [
+              0.2054,
+              -0.1739,
+              -21.8035
+            ],
+            "orange_cube": [
+              0.2217,
+              -0.0804,
+              -14.9058
+            ],
+            "yellow_cube": [
+              0.245,
+              0.0992,
+              -22.67
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303063,
+          "success": true,
+          "steps": 195,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1609,
+              0.1784,
+              0.0
+            ],
+            "blue_cube": [
+              0.2606,
+              -0.0702,
+              -24.5472
+            ],
+            "red_cube_1": [
+              0.1511,
+              -0.211,
+              -8.6153
+            ],
+            "red_cube_2": [
+              0.0919,
+              -0.1308,
+              -21.9947
+            ],
+            "orange_cube": [
+              0.2355,
+              0.0194,
+              5.5775
+            ],
+            "yellow_cube": [
+              0.1692,
+              -0.114,
+              -7.8625
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.75,
+              "dir_deg": 204.7,
+              "dyaw_deg": -14.4,
+              "steps": 23,
+              "t_start": 31
+            }
+          ]
+        },
+        {
+          "seed": 303064,
+          "success": true,
+          "steps": 388,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0872,
+              0.1582,
+              0.0
+            ],
+            "blue_cube": [
+              0.1062,
+              -0.1418,
+              -34.4805
+            ],
+            "red_cube_1": [
+              0.2353,
+              -0.0513,
+              40.3228
+            ],
+            "red_cube_2": [
+              0.1827,
+              0.0883,
+              16.0159
+            ],
+            "orange_cube": [
+              0.2059,
+              0.1855,
+              39.932
+            ],
+            "yellow_cube": [
+              0.138,
+              -0.082,
+              -13.5016
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303065,
+          "success": true,
+          "steps": 151,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1281,
+              0.1518,
+              0.0
+            ],
+            "blue_cube": [
+              0.2625,
+              0.0433,
+              38.6097
+            ],
+            "red_cube_1": [
+              0.1562,
+              -0.2348,
+              -25.1066
+            ],
+            "red_cube_2": [
+              0.1408,
+              -0.078,
+              -24.0961
+            ],
+            "orange_cube": [
+              0.1024,
+              -0.1182,
+              37.5369
+            ],
+            "yellow_cube": [
+              0.1729,
+              -0.1624,
+              -38.429
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303066,
+          "success": true,
+          "steps": 169,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0832,
+              0.1461,
+              0.0
+            ],
+            "blue_cube": [
+              0.2123,
+              0.1665,
+              -6.9194
+            ],
+            "red_cube_1": [
+              0.1708,
+              -0.1373,
+              -24.2924
+            ],
+            "red_cube_2": [
+              0.1266,
+              -0.0791,
+              6.1185
+            ],
+            "orange_cube": [
+              0.2742,
+              -0.0043,
+              18.8449
+            ],
+            "yellow_cube": [
+              0.1004,
+              -0.1383,
+              4.4892
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303067,
+          "success": true,
+          "steps": 247,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1576,
+              0.188,
+              0.0
+            ],
+            "blue_cube": [
+              0.161,
+              -0.1729,
+              20.357
+            ],
+            "red_cube_1": [
+              0.1593,
+              -0.1151,
+              17.0989
+            ],
+            "red_cube_2": [
+              0.2692,
+              -0.0195,
+              -41.4395
+            ],
+            "orange_cube": [
+              0.2525,
+              -0.0741,
+              20.4134
+            ],
+            "yellow_cube": [
+              0.2752,
+              0.083,
+              4.2951
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.35,
+              "dir_deg": 143.8,
+              "dyaw_deg": -8.4,
+              "steps": 25,
+              "t_start": 41
+            }
+          ]
+        },
+        {
+          "seed": 303068,
+          "success": true,
+          "steps": 242,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0698,
+              0.1502,
+              0.0
+            ],
+            "blue_cube": [
+              0.0967,
+              -0.1467,
+              -3.3289
+            ],
+            "red_cube_1": [
+              0.1613,
+              -0.162,
+              -9.8824
+            ],
+            "red_cube_2": [
+              0.2819,
+              0.0142,
+              21.7615
+            ],
+            "orange_cube": [
+              0.2436,
+              -0.054,
+              18.6222
+            ],
+            "yellow_cube": [
+              0.1976,
+              -0.0884,
+              31.2852
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.67,
+              "dir_deg": 79.5,
+              "dyaw_deg": 11.9,
+              "steps": 16,
+              "t_start": 40
+            }
+          ]
+        },
+        {
+          "seed": 303069,
+          "success": true,
+          "steps": 210,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.135,
+              0.169,
+              0.0
+            ],
+            "blue_cube": [
+              0.2246,
+              -0.1152,
+              2.4448
+            ],
+            "red_cube_1": [
+              0.167,
+              -0.2337,
+              4.9962
+            ],
+            "red_cube_2": [
+              0.1416,
+              -0.1393,
+              -8.6134
+            ],
+            "orange_cube": [
+              0.2469,
+              0.0122,
+              20.0571
+            ],
+            "yellow_cube": [
+              0.2783,
+              -0.0542,
+              -28.7203
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.44,
+              "dir_deg": 285.8,
+              "dyaw_deg": 2.0,
+              "steps": 19,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 303070,
+          "success": true,
+          "steps": 206,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0845,
+              0.1633,
+              0.0
+            ],
+            "blue_cube": [
+              0.211,
+              -0.0968,
+              32.5638
+            ],
+            "red_cube_1": [
+              0.1854,
+              0.0883,
+              9.4594
+            ],
+            "red_cube_2": [
+              0.2642,
+              -0.0592,
+              -40.9358
+            ],
+            "orange_cube": [
+              0.1374,
+              -0.1476,
+              26.6614
+            ],
+            "yellow_cube": [
+              0.2244,
+              0.1742,
+              7.3704
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.38,
+              "dir_deg": 292.7,
+              "dyaw_deg": -5.3,
+              "steps": 17,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 303071,
+          "success": true,
+          "steps": 472,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1146,
+              0.189,
+              0.0
+            ],
+            "blue_cube": [
+              0.1275,
+              -0.1756,
+              33.7489
+            ],
+            "red_cube_1": [
+              0.1696,
+              -0.0978,
+              33.8174
+            ],
+            "red_cube_2": [
+              0.2571,
+              0.0466,
+              1.713
+            ],
+            "orange_cube": [
+              0.0891,
+              -0.1301,
+              -38.125
+            ],
+            "yellow_cube": [
+              0.2346,
+              0.163,
+              -24.64
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.11,
+              "dir_deg": 85.7,
+              "dyaw_deg": 7.0,
+              "steps": 17,
+              "t_start": 50
+            }
+          ]
+        },
+        {
+          "seed": 303072,
+          "success": true,
+          "steps": 150,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1336,
+              0.1399,
+              0.0
+            ],
+            "blue_cube": [
+              0.2545,
+              0.0681,
+              -29.9404
+            ],
+            "red_cube_1": [
+              0.2429,
+              -0.0992,
+              39.2416
+            ],
+            "red_cube_2": [
+              0.2067,
+              -0.1895,
+              -20.5221
+            ],
+            "orange_cube": [
+              0.2346,
+              -0.0397,
+              -19.3262
+            ],
+            "yellow_cube": [
+              0.2718,
+              0.0127,
+              -22.9303
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303073,
+          "success": true,
+          "steps": 212,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1152,
+              0.1261,
+              0.0
+            ],
+            "blue_cube": [
+              0.1948,
+              -0.1878,
+              25.0762
+            ],
+            "red_cube_1": [
+              0.2561,
+              0.1064,
+              30.9621
+            ],
+            "red_cube_2": [
+              0.2692,
+              0.0364,
+              24.5836
+            ],
+            "orange_cube": [
+              0.252,
+              -0.0846,
+              22.2687
+            ],
+            "yellow_cube": [
+              0.0739,
+              -0.1099,
+              23.0758
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303074,
+          "success": true,
+          "steps": 562,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.107,
+              0.1653,
+              0.0
+            ],
+            "blue_cube": [
+              0.0998,
+              -0.1593,
+              30.2541
+            ],
+            "red_cube_1": [
+              0.2431,
+              -0.0814,
+              33.1522
+            ],
+            "red_cube_2": [
+              0.2284,
+              0.1471,
+              -4.3689
+            ],
+            "orange_cube": [
+              0.2267,
+              -0.1664,
+              -14.4944
+            ],
+            "yellow_cube": [
+              0.1368,
+              -0.1155,
+              30.7965
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303075,
+          "success": true,
+          "steps": 220,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0979,
+              0.1574,
+              0.0
+            ],
+            "blue_cube": [
+              0.23,
+              -0.1375,
+              -17.0047
+            ],
+            "red_cube_1": [
+              0.2045,
+              0.0845,
+              -8.4489
+            ],
+            "red_cube_2": [
+              0.1186,
+              -0.1282,
+              -3.538
+            ],
+            "orange_cube": [
+              0.2067,
+              -0.1867,
+              -31.5627
+            ],
+            "yellow_cube": [
+              0.1367,
+              -0.2,
+              -28.2099
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.69,
+              "dir_deg": 242.5,
+              "dyaw_deg": 6.3,
+              "steps": 16,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 303076,
+          "success": true,
+          "steps": 148,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1487,
+              0.1761,
+              0.0
+            ],
+            "blue_cube": [
+              0.2474,
+              0.0279,
+              18.0792
+            ],
+            "red_cube_1": [
+              0.1464,
+              -0.2304,
+              -24.6174
+            ],
+            "red_cube_2": [
+              0.218,
+              -0.1441,
+              44.3092
+            ],
+            "orange_cube": [
+              0.282,
+              -0.0111,
+              -25.1438
+            ],
+            "yellow_cube": [
+              0.2401,
+              0.0862,
+              5.4767
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303077,
+          "success": true,
+          "steps": 336,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1588,
+              0.1602,
+              0.0
+            ],
+            "blue_cube": [
+              0.2547,
+              0.039,
+              -43.4721
+            ],
+            "red_cube_1": [
+              0.2527,
+              -0.0349,
+              2.9672
+            ],
+            "red_cube_2": [
+              0.1223,
+              -0.124,
+              -36.6304
+            ],
+            "orange_cube": [
+              0.2493,
+              -0.11,
+              36.6353
+            ],
+            "yellow_cube": [
+              0.2009,
+              -0.2088,
+              9.4969
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.08,
+              "dir_deg": 22.1,
+              "dyaw_deg": 11.8,
+              "steps": 18,
+              "t_start": 32
+            }
+          ]
+        },
+        {
+          "seed": 303078,
+          "success": true,
+          "steps": 201,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0729,
+              0.1875,
+              0.0
+            ],
+            "blue_cube": [
+              0.2215,
+              -0.1046,
+              1.6477
+            ],
+            "red_cube_1": [
+              0.2433,
+              0.0901,
+              -19.8755
+            ],
+            "red_cube_2": [
+              0.2714,
+              -0.0072,
+              -27.098
+            ],
+            "orange_cube": [
+              0.1365,
+              -0.1479,
+              21.1662
+            ],
+            "yellow_cube": [
+              0.1942,
+              0.0895,
+              36.4117
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303079,
+          "success": true,
+          "steps": 183,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1303,
+              0.2075,
+              0.0
+            ],
+            "blue_cube": [
+              0.2715,
+              0.0315,
+              44.8192
+            ],
+            "red_cube_1": [
+              0.1397,
+              -0.1948,
+              18.3373
+            ],
+            "red_cube_2": [
+              0.1263,
+              -0.1392,
+              16.7295
+            ],
+            "orange_cube": [
+              0.2187,
+              -0.1277,
+              32.2915
+            ],
+            "yellow_cube": [
+              0.2733,
+              -0.0171,
+              0.869
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.14,
+              "dir_deg": 120.6,
+              "dyaw_deg": -3.0,
+              "steps": 24,
+              "t_start": 40
+            }
+          ]
+        },
+        {
+          "seed": 303080,
+          "success": true,
+          "steps": 180,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1331,
+              0.1352,
+              0.0
+            ],
+            "blue_cube": [
+              0.2457,
+              0.0445,
+              -9.2966
+            ],
+            "red_cube_1": [
+              0.1313,
+              -0.2125,
+              11.9184
+            ],
+            "red_cube_2": [
+              0.1094,
+              0.2684,
+              -39.0478
+            ],
+            "orange_cube": [
+              0.0728,
+              -0.113,
+              -23.7393
+            ],
+            "yellow_cube": [
+              0.256,
+              -0.098,
+              2.782
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.23,
+              "dir_deg": 341.8,
+              "dyaw_deg": 6.5,
+              "steps": 16,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 303081,
+          "success": true,
+          "steps": 334,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0821,
+              0.1787,
+              0.0
+            ],
+            "blue_cube": [
+              0.1307,
+              -0.1573,
+              33.3812
+            ],
+            "red_cube_1": [
+              0.1825,
+              -0.1719,
+              -32.0014
+            ],
+            "red_cube_2": [
+              0.2359,
+              -0.0408,
+              -29.9166
+            ],
+            "orange_cube": [
+              0.1838,
+              0.0807,
+              -22.6808
+            ],
+            "yellow_cube": [
+              0.2344,
+              0.1012,
+              -9.5826
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303082,
+          "success": true,
+          "steps": 220,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0649,
+              0.1716,
+              0.0
+            ],
+            "blue_cube": [
+              0.2226,
+              -0.0959,
+              14.8877
+            ],
+            "red_cube_1": [
+              0.1424,
+              -0.1148,
+              23.337
+            ],
+            "red_cube_2": [
+              0.1467,
+              0.0803,
+              30.2547
+            ],
+            "orange_cube": [
+              0.112,
+              -0.1778,
+              6.7072
+            ],
+            "yellow_cube": [
+              0.257,
+              0.017,
+              -34.8407
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.31,
+              "dir_deg": 66.2,
+              "dyaw_deg": -3.3,
+              "steps": 24,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 303083,
+          "success": false,
+          "steps": 415,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0909,
+              0.1869,
+              0.0
+            ],
+            "blue_cube": [
+              0.0706,
+              -0.1208,
+              17.9969
+            ],
+            "red_cube_1": [
+              0.1343,
+              -0.1476,
+              44.8685
+            ],
+            "red_cube_2": [
+              0.2371,
+              -0.1498,
+              31.3691
+            ],
+            "orange_cube": [
+              0.2728,
+              0.05,
+              20.6124
+            ],
+            "yellow_cube": [
+              0.2778,
+              -0.0761,
+              -1.8689
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303084,
+          "success": true,
+          "steps": 643,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1642,
+              0.1719,
+              0.0
+            ],
+            "blue_cube": [
+              0.2485,
+              -0.1133,
+              -36.8121
+            ],
+            "red_cube_1": [
+              0.13,
+              -0.212,
+              6.4056
+            ],
+            "red_cube_2": [
+              0.1714,
+              -0.0939,
+              -14.4596
+            ],
+            "orange_cube": [
+              0.2877,
+              0.0039,
+              28.2346
+            ],
+            "yellow_cube": [
+              0.1181,
+              -0.1308,
+              -34.9702
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303085,
+          "success": true,
+          "steps": 190,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1467,
+              0.196,
+              0.0
+            ],
+            "blue_cube": [
+              0.2083,
+              -0.1065,
+              -9.4518
+            ],
+            "red_cube_1": [
+              0.2764,
+              -0.0364,
+              -23.7178
+            ],
+            "red_cube_2": [
+              0.2629,
+              0.0962,
+              -35.7094
+            ],
+            "orange_cube": [
+              0.1604,
+              -0.0817,
+              22.5277
+            ],
+            "yellow_cube": [
+              0.1023,
+              0.0852,
+              -31.4001
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303086,
+          "success": true,
+          "steps": 609,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0994,
+              0.1489,
+              0.0
+            ],
+            "blue_cube": [
+              0.2102,
+              -0.0832,
+              -25.0913
+            ],
+            "red_cube_1": [
+              0.0923,
+              -0.1298,
+              30.8516
+            ],
+            "red_cube_2": [
+              0.2098,
+              -0.1759,
+              19.3884
+            ],
+            "orange_cube": [
+              0.1328,
+              -0.1809,
+              -2.1052
+            ],
+            "yellow_cube": [
+              0.2669,
+              0.0217,
+              -35.5837
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303087,
+          "success": true,
+          "steps": 164,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1228,
+              0.13,
+              0.0
+            ],
+            "blue_cube": [
+              0.2738,
+              0.0015,
+              -14.9898
+            ],
+            "red_cube_1": [
+              0.1747,
+              -0.1264,
+              18.9963
+            ],
+            "red_cube_2": [
+              0.1247,
+              -0.0969,
+              32.7131
+            ],
+            "orange_cube": [
+              0.2536,
+              0.1203,
+              17.1359
+            ],
+            "yellow_cube": [
+              0.1597,
+              -0.231,
+              20.6914
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 303088,
+          "success": true,
+          "steps": 219,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1423,
+              0.1671,
+              0.0
+            ],
+            "blue_cube": [
+              0.1993,
+              -0.099,
+              37.7231
+            ],
+            "red_cube_1": [
+              0.1032,
+              -0.1017,
+              30.4707
+            ],
+            "red_cube_2": [
+              0.242,
+              0.0053,
+              22.2247
+            ],
+            "orange_cube": [
+              0.144,
+              -0.2192,
+              37.6564
+            ],
+            "yellow_cube": [
+              0.2042,
+              -0.2003,
+              32.9895
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.49,
+              "dir_deg": 69.1,
+              "dyaw_deg": -10.4,
+              "steps": 20,
+              "t_start": 37
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "total_episodes": 84,
+  "total_frames": 23257,
+  "wall_time_s": 3697.4,
+  "resources": {
+    "peak_rss_gb": 1.913,
+    "peak_vram_alloc_gb": 0.0
+  },
+  "dataset_root": "datasets/sim_so101_v3/task_03"
+}

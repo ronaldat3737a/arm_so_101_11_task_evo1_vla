@@ -1,7 +1,7 @@
 {
-  "paused_at": "2026-10-08T12:21",
-  "running_processes_at_pause": "none (training stopped with SIGINT right after the step-1000 checkpoint; GPU 12 MiB = idle)",
-  "current_phase": "Phase 10: Evo-1 stage1, cached-feature training run 2 (run 1 complete)",
+  "paused_at": "2026-10-13T22:28",
+  "running_processes_at_pause": "none",
+  "current_phase": "Phase 25 COMPLETE: stop criterion NOT MET; next = real-robot dry-run with the best checkpoint (decision pending)",
   "feature_cache": {
     "root": "datasets/evo1_feature_cache (39 GB)",
     "status": "COMPLETE",
@@ -25,7 +25,7 @@
     "run_dir": "outputs/evo1_stage1_cached_r2_20261008_121256",
     "log": "outputs/evo1_cached_train_r2.log",
     "script": "scripts/train_evo1_cached.py",
-    "current_step": "1000 of 20000 (process stopped during step 1001; that partial step is discarded)",
+    "current_step": "20000 of 20000",
     "latest_complete_checkpoint": "outputs/evo1_stage1_cached_r2_20261008_121256/checkpoints/latest (step 1000: pretrained_model + training_state.pt with optimizer, scheduler, RNG, data stream position epoch 0 / shard_pos 125 / sample_pos 228)",
     "best_checkpoint": "outputs/evo1_stage1_cached_r2_20261008_121256/checkpoints/best (step 1000, val loss 0.0465)",
     "val_loss_history": {
@@ -37,10 +37,11 @@
     "config": "outputs/evo1_stage1_cached_r2_20261008_121256/args.json: steps 20000, batch 32 (effective batch 32, no grad accumulation), lr 1e-5, warmup 500, cosine, val/ckpt every 1000, seed 1000, export evo1_so101",
     "precision": "frozen VLM tokens cached in bf16; action head trained with Evo-1 internal bf16 autocast (use_amp=true), fp32 master weights, fp32 loss",
     "resume_command": "uv run python scripts/train_evo1_cached.py --resume outputs/evo1_stage1_cached_r2_20261008_121256",
-    "after_training": "uv run python scripts/evaluate_offline.py --checkpoint checkpoints/evo1_so101/best --task all --split test --frames-per-episode 4 --name evo1_stage1_cached_r2"
+    "after_training": "uv run python scripts/evaluate_offline.py --checkpoint checkpoints/evo1_so101/best --task all --split test --frames-per-episode 4 --name evo1_stage1_cached_r2",
+    "status": "COMPLETE: step 20000/20000, best val 0.02796, exported to checkpoints/evo1_so101; offline test MAE 11.95 (hold 11.96, run 1 15.03)"
   },
   "evo1_checkpoints": {
-    "checkpoints/evo1_so101": "= cached run 1 (export happens only when run 2 finishes)",
+    "checkpoints/evo1_so101": "= cached run 2 (step 20000)",
     "checkpoints/evo1_so101_stage1_cached_r1": "cached run 1 backup (step 20000, val 0.0352, offline test MAE 15.0)",
     "checkpoints/evo1_so101_stage1_e2e_3000": "end-to-end stage1 run (3000 updates)"
   },
@@ -66,14 +67,180 @@
     "mixture": "datasets/mixtures/REAL_PLUS_SIM (652 train episodes = 432 real + 220 sim; reports/mixture_REAL_PLUS_SIM.json)"
   },
   "next_steps_in_order": [
-    "1. resume run 2: uv run python scripts/train_evo1_cached.py --resume outputs/evo1_stage1_cached_r2_20261008_121256",
-    "2. offline eval of checkpoints/evo1_so101/best (all tasks, test split) and compare with run 1 (15.0 deg) and hold-state",
-    "3. then: stage-2-lite profiles, sim evaluation, CKA/CLP, quantization"
+    "real-robot dry-run (hardware, read-only) with checkpoints/evo1_so101_s2lite_selective_llm_rpsv3/best after calibration; checklist reports/real_robot_readiness.md"
   ],
   "do_not": [
-    "recompute cache shards",
-    "retrain from scratch",
+    "recompute any cache (evo1_feature_cache, evo1_hidden_cache_L10 incl. sim part)",
+    "retrain stage1 run 2, selective_llm, head_only or REAL_PLUS_SIM",
     "regenerate simulation data",
     "reset the project"
-  ]
+  ],
+  "updated_at": "2026-10-09",
+  "stage2_lite_selective_llm": {
+    "hidden_cache": "datasets/evo1_hidden_cache_L10: COMPLETE (val 4/4, train_s10_o0 79/79 shards, 20 GB, verification rel_err 0.0) - do NOT recompute",
+    "cache_log": "outputs/cache_evo1_hidden_L10.log",
+    "smoke": "PASS: step-0 val 0.027950 vs run 2 0.027958; fp32 LM layers save -> load into bf16 exact",
+    "run": {
+      "run_dir": "outputs/evo1_s2lite_selective_llm_20261009_033535",
+      "log": "outputs/s2lite_selective_llm.log",
+      "steps": 10000,
+      "batch": 32,
+      "micro_batch": 8,
+      "lr": 1e-05,
+      "train_from_layer": 12,
+      "resume_command": "uv run python scripts/train_evo1_selective.py --resume outputs/evo1_s2lite_selective_llm_20261009_033535",
+      "export": "checkpoints/evo1_so101_s2lite_selective_llm"
+    },
+    "status": "COMPLETE: selective_llm test MAE 11.26 (9/11 > hold), head_only control 11.86, run 2 11.95, hold 11.96"
+  },
+  "sim_eval": {
+    "command": "uv run python scripts/evaluate_policy.py --checkpoint checkpoints/evo1_so101_s2lite_selective_llm/best --task all --splits test --profile position --episodes 5 --name evo1_s2lite_selective_llm --video",
+    "log": "outputs/sim_eval_s2lite_selective.log",
+    "note": "not resumable per episode: rerun the command if interrupted (about 50 min)",
+    "status": "COMPLETE: 0/55 on unseen test positions (reports/evaluation_evo1_s2lite_selective_llm_position.*)"
+  },
+  "cka_sensitivity": {
+    "command": "uv run python scripts/analyze_cka_sensitivity.py",
+    "log": "outputs/cka_sensitivity.log",
+    "output": "reports/cka_sensitivity_evo1_s2lite_selective_llm.{json,md}",
+    "note": "not resumable: rerun (CKA 1.5 min + 39 x ~3 min sensitivity)",
+    "status": "COMPLETE: reports/cka_sensitivity_evo1_s2lite_selective_llm.{json,md}; CLP candidates LM 4 -> 3 -> 5, vision 1"
+  },
+  "real_plus_sim_selective_llm": {
+    "sim_hidden_cache": "datasets/evo1_hidden_cache_L10/sim_s10_o0: COMPLETE 25/25 shards, 6,400 sim frames, verification rel_err 0.0 - do NOT recompute",
+    "training": "COMPLETE: outputs/evo1_s2lite_selective_llm_rps_20261009_114711, 10000/10000 steps, parts train_s10_o0 + sim_s10_o0 (104 shards), best val 0.02629 (real val frames), wall 3.24 h, peak RSS 4.84 GB, VRAM 4.13 GB - do NOT retrain",
+    "export": "checkpoints/evo1_so101_s2lite_selective_llm_rps/{best,latest}",
+    "evaluation": "COMPLETE: reports/offline_evo1_s2lite_selective_llm_rps_test.json, reports/evaluation_evo1_s2lite_selective_llm_rps_position.*"
+  },
+  "real_plus_sim_v2": {
+    "steps_in_order": [
+      "uv run python scripts/cache_evo1_hidden.py --start 10 --parts sim --offset 5   (sim_s10_o5; skips finished shards; log outputs/cache_evo1_hidden_L10_sim_o5.log)",
+      "uv run python scripts/train_evo1_selective.py --train-from 12 --steps 10000 --parts train_s10_o0,sim_s10_o0,sim_s10_o5 --name evo1_s2lite_selective_llm_rps2 --export evo1_so101_s2lite_selective_llm_rps2   (resume: --resume outputs/evo1_s2lite_selective_llm_rps2_<ts>)",
+      "uv run python scripts/evaluate_offline.py --checkpoint checkpoints/evo1_so101_s2lite_selective_llm_rps2/best --task all --split test --frames-per-episode 4 --name evo1_s2lite_selective_llm_rps2",
+      "uv run python scripts/evaluate_policy.py --checkpoint checkpoints/evo1_so101_s2lite_selective_llm_rps2/best --task all --splits test --profile position --episodes 5 --name evo1_s2lite_selective_llm_rps2 --video"
+    ],
+    "status": "COMPLETE: cache sim_s10_o5 25/25, training 10000/10000, evals done - do NOT redo"
+  },
+  "clp": {
+    "reference": "checkpoints/evo1_so101_s2lite_selective_llm/best (offline test MAE 11.26, 9/11 > hold, sim 0/55)",
+    "script": "scripts/clp_prune.py (renumbers remaining LM layers, sets vlm_num_layers; official strict load verified)",
+    "acceptance": "offline test MAE <= reference + 0.3 deg",
+    "done": [
+      "checkpoints/evo1_clp/lm_drop4 created (13 LM layers, -14.9M params); official strict load OK"
+    ],
+    "next": [
+      "run resume_command",
+      "vision layer 1: not prunable via official config -> report"
+    ],
+    "resume_command": "uv run python scripts/clp_run.py --order 4,3,5   (resumable: finished steps in reports/clp_progress.json are skipped)",
+    "status": "drop LM 4 rejected (+0.54 deg, -1% latency); LM CLP not worthwhile; vision pruning BLOCKED (not in official config)"
+  },
+  "inference_steps_sweep": {
+    "command": "for S in 16 8: uv run python scripts/evaluate_offline.py --checkpoint checkpoints/evo1_so101_s2lite_selective_llm/best --task all --split test --frames-per-episode 4 --name evo1_s2lite_selective_llm_steps$S --num-inference-timesteps $S  (skip if reports/offline_evo1_s2lite_selective_llm_steps$S_test.json exists)",
+    "status": "COMPLETE: 8 steps = same MAE (11.24 vs 11.26), latency 565 vs 798 ms"
+  },
+  "quantization": {
+    "module": "src/quantization/torchao_quant.py",
+    "resume_command": "for Q in bf16 w8a8_vision w8a8_vis_lm w8a8_all: skip if reports/offline_evo1_q_${Q}_s8_test.json exists; else uv run python scripts/evaluate_offline.py --checkpoint checkpoints/evo1_so101_s2lite_selective_llm/best --task all --split test --frames-per-episode 4 --name evo1_q_${Q}_s8 --num-inference-timesteps 8 --quant $Q --compile",
+    "profile": "bf16 s8 eager 560 ms, compiled 399, w8a8_vision compiled 332 (reports/latency_profile_prof_*.json)",
+    "w4a8": "torchao Int8DynamicActivationIntxWeight int4: slower than bf16 and 11% error on test MLP; Int4WeightOnly needs mslk (not installed)",
+    "status": "COMPLETE (reports/offline_evo1_q_*_s8_test.json)"
+  },
+  "best_local_candidate": {
+    "checkpoint": "checkpoints/evo1_so101_s2lite_selective_llm/best",
+    "num_inference_timesteps": 8,
+    "quant": "w8a8_vision",
+    "compile": true,
+    "offline": "MAE 11.81 (BF16 eager 11.24, hold 11.96), latency P50 334 ms/chunk, VRAM 3.42 GB, RSS 8.6 GB"
+  },
+  "best_local_sim_eval": {
+    "resume_command": "for Q in bf16 w8a8_vision: skip if reports/evaluation_evo1_bl_${Q}_c_s8_position.json exists; else uv run python scripts/evaluate_policy.py --checkpoint checkpoints/evo1_so101_s2lite_selective_llm/best --task all --splits test --profile position --episodes 5 --name evo1_bl_${Q}_c_s8 --num-inference-timesteps 8 --quant $Q --compile --video --trace",
+    "tests": "pytest 57/57 PASS (incl. tests/test_quantization.py); sim smoke PASS (int8 tensors: vision 144, projector/LM/head 0; chunk P50 336 ms)",
+    "status": "COMPLETE: reports/evaluation_evo1_bl_{bf16,w8a8_vision}_c_s8_position.*; traces outputs/traces"
+  },
+  "real_robot": {
+    "replay_dry_run": "PASS reports/deploy_dry-run_task_01_20261010_105115.json (deploy_so101.py now supports --quant/--compile/--num-inference-timesteps/--warmup)",
+    "hardware_dry_run": "NOT YET VERIFIED (needs calibration + robot connected)",
+    "real_motion": "NOT DONE; checklist reports/real_robot_readiness.md; requires user approval"
+  },
+  "n_action_steps_sweep": {
+    "resume_command": "for N in 25 10: skip if reports/evaluation_evo1_bl_w8a8_vision_c_s8_n${N}_position.json exists; else uv run python scripts/evaluate_policy.py --checkpoint checkpoints/evo1_so101_s2lite_selective_llm/best --task all --splits test --profile position --episodes 5 --name evo1_bl_w8a8_vision_c_s8_n${N} --num-inference-timesteps 8 --quant w8a8_vision --compile --n-action-steps $N --video --trace",
+    "status": "COMPLETE: n50 / n25 / n10 all 0/55"
+  },
+  "sim_recalibration": {
+    "status": "COMPLETE: data 440 eps (datasets/sim_so101_v2_all), cache simv2_s10_o0, checkpoint checkpoints/evo1_so101_s2lite_selective_llm_rpsv2 (offline 11.46), v2-scene sim: realonly 0/55, rpsv2 0/55 (19 interactions)",
+    "config": "configs/simulation_v2.yaml (select with SO101_SIM_CONFIG); top camera + cyan robot + table/backdrop yaw -20 deg + leader-arm stand-in; qualitative match (scripts/calibrate_sim_camera.py); wrist camera and object sizes unchanged",
+    "object_size_evidence": "hold-gripper median real 14.0-17.5 vs sim(25 mm) 15.9-16.2 -> real cubes not larger",
+    "generation_resume_command": "./scripts/generate_sim_v2.sh   (N=40 per task, per-task datasets in datasets/sim_so101_v2/task_XX, finished tasks skipped)",
+    "then": [
+      "build/aggregate or cache each task dataset (cache_evo1_hidden.py needs a multi-root sim part)",
+      "train selective_llm REAL_PLUS_SIM(v2) from run 2, 10k steps",
+      "sim eval with SO101_SIM_CONFIG=configs/simulation_v2.yaml (same seeds)"
+    ],
+    "rule": "datasets/sim_so101_all (v1, 220 eps) untouched",
+    "generation_progress": "datasets/sim_so101_v2/task_01..03 complete (40 eps each); task_04 unfinished (will be regenerated with --force by the script); task_05..11 not started"
+  },
+  "n10_command": "uv run python scripts/evaluate_policy.py --checkpoint checkpoints/evo1_so101_s2lite_selective_llm/best --task all --splits test --profile position --episodes 5 --name evo1_bl_w8a8_vision_c_s8_n10 --num-inference-timesteps 8 --quant w8a8_vision --compile --n-action-steps 10 --video --trace",
+  "physics_v3": {
+    "config": "configs/simulation_v3.yaml (v2 visuals + pots: 60% mass in bottom; pots/lids friction 0.4 with contact priority 1)",
+    "push_test": "reports/pot_stability_{v2,v3}.json: v2 tips at 4.0-8.4 N (3/5 pots), v3 all slide at 2.2-3.7 N, tilt ~0",
+    "oracle_check": "SO101_SIM_CONFIG=configs/simulation_v{2,3}.yaml scripts/run_oracle.py --task task_01,task_03,task_04,task_05,task_06 --profile position --splits test --episodes 10 --seed0 1000 --outdir reports/oracle_v{2,3}",
+    "eval_resume_command": "./scripts/run_physics_v3_eval.sh  (A: v2 scene control, B: v3 scene; BF16 eager, 8 steps; finished runs skipped)",
+    "status": "COMPLETE"
+  },
+  "train_layout_test": {
+    "seed_map": "reports/seed_map_sim_v2_train.json (first 5 successful generation seeds per task; layouts verified identical, max diff 0.0)",
+    "command": "SO101_SIM_CONFIG=configs/simulation_v2.yaml uv run python scripts/evaluate_policy.py --checkpoint checkpoints/evo1_so101_s2lite_selective_llm_rpsv2/best --task all --splits train --profile position_visual --episodes 5 --seed-map reports/seed_map_sim_v2_train.json --name evo1_rpsv2_trainlayouts_v2scene_bf16_s8 --num-inference-timesteps 8 --video --trace",
+    "output": "reports/evaluation_evo1_rpsv2_trainlayouts_v2scene_bf16_s8_position_visual.json",
+    "status": "COMPLETE"
+  },
+  "rpsv2c": {
+    "resume_command": "./scripts/run_rpsv2c_pipeline.sh  (resumable: cache shards skipped, training resumes from latest, finished evals skipped)",
+    "log": "outputs/rpsv2c_pipeline.log",
+    "init": "checkpoints/evo1_so101_s2lite_selective_llm_rpsv2/best",
+    "parts": "train_s10_o0 (real 20,213) + simv2_s10_o0 (12,497) + simv2_s10_o5 (~12.5k)",
+    "export": "checkpoints/evo1_so101_s2lite_selective_llm_rpsv2c",
+    "status": "COMPLETE (all steps done; rerunning the pipeline is a no-op)"
+  },
+  "best_checkpoint": "checkpoints/evo1_so101_s2lite_selective_llm_rpsv2c/best",
+  "drift_test": {
+    "command": "SO101_SIM_CONFIG=configs/simulation_v2.yaml uv run python scripts/evaluate_policy.py --checkpoint checkpoints/evo1_so101_s2lite_selective_llm_rpsv2c/best --task all --splits train --profile position_visual --episodes 5 --seed-map reports/seed_map_sim_v2_train.json --name evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10 --num-inference-timesteps 8 --n-action-steps 10 --video --trace",
+    "output": "reports/evaluation_evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10_position_visual.json",
+    "status": "COMPLETE"
+  },
+  "position_wide": {
+    "config": "configs/simulation_v3.yaml profiles.position_wide",
+    "coverage": "reports/layout_coverage.{json,md}",
+    "oracle": "reports/oracle_v3_wide (44/55)",
+    "generation_command_when_approved": "per task: SO101_SIM_CONFIG=configs/simulation_v3.yaml uv run python scripts/generate_sim_data.py --tasks task_XX --episodes-per-task 40 --profile position_wide --max-attempts-factor 3 --seed0 <300000+> --out datasets/sim_so101_v3/task_XX --force --report-name sim_v3_report_task_XX"
+  },
+  "sim_v3_generation": {
+    "resume_command": "./scripts/generate_sim_v3.sh  (per task; finished tasks skipped; an interrupted task is regenerated)",
+    "log": "outputs/gen_sim_v3.log",
+    "output": "datasets/sim_so101_v3/task_XX, reports/sim_v3_report_task_XX.json",
+    "estimate": "~18-20 h CPU, ~5 GB (+~4 GB when aggregated)",
+    "task_11_rule": "if task_11 ends below 84: top up with --max-attempts-factor 5+ (user approved) until 84",
+    "progress": "COMPLETE: 1000 episodes / 332,710 frames (datasets/sim_so101_v3_all, reports/sim_v3_dataset_report.json PASS); no top-up needed"
+  },
+  "disk_cleanup_2026-10-12": {
+    "approved_by_user": true,
+    "deleted": [
+      "datasets/evo1_feature_cache (39 GB; stage-1 frozen-VLM token cache, used only by scripts/cache_evo1_features.py + scripts/train_evo1_cached.py, not by the current pipeline)",
+      "outputs/smoke_s2lite_selective_20261009_033322 (4.6 GB; 2-step smoke run)"
+    ],
+    "note": "stage-1 cached head-only training (train_evo1_cached.py) would need the feature cache to be rebuilt (cache_evo1_features.py, ~11 h)"
+  },
+  "v3_round": {
+    "resume_command": "./scripts/run_v3_pipeline.sh  (after generate_sim_v3.sh + topup_sim_v3.sh; every step resumable)",
+    "log": "outputs/v3_pipeline.log",
+    "stop_criterion": "on the exact v3 training layouts: success >= 10/55 AND clearly fewer pot tips than the rpsv2c baseline on the same layouts; otherwise stop adding sim data, record the limitation, move to the real-robot dry-run with the best checkpoint",
+    "progress": {
+      "aggregate": "PASS",
+      "seed_map": "PASS (max layout diff 0.0)",
+      "cache": "simv3_s10_o0 132/132 shards, 33,722 frames, rel_err 0.0",
+      "training": "outputs/evo1_s2lite_selective_llm_rpsv3_20261013_073750: checkpoints/latest = step 18000 of 20000 (best val 0.02420); resumes automatically",
+      "evals": "not started"
+    },
+    "result": "rpsv3: train layouts 1/55 (6 tips) vs rpsv2c 2/55 (9 tips); test positions 2/55; offline real 10.44 -> stop criterion NOT MET; rpsv2c test positions 1/55 (10 tips); pipeline COMPLETE"
+  }
 }

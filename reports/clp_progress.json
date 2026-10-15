@@ -1,0 +1,29 @@
+{
+  "method": "CLP-inspired adaptation to Evo-1 (not official Evo-1 CLP)",
+  "reference": "checkpoints/evo1_so101_s2lite_selective_llm/best",
+  "reference_mae": 11.257941939614035,
+  "reference_hold": 11.964343331076883,
+  "reference_latency_p50_ms": 797.5520530017093,
+  "tol_deg": 0.3,
+  "steps": [
+    {
+      "dropped": [
+        4
+      ],
+      "checkpoint": "checkpoints/evo1_clp/lm_drop4",
+      "vlm_num_layers": 13,
+      "mae": 11.795251326127486,
+      "d_mae": 0.5373093865134511,
+      "tasks_better_than_hold": 7,
+      "delta_cosine": 0.5631298609929879,
+      "latency_p50_ms": 790.9944879999955,
+      "resources": {
+        "peak_rss_gb": 3.184,
+        "peak_vram_alloc_gb": 3.366
+      },
+      "report": "reports/offline_evo1_clp_lm_drop4_test.json",
+      "accepted": false
+    }
+  ],
+  "final_accepted_drop": []
+}

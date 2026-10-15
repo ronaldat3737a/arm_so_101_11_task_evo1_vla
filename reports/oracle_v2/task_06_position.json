@@ -1,0 +1,277 @@
+{
+  "task": "task_06",
+  "profile": "position",
+  "splits": {
+    "test": {
+      "episodes": 10,
+      "success": 10,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 1000,
+          "success": true,
+          "steps": 214,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1582,
+              0.1433,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1661,
+              -0.1369,
+              -8.7382
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "red_cube_base": "test"
+          },
+          "sim_ms_per_step": 17.840604915797154,
+          "oracle_error": null
+        },
+        {
+          "seed": 1001,
+          "success": true,
+          "steps": 202,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1983,
+              0.1244,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1606,
+              -0.1577,
+              -2.6233
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "red_cube_base": "test"
+          },
+          "sim_ms_per_step": 18.753938155599158,
+          "oracle_error": null
+        },
+        {
+          "seed": 1002,
+          "success": true,
+          "steps": 208,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1909,
+              0.1217,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1642,
+              -0.151,
+              -7.9335
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "red_cube_base": "test"
+          },
+          "sim_ms_per_step": 17.499548884538505,
+          "oracle_error": null
+        },
+        {
+          "seed": 1003,
+          "success": true,
+          "steps": 192,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1505,
+              0.1491,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2526,
+              -0.0497,
+              -11.3186
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "red_cube_base": "test"
+          },
+          "sim_ms_per_step": 17.411008477211,
+          "oracle_error": null
+        },
+        {
+          "seed": 1004,
+          "success": true,
+          "steps": 212,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1796,
+              0.1384,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1684,
+              -0.1663,
+              1.164
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "red_cube_base": "test"
+          },
+          "sim_ms_per_step": 19.42456105969987,
+          "oracle_error": null
+        },
+        {
+          "seed": 1005,
+          "success": true,
+          "steps": 210,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1764,
+              0.1345,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1792,
+              -0.1548,
+              11.6206
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "red_cube_base": "test"
+          },
+          "sim_ms_per_step": 18.332786787123908,
+          "oracle_error": null
+        },
+        {
+          "seed": 1006,
+          "success": true,
+          "steps": 213,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1775,
+              0.1338,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1722,
+              -0.1242,
+              -16.616
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "red_cube_base": "test"
+          },
+          "sim_ms_per_step": 17.421088867903876,
+          "oracle_error": null
+        },
+        {
+          "seed": 1007,
+          "success": true,
+          "steps": 165,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1843,
+              0.1379,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2569,
+              -0.0189,
+              4.2283
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "red_cube_base": "test"
+          },
+          "sim_ms_per_step": 17.11068008885239,
+          "oracle_error": null
+        },
+        {
+          "seed": 1008,
+          "success": true,
+          "steps": 190,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1942,
+              0.138,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2,
+              -0.1194,
+              -19.8989
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "red_cube_base": "test"
+          },
+          "sim_ms_per_step": 18.47318975548995,
+          "oracle_error": null
+        },
+        {
+          "seed": 1009,
+          "success": true,
+          "steps": 219,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1703,
+              0.1556,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1948,
+              -0.1366,
+              -8.8685
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "red_cube_base": "test"
+          },
+          "sim_ms_per_step": 17.829770911229797,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 0.931,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

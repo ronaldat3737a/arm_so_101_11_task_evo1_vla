@@ -1,0 +1,1410 @@
+{
+  "sim_config": "configs/simulation_v2.yaml",
+  "profile": "position_visual",
+  "split": "train",
+  "seed0": 201000,
+  "tasks": {
+    "task_01": {
+      "instruction": "Pick up the red cube and place it into the steel pot.",
+      "kept": 40,
+      "attempted": 42,
+      "oracle_success_rate": 0.9523809523809523,
+      "attempts": [
+        {
+          "seed": 202000,
+          "success": true,
+          "steps": 214,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1452,
+              0.1886,
+              0.0
+            ],
+            "red_cube": [
+              0.1826,
+              -0.1724,
+              -17.2622
+            ],
+            "yellow_cube": [
+              0.2869,
+              0.0308,
+              -10.9231
+            ],
+            "orange_cube": [
+              0.1027,
+              -0.1318,
+              -9.2457
+            ],
+            "yellow_prism": [
+              0.1338,
+              -0.2034,
+              5.133
+            ]
+          }
+        },
+        {
+          "seed": 202001,
+          "success": true,
+          "steps": 220,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1247,
+              0.1677,
+              0.0
+            ],
+            "red_cube": [
+              0.1855,
+              -0.1771,
+              -6.4637
+            ],
+            "yellow_cube": [
+              0.2313,
+              -0.1431,
+              -9.5171
+            ],
+            "orange_cube": [
+              0.253,
+              0.1162,
+              16.018
+            ],
+            "yellow_prism": [
+              0.1217,
+              -0.1253,
+              -1.1368
+            ]
+          }
+        },
+        {
+          "seed": 202002,
+          "success": true,
+          "steps": 194,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1213,
+              0.1613,
+              0.0
+            ],
+            "red_cube": [
+              0.1933,
+              -0.1044,
+              -19.5552
+            ],
+            "yellow_cube": [
+              0.2626,
+              0.0844,
+              12.8055
+            ],
+            "orange_cube": [
+              0.1551,
+              -0.2261,
+              16.3254
+            ],
+            "yellow_prism": [
+              0.1061,
+              -0.1356,
+              -18.9026
+            ]
+          }
+        },
+        {
+          "seed": 202003,
+          "success": true,
+          "steps": 210,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1083,
+              0.1843,
+              0.0
+            ],
+            "red_cube": [
+              0.1153,
+              -0.0987,
+              -0.6386
+            ],
+            "yellow_cube": [
+              0.1034,
+              -0.1726,
+              -13.0769
+            ],
+            "orange_cube": [
+              0.2882,
+              -0.0291,
+              14.129
+            ],
+            "yellow_prism": [
+              0.2815,
+              0.0446,
+              10.3245
+            ]
+          }
+        },
+        {
+          "seed": 202004,
+          "success": true,
+          "steps": 169,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1122,
+              0.1428,
+              0.0
+            ],
+            "red_cube": [
+              0.2378,
+              0.0069,
+              -17.9072
+            ],
+            "yellow_cube": [
+              0.2012,
+              -0.0805,
+              -10.1316
+            ],
+            "orange_cube": [
+              0.2711,
+              -0.0384,
+              -18.9278
+            ],
+            "yellow_prism": [
+              0.1155,
+              -0.1252,
+              12.2637
+            ]
+          }
+        },
+        {
+          "seed": 202005,
+          "success": true,
+          "steps": 174,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1042,
+              0.1642,
+              0.0
+            ],
+            "red_cube": [
+              0.2536,
+              0.0078,
+              -15.3307
+            ],
+            "yellow_cube": [
+              0.1742,
+              -0.0865,
+              -5.4199
+            ],
+            "orange_cube": [
+              0.2218,
+              0.0933,
+              12.7171
+            ],
+            "yellow_prism": [
+              0.1478,
+              -0.239,
+              0.5358
+            ]
+          }
+        },
+        {
+          "seed": 202006,
+          "success": true,
+          "steps": 192,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.156,
+              0.1686,
+              0.0
+            ],
+            "red_cube": [
+              0.1732,
+              -0.0956,
+              -11.4184
+            ],
+            "yellow_cube": [
+              0.2444,
+              -0.1429,
+              17.0097
+            ],
+            "orange_cube": [
+              0.1077,
+              -0.0844,
+              18.0309
+            ],
+            "yellow_prism": [
+              0.1374,
+              -0.1822,
+              11.4138
+            ]
+          }
+        },
+        {
+          "seed": 202007,
+          "success": true,
+          "steps": 632,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0858,
+              0.1719,
+              0.0
+            ],
+            "red_cube": [
+              0.2203,
+              -0.1228,
+              -17.9409
+            ],
+            "yellow_cube": [
+              0.1626,
+              -0.1392,
+              5.9131
+            ],
+            "orange_cube": [
+              0.2444,
+              0.12,
+              -3.7479
+            ],
+            "yellow_prism": [
+              0.2785,
+              0.0274,
+              17.0642
+            ]
+          }
+        },
+        {
+          "seed": 202008,
+          "success": false,
+          "steps": 235,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0951,
+              0.16,
+              0.0
+            ],
+            "red_cube": [
+              0.1051,
+              -0.0959,
+              14.0022
+            ],
+            "yellow_cube": [
+              0.2312,
+              0.0743,
+              -1.7668
+            ],
+            "orange_cube": [
+              0.2749,
+              0.0193,
+              -15.7372
+            ],
+            "yellow_prism": [
+              0.2155,
+              -0.1605,
+              2.6487
+            ]
+          }
+        },
+        {
+          "seed": 202009,
+          "success": false,
+          "steps": 594,
+          "failure_reason": "pot_tipped_over",
+          "layout": {
+            "pot": [
+              0.0954,
+              0.1846,
+              0.0
+            ],
+            "red_cube": [
+              0.1799,
+              -0.1011,
+              -19.5999
+            ],
+            "yellow_cube": [
+              0.0988,
+              -0.0934,
+              -11.4952
+            ],
+            "orange_cube": [
+              0.2386,
+              0.1598,
+              8.5317
+            ],
+            "yellow_prism": [
+              0.2196,
+              -0.1877,
+              -11.5273
+            ]
+          }
+        },
+        {
+          "seed": 202010,
+          "success": true,
+          "steps": 201,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1486,
+              0.1547,
+              0.0
+            ],
+            "red_cube": [
+              0.1308,
+              -0.1077,
+              -9.0909
+            ],
+            "yellow_cube": [
+              0.1327,
+              -0.1709,
+              19.4815
+            ],
+            "orange_cube": [
+              0.2594,
+              0.0255,
+              -15.2859
+            ],
+            "yellow_prism": [
+              0.2504,
+              -0.0397,
+              -9.5697
+            ]
+          }
+        },
+        {
+          "seed": 202011,
+          "success": true,
+          "steps": 189,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1337,
+              0.1494,
+              0.0
+            ],
+            "red_cube": [
+              0.1706,
+              -0.0878,
+              0.4608
+            ],
+            "yellow_cube": [
+              0.0854,
+              -0.1204,
+              16.2555
+            ],
+            "orange_cube": [
+              0.2483,
+              0.061,
+              -6.7901
+            ],
+            "yellow_prism": [
+              0.2521,
+              -0.0531,
+              1.0764
+            ]
+          }
+        },
+        {
+          "seed": 202012,
+          "success": true,
+          "steps": 200,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0824,
+              0.1765,
+              0.0
+            ],
+            "red_cube": [
+              0.1791,
+              -0.1023,
+              -2.4652
+            ],
+            "yellow_cube": [
+              0.2124,
+              0.1818,
+              6.126
+            ],
+            "orange_cube": [
+              0.2785,
+              -0.04,
+              -0.6066
+            ],
+            "yellow_prism": [
+              0.1794,
+              -0.1895,
+              -12.2785
+            ]
+          }
+        },
+        {
+          "seed": 202013,
+          "success": true,
+          "steps": 153,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1409,
+              0.1711,
+              0.0
+            ],
+            "red_cube": [
+              0.2443,
+              0.0204,
+              14.4952
+            ],
+            "yellow_cube": [
+              0.1623,
+              -0.1955,
+              -12.9616
+            ],
+            "orange_cube": [
+              0.2702,
+              -0.0613,
+              -0.4181
+            ],
+            "yellow_prism": [
+              0.0969,
+              -0.1496,
+              19.3927
+            ]
+          }
+        },
+        {
+          "seed": 202014,
+          "success": true,
+          "steps": 194,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1499,
+              0.1681,
+              0.0
+            ],
+            "red_cube": [
+              0.1596,
+              -0.0822,
+              -7.8133
+            ],
+            "yellow_cube": [
+              0.1274,
+              -0.2024,
+              -16.1456
+            ],
+            "orange_cube": [
+              0.2632,
+              -0.0351,
+              15.4236
+            ],
+            "yellow_prism": [
+              0.2542,
+              0.0233,
+              18.7254
+            ]
+          }
+        },
+        {
+          "seed": 202015,
+          "success": true,
+          "steps": 157,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1025,
+              0.1796,
+              0.0
+            ],
+            "red_cube": [
+              0.1863,
+              0.0856,
+              12.1763
+            ],
+            "yellow_cube": [
+              0.2033,
+              -0.1463,
+              15.3688
+            ],
+            "orange_cube": [
+              0.2826,
+              -0.0205,
+              -5.8069
+            ],
+            "yellow_prism": [
+              0.1074,
+              -0.0901,
+              -5.6677
+            ]
+          }
+        },
+        {
+          "seed": 202016,
+          "success": true,
+          "steps": 197,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1138,
+              0.1457,
+              0.0
+            ],
+            "red_cube": [
+              0.2241,
+              -0.1119,
+              -6.0585
+            ],
+            "yellow_cube": [
+              0.2581,
+              -0.0391,
+              4.9875
+            ],
+            "orange_cube": [
+              0.1727,
+              -0.1558,
+              -2.0604
+            ],
+            "yellow_prism": [
+              0.0805,
+              -0.1353,
+              18.5489
+            ]
+          }
+        },
+        {
+          "seed": 202017,
+          "success": true,
+          "steps": 192,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.123,
+              0.1584,
+              0.0
+            ],
+            "red_cube": [
+              0.1595,
+              -0.0883,
+              -12.9663
+            ],
+            "yellow_cube": [
+              0.258,
+              0.1308,
+              -8.318
+            ],
+            "orange_cube": [
+              0.0944,
+              -0.0914,
+              -5.0259
+            ],
+            "yellow_prism": [
+              0.2237,
+              -0.1448,
+              -4.8031
+            ]
+          }
+        },
+        {
+          "seed": 202018,
+          "success": true,
+          "steps": 161,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0946,
+              0.1537,
+              0.0
+            ],
+            "red_cube": [
+              0.2028,
+              0.0967,
+              -16.3225
+            ],
+            "yellow_cube": [
+              0.1856,
+              -0.1297,
+              -14.5361
+            ],
+            "orange_cube": [
+              0.1146,
+              -0.1276,
+              18.3014
+            ],
+            "yellow_prism": [
+              0.2544,
+              -0.0921,
+              -0.4938
+            ]
+          }
+        },
+        {
+          "seed": 202019,
+          "success": true,
+          "steps": 152,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1422,
+              0.1878,
+              0.0
+            ],
+            "red_cube": [
+              0.2439,
+              0.0475,
+              5.7073
+            ],
+            "yellow_cube": [
+              0.1106,
+              -0.1738,
+              -16.0241
+            ],
+            "orange_cube": [
+              0.2256,
+              -0.1081,
+              -7.7369
+            ],
+            "yellow_prism": [
+              0.1526,
+              -0.2268,
+              -3.6029
+            ]
+          }
+        },
+        {
+          "seed": 202020,
+          "success": true,
+          "steps": 181,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1445,
+              0.1864,
+              0.0
+            ],
+            "red_cube": [
+              0.231,
+              -0.1035,
+              -2.7206
+            ],
+            "yellow_cube": [
+              0.2366,
+              0.0719,
+              5.7325
+            ],
+            "orange_cube": [
+              0.1545,
+              -0.2018,
+              8.4406
+            ],
+            "yellow_prism": [
+              0.0738,
+              -0.1107,
+              -5.8512
+            ]
+          }
+        },
+        {
+          "seed": 202021,
+          "success": true,
+          "steps": 165,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1279,
+              0.1962,
+              0.0
+            ],
+            "red_cube": [
+              0.2477,
+              -0.0691,
+              9.1876
+            ],
+            "yellow_cube": [
+              0.1498,
+              -0.2074,
+              6.4984
+            ],
+            "orange_cube": [
+              0.2394,
+              0.1388,
+              -3.0384
+            ],
+            "yellow_prism": [
+              0.105,
+              -0.0975,
+              0.0791
+            ]
+          }
+        },
+        {
+          "seed": 202022,
+          "success": true,
+          "steps": 188,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1487,
+              0.157,
+              0.0
+            ],
+            "red_cube": [
+              0.2252,
+              -0.0928,
+              -8.1957
+            ],
+            "yellow_cube": [
+              0.2122,
+              -0.1384,
+              18.964
+            ],
+            "orange_cube": [
+              0.2766,
+              0.0846,
+              2.4643
+            ],
+            "yellow_prism": [
+              0.1015,
+              -0.0872,
+              -3.9712
+            ]
+          }
+        },
+        {
+          "seed": 202023,
+          "success": true,
+          "steps": 194,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1557,
+              0.1784,
+              0.0
+            ],
+            "red_cube": [
+              0.1964,
+              -0.1009,
+              5.5372
+            ],
+            "yellow_cube": [
+              0.2774,
+              0.0069,
+              5.0682
+            ],
+            "orange_cube": [
+              0.1425,
+              -0.2187,
+              -16.5544
+            ],
+            "yellow_prism": [
+              0.1549,
+              -0.1597,
+              10.3005
+            ]
+          }
+        },
+        {
+          "seed": 202024,
+          "success": true,
+          "steps": 190,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1211,
+              0.1608,
+              0.0
+            ],
+            "red_cube": [
+              0.1706,
+              -0.0812,
+              14.939
+            ],
+            "yellow_cube": [
+              0.2185,
+              -0.1772,
+              4.1725
+            ],
+            "orange_cube": [
+              0.2346,
+              0.1131,
+              -9.4348
+            ],
+            "yellow_prism": [
+              0.2655,
+              -0.0309,
+              9.1055
+            ]
+          }
+        },
+        {
+          "seed": 202025,
+          "success": true,
+          "steps": 171,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1172,
+              0.1772,
+              0.0
+            ],
+            "red_cube": [
+              0.2455,
+              0.0018,
+              -4.7793
+            ],
+            "yellow_cube": [
+              0.109,
+              -0.172,
+              -4.6733
+            ],
+            "orange_cube": [
+              0.2369,
+              0.0771,
+              1.1685
+            ],
+            "yellow_prism": [
+              0.2131,
+              -0.159,
+              -19.4982
+            ]
+          }
+        },
+        {
+          "seed": 202026,
+          "success": true,
+          "steps": 194,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1335,
+              0.1567,
+              0.0
+            ],
+            "red_cube": [
+              0.218,
+              -0.1011,
+              -1.4357
+            ],
+            "yellow_cube": [
+              0.2359,
+              0.046,
+              -17.5175
+            ],
+            "orange_cube": [
+              0.2771,
+              -0.061,
+              -17.362
+            ],
+            "yellow_prism": [
+              0.1584,
+              -0.1744,
+              -12.7228
+            ]
+          }
+        },
+        {
+          "seed": 202027,
+          "success": true,
+          "steps": 222,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1132,
+              0.193,
+              0.0
+            ],
+            "red_cube": [
+              0.1792,
+              -0.1781,
+              -14.8113
+            ],
+            "yellow_cube": [
+              0.2506,
+              -0.1106,
+              13.3075
+            ],
+            "orange_cube": [
+              0.2486,
+              0.0079,
+              -14.5793
+            ],
+            "yellow_prism": [
+              0.122,
+              -0.1867,
+              -17.0819
+            ]
+          }
+        },
+        {
+          "seed": 202028,
+          "success": true,
+          "steps": 197,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1244,
+              0.1503,
+              0.0
+            ],
+            "red_cube": [
+              0.229,
+              -0.1127,
+              -12.3378
+            ],
+            "yellow_cube": [
+              0.2868,
+              0.0395,
+              -11.4471
+            ],
+            "orange_cube": [
+              0.1464,
+              -0.2128,
+              -9.9982
+            ],
+            "yellow_prism": [
+              0.1049,
+              -0.1303,
+              15.8174
+            ]
+          }
+        },
+        {
+          "seed": 202029,
+          "success": true,
+          "steps": 210,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1514,
+              0.1753,
+              0.0
+            ],
+            "red_cube": [
+              0.1197,
+              -0.112,
+              -4.7894
+            ],
+            "yellow_cube": [
+              0.1323,
+              -0.1858,
+              -2.7481
+            ],
+            "orange_cube": [
+              0.2669,
+              -0.0435,
+              6.2825
+            ],
+            "yellow_prism": [
+              0.2477,
+              0.0271,
+              -11.0166
+            ]
+          }
+        },
+        {
+          "seed": 202030,
+          "success": true,
+          "steps": 203,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1223,
+              0.1948,
+              0.0
+            ],
+            "red_cube": [
+              0.1248,
+              -0.0838,
+              14.9122
+            ],
+            "yellow_cube": [
+              0.114,
+              -0.1356,
+              -8.828
+            ],
+            "orange_cube": [
+              0.165,
+              -0.144,
+              -3.4895
+            ],
+            "yellow_prism": [
+              0.2446,
+              -0.0355,
+              19.6047
+            ]
+          }
+        },
+        {
+          "seed": 202031,
+          "success": true,
+          "steps": 151,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1495,
+              0.1868,
+              0.0
+            ],
+            "red_cube": [
+              0.2358,
+              0.013,
+              -11.7676
+            ],
+            "yellow_cube": [
+              0.0992,
+              -0.1281,
+              2.1486
+            ],
+            "orange_cube": [
+              0.1206,
+              -0.1825,
+              -18.6816
+            ],
+            "yellow_prism": [
+              0.1909,
+              -0.1577,
+              -19.746
+            ]
+          }
+        },
+        {
+          "seed": 202032,
+          "success": true,
+          "steps": 170,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0961,
+              0.1766,
+              0.0
+            ],
+            "red_cube": [
+              0.252,
+              0.0043,
+              -9.2972
+            ],
+            "yellow_cube": [
+              0.2178,
+              -0.136,
+              -9.7173
+            ],
+            "orange_cube": [
+              0.2141,
+              0.1444,
+              -4.0652
+            ],
+            "yellow_prism": [
+              0.0991,
+              -0.1035,
+              16.5008
+            ]
+          }
+        },
+        {
+          "seed": 202033,
+          "success": true,
+          "steps": 208,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1206,
+              0.1539,
+              0.0
+            ],
+            "red_cube": [
+              0.105,
+              -0.0951,
+              -15.9684
+            ],
+            "yellow_cube": [
+              0.2698,
+              -0.0894,
+              -3.728
+            ],
+            "orange_cube": [
+              0.1235,
+              -0.1813,
+              11.7828
+            ],
+            "yellow_prism": [
+              0.2416,
+              0.043,
+              -17.6981
+            ]
+          }
+        },
+        {
+          "seed": 202034,
+          "success": true,
+          "steps": 187,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1533,
+              0.1659,
+              0.0
+            ],
+            "red_cube": [
+              0.2073,
+              -0.088,
+              8.218
+            ],
+            "yellow_cube": [
+              0.1351,
+              -0.1779,
+              9.5129
+            ],
+            "orange_cube": [
+              0.2035,
+              -0.1515,
+              -19.1584
+            ],
+            "yellow_prism": [
+              0.2715,
+              -0.0391,
+              -0.9941
+            ]
+          }
+        },
+        {
+          "seed": 202035,
+          "success": true,
+          "steps": 208,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.0858,
+              0.1698,
+              0.0
+            ],
+            "red_cube": [
+              0.1155,
+              -0.0899,
+              -9.9198
+            ],
+            "yellow_cube": [
+              0.1744,
+              -0.0804,
+              -11.283
+            ],
+            "orange_cube": [
+              0.0907,
+              -0.1503,
+              -10.643
+            ],
+            "yellow_prism": [
+              0.175,
+              -0.1586,
+              -1.0299
+            ]
+          }
+        },
+        {
+          "seed": 202036,
+          "success": true,
+          "steps": 208,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1272,
+              0.1894,
+              0.0
+            ],
+            "red_cube": [
+              0.1221,
+              -0.1075,
+              14.9035
+            ],
+            "yellow_cube": [
+              0.1531,
+              -0.1753,
+              -15.7537
+            ],
+            "orange_cube": [
+              0.2272,
+              -0.159,
+              13.267
+            ],
+            "yellow_prism": [
+              0.238,
+              0.1015,
+              -17.5253
+            ]
+          }
+        },
+        {
+          "seed": 202037,
+          "success": true,
+          "steps": 153,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.147,
+              0.1864,
+              0.0
+            ],
+            "red_cube": [
+              0.2492,
+              0.0084,
+              -6.9599
+            ],
+            "yellow_cube": [
+              0.2133,
+              0.0833,
+              -3.7736
+            ],
+            "orange_cube": [
+              0.1319,
+              -0.1161,
+              6.8514
+            ],
+            "yellow_prism": [
+              0.2556,
+              -0.0525,
+              15.9307
+            ]
+          }
+        },
+        {
+          "seed": 202038,
+          "success": true,
+          "steps": 151,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1549,
+              0.1677,
+              0.0
+            ],
+            "red_cube": [
+              0.2473,
+              0.0115,
+              1.7809
+            ],
+            "yellow_cube": [
+              0.1892,
+              -0.1595,
+              13.9079
+            ],
+            "orange_cube": [
+              0.211,
+              -0.0903,
+              5.184
+            ],
+            "yellow_prism": [
+              0.1365,
+              -0.1243,
+              -10.4253
+            ]
+          }
+        },
+        {
+          "seed": 202039,
+          "success": true,
+          "steps": 161,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1016,
+              0.1625,
+              0.0
+            ],
+            "red_cube": [
+              0.2136,
+              0.0819,
+              -8.5198
+            ],
+            "yellow_cube": [
+              0.2368,
+              0.1425,
+              13.137
+            ],
+            "orange_cube": [
+              0.1198,
+              -0.1162,
+              0.1306
+            ],
+            "yellow_prism": [
+              0.2631,
+              -0.012,
+              -3.3868
+            ]
+          }
+        },
+        {
+          "seed": 202040,
+          "success": true,
+          "steps": 192,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1281,
+              0.1978,
+              0.0
+            ],
+            "red_cube": [
+              0.2156,
+              -0.0933,
+              -19.1288
+            ],
+            "yellow_cube": [
+              0.1369,
+              -0.0824,
+              16.589
+            ],
+            "orange_cube": [
+              0.261,
+              0.0251,
+              7.2667
+            ],
+            "yellow_prism": [
+              0.1103,
+              -0.1779,
+              -11.215
+            ]
+          }
+        },
+        {
+          "seed": 202041,
+          "success": true,
+          "steps": 170,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.102,
+              0.1723,
+              0.0
+            ],
+            "red_cube": [
+              0.2481,
+              0.0161,
+              -8.8601
+            ],
+            "yellow_cube": [
+              0.2458,
+              0.111,
+              13.3566
+            ],
+            "orange_cube": [
+              0.1179,
+              -0.1345,
+              -11.3244
+            ],
+            "yellow_prism": [
+              0.1941,
+              -0.205,
+              1.6346
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "total_episodes": 40,
+  "total_frames": 7875,
+  "wall_time_s": 1301.5,
+  "resources": {
+    "peak_rss_gb": 1.832,
+    "peak_vram_alloc_gb": 0.0
+  },
+  "dataset_root": "datasets/sim_so101_v2/task_01"
+}

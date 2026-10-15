@@ -1,0 +1,177 @@
+{
+  "task": "task_08",
+  "profile": "position_wide",
+  "splits": {
+    "train": {
+      "episodes": 5,
+      "success": 5,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 950000,
+          "success": true,
+          "steps": 244,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 26,
+          "layout": {
+            "board": [
+              0.1323,
+              0.1783,
+              -37.62
+            ],
+            "table_red": [
+              0.2588,
+              0.0089,
+              -30.9786
+            ],
+            "table_blue": [
+              0.2331,
+              -0.0688,
+              8.5294
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "table_red": "train",
+            "table_blue": "train"
+          },
+          "sim_ms_per_step": 12.29014259869935,
+          "oracle_error": null
+        },
+        {
+          "seed": 950001,
+          "success": true,
+          "steps": 234,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 26,
+          "layout": {
+            "board": [
+              0.153,
+              0.1781,
+              34.8373
+            ],
+            "table_red": [
+              0.1305,
+              -0.0877,
+              -28.4091
+            ],
+            "table_blue": [
+              0.1196,
+              -0.2032,
+              18.3724
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "table_red": "train",
+            "table_blue": "train"
+          },
+          "sim_ms_per_step": 14.2619691343389,
+          "oracle_error": null
+        },
+        {
+          "seed": 950002,
+          "success": true,
+          "steps": 220,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "board": [
+              0.1205,
+              0.201,
+              42.7936
+            ],
+            "table_red": [
+              0.2154,
+              -0.0886,
+              35.4597
+            ],
+            "table_blue": [
+              0.2559,
+              -0.1258,
+              -36.551
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "table_red": "train",
+            "table_blue": "train"
+          },
+          "sim_ms_per_step": 15.878757563504307,
+          "oracle_error": null
+        },
+        {
+          "seed": 950003,
+          "success": true,
+          "steps": 224,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 26,
+          "layout": {
+            "board": [
+              0.1452,
+              0.1478,
+              25.823
+            ],
+            "table_red": [
+              0.1512,
+              -0.1708,
+              -0.7509
+            ],
+            "table_blue": [
+              0.1132,
+              -0.0829,
+              -2.1391
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "table_red": "train",
+            "table_blue": "train"
+          },
+          "sim_ms_per_step": 10.694219597748347,
+          "oracle_error": null
+        },
+        {
+          "seed": 950004,
+          "success": true,
+          "steps": 236,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 26,
+          "layout": {
+            "board": [
+              0.118,
+              0.1579,
+              -4.1278
+            ],
+            "table_red": [
+              0.1867,
+              -0.0924,
+              4.1963
+            ],
+            "table_blue": [
+              0.1196,
+              -0.1158,
+              -6.8575
+            ]
+          },
+          "layout_split": {
+            "board": "train",
+            "table_red": "train",
+            "table_blue": "train"
+          },
+          "sim_ms_per_step": 14.713873297481214,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 1.03,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

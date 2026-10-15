@@ -1,0 +1,24 @@
+{
+  "checkpoint": "/home/ncd/Desktop/VRB/task_week_2/so101_evo1/checkpoints/evo1_so101_s2lite_selective_llm/best",
+  "runs": 20,
+  "median_ms": {
+    "vision": 264.0,
+    "language": 50.8,
+    "vlm": 318.7,
+    "head": 78.2,
+    "chunk": 399.2
+  },
+  "vlm_num_layers": 14,
+  "num_inference_timesteps": 8,
+  "max_views": 3,
+  "fused_tokens": 549,
+  "quantization": {
+    "scheme": "bf16",
+    "compile": true,
+    "quantized_linear_layers": 0,
+    "library": "torchao",
+    "config": null
+  },
+  "steps_override": 8,
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+}

@@ -1,0 +1,5321 @@
+{
+  "threshold_cm": 2.0,
+  "runs": [
+    "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+    "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10"
+  ],
+  "summary": {
+    "all": {
+      "episodes": 110,
+      "success": 4,
+      "diverged": 98,
+      "divergence_phase": {
+        "approach": 48,
+        "carry": 40,
+        "close": 2,
+        "descend": 8
+      },
+      "divergence_dev_cm_median": 2.25,
+      "max_progress_phase": {
+        "carry": 85,
+        "approach": 15,
+        "descend": 10
+      },
+      "mean_dev_cm_median": 4.29,
+      "divergence_joint_dev_abs_median_deg": {
+        "shoulder_pan": 3.0,
+        "shoulder_lift": 6.7,
+        "elbow_flex": 8.0,
+        "wrist_flex": 4.5,
+        "wrist_roll": 7.0,
+        "gripper": 8.1
+      },
+      "policy_close": {
+        "n": 71,
+        "xy_to_target_cm_median": 3.12,
+        "z_to_target_cm_median": 0.85,
+        "aligned_phase": {
+          "descend": 12,
+          "carry": 51,
+          "close": 8
+        }
+      },
+      "tips": {
+        "n": 27,
+        "where": {
+          "over / at the wall": 8,
+          "inside opening": 18,
+          "outside the pot": 1
+        },
+        "aligned_phase": {
+          "carry": 7,
+          "approach": 10,
+          "descend": 10
+        },
+        "r_from_axis_cm_median": 2.88,
+        "z_cm_median": 4.49,
+        "dev_from_oracle_cm_median": 4.85,
+        "gripper_closed_on_something": 3,
+        "joint_dev_abs_median_deg": {
+          "shoulder_pan": 3.8,
+          "shoulder_lift": 6.1,
+          "elbow_flex": 9.9,
+          "wrist_flex": 14.6,
+          "wrist_roll": 15.7,
+          "gripper": 9.5
+        },
+        "joint_dev_signed_median_deg": {
+          "shoulder_pan": -0.3,
+          "shoulder_lift": 4.7,
+          "elbow_flex": 6.7,
+          "wrist_flex": -14.6,
+          "wrist_roll": -1.1,
+          "gripper": 8.4
+        }
+      }
+    },
+    "per_task": {
+      "task_01": {
+        "episodes": 10,
+        "success": 1,
+        "diverged": 10,
+        "divergence_phase": {
+          "approach": 7,
+          "carry": 3
+        },
+        "divergence_dev_cm_median": 2.23,
+        "max_progress_phase": {
+          "carry": 10
+        },
+        "mean_dev_cm_median": 3.55,
+        "divergence_joint_dev_abs_median_deg": {
+          "shoulder_pan": 2.1,
+          "shoulder_lift": 7.0,
+          "elbow_flex": 6.9,
+          "wrist_flex": 3.7,
+          "wrist_roll": 7.4,
+          "gripper": 1.4
+        },
+        "policy_close": {
+          "n": 10,
+          "xy_to_target_cm_median": 4.06,
+          "z_to_target_cm_median": 1.23,
+          "aligned_phase": {
+            "descend": 3,
+            "carry": 7
+          }
+        },
+        "tips": {
+          "n": 2,
+          "where": {
+            "over / at the wall": 1,
+            "inside opening": 1
+          },
+          "aligned_phase": {
+            "carry": 2
+          },
+          "r_from_axis_cm_median": 4.25,
+          "z_cm_median": 2.59,
+          "dev_from_oracle_cm_median": 7.41,
+          "gripper_closed_on_something": 0,
+          "joint_dev_abs_median_deg": {
+            "shoulder_pan": 11.9,
+            "shoulder_lift": 21.0,
+            "elbow_flex": 8.1,
+            "wrist_flex": 11.1,
+            "wrist_roll": 44.2,
+            "gripper": 6.9
+          },
+          "joint_dev_signed_median_deg": {
+            "shoulder_pan": 5.9,
+            "shoulder_lift": 21.0,
+            "elbow_flex": -1.9,
+            "wrist_flex": -11.1,
+            "wrist_roll": 5.0,
+            "gripper": 6.9
+          }
+        }
+      },
+      "task_02": {
+        "episodes": 10,
+        "success": 1,
+        "diverged": 10,
+        "divergence_phase": {
+          "carry": 6,
+          "approach": 2,
+          "descend": 2
+        },
+        "divergence_dev_cm_median": 2.25,
+        "max_progress_phase": {
+          "carry": 10
+        },
+        "mean_dev_cm_median": 6.12,
+        "divergence_joint_dev_abs_median_deg": {
+          "shoulder_pan": 3.9,
+          "shoulder_lift": 3.9,
+          "elbow_flex": 5.9,
+          "wrist_flex": 5.0,
+          "wrist_roll": 11.7,
+          "gripper": 27.0
+        },
+        "policy_close": {
+          "n": 10,
+          "xy_to_target_cm_median": 2.77,
+          "z_to_target_cm_median": 0.81,
+          "aligned_phase": {
+            "carry": 9,
+            "close": 1
+          }
+        }
+      },
+      "task_03": {
+        "episodes": 10,
+        "success": 1,
+        "diverged": 10,
+        "divergence_phase": {
+          "approach": 6,
+          "carry": 4
+        },
+        "divergence_dev_cm_median": 2.48,
+        "max_progress_phase": {
+          "carry": 10
+        },
+        "mean_dev_cm_median": 3.75,
+        "divergence_joint_dev_abs_median_deg": {
+          "shoulder_pan": 4.0,
+          "shoulder_lift": 7.3,
+          "elbow_flex": 8.8,
+          "wrist_flex": 6.2,
+          "wrist_roll": 7.9,
+          "gripper": 12.2
+        },
+        "policy_close": {
+          "n": 10,
+          "xy_to_target_cm_median": 3.57,
+          "z_to_target_cm_median": 0.89,
+          "aligned_phase": {
+            "descend": 4,
+            "carry": 5,
+            "close": 1
+          }
+        },
+        "tips": {
+          "n": 4,
+          "where": {
+            "inside opening": 2,
+            "over / at the wall": 2
+          },
+          "aligned_phase": {
+            "carry": 4
+          },
+          "r_from_axis_cm_median": 4.14,
+          "z_cm_median": 5.52,
+          "dev_from_oracle_cm_median": 5.46,
+          "gripper_closed_on_something": 0,
+          "joint_dev_abs_median_deg": {
+            "shoulder_pan": 7.7,
+            "shoulder_lift": 11.7,
+            "elbow_flex": 6.7,
+            "wrist_flex": 9.0,
+            "wrist_roll": 34.2,
+            "gripper": 10.7
+          },
+          "joint_dev_signed_median_deg": {
+            "shoulder_pan": -1.5,
+            "shoulder_lift": 11.7,
+            "elbow_flex": -0.5,
+            "wrist_flex": -9.0,
+            "wrist_roll": 34.2,
+            "gripper": 10.7
+          }
+        }
+      },
+      "task_04": {
+        "episodes": 10,
+        "success": 0,
+        "diverged": 10,
+        "divergence_phase": {
+          "approach": 4,
+          "close": 1,
+          "carry": 5
+        },
+        "divergence_dev_cm_median": 2.15,
+        "max_progress_phase": {
+          "carry": 10
+        },
+        "mean_dev_cm_median": 10.73,
+        "divergence_joint_dev_abs_median_deg": {
+          "shoulder_pan": 2.1,
+          "shoulder_lift": 3.1,
+          "elbow_flex": 4.8,
+          "wrist_flex": 5.5,
+          "wrist_roll": 2.6,
+          "gripper": 6.4
+        },
+        "policy_close": {
+          "n": 10,
+          "xy_to_target_cm_median": 2.85,
+          "z_to_target_cm_median": 0.77,
+          "aligned_phase": {
+            "carry": 6,
+            "close": 4
+          }
+        },
+        "tips": {
+          "n": 1,
+          "where": {
+            "inside opening": 1
+          },
+          "aligned_phase": {
+            "carry": 1
+          },
+          "r_from_axis_cm_median": 3.77,
+          "z_cm_median": 11.02,
+          "dev_from_oracle_cm_median": 2.15,
+          "gripper_closed_on_something": 1,
+          "joint_dev_abs_median_deg": {
+            "shoulder_pan": 0.7,
+            "shoulder_lift": 0.9,
+            "elbow_flex": 4.8,
+            "wrist_flex": 2.4,
+            "wrist_roll": 2.3,
+            "gripper": 34.7
+          },
+          "joint_dev_signed_median_deg": {
+            "shoulder_pan": 0.7,
+            "shoulder_lift": 0.9,
+            "elbow_flex": 4.8,
+            "wrist_flex": 2.4,
+            "wrist_roll": 2.3,
+            "gripper": -34.7
+          }
+        }
+      },
+      "task_05": {
+        "episodes": 10,
+        "success": 0,
+        "diverged": 3,
+        "divergence_phase": {
+          "descend": 1,
+          "approach": 2
+        },
+        "divergence_dev_cm_median": 2.26,
+        "max_progress_phase": {
+          "approach": 6,
+          "descend": 4
+        },
+        "mean_dev_cm_median": 1.49,
+        "divergence_joint_dev_abs_median_deg": {
+          "shoulder_pan": 2.4,
+          "shoulder_lift": 6.1,
+          "elbow_flex": 7.6,
+          "wrist_flex": 3.5,
+          "wrist_roll": 8.7,
+          "gripper": 8.4
+        },
+        "tips": {
+          "n": 10,
+          "where": {
+            "inside opening": 10
+          },
+          "aligned_phase": {
+            "approach": 6,
+            "descend": 4
+          },
+          "r_from_axis_cm_median": 1.97,
+          "z_cm_median": 4.25,
+          "dev_from_oracle_cm_median": 4.14,
+          "gripper_closed_on_something": 0,
+          "joint_dev_abs_median_deg": {
+            "shoulder_pan": 1.7,
+            "shoulder_lift": 4.6,
+            "elbow_flex": 10.8,
+            "wrist_flex": 17.9,
+            "wrist_roll": 9.2,
+            "gripper": 8.5
+          },
+          "joint_dev_signed_median_deg": {
+            "shoulder_pan": 1.4,
+            "shoulder_lift": 3.5,
+            "elbow_flex": 10.0,
+            "wrist_flex": -17.9,
+            "wrist_roll": -5.8,
+            "gripper": 8.3
+          }
+        }
+      },
+      "task_06": {
+        "episodes": 10,
+        "success": 0,
+        "diverged": 7,
+        "divergence_phase": {
+          "descend": 5,
+          "approach": 2
+        },
+        "divergence_dev_cm_median": 2.33,
+        "max_progress_phase": {
+          "approach": 4,
+          "descend": 6
+        },
+        "mean_dev_cm_median": 2.24,
+        "divergence_joint_dev_abs_median_deg": {
+          "shoulder_pan": 1.6,
+          "shoulder_lift": 7.2,
+          "elbow_flex": 6.9,
+          "wrist_flex": 3.0,
+          "wrist_roll": 6.9,
+          "gripper": 2.0
+        },
+        "policy_close": {
+          "n": 1,
+          "xy_to_target_cm_median": 1.73,
+          "z_to_target_cm_median": 0.75,
+          "aligned_phase": {
+            "descend": 1
+          }
+        },
+        "tips": {
+          "n": 10,
+          "where": {
+            "inside opening": 4,
+            "over / at the wall": 5,
+            "outside the pot": 1
+          },
+          "aligned_phase": {
+            "approach": 4,
+            "descend": 6
+          },
+          "r_from_axis_cm_median": 3.38,
+          "z_cm_median": 4.63,
+          "dev_from_oracle_cm_median": 5.04,
+          "gripper_closed_on_something": 2,
+          "joint_dev_abs_median_deg": {
+            "shoulder_pan": 6.9,
+            "shoulder_lift": 7.5,
+            "elbow_flex": 10.4,
+            "wrist_flex": 16.2,
+            "wrist_roll": 16.3,
+            "gripper": 13.4
+          },
+          "joint_dev_signed_median_deg": {
+            "shoulder_pan": -6.9,
+            "shoulder_lift": 3.3,
+            "elbow_flex": 5.9,
+            "wrist_flex": -16.2,
+            "wrist_roll": -10.6,
+            "gripper": 10.6
+          }
+        }
+      },
+      "task_07": {
+        "episodes": 10,
+        "success": 0,
+        "diverged": 10,
+        "divergence_phase": {
+          "carry": 5,
+          "approach": 5
+        },
+        "divergence_dev_cm_median": 2.21,
+        "max_progress_phase": {
+          "carry": 10
+        },
+        "mean_dev_cm_median": 6.05,
+        "divergence_joint_dev_abs_median_deg": {
+          "shoulder_pan": 3.0,
+          "shoulder_lift": 11.0,
+          "elbow_flex": 11.2,
+          "wrist_flex": 3.4,
+          "wrist_roll": 11.7,
+          "gripper": 18.0
+        },
+        "policy_close": {
+          "n": 10,
+          "xy_to_target_cm_median": 3.69,
+          "z_to_target_cm_median": 0.81,
+          "aligned_phase": {
+            "carry": 8,
+            "descend": 2
+          }
+        }
+      },
+      "task_08": {
+        "episodes": 10,
+        "success": 0,
+        "diverged": 10,
+        "divergence_phase": {
+          "approach": 8,
+          "carry": 2
+        },
+        "divergence_dev_cm_median": 2.55,
+        "max_progress_phase": {
+          "carry": 8,
+          "approach": 2
+        },
+        "mean_dev_cm_median": 9.02,
+        "divergence_joint_dev_abs_median_deg": {
+          "shoulder_pan": 1.4,
+          "shoulder_lift": 6.2,
+          "elbow_flex": 7.2,
+          "wrist_flex": 4.0,
+          "wrist_roll": 5.4,
+          "gripper": 1.3
+        }
+      },
+      "task_09": {
+        "episodes": 10,
+        "success": 0,
+        "diverged": 10,
+        "divergence_phase": {
+          "carry": 3,
+          "approach": 6,
+          "close": 1
+        },
+        "divergence_dev_cm_median": 2.25,
+        "max_progress_phase": {
+          "carry": 10
+        },
+        "mean_dev_cm_median": 4.18,
+        "divergence_joint_dev_abs_median_deg": {
+          "shoulder_pan": 3.5,
+          "shoulder_lift": 7.1,
+          "elbow_flex": 9.9,
+          "wrist_flex": 2.5,
+          "wrist_roll": 4.6,
+          "gripper": 5.2
+        },
+        "policy_close": {
+          "n": 10,
+          "xy_to_target_cm_median": 2.7,
+          "z_to_target_cm_median": 0.89,
+          "aligned_phase": {
+            "carry": 8,
+            "descend": 2
+          }
+        }
+      },
+      "task_10": {
+        "episodes": 10,
+        "success": 0,
+        "diverged": 10,
+        "divergence_phase": {
+          "carry": 6,
+          "approach": 4
+        },
+        "divergence_dev_cm_median": 2.19,
+        "max_progress_phase": {
+          "carry": 10
+        },
+        "mean_dev_cm_median": 6.69,
+        "divergence_joint_dev_abs_median_deg": {
+          "shoulder_pan": 2.6,
+          "shoulder_lift": 6.0,
+          "elbow_flex": 6.4,
+          "wrist_flex": 2.8,
+          "wrist_roll": 4.9,
+          "gripper": 19.5
+        },
+        "policy_close": {
+          "n": 10,
+          "xy_to_target_cm_median": 2.04,
+          "z_to_target_cm_median": 1.03,
+          "aligned_phase": {
+            "carry": 8,
+            "close": 2
+          }
+        }
+      },
+      "task_11": {
+        "episodes": 10,
+        "success": 1,
+        "diverged": 8,
+        "divergence_phase": {
+          "carry": 6,
+          "approach": 2
+        },
+        "divergence_dev_cm_median": 2.27,
+        "max_progress_phase": {
+          "carry": 7,
+          "approach": 3
+        },
+        "mean_dev_cm_median": 3.41,
+        "divergence_joint_dev_abs_median_deg": {
+          "shoulder_pan": 7.2,
+          "shoulder_lift": 7.8,
+          "elbow_flex": 9.5,
+          "wrist_flex": 6.2,
+          "wrist_roll": 12.3,
+          "gripper": 15.2
+        }
+      }
+    },
+    "oracle_close_offset_cm_median": {
+      "xy": 0.06,
+      "z": 0.78
+    }
+  },
+  "episodes": [
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_01",
+      "seed": 202000,
+      "oracle_episode": 0,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 214,
+      "oracle_events": {
+        "t_descend": 63,
+        "t_close": 78,
+        "grasp_z": 0.020069559096977906
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 2.96,
+      "divergence": {
+        "policy_step": 52,
+        "oracle_step": 50,
+        "phase": "approach",
+        "dev_cm": 2.86,
+        "joint_dev_deg": {
+          "shoulder_pan": 4.099999904632568,
+          "shoulder_lift": -7.199999809265137,
+          "elbow_flex": 10.399999618530273,
+          "wrist_flex": 0.800000011920929,
+          "wrist_roll": 7.199999809265137,
+          "gripper": -1.5
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.07,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 71,
+        "xy_to_target_cm": 4.1,
+        "z_to_target_cm": 0.81,
+        "aligned_phase": "descend"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_01",
+      "seed": 202001,
+      "oracle_episode": 1,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 220,
+      "oracle_events": {
+        "t_descend": 64,
+        "t_close": 79,
+        "grasp_z": 0.020064116947583397
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.913,
+      "mean_dev_cm": 2.67,
+      "divergence": {
+        "policy_step": 59,
+        "oracle_step": 54,
+        "phase": "approach",
+        "dev_cm": 2.19,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.799999952316284,
+          "shoulder_lift": -9.300000190734863,
+          "elbow_flex": 15.100000381469727,
+          "wrist_flex": -6.5,
+          "wrist_roll": 5.599999904632568,
+          "gripper": -1.0
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.06,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 83,
+        "xy_to_target_cm": 3.16,
+        "z_to_target_cm": 0.72,
+        "aligned_phase": "descend"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_01",
+      "seed": 202002,
+      "oracle_episode": 2,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 194,
+      "oracle_events": {
+        "t_descend": 51,
+        "t_close": 66,
+        "grasp_z": 0.020206344194235937
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.902,
+      "mean_dev_cm": 3.38,
+      "divergence": {
+        "policy_step": 51,
+        "oracle_step": 90,
+        "phase": "carry",
+        "dev_cm": 2.03,
+        "joint_dev_deg": {
+          "shoulder_pan": -0.6000000238418579,
+          "shoulder_lift": 7.5,
+          "elbow_flex": -7.800000190734863,
+          "wrist_flex": -2.0999999046325684,
+          "wrist_roll": 25.0,
+          "gripper": 29.799999237060547
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.04,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 67,
+        "xy_to_target_cm": 4.94,
+        "z_to_target_cm": 1.91,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_01",
+      "seed": 202003,
+      "oracle_episode": 3,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 893,
+      "oracle_steps": 210,
+      "oracle_events": {
+        "t_descend": 53,
+        "t_close": 70,
+        "grasp_z": 0.02002066514204109
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.971,
+      "mean_dev_cm": 5.23,
+      "divergence": {
+        "policy_step": 29,
+        "oracle_step": 30,
+        "phase": "approach",
+        "dev_cm": 2.2,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.399999976158142,
+          "shoulder_lift": 7.5,
+          "elbow_flex": -6.900000095367432,
+          "wrist_flex": -3.5999999046325684,
+          "wrist_roll": 2.799999952316284,
+          "gripper": 0.8999999761581421
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.09,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 81,
+        "xy_to_target_cm": 7.93,
+        "z_to_target_cm": 2.04,
+        "aligned_phase": "carry"
+      },
+      "tip": {
+        "step": 892,
+        "grasp_point_r_from_pot_axis_cm": 5.62,
+        "pot_inner_radius_cm": 5.9,
+        "pot_outer_radius_cm": 6.5,
+        "grasp_point_z_cm": 2.81,
+        "pot_height_cm": 6.5,
+        "where": "over / at the wall",
+        "aligned_oracle_phase": "carry",
+        "dev_from_oracle_path_cm": 8.02,
+        "gripper_cmd": 35.4,
+        "gripper_state": 35.1,
+        "joint_dev_deg": {
+          "shoulder_pan": 17.799999237060547,
+          "shoulder_lift": 14.199999809265137,
+          "elbow_flex": 6.199999809265137,
+          "wrist_flex": -11.800000190734863,
+          "wrist_roll": 49.20000076293945,
+          "gripper": 7.300000190734863
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.03
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_01",
+      "seed": 202004,
+      "oracle_episode": 4,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 169,
+      "oracle_events": {
+        "t_descend": 45,
+        "t_close": 60,
+        "grasp_z": 0.02020190630669816
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.881,
+      "mean_dev_cm": 4.76,
+      "divergence": {
+        "policy_step": 34,
+        "oracle_step": 33,
+        "phase": "approach",
+        "dev_cm": 2.14,
+        "joint_dev_deg": {
+          "shoulder_pan": 7.900000095367432,
+          "shoulder_lift": -5.5,
+          "elbow_flex": 5.199999809265137,
+          "wrist_flex": -3.700000047683716,
+          "wrist_roll": 20.600000381469727,
+          "gripper": 0.5
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.02,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 78,
+        "xy_to_target_cm": 4.02,
+        "z_to_target_cm": 0.76,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_02",
+      "seed": 204000,
+      "oracle_episode": 40,
+      "success": true,
+      "failure": "success",
+      "policy_steps": 247,
+      "oracle_steps": 216,
+      "oracle_events": {
+        "t_descend": 56,
+        "t_close": 73,
+        "grasp_z": 0.020262662657295462
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 2.3,
+      "divergence": {
+        "policy_step": 58,
+        "oracle_step": 102,
+        "phase": "carry",
+        "dev_cm": 2.06,
+        "joint_dev_deg": {
+          "shoulder_pan": 4.599999904632568,
+          "shoulder_lift": -3.9000000953674316,
+          "elbow_flex": 9.0,
+          "wrist_flex": -5.199999809265137,
+          "wrist_roll": -1.899999976158142,
+          "gripper": 26.899999618530273
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.04,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 74,
+        "xy_to_target_cm": 2.27,
+        "z_to_target_cm": 0.78,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_02",
+      "seed": 204001,
+      "oracle_episode": 41,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 216,
+      "oracle_events": {
+        "t_descend": 59,
+        "t_close": 75,
+        "grasp_z": 0.01997262287374668
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.712,
+      "mean_dev_cm": 8.13,
+      "divergence": {
+        "policy_step": 34,
+        "oracle_step": 34,
+        "phase": "approach",
+        "dev_cm": 2.12,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.4000000953674316,
+          "shoulder_lift": 7.0,
+          "elbow_flex": -3.299999952316284,
+          "wrist_flex": -6.800000190734863,
+          "wrist_roll": 6.699999809265137,
+          "gripper": 1.0
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.04,
+        "z": 0.75
+      },
+      "policy_close": {
+        "step": 79,
+        "xy_to_target_cm": 5.29,
+        "z_to_target_cm": 0.79,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_02",
+      "seed": 204002,
+      "oracle_episode": 42,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 207,
+      "oracle_events": {
+        "t_descend": 55,
+        "t_close": 70,
+        "grasp_z": 0.020197693409029615
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 3.67,
+      "divergence": {
+        "policy_step": 53,
+        "oracle_step": 103,
+        "phase": "carry",
+        "dev_cm": 2.74,
+        "joint_dev_deg": {
+          "shoulder_pan": 9.199999809265137,
+          "shoulder_lift": -4.900000095367432,
+          "elbow_flex": 5.300000190734863,
+          "wrist_flex": -1.399999976158142,
+          "wrist_roll": 21.799999237060547,
+          "gripper": 28.100000381469727
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.04,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 77,
+        "xy_to_target_cm": 3.37,
+        "z_to_target_cm": 0.74,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_02",
+      "seed": 204003,
+      "oracle_episode": 43,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 228,
+      "oracle_events": {
+        "t_descend": 64,
+        "t_close": 79,
+        "grasp_z": 0.020090946259094123
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 9.58,
+      "divergence": {
+        "policy_step": 65,
+        "oracle_step": 53,
+        "phase": "approach",
+        "dev_cm": 2.11,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.7999999523162842,
+          "shoulder_lift": 3.4000000953674316,
+          "elbow_flex": 3.799999952316284,
+          "wrist_flex": -8.699999809265137,
+          "wrist_roll": 14.0,
+          "gripper": -2.0999999046325684
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.05,
+        "z": 0.77
+      },
+      "policy_close": {
+        "step": 80,
+        "xy_to_target_cm": 2.54,
+        "z_to_target_cm": 3.3,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_02",
+      "seed": 204004,
+      "oracle_episode": 44,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 216,
+      "oracle_events": {
+        "t_descend": 58,
+        "t_close": 75,
+        "grasp_z": 0.020251819541303426
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.977,
+      "mean_dev_cm": 6.29,
+      "divergence": {
+        "policy_step": 51,
+        "oracle_step": 104,
+        "phase": "carry",
+        "dev_cm": 2.24,
+        "joint_dev_deg": {
+          "shoulder_pan": -1.2999999523162842,
+          "shoulder_lift": -9.600000381469727,
+          "elbow_flex": 8.300000190734863,
+          "wrist_flex": 2.4000000953674316,
+          "wrist_roll": 2.799999952316284,
+          "gripper": 28.5
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.02,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 75,
+        "xy_to_target_cm": 3.01,
+        "z_to_target_cm": 0.75,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_03",
+      "seed": 206000,
+      "oracle_episode": 80,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 439,
+      "oracle_steps": 201,
+      "oracle_events": {
+        "t_descend": 55,
+        "t_close": 70,
+        "grasp_z": 0.020065956883394426
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.935,
+      "mean_dev_cm": 3.19,
+      "divergence": {
+        "policy_step": 56,
+        "oracle_step": 36,
+        "phase": "approach",
+        "dev_cm": 2.86,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.5,
+          "shoulder_lift": 7.0,
+          "elbow_flex": 1.899999976158142,
+          "wrist_flex": -0.0,
+          "wrist_roll": -28.799999237060547,
+          "gripper": 1.7999999523162842
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.06,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 75,
+        "xy_to_target_cm": 3.17,
+        "z_to_target_cm": 0.94,
+        "aligned_phase": "descend"
+      },
+      "tip": {
+        "step": 438,
+        "grasp_point_r_from_pot_axis_cm": 3.13,
+        "pot_inner_radius_cm": 5.9,
+        "pot_outer_radius_cm": 6.5,
+        "grasp_point_z_cm": 3.54,
+        "pot_height_cm": 6.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "carry",
+        "dev_from_oracle_path_cm": 5.51,
+        "gripper_cmd": 37.6,
+        "gripper_state": 37.8,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.9000000953674316,
+          "shoulder_lift": 19.399999618530273,
+          "elbow_flex": -3.799999952316284,
+          "wrist_flex": -16.100000381469727,
+          "wrist_roll": -0.699999988079071,
+          "gripper": 21.600000381469727
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.02
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_03",
+      "seed": 206002,
+      "oracle_episode": 81,
+      "success": true,
+      "failure": "success",
+      "policy_steps": 256,
+      "oracle_steps": 217,
+      "oracle_events": {
+        "t_descend": 57,
+        "t_close": 72,
+        "grasp_z": 0.02007158621725789
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.912,
+      "mean_dev_cm": 2.02,
+      "divergence": {
+        "policy_step": 71,
+        "oracle_step": 95,
+        "phase": "carry",
+        "dev_cm": 2.37,
+        "joint_dev_deg": {
+          "shoulder_pan": -1.2999999523162842,
+          "shoulder_lift": 0.699999988079071,
+          "elbow_flex": 1.899999976158142,
+          "wrist_flex": -13.199999809265137,
+          "wrist_roll": 9.899999618530273,
+          "gripper": 27.899999618530273
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.16,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 77,
+        "xy_to_target_cm": 3.77,
+        "z_to_target_cm": 2.85,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_03",
+      "seed": 206004,
+      "oracle_episode": 82,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 399,
+      "oracle_steps": 196,
+      "oracle_events": {
+        "t_descend": 53,
+        "t_close": 68,
+        "grasp_z": 0.02008111107182107
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.903,
+      "mean_dev_cm": 5.37,
+      "divergence": {
+        "policy_step": 17,
+        "oracle_step": 8,
+        "phase": "approach",
+        "dev_cm": 2.57,
+        "joint_dev_deg": {
+          "shoulder_pan": 6.800000190734863,
+          "shoulder_lift": 22.799999237060547,
+          "elbow_flex": -11.899999618530273,
+          "wrist_flex": 9.5,
+          "wrist_roll": -1.0,
+          "gripper": 14.100000381469727
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.07,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 74,
+        "xy_to_target_cm": 12.07,
+        "z_to_target_cm": 0.71,
+        "aligned_phase": "descend"
+      },
+      "tip": {
+        "step": 398,
+        "grasp_point_r_from_pot_axis_cm": 6.54,
+        "pot_inner_radius_cm": 5.9,
+        "pot_outer_radius_cm": 6.5,
+        "grasp_point_z_cm": 7.94,
+        "pot_height_cm": 6.0,
+        "where": "over / at the wall",
+        "aligned_oracle_phase": "carry",
+        "dev_from_oracle_path_cm": 6.54,
+        "gripper_cmd": 30.8,
+        "gripper_state": 32.0,
+        "joint_dev_deg": {
+          "shoulder_pan": 14.399999618530273,
+          "shoulder_lift": 10.5,
+          "elbow_flex": -11.100000381469727,
+          "wrist_flex": -7.099999904632568,
+          "wrist_roll": 55.900001525878906,
+          "gripper": 4.699999809265137
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.03
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_03",
+      "seed": 206005,
+      "oracle_episode": 83,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 644,
+      "oracle_steps": 148,
+      "oracle_events": {
+        "t_descend": 48,
+        "t_close": 63,
+        "grasp_z": 0.020117432975799564
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.884,
+      "mean_dev_cm": 2.04,
+      "divergence": {
+        "policy_step": 51,
+        "oracle_step": 86,
+        "phase": "carry",
+        "dev_cm": 3.02,
+        "joint_dev_deg": {
+          "shoulder_pan": -6.699999809265137,
+          "shoulder_lift": -5.400000095367432,
+          "elbow_flex": 8.800000190734863,
+          "wrist_flex": -0.5,
+          "wrist_roll": -10.300000190734863,
+          "gripper": 26.799999237060547
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.06,
+        "z": 0.77
+      },
+      "policy_close": {
+        "step": 61,
+        "xy_to_target_cm": 2.54,
+        "z_to_target_cm": 0.69,
+        "aligned_phase": "close"
+      },
+      "tip": {
+        "step": 643,
+        "grasp_point_r_from_pot_axis_cm": 2.46,
+        "pot_inner_radius_cm": 5.9,
+        "pot_outer_radius_cm": 6.5,
+        "grasp_point_z_cm": 2.93,
+        "pot_height_cm": 6.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "carry",
+        "dev_from_oracle_path_cm": 5.4,
+        "gripper_cmd": 32.9,
+        "gripper_state": 33.0,
+        "joint_dev_deg": {
+          "shoulder_pan": -6.0,
+          "shoulder_lift": 12.800000190734863,
+          "elbow_flex": 2.799999952316284,
+          "wrist_flex": -11.0,
+          "wrist_roll": 12.5,
+          "gripper": 16.600000381469727
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.03
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_03",
+      "seed": 206006,
+      "oracle_episode": 84,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 205,
+      "oracle_events": {
+        "t_descend": 58,
+        "t_close": 73,
+        "grasp_z": 0.020113876659489185
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.907,
+      "mean_dev_cm": 4.92,
+      "divergence": {
+        "policy_step": 56,
+        "oracle_step": 47,
+        "phase": "approach",
+        "dev_cm": 2.46,
+        "joint_dev_deg": {
+          "shoulder_pan": 3.5999999046325684,
+          "shoulder_lift": -7.599999904632568,
+          "elbow_flex": 14.800000190734863,
+          "wrist_flex": -6.800000190734863,
+          "wrist_roll": -6.0,
+          "gripper": -1.5
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.01,
+        "z": 0.77
+      },
+      "policy_close": {
+        "step": 75,
+        "xy_to_target_cm": 2.75,
+        "z_to_target_cm": 0.8,
+        "aligned_phase": "descend"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_04",
+      "seed": 208000,
+      "oracle_episode": 120,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 1200,
+      "oracle_steps": 439,
+      "oracle_events": {
+        "t_descend": 65,
+        "t_close": 80,
+        "grasp_z": 0.02010557510269661
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.384,
+      "mean_dev_cm": 13.23,
+      "divergence": {
+        "policy_step": 41,
+        "oracle_step": 42,
+        "phase": "approach",
+        "dev_cm": 2.42,
+        "joint_dev_deg": {
+          "shoulder_pan": -1.600000023841858,
+          "shoulder_lift": 1.899999976158142,
+          "elbow_flex": -10.399999618530273,
+          "wrist_flex": 5.900000095367432,
+          "wrist_roll": 3.5,
+          "gripper": -0.800000011920929
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.02,
+        "z": 0.41
+      },
+      "policy_close": {
+        "step": 87,
+        "xy_to_target_cm": 6.29,
+        "z_to_target_cm": 3.3,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_04",
+      "seed": 208001,
+      "oracle_episode": 121,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 1200,
+      "oracle_steps": 877,
+      "oracle_events": {
+        "t_descend": 58,
+        "t_close": 73,
+        "grasp_z": 0.01997733284347862
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.159,
+      "mean_dev_cm": 8.4,
+      "divergence": {
+        "policy_step": 42,
+        "oracle_step": 49,
+        "phase": "approach",
+        "dev_cm": 2.01,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.600000023841858,
+          "shoulder_lift": -6.300000190734863,
+          "elbow_flex": 10.600000381469727,
+          "wrist_flex": -2.0,
+          "wrist_roll": -9.5,
+          "gripper": 1.7999999523162842
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.05,
+        "z": 0.4
+      },
+      "policy_close": {
+        "step": 77,
+        "xy_to_target_cm": 4.26,
+        "z_to_target_cm": 0.34,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_04",
+      "seed": 208003,
+      "oracle_episode": 122,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 1200,
+      "oracle_steps": 426,
+      "oracle_events": {
+        "t_descend": 60,
+        "t_close": 75,
+        "grasp_z": 0.0190007438074409
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.96,
+      "mean_dev_cm": 12.55,
+      "divergence": {
+        "policy_step": 48,
+        "oracle_step": 49,
+        "phase": "approach",
+        "dev_cm": 2.05,
+        "joint_dev_deg": {
+          "shoulder_pan": 0.20000000298023224,
+          "shoulder_lift": -1.2000000476837158,
+          "elbow_flex": 10.399999618530273,
+          "wrist_flex": -9.699999809265137,
+          "wrist_roll": 1.100000023841858,
+          "gripper": -0.4000000059604645
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 1.03,
+        "z": 0.3
+      },
+      "policy_close": {
+        "step": 68,
+        "xy_to_target_cm": 2.61,
+        "z_to_target_cm": 0.34,
+        "aligned_phase": "close"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_04",
+      "seed": 208004,
+      "oracle_episode": 123,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 1200,
+      "oracle_steps": 447,
+      "oracle_events": {
+        "t_descend": 71,
+        "t_close": 86,
+        "grasp_z": 0.020035357069091014
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.484,
+      "mean_dev_cm": 11.11,
+      "divergence": {
+        "policy_step": 79,
+        "oracle_step": 105,
+        "phase": "close",
+        "dev_cm": 2.15,
+        "joint_dev_deg": {
+          "shoulder_pan": -5.099999904632568,
+          "shoulder_lift": -0.800000011920929,
+          "elbow_flex": 2.0,
+          "wrist_flex": 1.2000000476837158,
+          "wrist_roll": 1.600000023841858,
+          "gripper": 9.600000381469727
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.05,
+        "z": 0.41
+      },
+      "policy_close": {
+        "step": 89,
+        "xy_to_target_cm": 2.38,
+        "z_to_target_cm": 0.36,
+        "aligned_phase": "close"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_04",
+      "seed": 208005,
+      "oracle_episode": 124,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 1200,
+      "oracle_steps": 451,
+      "oracle_events": {
+        "t_descend": 52,
+        "t_close": 67,
+        "grasp_z": 0.020098563049552674
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.96,
+      "mean_dev_cm": 13.01,
+      "divergence": {
+        "policy_step": 150,
+        "oracle_step": 152,
+        "phase": "carry",
+        "dev_cm": 2.07,
+        "joint_dev_deg": {
+          "shoulder_pan": -0.8999999761581421,
+          "shoulder_lift": 6.0,
+          "elbow_flex": -3.299999952316284,
+          "wrist_flex": -5.300000190734863,
+          "wrist_roll": -0.20000000298023224,
+          "gripper": 0.4000000059604645
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.02,
+        "z": 0.41
+      },
+      "policy_close": {
+        "step": 64,
+        "xy_to_target_cm": 0.26,
+        "z_to_target_cm": 1.5,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_05",
+      "seed": 210000,
+      "oracle_episode": 160,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 81,
+      "oracle_steps": 216,
+      "oracle_events": {
+        "t_descend": 187,
+        "t_close": 215,
+        "grasp_z": 0.04407284501919967
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.53,
+      "mean_dev_cm": 1.3,
+      "divergence": null,
+      "oracle_close_offset_cm": {
+        "xy": 26.92,
+        "z": 2.36
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 80,
+        "grasp_point_r_from_pot_axis_cm": 1.68,
+        "pot_inner_radius_cm": 7.4,
+        "pot_outer_radius_cm": 8.0,
+        "grasp_point_z_cm": 5.11,
+        "pot_height_cm": 7.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "approach",
+        "dev_from_oracle_path_cm": 1.96,
+        "gripper_cmd": 26.5,
+        "gripper_state": 27.4,
+        "joint_dev_deg": {
+          "shoulder_pan": 4.800000190734863,
+          "shoulder_lift": -3.5,
+          "elbow_flex": 8.800000190734863,
+          "wrist_flex": -13.5,
+          "wrist_roll": -0.5,
+          "gripper": 11.899999618530273
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.02
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_05",
+      "seed": 210001,
+      "oracle_episode": 161,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 71,
+      "oracle_steps": 236,
+      "oracle_events": {
+        "t_descend": 0,
+        "t_close": 235,
+        "grasp_z": 0.10698103142031352
+      },
+      "max_oracle_progress_phase": "descend",
+      "max_oracle_progress_frac": 0.498,
+      "mean_dev_cm": 1.28,
+      "divergence": null,
+      "oracle_close_offset_cm": {
+        "xy": 29.38,
+        "z": 8.65
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 70,
+        "grasp_point_r_from_pot_axis_cm": 1.21,
+        "pot_inner_radius_cm": 7.4,
+        "pot_outer_radius_cm": 8.0,
+        "grasp_point_z_cm": 4.56,
+        "pot_height_cm": 7.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "descend",
+        "dev_from_oracle_path_cm": 3.64,
+        "gripper_cmd": 24.6,
+        "gripper_state": 24.7,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.5,
+          "shoulder_lift": 6.699999809265137,
+          "elbow_flex": 7.0,
+          "wrist_flex": -16.200000762939453,
+          "wrist_roll": -3.700000047683716,
+          "gripper": 11.5
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.07
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_05",
+      "seed": 210002,
+      "oracle_episode": 162,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 129,
+      "oracle_steps": 218,
+      "oracle_events": {
+        "t_descend": 0,
+        "t_close": 217,
+        "grasp_z": 0.1021762077559808
+      },
+      "max_oracle_progress_phase": "descend",
+      "max_oracle_progress_frac": 0.521,
+      "mean_dev_cm": 3.52,
+      "divergence": {
+        "policy_step": 53,
+        "oracle_step": 55,
+        "phase": "descend",
+        "dev_cm": 2.12,
+        "joint_dev_deg": {
+          "shoulder_pan": -2.4000000953674316,
+          "shoulder_lift": -6.099999904632568,
+          "elbow_flex": 9.0,
+          "wrist_flex": 0.10000000149011612,
+          "wrist_roll": -8.699999809265137,
+          "gripper": -2.5999999046325684
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 25.83,
+        "z": 8.17
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 128,
+        "grasp_point_r_from_pot_axis_cm": 2.22,
+        "pot_inner_radius_cm": 7.4,
+        "pot_outer_radius_cm": 8.0,
+        "grasp_point_z_cm": 2.62,
+        "pot_height_cm": 7.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "descend",
+        "dev_from_oracle_path_cm": 6.23,
+        "gripper_cmd": 5.2,
+        "gripper_state": 5.5,
+        "joint_dev_deg": {
+          "shoulder_pan": -0.8999999761581421,
+          "shoulder_lift": 4.099999904632568,
+          "elbow_flex": 20.600000381469727,
+          "wrist_flex": -18.899999618530273,
+          "wrist_roll": -7.800000190734863,
+          "gripper": -9.5
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.06
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_05",
+      "seed": 210003,
+      "oracle_episode": 163,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 83,
+      "oracle_steps": 232,
+      "oracle_events": {
+        "t_descend": 184,
+        "t_close": 231,
+        "grasp_z": 0.08785287986352484
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.481,
+      "mean_dev_cm": 1.41,
+      "divergence": null,
+      "oracle_close_offset_cm": {
+        "xy": 32.47,
+        "z": 6.74
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 82,
+        "grasp_point_r_from_pot_axis_cm": 0.86,
+        "pot_inner_radius_cm": 7.4,
+        "pot_outer_radius_cm": 8.0,
+        "grasp_point_z_cm": 2.96,
+        "pot_height_cm": 7.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "approach",
+        "dev_from_oracle_path_cm": 3.72,
+        "gripper_cmd": 22.9,
+        "gripper_state": 23.3,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.899999976158142,
+          "shoulder_lift": 0.30000001192092896,
+          "elbow_flex": 16.0,
+          "wrist_flex": -21.0,
+          "wrist_roll": -19.200000762939453,
+          "gripper": 5.5
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.06
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_05",
+      "seed": 210006,
+      "oracle_episode": 164,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 86,
+      "oracle_steps": 215,
+      "oracle_events": {
+        "t_descend": 186,
+        "t_close": 214,
+        "grasp_z": 0.04409016314675657
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.556,
+      "mean_dev_cm": 2.2,
+      "divergence": {
+        "policy_step": 61,
+        "oracle_step": 118,
+        "phase": "approach",
+        "dev_cm": 2.26,
+        "joint_dev_deg": {
+          "shoulder_pan": 0.4000000059604645,
+          "shoulder_lift": 7.300000190734863,
+          "elbow_flex": -7.599999904632568,
+          "wrist_flex": -3.5,
+          "wrist_roll": -8.199999809265137,
+          "gripper": 9.0
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 27.07,
+        "z": 2.36
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 85,
+        "grasp_point_r_from_pot_axis_cm": 2.08,
+        "pot_inner_radius_cm": 7.4,
+        "pot_outer_radius_cm": 8.0,
+        "grasp_point_z_cm": 7.1,
+        "pot_height_cm": 7.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "approach",
+        "dev_from_oracle_path_cm": 4.23,
+        "gripper_cmd": 25.0,
+        "gripper_state": 25.2,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.2999999523162842,
+          "shoulder_lift": 3.0,
+          "elbow_flex": 10.100000381469727,
+          "wrist_flex": -26.5,
+          "wrist_roll": -26.799999237060547,
+          "gripper": 8.199999809265137
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 1.13
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_06",
+      "seed": 212000,
+      "oracle_episode": 200,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 87,
+      "oracle_steps": 201,
+      "oracle_events": {
+        "t_descend": 171,
+        "t_close": 200,
+        "grasp_z": 0.04414447507352608
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.575,
+      "mean_dev_cm": 1.15,
+      "divergence": null,
+      "oracle_close_offset_cm": {
+        "xy": 19.44,
+        "z": 2.37
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 86,
+        "grasp_point_r_from_pot_axis_cm": 1.55,
+        "pot_inner_radius_cm": 4.2,
+        "pot_outer_radius_cm": 4.8,
+        "grasp_point_z_cm": 1.92,
+        "pot_height_cm": 5.5,
+        "where": "inside opening",
+        "aligned_oracle_phase": "approach",
+        "dev_from_oracle_path_cm": 5.37,
+        "gripper_cmd": 20.2,
+        "gripper_state": 27.2,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.5,
+          "shoulder_lift": 6.099999904632568,
+          "elbow_flex": 16.0,
+          "wrist_flex": -17.899999618530273,
+          "wrist_roll": 15.699999809265137,
+          "gripper": 43.5
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.0
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_06",
+      "seed": 212001,
+      "oracle_episode": 201,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 95,
+      "oracle_steps": 247,
+      "oracle_events": {
+        "t_descend": 0,
+        "t_close": 246,
+        "grasp_z": 0.10249684566931512
+      },
+      "max_oracle_progress_phase": "descend",
+      "max_oracle_progress_frac": 0.589,
+      "mean_dev_cm": 1.92,
+      "divergence": {
+        "policy_step": 61,
+        "oracle_step": 143,
+        "phase": "descend",
+        "dev_cm": 2.33,
+        "joint_dev_deg": {
+          "shoulder_pan": -6.599999904632568,
+          "shoulder_lift": 2.9000000953674316,
+          "elbow_flex": -3.200000047683716,
+          "wrist_flex": -0.0,
+          "wrist_roll": -29.200000762939453,
+          "gripper": 8.600000381469727
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 25.5,
+        "z": 8.2
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 94,
+        "grasp_point_r_from_pot_axis_cm": 3.29,
+        "pot_inner_radius_cm": 4.2,
+        "pot_outer_radius_cm": 4.8,
+        "grasp_point_z_cm": 7.47,
+        "pot_height_cm": 5.5,
+        "where": "over / at the wall",
+        "aligned_oracle_phase": "descend",
+        "dev_from_oracle_path_cm": 3.9,
+        "gripper_cmd": 18.7,
+        "gripper_state": 20.6,
+        "joint_dev_deg": {
+          "shoulder_pan": -6.800000190734863,
+          "shoulder_lift": -12.5,
+          "elbow_flex": 29.799999237060547,
+          "wrist_flex": -37.70000076293945,
+          "wrist_roll": -31.5,
+          "gripper": -13.100000381469727
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.03
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_06",
+      "seed": 212002,
+      "oracle_episode": 202,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 78,
+      "oracle_steps": 230,
+      "oracle_events": {
+        "t_descend": 200,
+        "t_close": 229,
+        "grasp_z": 0.04422976223887071
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.629,
+      "mean_dev_cm": 2.36,
+      "divergence": {
+        "policy_step": 49,
+        "oracle_step": 55,
+        "phase": "approach",
+        "dev_cm": 2.03,
+        "joint_dev_deg": {
+          "shoulder_pan": -3.5999999046325684,
+          "shoulder_lift": -11.300000190734863,
+          "elbow_flex": 10.699999809265137,
+          "wrist_flex": -3.0,
+          "wrist_roll": -27.299999237060547,
+          "gripper": -2.0
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 27.24,
+        "z": 2.38
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 77,
+        "grasp_point_r_from_pot_axis_cm": 4.01,
+        "pot_inner_radius_cm": 4.2,
+        "pot_outer_radius_cm": 4.8,
+        "grasp_point_z_cm": 1.98,
+        "pot_height_cm": 5.5,
+        "where": "over / at the wall",
+        "aligned_oracle_phase": "approach",
+        "dev_from_oracle_path_cm": 7.28,
+        "gripper_cmd": 25.1,
+        "gripper_state": 28.2,
+        "joint_dev_deg": {
+          "shoulder_pan": -3.0999999046325684,
+          "shoulder_lift": -2.5999999046325684,
+          "elbow_flex": 30.5,
+          "wrist_flex": -22.5,
+          "wrist_roll": -29.200000762939453,
+          "gripper": 41.5
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.54
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_06",
+      "seed": 212003,
+      "oracle_episode": 203,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 619,
+      "oracle_steps": 233,
+      "oracle_events": {
+        "t_descend": 0,
+        "t_close": 232,
+        "grasp_z": 0.10253144066329452
+      },
+      "max_oracle_progress_phase": "descend",
+      "max_oracle_progress_frac": 0.608,
+      "mean_dev_cm": 6.89,
+      "divergence": {
+        "policy_step": 70,
+        "oracle_step": 111,
+        "phase": "descend",
+        "dev_cm": 2.39,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.9000000953674316,
+          "shoulder_lift": 5.5,
+          "elbow_flex": 2.299999952316284,
+          "wrist_flex": -9.399999618530273,
+          "wrist_roll": -5.800000190734863,
+          "gripper": 9.600000381469727
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 27.69,
+        "z": 8.21
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 618,
+        "grasp_point_r_from_pot_axis_cm": 4.5,
+        "pot_inner_radius_cm": 4.2,
+        "pot_outer_radius_cm": 4.8,
+        "grasp_point_z_cm": 4.14,
+        "pot_height_cm": 5.5,
+        "where": "over / at the wall",
+        "aligned_oracle_phase": "descend",
+        "dev_from_oracle_path_cm": 10.51,
+        "gripper_cmd": 27.4,
+        "gripper_state": 28.0,
+        "joint_dev_deg": {
+          "shoulder_pan": -11.5,
+          "shoulder_lift": 39.900001525878906,
+          "elbow_flex": -14.100000381469727,
+          "wrist_flex": -11.800000190734863,
+          "wrist_roll": -33.70000076293945,
+          "gripper": 19.600000381469727
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.0
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_06",
+      "seed": 212004,
+      "oracle_episode": 204,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 150,
+      "oracle_steps": 228,
+      "oracle_events": {
+        "t_descend": 0,
+        "t_close": 227,
+        "grasp_z": 0.10228470634404849
+      },
+      "max_oracle_progress_phase": "descend",
+      "max_oracle_progress_frac": 0.63,
+      "mean_dev_cm": 5.47,
+      "divergence": {
+        "policy_step": 25,
+        "oracle_step": 32,
+        "phase": "descend",
+        "dev_cm": 2.61,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.100000023841858,
+          "shoulder_lift": 7.5,
+          "elbow_flex": -0.800000011920929,
+          "wrist_flex": -9.600000381469727,
+          "wrist_roll": 4.300000190734863,
+          "gripper": 0.800000011920929
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 31.19,
+        "z": 8.18
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 149,
+        "grasp_point_r_from_pot_axis_cm": 16.85,
+        "pot_inner_radius_cm": 4.2,
+        "pot_outer_radius_cm": 4.8,
+        "grasp_point_z_cm": 7.27,
+        "pot_height_cm": 5.5,
+        "where": "outside the pot",
+        "aligned_oracle_phase": "descend",
+        "dev_from_oracle_path_cm": 6.96,
+        "gripper_cmd": 2.7,
+        "gripper_state": 2.5,
+        "joint_dev_deg": {
+          "shoulder_pan": -0.5,
+          "shoulder_lift": 20.100000381469727,
+          "elbow_flex": -0.4000000059604645,
+          "wrist_flex": -17.799999237060547,
+          "wrist_roll": -4.300000190734863,
+          "gripper": -13.600000381469727
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.04
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_07",
+      "seed": 214000,
+      "oracle_episode": 240,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 195,
+      "oracle_events": {
+        "t_descend": 49,
+        "t_close": 64,
+        "grasp_z": 0.020155620310251213
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 8.64,
+      "divergence": {
+        "policy_step": 63,
+        "oracle_step": 86,
+        "phase": "carry",
+        "dev_cm": 2.1,
+        "joint_dev_deg": {
+          "shoulder_pan": -5.699999809265137,
+          "shoulder_lift": 10.100000381469727,
+          "elbow_flex": -7.300000190734863,
+          "wrist_flex": 11.199999809265137,
+          "wrist_roll": -5.599999904632568,
+          "gripper": 27.399999618530273
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.12,
+        "z": 0.77
+      },
+      "policy_close": {
+        "step": 67,
+        "xy_to_target_cm": 3.59,
+        "z_to_target_cm": 2.03,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_07",
+      "seed": 214001,
+      "oracle_episode": 241,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 188,
+      "oracle_events": {
+        "t_descend": 51,
+        "t_close": 66,
+        "grasp_z": 0.020223392776115443
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.957,
+      "mean_dev_cm": 4.16,
+      "divergence": {
+        "policy_step": 68,
+        "oracle_step": 90,
+        "phase": "carry",
+        "dev_cm": 2.08,
+        "joint_dev_deg": {
+          "shoulder_pan": -1.2999999523162842,
+          "shoulder_lift": 7.800000190734863,
+          "elbow_flex": -5.300000190734863,
+          "wrist_flex": -4.599999904632568,
+          "wrist_roll": 19.5,
+          "gripper": 29.600000381469727
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.03,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 75,
+        "xy_to_target_cm": 3.79,
+        "z_to_target_cm": 3.48,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_07",
+      "seed": 214002,
+      "oracle_episode": 242,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 215,
+      "oracle_events": {
+        "t_descend": 55,
+        "t_close": 72,
+        "grasp_z": 0.01976678218766289
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.953,
+      "mean_dev_cm": 6.48,
+      "divergence": {
+        "policy_step": 42,
+        "oracle_step": 37,
+        "phase": "approach",
+        "dev_cm": 2.19,
+        "joint_dev_deg": {
+          "shoulder_pan": 3.4000000953674316,
+          "shoulder_lift": 13.100000381469727,
+          "elbow_flex": -11.0,
+          "wrist_flex": -0.30000001192092896,
+          "wrist_roll": 4.0,
+          "gripper": 2.9000000953674316
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.04,
+        "z": 0.73
+      },
+      "policy_close": {
+        "step": 74,
+        "xy_to_target_cm": 5.23,
+        "z_to_target_cm": 0.97,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_07",
+      "seed": 214003,
+      "oracle_episode": 243,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 200,
+      "oracle_events": {
+        "t_descend": 53,
+        "t_close": 68,
+        "grasp_z": 0.02007179609741019
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.889,
+      "mean_dev_cm": 5.41,
+      "divergence": {
+        "policy_step": 59,
+        "oracle_step": 40,
+        "phase": "approach",
+        "dev_cm": 2.2,
+        "joint_dev_deg": {
+          "shoulder_pan": 3.4000000953674316,
+          "shoulder_lift": -13.300000190734863,
+          "elbow_flex": 12.100000381469727,
+          "wrist_flex": -2.299999952316284,
+          "wrist_roll": -2.700000047683716,
+          "gripper": 0.800000011920929
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.06,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 85,
+        "xy_to_target_cm": 2.33,
+        "z_to_target_cm": 0.84,
+        "aligned_phase": "descend"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_07",
+      "seed": 214004,
+      "oracle_episode": 244,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 214,
+      "oracle_events": {
+        "t_descend": 59,
+        "t_close": 74,
+        "grasp_z": 0.020119217241977405
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.737,
+      "mean_dev_cm": 9.61,
+      "divergence": {
+        "policy_step": 52,
+        "oracle_step": 43,
+        "phase": "approach",
+        "dev_cm": 2.61,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.200000047683716,
+          "shoulder_lift": 10.300000190734863,
+          "elbow_flex": -11.5,
+          "wrist_flex": -1.100000023841858,
+          "wrist_roll": 18.100000381469727,
+          "gripper": 0.6000000238418579
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.15,
+        "z": 0.77
+      },
+      "policy_close": {
+        "step": 79,
+        "xy_to_target_cm": 5.96,
+        "z_to_target_cm": 2.05,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_08",
+      "seed": 216000,
+      "oracle_episode": 280,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 269,
+      "oracle_events": {
+        "t_descend": 70,
+        "t_close": 87,
+        "grasp_z": 0.020156094983598348
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.981,
+      "mean_dev_cm": 6.12,
+      "divergence": {
+        "policy_step": 47,
+        "oracle_step": 51,
+        "phase": "approach",
+        "dev_cm": 2.47,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.5,
+          "shoulder_lift": -19.399999618530273,
+          "elbow_flex": 16.0,
+          "wrist_flex": -1.600000023841858,
+          "wrist_roll": 3.5,
+          "gripper": 1.399999976158142
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_08",
+      "seed": 216001,
+      "oracle_episode": 281,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 219,
+      "oracle_events": {
+        "t_descend": 67,
+        "t_close": 82,
+        "grasp_z": 0.020066517698557416
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.248,
+      "mean_dev_cm": 14.19,
+      "divergence": {
+        "policy_step": 61,
+        "oracle_step": 52,
+        "phase": "approach",
+        "dev_cm": 2.44,
+        "joint_dev_deg": {
+          "shoulder_pan": -0.8999999761581421,
+          "shoulder_lift": 7.099999904632568,
+          "elbow_flex": 0.20000000298023224,
+          "wrist_flex": -7.699999809265137,
+          "wrist_roll": -8.100000381469727,
+          "gripper": 0.6000000238418579
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_08",
+      "seed": 216002,
+      "oracle_episode": 282,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 176,
+      "oracle_events": {
+        "t_descend": 46,
+        "t_close": 61,
+        "grasp_z": 0.020126845586385562
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 9.5,
+      "divergence": {
+        "policy_step": 63,
+        "oracle_step": 84,
+        "phase": "carry",
+        "dev_cm": 3.06,
+        "joint_dev_deg": {
+          "shoulder_pan": 4.199999809265137,
+          "shoulder_lift": 4.699999809265137,
+          "elbow_flex": -5.800000190734863,
+          "wrist_flex": -5.599999904632568,
+          "wrist_roll": -1.2999999523162842,
+          "gripper": 27.799999237060547
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_08",
+      "seed": 216003,
+      "oracle_episode": 283,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 214,
+      "oracle_events": {
+        "t_descend": 65,
+        "t_close": 80,
+        "grasp_z": 0.020077741592298397
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.991,
+      "mean_dev_cm": 5.65,
+      "divergence": {
+        "policy_step": 60,
+        "oracle_step": 56,
+        "phase": "approach",
+        "dev_cm": 2.86,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.600000023841858,
+          "shoulder_lift": -2.799999952316284,
+          "elbow_flex": 13.399999618530273,
+          "wrist_flex": -8.100000381469727,
+          "wrist_roll": -2.5,
+          "gripper": -0.4000000059604645
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_08",
+      "seed": 216004,
+      "oracle_episode": 284,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 207,
+      "oracle_events": {
+        "t_descend": 53,
+        "t_close": 70,
+        "grasp_z": 0.0202055268006945
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 11.26,
+      "divergence": {
+        "policy_step": 51,
+        "oracle_step": 96,
+        "phase": "carry",
+        "dev_cm": 2.48,
+        "joint_dev_deg": {
+          "shoulder_pan": 4.900000095367432,
+          "shoulder_lift": 4.199999809265137,
+          "elbow_flex": -5.099999904632568,
+          "wrist_flex": -3.5,
+          "wrist_roll": 4.199999809265137,
+          "gripper": 26.399999618530273
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_09",
+      "seed": 218000,
+      "oracle_episode": 320,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 378,
+      "oracle_events": {
+        "t_descend": 74,
+        "t_close": 90,
+        "grasp_z": 0.04974359205540396
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.987,
+      "mean_dev_cm": 3.97,
+      "divergence": {
+        "policy_step": 74,
+        "oracle_step": 116,
+        "phase": "carry",
+        "dev_cm": 2.89,
+        "joint_dev_deg": {
+          "shoulder_pan": 0.0,
+          "shoulder_lift": -4.900000095367432,
+          "elbow_flex": 18.399999618530273,
+          "wrist_flex": -14.100000381469727,
+          "wrist_roll": 5.199999809265137,
+          "gripper": 26.399999618530273
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.09,
+        "z": 0.88
+      },
+      "policy_close": {
+        "step": 87,
+        "xy_to_target_cm": 1.01,
+        "z_to_target_cm": 0.9,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_09",
+      "seed": 218001,
+      "oracle_episode": 321,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 426,
+      "oracle_events": {
+        "t_descend": 86,
+        "t_close": 102,
+        "grasp_z": 0.04974620255532532
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.762,
+      "mean_dev_cm": 7.71,
+      "divergence": {
+        "policy_step": 131,
+        "oracle_step": 130,
+        "phase": "carry",
+        "dev_cm": 2.63,
+        "joint_dev_deg": {
+          "shoulder_pan": 7.199999809265137,
+          "shoulder_lift": -7.0,
+          "elbow_flex": 9.899999618530273,
+          "wrist_flex": -7.300000190734863,
+          "wrist_roll": 3.799999952316284,
+          "gripper": -17.200000762939453
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.16,
+        "z": 0.88
+      },
+      "policy_close": {
+        "step": 81,
+        "xy_to_target_cm": 1.75,
+        "z_to_target_cm": 0.86,
+        "aligned_phase": "descend"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_09",
+      "seed": 218002,
+      "oracle_episode": 322,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 415,
+      "oracle_events": {
+        "t_descend": 59,
+        "t_close": 75,
+        "grasp_z": 0.049749606523182235
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.353,
+      "mean_dev_cm": 8.85,
+      "divergence": {
+        "policy_step": 42,
+        "oracle_step": 39,
+        "phase": "approach",
+        "dev_cm": 2.22,
+        "joint_dev_deg": {
+          "shoulder_pan": -2.5999999046325684,
+          "shoulder_lift": -1.899999976158142,
+          "elbow_flex": 7.199999809265137,
+          "wrist_flex": 0.0,
+          "wrist_roll": 1.600000023841858,
+          "gripper": -0.10000000149011612
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.61,
+        "z": 0.88
+      },
+      "policy_close": {
+        "step": 85,
+        "xy_to_target_cm": 5.71,
+        "z_to_target_cm": 0.75,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_09",
+      "seed": 218003,
+      "oracle_episode": 323,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 408,
+      "oracle_events": {
+        "t_descend": 73,
+        "t_close": 89,
+        "grasp_z": 0.049737898815706415
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 4.61,
+      "divergence": {
+        "policy_step": 46,
+        "oracle_step": 43,
+        "phase": "approach",
+        "dev_cm": 2.02,
+        "joint_dev_deg": {
+          "shoulder_pan": -2.700000047683716,
+          "shoulder_lift": -10.399999618530273,
+          "elbow_flex": 10.399999618530273,
+          "wrist_flex": -1.2000000476837158,
+          "wrist_roll": -7.400000095367432,
+          "gripper": -2.5
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.1,
+        "z": 0.88
+      },
+      "policy_close": {
+        "step": 77,
+        "xy_to_target_cm": 3.12,
+        "z_to_target_cm": 0.97,
+        "aligned_phase": "descend"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_09",
+      "seed": 218004,
+      "oracle_episode": 324,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 386,
+      "oracle_events": {
+        "t_descend": 56,
+        "t_close": 73,
+        "grasp_z": 0.04964604526113646
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 8.14,
+      "divergence": {
+        "policy_step": 36,
+        "oracle_step": 38,
+        "phase": "approach",
+        "dev_cm": 2.21,
+        "joint_dev_deg": {
+          "shoulder_pan": -0.10000000149011612,
+          "shoulder_lift": 7.199999809265137,
+          "elbow_flex": -6.199999809265137,
+          "wrist_flex": -4.5,
+          "wrist_roll": -7.0,
+          "gripper": -1.100000023841858
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.05,
+        "z": 0.87
+      },
+      "policy_close": {
+        "step": 68,
+        "xy_to_target_cm": 3.12,
+        "z_to_target_cm": 0.81,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_10",
+      "seed": 220000,
+      "oracle_episode": 360,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 208,
+      "oracle_events": {
+        "t_descend": 57,
+        "t_close": 72,
+        "grasp_z": 0.033725000381378045
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.942,
+      "mean_dev_cm": 2.72,
+      "divergence": {
+        "policy_step": 56,
+        "oracle_step": 96,
+        "phase": "carry",
+        "dev_cm": 2.18,
+        "joint_dev_deg": {
+          "shoulder_pan": 4.199999809265137,
+          "shoulder_lift": -1.600000023841858,
+          "elbow_flex": 5.0,
+          "wrist_flex": 1.5,
+          "wrist_roll": -2.9000000953674316,
+          "gripper": 24.100000381469727
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.03,
+        "z": 1.13
+      },
+      "policy_close": {
+        "step": 71,
+        "xy_to_target_cm": 1.88,
+        "z_to_target_cm": 1.16,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_10",
+      "seed": 220001,
+      "oracle_episode": 361,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 223,
+      "oracle_events": {
+        "t_descend": 70,
+        "t_close": 84,
+        "grasp_z": 0.03358140918352916
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.721,
+      "mean_dev_cm": 8.88,
+      "divergence": {
+        "policy_step": 71,
+        "oracle_step": 58,
+        "phase": "approach",
+        "dev_cm": 2.14,
+        "joint_dev_deg": {
+          "shoulder_pan": -1.5,
+          "shoulder_lift": 7.599999904632568,
+          "elbow_flex": -6.400000095367432,
+          "wrist_flex": -3.200000047683716,
+          "wrist_roll": -1.7999999523162842,
+          "gripper": -0.4000000059604645
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.01,
+        "z": 1.11
+      },
+      "policy_close": {
+        "step": 97,
+        "xy_to_target_cm": 4.13,
+        "z_to_target_cm": 1.33,
+        "aligned_phase": "close"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_10",
+      "seed": 220002,
+      "oracle_episode": 362,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 240,
+      "oracle_events": {
+        "t_descend": 86,
+        "t_close": 101,
+        "grasp_z": 0.03431628969803398
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.971,
+      "mean_dev_cm": 9.32,
+      "divergence": {
+        "policy_step": 58,
+        "oracle_step": 55,
+        "phase": "approach",
+        "dev_cm": 2.6,
+        "joint_dev_deg": {
+          "shoulder_pan": 3.200000047683716,
+          "shoulder_lift": -7.300000190734863,
+          "elbow_flex": 9.199999809265137,
+          "wrist_flex": 1.7000000476837158,
+          "wrist_roll": 3.200000047683716,
+          "gripper": -0.8999999761581421
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.12,
+        "z": 1.19
+      },
+      "policy_close": {
+        "step": 82,
+        "xy_to_target_cm": 3.05,
+        "z_to_target_cm": 0.19,
+        "aligned_phase": "close"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_10",
+      "seed": 220003,
+      "oracle_episode": 363,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 207,
+      "oracle_events": {
+        "t_descend": 59,
+        "t_close": 73,
+        "grasp_z": 0.03359677301311283
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.947,
+      "mean_dev_cm": 3.17,
+      "divergence": {
+        "policy_step": 51,
+        "oracle_step": 100,
+        "phase": "carry",
+        "dev_cm": 2.23,
+        "joint_dev_deg": {
+          "shoulder_pan": -3.299999952316284,
+          "shoulder_lift": -6.5,
+          "elbow_flex": 8.100000381469727,
+          "wrist_flex": 1.2000000476837158,
+          "wrist_roll": -7.599999904632568,
+          "gripper": 22.0
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.01,
+        "z": 1.12
+      },
+      "policy_close": {
+        "step": 72,
+        "xy_to_target_cm": 1.54,
+        "z_to_target_cm": 1.83,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_10",
+      "seed": 220004,
+      "oracle_episode": 364,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 217,
+      "oracle_events": {
+        "t_descend": 56,
+        "t_close": 71,
+        "grasp_z": 0.03302411068487618
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.931,
+      "mean_dev_cm": 10.12,
+      "divergence": {
+        "policy_step": 59,
+        "oracle_step": 94,
+        "phase": "carry",
+        "dev_cm": 2.48,
+        "joint_dev_deg": {
+          "shoulder_pan": 6.099999904632568,
+          "shoulder_lift": 3.9000000953674316,
+          "elbow_flex": 6.400000095367432,
+          "wrist_flex": -7.099999904632568,
+          "wrist_roll": 6.699999809265137,
+          "gripper": 20.299999237060547
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.03,
+        "z": 1.06
+      },
+      "policy_close": {
+        "step": 71,
+        "xy_to_target_cm": 2.19,
+        "z_to_target_cm": -0.08,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_11",
+      "seed": 222002,
+      "oracle_episode": 400,
+      "success": false,
+      "failure": "wrong_order",
+      "policy_steps": 145,
+      "oracle_steps": 488,
+      "oracle_events": {
+        "t_descend": 60,
+        "t_close": 75,
+        "grasp_z": 0.04854909692658396
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.333,
+      "mean_dev_cm": 3.38,
+      "divergence": {
+        "policy_step": 54,
+        "oracle_step": 104,
+        "phase": "carry",
+        "dev_cm": 2.3,
+        "joint_dev_deg": {
+          "shoulder_pan": -5.699999809265137,
+          "shoulder_lift": 3.5,
+          "elbow_flex": -2.9000000953674316,
+          "wrist_flex": 0.0,
+          "wrist_roll": 8.300000190734863,
+          "gripper": 16.100000381469727
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_11",
+      "seed": 222003,
+      "oracle_episode": 401,
+      "success": false,
+      "failure": "wrong_order",
+      "policy_steps": 46,
+      "oracle_steps": 526,
+      "oracle_events": {
+        "t_descend": 75,
+        "t_close": 90,
+        "grasp_z": 0.04866361584785377
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.082,
+      "mean_dev_cm": 1.6,
+      "divergence": null
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_11",
+      "seed": 222005,
+      "oracle_episode": 402,
+      "success": false,
+      "failure": "wrong_order",
+      "policy_steps": 246,
+      "oracle_steps": 364,
+      "oracle_events": {
+        "t_descend": 72,
+        "t_close": 87,
+        "grasp_z": 0.04857609055685837
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.782,
+      "mean_dev_cm": 3.63,
+      "divergence": {
+        "policy_step": 71,
+        "oracle_step": 110,
+        "phase": "carry",
+        "dev_cm": 2.56,
+        "joint_dev_deg": {
+          "shoulder_pan": 7.400000095367432,
+          "shoulder_lift": -2.5999999046325684,
+          "elbow_flex": 2.799999952316284,
+          "wrist_flex": -5.099999904632568,
+          "wrist_roll": 7.699999809265137,
+          "gripper": 16.100000381469727
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_11",
+      "seed": 222006,
+      "oracle_episode": 403,
+      "success": false,
+      "failure": "wrong_order",
+      "policy_steps": 71,
+      "oracle_steps": 496,
+      "oracle_events": {
+        "t_descend": 72,
+        "t_close": 88,
+        "grasp_z": 0.04854383351219923
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.107,
+      "mean_dev_cm": 1.45,
+      "divergence": null
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8",
+      "task": "task_11",
+      "seed": 222008,
+      "oracle_episode": 404,
+      "success": false,
+      "failure": "wrong_order",
+      "policy_steps": 104,
+      "oracle_steps": 521,
+      "oracle_events": {
+        "t_descend": 52,
+        "t_close": 67,
+        "grasp_z": 0.048762508490847636
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.179,
+      "mean_dev_cm": 4.03,
+      "divergence": {
+        "policy_step": 46,
+        "oracle_step": 90,
+        "phase": "carry",
+        "dev_cm": 2.56,
+        "joint_dev_deg": {
+          "shoulder_pan": -8.600000381469727,
+          "shoulder_lift": 8.699999809265137,
+          "elbow_flex": -9.399999618530273,
+          "wrist_flex": 3.5,
+          "wrist_roll": -16.399999618530273,
+          "gripper": 14.399999618530273
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_01",
+      "seed": 202000,
+      "oracle_episode": 0,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 214,
+      "oracle_events": {
+        "t_descend": 63,
+        "t_close": 78,
+        "grasp_z": 0.020069559096977906
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 2.57,
+      "divergence": {
+        "policy_step": 75,
+        "oracle_step": 104,
+        "phase": "carry",
+        "dev_cm": 2.75,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.2000000476837158,
+          "shoulder_lift": -6.800000190734863,
+          "elbow_flex": 13.399999618530273,
+          "wrist_flex": -3.700000047683716,
+          "wrist_roll": 27.600000381469727,
+          "gripper": 25.799999237060547
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.07,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 99,
+        "xy_to_target_cm": 3.95,
+        "z_to_target_cm": 1.66,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_01",
+      "seed": 202001,
+      "oracle_episode": 1,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 881,
+      "oracle_steps": 220,
+      "oracle_events": {
+        "t_descend": 64,
+        "t_close": 79,
+        "grasp_z": 0.020064116947583397
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 3.16,
+      "divergence": {
+        "policy_step": 41,
+        "oracle_step": 35,
+        "phase": "approach",
+        "dev_cm": 2.54,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.5,
+          "shoulder_lift": -5.199999809265137,
+          "elbow_flex": -1.600000023841858,
+          "wrist_flex": 11.899999618530273,
+          "wrist_roll": -12.399999618530273,
+          "gripper": 0.0
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.06,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 109,
+        "xy_to_target_cm": 3.5,
+        "z_to_target_cm": 0.77,
+        "aligned_phase": "descend"
+      },
+      "tip": {
+        "step": 880,
+        "grasp_point_r_from_pot_axis_cm": 2.88,
+        "pot_inner_radius_cm": 5.9,
+        "pot_outer_radius_cm": 6.5,
+        "grasp_point_z_cm": 2.38,
+        "pot_height_cm": 6.5,
+        "where": "inside opening",
+        "aligned_oracle_phase": "carry",
+        "dev_from_oracle_path_cm": 6.81,
+        "gripper_cmd": 37.0,
+        "gripper_state": 36.7,
+        "joint_dev_deg": {
+          "shoulder_pan": -6.0,
+          "shoulder_lift": 27.700000762939453,
+          "elbow_flex": -10.0,
+          "wrist_flex": -10.300000190734863,
+          "wrist_roll": -39.29999923706055,
+          "gripper": 6.400000095367432
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.03
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_01",
+      "seed": 202002,
+      "oracle_episode": 2,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 194,
+      "oracle_events": {
+        "t_descend": 51,
+        "t_close": 66,
+        "grasp_z": 0.020206344194235937
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.632,
+      "mean_dev_cm": 10.67,
+      "divergence": {
+        "policy_step": 31,
+        "oracle_step": 28,
+        "phase": "approach",
+        "dev_cm": 2.19,
+        "joint_dev_deg": {
+          "shoulder_pan": 3.4000000953674316,
+          "shoulder_lift": -12.899999618530273,
+          "elbow_flex": 6.800000190734863,
+          "wrist_flex": 5.099999904632568,
+          "wrist_roll": 7.599999904632568,
+          "gripper": -2.0999999046325684
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.04,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 303,
+        "xy_to_target_cm": 5.61,
+        "z_to_target_cm": 3.86,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_01",
+      "seed": 202003,
+      "oracle_episode": 3,
+      "success": true,
+      "failure": "success",
+      "policy_steps": 753,
+      "oracle_steps": 210,
+      "oracle_events": {
+        "t_descend": 53,
+        "t_close": 70,
+        "grasp_z": 0.02002066514204109
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.9,
+      "mean_dev_cm": 3.73,
+      "divergence": {
+        "policy_step": 57,
+        "oracle_step": 93,
+        "phase": "carry",
+        "dev_cm": 2.25,
+        "joint_dev_deg": {
+          "shoulder_pan": -0.8999999761581421,
+          "shoulder_lift": 5.699999809265137,
+          "elbow_flex": -3.0999999046325684,
+          "wrist_flex": -8.199999809265137,
+          "wrist_roll": -1.2999999523162842,
+          "gripper": 29.600000381469727
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.09,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 119,
+        "xy_to_target_cm": 2.41,
+        "z_to_target_cm": 0.8,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_01",
+      "seed": 202004,
+      "oracle_episode": 4,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 169,
+      "oracle_events": {
+        "t_descend": 45,
+        "t_close": 60,
+        "grasp_z": 0.02020190630669816
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.881,
+      "mean_dev_cm": 7.39,
+      "divergence": {
+        "policy_step": 36,
+        "oracle_step": 32,
+        "phase": "approach",
+        "dev_cm": 2.54,
+        "joint_dev_deg": {
+          "shoulder_pan": -7.800000190734863,
+          "shoulder_lift": -1.600000023841858,
+          "elbow_flex": -1.5,
+          "wrist_flex": 3.299999952316284,
+          "wrist_roll": 5.0,
+          "gripper": 1.399999976158142
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.02,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 230,
+        "xy_to_target_cm": 18.44,
+        "z_to_target_cm": 8.16,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_02",
+      "seed": 204000,
+      "oracle_episode": 40,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 216,
+      "oracle_events": {
+        "t_descend": 56,
+        "t_close": 73,
+        "grasp_z": 0.020262662657295462
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.512,
+      "mean_dev_cm": 9.42,
+      "divergence": {
+        "policy_step": 61,
+        "oracle_step": 58,
+        "phase": "descend",
+        "dev_cm": 2.91,
+        "joint_dev_deg": {
+          "shoulder_pan": -5.0,
+          "shoulder_lift": -3.9000000953674316,
+          "elbow_flex": 3.799999952316284,
+          "wrist_flex": 8.399999618530273,
+          "wrist_roll": -24.299999237060547,
+          "gripper": 0.10000000149011612
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.04,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 189,
+        "xy_to_target_cm": 6.39,
+        "z_to_target_cm": 1.08,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_02",
+      "seed": 204001,
+      "oracle_episode": 41,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 216,
+      "oracle_events": {
+        "t_descend": 59,
+        "t_close": 75,
+        "grasp_z": 0.01997262287374668
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.642,
+      "mean_dev_cm": 3.4,
+      "divergence": {
+        "policy_step": 60,
+        "oracle_step": 61,
+        "phase": "descend",
+        "dev_cm": 2.46,
+        "joint_dev_deg": {
+          "shoulder_pan": -10.399999618530273,
+          "shoulder_lift": -1.0,
+          "elbow_flex": 1.399999976158142,
+          "wrist_flex": 4.900000095367432,
+          "wrist_roll": -9.300000190734863,
+          "gripper": -0.4000000059604645
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.04,
+        "z": 0.75
+      },
+      "policy_close": {
+        "step": 113,
+        "xy_to_target_cm": 0.52,
+        "z_to_target_cm": 0.94,
+        "aligned_phase": "close"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_02",
+      "seed": 204002,
+      "oracle_episode": 42,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 207,
+      "oracle_events": {
+        "t_descend": 55,
+        "t_close": 70,
+        "grasp_z": 0.020197693409029615
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.505,
+      "mean_dev_cm": 10.6,
+      "divergence": {
+        "policy_step": 61,
+        "oracle_step": 95,
+        "phase": "carry",
+        "dev_cm": 2.25,
+        "joint_dev_deg": {
+          "shoulder_pan": 7.0,
+          "shoulder_lift": -1.7000000476837158,
+          "elbow_flex": 6.5,
+          "wrist_flex": -8.699999809265137,
+          "wrist_roll": 17.399999618530273,
+          "gripper": 27.700000762939453
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.04,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 76,
+        "xy_to_target_cm": 1.25,
+        "z_to_target_cm": 0.84,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_02",
+      "seed": 204003,
+      "oracle_episode": 43,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 228,
+      "oracle_events": {
+        "t_descend": 64,
+        "t_close": 79,
+        "grasp_z": 0.020090946259094123
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.559,
+      "mean_dev_cm": 5.96,
+      "divergence": {
+        "policy_step": 82,
+        "oracle_step": 101,
+        "phase": "carry",
+        "dev_cm": 2.26,
+        "joint_dev_deg": {
+          "shoulder_pan": -3.200000047683716,
+          "shoulder_lift": -8.800000190734863,
+          "elbow_flex": 12.100000381469727,
+          "wrist_flex": -4.5,
+          "wrist_roll": 18.799999237060547,
+          "gripper": 27.100000381469727
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.05,
+        "z": 0.77
+      },
+      "policy_close": {
+        "step": 186,
+        "xy_to_target_cm": 3.75,
+        "z_to_target_cm": 1.21,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_02",
+      "seed": 204004,
+      "oracle_episode": 44,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 216,
+      "oracle_events": {
+        "t_descend": 58,
+        "t_close": 75,
+        "grasp_z": 0.020251819541303426
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 2.58,
+      "divergence": {
+        "policy_step": 67,
+        "oracle_step": 103,
+        "phase": "carry",
+        "dev_cm": 2.07,
+        "joint_dev_deg": {
+          "shoulder_pan": -3.0999999046325684,
+          "shoulder_lift": -2.299999952316284,
+          "elbow_flex": 8.600000381469727,
+          "wrist_flex": -4.699999809265137,
+          "wrist_roll": -3.4000000953674316,
+          "gripper": 28.399999618530273
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.02,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 88,
+        "xy_to_target_cm": 1.31,
+        "z_to_target_cm": 0.75,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_03",
+      "seed": 206000,
+      "oracle_episode": 80,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 201,
+      "oracle_events": {
+        "t_descend": 55,
+        "t_close": 70,
+        "grasp_z": 0.020065956883394426
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.9,
+      "mean_dev_cm": 4.3,
+      "divergence": {
+        "policy_step": 42,
+        "oracle_step": 29,
+        "phase": "approach",
+        "dev_cm": 2.49,
+        "joint_dev_deg": {
+          "shoulder_pan": 3.4000000953674316,
+          "shoulder_lift": -8.199999809265137,
+          "elbow_flex": 8.899999618530273,
+          "wrist_flex": 1.7999999523162842,
+          "wrist_roll": 1.100000023841858,
+          "gripper": 0.800000011920929
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.06,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 110,
+        "xy_to_target_cm": 11.78,
+        "z_to_target_cm": 1.0,
+        "aligned_phase": "descend"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_03",
+      "seed": 206002,
+      "oracle_episode": 81,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 217,
+      "oracle_events": {
+        "t_descend": 57,
+        "t_close": 72,
+        "grasp_z": 0.02007158621725789
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.773,
+      "mean_dev_cm": 13.82,
+      "divergence": {
+        "policy_step": 70,
+        "oracle_step": 97,
+        "phase": "carry",
+        "dev_cm": 2.23,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.399999976158142,
+          "shoulder_lift": 20.600000381469727,
+          "elbow_flex": -16.0,
+          "wrist_flex": 1.100000023841858,
+          "wrist_roll": 14.800000190734863,
+          "gripper": 30.299999237060547
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.16,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 163,
+        "xy_to_target_cm": 5.95,
+        "z_to_target_cm": 1.3,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_03",
+      "seed": 206004,
+      "oracle_episode": 82,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 196,
+      "oracle_events": {
+        "t_descend": 53,
+        "t_close": 68,
+        "grasp_z": 0.02008111107182107
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 4.61,
+      "divergence": {
+        "policy_step": 26,
+        "oracle_step": 16,
+        "phase": "approach",
+        "dev_cm": 2.42,
+        "joint_dev_deg": {
+          "shoulder_pan": 8.100000381469727,
+          "shoulder_lift": 14.5,
+          "elbow_flex": -8.5,
+          "wrist_flex": 9.5,
+          "wrist_roll": 5.199999809265137,
+          "gripper": 15.100000381469727
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.07,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 84,
+        "xy_to_target_cm": 11.17,
+        "z_to_target_cm": 0.79,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_03",
+      "seed": 206005,
+      "oracle_episode": 83,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 466,
+      "oracle_steps": 148,
+      "oracle_events": {
+        "t_descend": 48,
+        "t_close": 63,
+        "grasp_z": 0.020117432975799564
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 1.0,
+      "mean_dev_cm": 2.55,
+      "divergence": {
+        "policy_step": 71,
+        "oracle_step": 85,
+        "phase": "carry",
+        "dev_cm": 2.26,
+        "joint_dev_deg": {
+          "shoulder_pan": -5.5,
+          "shoulder_lift": -2.4000000953674316,
+          "elbow_flex": 9.800000190734863,
+          "wrist_flex": -9.5,
+          "wrist_roll": -24.5,
+          "gripper": 10.399999618530273
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.06,
+        "z": 0.77
+      },
+      "policy_close": {
+        "step": 66,
+        "xy_to_target_cm": 1.18,
+        "z_to_target_cm": 0.83,
+        "aligned_phase": "carry"
+      },
+      "tip": {
+        "step": 465,
+        "grasp_point_r_from_pot_axis_cm": 5.15,
+        "pot_inner_radius_cm": 5.9,
+        "pot_outer_radius_cm": 6.5,
+        "grasp_point_z_cm": 7.49,
+        "pot_height_cm": 6.0,
+        "where": "over / at the wall",
+        "aligned_oracle_phase": "carry",
+        "dev_from_oracle_path_cm": 5.15,
+        "gripper_cmd": 27.0,
+        "gripper_state": 26.9,
+        "joint_dev_deg": {
+          "shoulder_pan": -9.300000190734863,
+          "shoulder_lift": -5.900000095367432,
+          "elbow_flex": 9.699999809265137,
+          "wrist_flex": -4.0,
+          "wrist_roll": 124.5999984741211,
+          "gripper": -2.4000000953674316
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.03
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_03",
+      "seed": 206006,
+      "oracle_episode": 84,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 205,
+      "oracle_events": {
+        "t_descend": 58,
+        "t_close": 73,
+        "grasp_z": 0.020113876659489185
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.907,
+      "mean_dev_cm": 3.12,
+      "divergence": {
+        "policy_step": 37,
+        "oracle_step": 35,
+        "phase": "approach",
+        "dev_cm": 2.55,
+        "joint_dev_deg": {
+          "shoulder_pan": 4.400000095367432,
+          "shoulder_lift": -4.400000095367432,
+          "elbow_flex": 4.400000095367432,
+          "wrist_flex": 5.5,
+          "wrist_roll": -4.800000190734863,
+          "gripper": 0.4000000059604645
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.01,
+        "z": 0.77
+      },
+      "policy_close": {
+        "step": 187,
+        "xy_to_target_cm": 3.37,
+        "z_to_target_cm": 1.44,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_04",
+      "seed": 208000,
+      "oracle_episode": 120,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 536,
+      "oracle_steps": 439,
+      "oracle_events": {
+        "t_descend": 65,
+        "t_close": 80,
+        "grasp_z": 0.02010557510269661
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.737,
+      "mean_dev_cm": 4.05,
+      "divergence": {
+        "policy_step": 60,
+        "oracle_step": 102,
+        "phase": "carry",
+        "dev_cm": 2.15,
+        "joint_dev_deg": {
+          "shoulder_pan": -5.599999904632568,
+          "shoulder_lift": -1.399999976158142,
+          "elbow_flex": -0.30000001192092896,
+          "wrist_flex": 7.0,
+          "wrist_roll": -12.5,
+          "gripper": 18.799999237060547
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.02,
+        "z": 0.41
+      },
+      "policy_close": {
+        "step": 77,
+        "xy_to_target_cm": 3.1,
+        "z_to_target_cm": 0.85,
+        "aligned_phase": "close"
+      },
+      "tip": {
+        "step": 535,
+        "grasp_point_r_from_pot_axis_cm": 3.77,
+        "pot_inner_radius_cm": 7.4,
+        "pot_outer_radius_cm": 8.0,
+        "grasp_point_z_cm": 11.02,
+        "pot_height_cm": 7.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "carry",
+        "dev_from_oracle_path_cm": 2.15,
+        "gripper_cmd": -0.1,
+        "gripper_state": 11.2,
+        "joint_dev_deg": {
+          "shoulder_pan": 0.699999988079071,
+          "shoulder_lift": 0.8999999761581421,
+          "elbow_flex": 4.800000190734863,
+          "wrist_flex": 2.4000000953674316,
+          "wrist_roll": 2.299999952316284,
+          "gripper": -34.70000076293945
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 15.67
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_04",
+      "seed": 208001,
+      "oracle_episode": 121,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 1200,
+      "oracle_steps": 877,
+      "oracle_events": {
+        "t_descend": 58,
+        "t_close": 73,
+        "grasp_z": 0.01997733284347862
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.913,
+      "mean_dev_cm": 3.02,
+      "divergence": {
+        "policy_step": 69,
+        "oracle_step": 100,
+        "phase": "carry",
+        "dev_cm": 2.16,
+        "joint_dev_deg": {
+          "shoulder_pan": -0.0,
+          "shoulder_lift": 3.700000047683716,
+          "elbow_flex": 3.5,
+          "wrist_flex": -5.699999809265137,
+          "wrist_roll": 16.0,
+          "gripper": 13.100000381469727
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.05,
+        "z": 0.4
+      },
+      "policy_close": {
+        "step": 98,
+        "xy_to_target_cm": 1.61,
+        "z_to_target_cm": 0.45,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_04",
+      "seed": 208003,
+      "oracle_episode": 122,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 1200,
+      "oracle_steps": 426,
+      "oracle_events": {
+        "t_descend": 60,
+        "t_close": 75,
+        "grasp_z": 0.0190007438074409
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.254,
+      "mean_dev_cm": 10.36,
+      "divergence": {
+        "policy_step": 40,
+        "oracle_step": 42,
+        "phase": "approach",
+        "dev_cm": 2.04,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.5999999046325684,
+          "shoulder_lift": -6.0,
+          "elbow_flex": 6.0,
+          "wrist_flex": 2.5999999046325684,
+          "wrist_roll": -0.5,
+          "gripper": 3.5
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 1.03,
+        "z": 0.3
+      },
+      "policy_close": {
+        "step": 157,
+        "xy_to_target_cm": 9.4,
+        "z_to_target_cm": 1.02,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_04",
+      "seed": 208004,
+      "oracle_episode": 123,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 1200,
+      "oracle_steps": 447,
+      "oracle_events": {
+        "t_descend": 71,
+        "t_close": 86,
+        "grasp_z": 0.020035357069091014
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.895,
+      "mean_dev_cm": 7.44,
+      "divergence": {
+        "policy_step": 91,
+        "oracle_step": 107,
+        "phase": "carry",
+        "dev_cm": 2.42,
+        "joint_dev_deg": {
+          "shoulder_pan": -5.099999904632568,
+          "shoulder_lift": -6.0,
+          "elbow_flex": 9.0,
+          "wrist_flex": -3.200000047683716,
+          "wrist_roll": 5.800000190734863,
+          "gripper": 9.399999618530273
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.05,
+        "z": 0.41
+      },
+      "policy_close": {
+        "step": 99,
+        "xy_to_target_cm": 3.6,
+        "z_to_target_cm": 0.69,
+        "aligned_phase": "close"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_04",
+      "seed": 208005,
+      "oracle_episode": 124,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 1200,
+      "oracle_steps": 451,
+      "oracle_events": {
+        "t_descend": 52,
+        "t_close": 67,
+        "grasp_z": 0.020098563049552674
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.322,
+      "mean_dev_cm": 18.65,
+      "divergence": {
+        "policy_step": 61,
+        "oracle_step": 95,
+        "phase": "carry",
+        "dev_cm": 2.74,
+        "joint_dev_deg": {
+          "shoulder_pan": 4.599999904632568,
+          "shoulder_lift": 2.5,
+          "elbow_flex": -2.0,
+          "wrist_flex": -6.900000095367432,
+          "wrist_roll": -0.800000011920929,
+          "gripper": 12.899999618530273
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.02,
+        "z": 0.41
+      },
+      "policy_close": {
+        "step": 106,
+        "xy_to_target_cm": 2.46,
+        "z_to_target_cm": 1.05,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_05",
+      "seed": 210000,
+      "oracle_episode": 160,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 76,
+      "oracle_steps": 216,
+      "oracle_events": {
+        "t_descend": 187,
+        "t_close": 215,
+        "grasp_z": 0.04407284501919967
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.363,
+      "mean_dev_cm": 1.06,
+      "divergence": null,
+      "oracle_close_offset_cm": {
+        "xy": 26.92,
+        "z": 2.36
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 75,
+        "grasp_point_r_from_pot_axis_cm": 2.74,
+        "pot_inner_radius_cm": 7.4,
+        "pot_outer_radius_cm": 8.0,
+        "grasp_point_z_cm": 3.67,
+        "pot_height_cm": 7.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "approach",
+        "dev_from_oracle_path_cm": 2.75,
+        "gripper_cmd": 24.8,
+        "gripper_state": 24.8,
+        "joint_dev_deg": {
+          "shoulder_pan": 4.0,
+          "shoulder_lift": 8.399999618530273,
+          "elbow_flex": -11.399999618530273,
+          "wrist_flex": 0.8999999761581421,
+          "wrist_roll": 4.199999809265137,
+          "gripper": -0.20000000298023224
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.02
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_05",
+      "seed": 210001,
+      "oracle_episode": 161,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 80,
+      "oracle_steps": 236,
+      "oracle_events": {
+        "t_descend": 0,
+        "t_close": 235,
+        "grasp_z": 0.10698103142031352
+      },
+      "max_oracle_progress_phase": "descend",
+      "max_oracle_progress_frac": 0.498,
+      "mean_dev_cm": 1.57,
+      "divergence": null,
+      "oracle_close_offset_cm": {
+        "xy": 29.38,
+        "z": 8.65
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 79,
+        "grasp_point_r_from_pot_axis_cm": 1.85,
+        "pot_inner_radius_cm": 7.4,
+        "pot_outer_radius_cm": 8.0,
+        "grasp_point_z_cm": 4.4,
+        "pot_height_cm": 7.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "descend",
+        "dev_from_oracle_path_cm": 4.05,
+        "gripper_cmd": 25.7,
+        "gripper_state": 25.8,
+        "joint_dev_deg": {
+          "shoulder_pan": 3.700000047683716,
+          "shoulder_lift": 5.199999809265137,
+          "elbow_flex": 9.899999618530273,
+          "wrist_flex": -20.299999237060547,
+          "wrist_roll": 2.0,
+          "gripper": 8.399999618530273
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.07
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_05",
+      "seed": 210002,
+      "oracle_episode": 162,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 80,
+      "oracle_steps": 218,
+      "oracle_events": {
+        "t_descend": 0,
+        "t_close": 217,
+        "grasp_z": 0.1021762077559808
+      },
+      "max_oracle_progress_phase": "descend",
+      "max_oracle_progress_frac": 0.521,
+      "mean_dev_cm": 1.85,
+      "divergence": null,
+      "oracle_close_offset_cm": {
+        "xy": 25.83,
+        "z": 8.17
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 79,
+        "grasp_point_r_from_pot_axis_cm": 2.9,
+        "pot_inner_radius_cm": 7.4,
+        "pot_outer_radius_cm": 8.0,
+        "grasp_point_z_cm": 3.92,
+        "pot_height_cm": 7.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "descend",
+        "dev_from_oracle_path_cm": 5.35,
+        "gripper_cmd": 25.0,
+        "gripper_state": 25.0,
+        "joint_dev_deg": {
+          "shoulder_pan": -3.700000047683716,
+          "shoulder_lift": -3.0,
+          "elbow_flex": 23.5,
+          "wrist_flex": -17.0,
+          "wrist_roll": -16.600000381469727,
+          "gripper": 8.600000381469727
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.06
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_05",
+      "seed": 210003,
+      "oracle_episode": 163,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 90,
+      "oracle_steps": 232,
+      "oracle_events": {
+        "t_descend": 184,
+        "t_close": 231,
+        "grasp_z": 0.08785287986352484
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.498,
+      "mean_dev_cm": 1.27,
+      "divergence": null,
+      "oracle_close_offset_cm": {
+        "xy": 32.47,
+        "z": 6.74
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 89,
+        "grasp_point_r_from_pot_axis_cm": 2.21,
+        "pot_inner_radius_cm": 7.4,
+        "pot_outer_radius_cm": 8.0,
+        "grasp_point_z_cm": 4.09,
+        "pot_height_cm": 7.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "approach",
+        "dev_from_oracle_path_cm": 4.85,
+        "gripper_cmd": 24.6,
+        "gripper_state": 24.6,
+        "joint_dev_deg": {
+          "shoulder_pan": -0.30000001192092896,
+          "shoulder_lift": -5.400000095367432,
+          "elbow_flex": 25.700000762939453,
+          "wrist_flex": -19.299999237060547,
+          "wrist_roll": 10.5,
+          "gripper": 9.899999618530273
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.06
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_05",
+      "seed": 210006,
+      "oracle_episode": 164,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 214,
+      "oracle_steps": 215,
+      "oracle_events": {
+        "t_descend": 186,
+        "t_close": 214,
+        "grasp_z": 0.04409016314675657
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.547,
+      "mean_dev_cm": 3.59,
+      "divergence": {
+        "policy_step": 77,
+        "oracle_step": 112,
+        "phase": "approach",
+        "dev_cm": 2.47,
+        "joint_dev_deg": {
+          "shoulder_pan": -5.800000190734863,
+          "shoulder_lift": 4.599999904632568,
+          "elbow_flex": 2.299999952316284,
+          "wrist_flex": -4.699999809265137,
+          "wrist_roll": -23.5,
+          "gripper": 8.399999618530273
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 27.07,
+        "z": 2.36
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 213,
+        "grasp_point_r_from_pot_axis_cm": 1.61,
+        "pot_inner_radius_cm": 7.4,
+        "pot_outer_radius_cm": 8.0,
+        "grasp_point_z_cm": 5.25,
+        "pot_height_cm": 7.0,
+        "where": "inside opening",
+        "aligned_oracle_phase": "approach",
+        "dev_from_oracle_path_cm": 4.57,
+        "gripper_cmd": 23.5,
+        "gripper_state": 23.7,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.399999976158142,
+          "shoulder_lift": 16.200000762939453,
+          "elbow_flex": -4.400000095367432,
+          "wrist_flex": -12.399999618530273,
+          "wrist_roll": -15.699999809265137,
+          "gripper": 6.800000190734863
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 1.13
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_06",
+      "seed": 212000,
+      "oracle_episode": 200,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 79,
+      "oracle_steps": 201,
+      "oracle_events": {
+        "t_descend": 171,
+        "t_close": 200,
+        "grasp_z": 0.04414447507352608
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.57,
+      "mean_dev_cm": 1.48,
+      "divergence": null,
+      "oracle_close_offset_cm": {
+        "xy": 19.44,
+        "z": 2.37
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 78,
+        "grasp_point_r_from_pot_axis_cm": 2.29,
+        "pot_inner_radius_cm": 4.2,
+        "pot_outer_radius_cm": 4.8,
+        "grasp_point_z_cm": 4.57,
+        "pot_height_cm": 5.5,
+        "where": "inside opening",
+        "aligned_oracle_phase": "approach",
+        "dev_from_oracle_path_cm": 3.0,
+        "gripper_cmd": 26.7,
+        "gripper_state": 26.7,
+        "joint_dev_deg": {
+          "shoulder_pan": -7.0,
+          "shoulder_lift": -9.0,
+          "elbow_flex": 19.899999618530273,
+          "wrist_flex": -22.200000762939453,
+          "wrist_roll": -1.100000023841858,
+          "gripper": 8.899999618530273
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.0
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_06",
+      "seed": 212001,
+      "oracle_episode": 201,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 91,
+      "oracle_steps": 247,
+      "oracle_events": {
+        "t_descend": 0,
+        "t_close": 246,
+        "grasp_z": 0.10249684566931512
+      },
+      "max_oracle_progress_phase": "descend",
+      "max_oracle_progress_frac": 0.577,
+      "mean_dev_cm": 2.78,
+      "divergence": {
+        "policy_step": 48,
+        "oracle_step": 52,
+        "phase": "descend",
+        "dev_cm": 2.14,
+        "joint_dev_deg": {
+          "shoulder_pan": -1.600000023841858,
+          "shoulder_lift": -7.199999809265137,
+          "elbow_flex": 11.0,
+          "wrist_flex": -1.2999999523162842,
+          "wrist_roll": -6.900000095367432,
+          "gripper": 1.600000023841858
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 25.5,
+        "z": 8.2
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 90,
+        "grasp_point_r_from_pot_axis_cm": 6.24,
+        "pot_inner_radius_cm": 4.2,
+        "pot_outer_radius_cm": 4.8,
+        "grasp_point_z_cm": 5.84,
+        "pot_height_cm": 5.5,
+        "where": "over / at the wall",
+        "aligned_oracle_phase": "descend",
+        "dev_from_oracle_path_cm": 6.56,
+        "gripper_cmd": 30.2,
+        "gripper_state": 30.2,
+        "joint_dev_deg": {
+          "shoulder_pan": -15.100000381469727,
+          "shoulder_lift": 4.699999809265137,
+          "elbow_flex": 5.199999809265137,
+          "wrist_flex": -14.600000381469727,
+          "wrist_roll": -16.899999618530273,
+          "gripper": 15.800000190734863
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.03
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_06",
+      "seed": 212002,
+      "oracle_episode": 202,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 104,
+      "oracle_steps": 230,
+      "oracle_events": {
+        "t_descend": 200,
+        "t_close": 229,
+        "grasp_z": 0.04422976223887071
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.629,
+      "mean_dev_cm": 2.34,
+      "divergence": {
+        "policy_step": 57,
+        "oracle_step": 55,
+        "phase": "approach",
+        "dev_cm": 2.15,
+        "joint_dev_deg": {
+          "shoulder_pan": -1.399999976158142,
+          "shoulder_lift": -7.900000095367432,
+          "elbow_flex": 11.199999809265137,
+          "wrist_flex": -2.200000047683716,
+          "wrist_roll": -31.700000762939453,
+          "gripper": 0.0
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 27.24,
+        "z": 2.38
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 103,
+        "grasp_point_r_from_pot_axis_cm": 3.47,
+        "pot_inner_radius_cm": 4.2,
+        "pot_outer_radius_cm": 4.8,
+        "grasp_point_z_cm": 9.8,
+        "pot_height_cm": 5.5,
+        "where": "over / at the wall",
+        "aligned_oracle_phase": "approach",
+        "dev_from_oracle_path_cm": 2.82,
+        "gripper_cmd": 28.9,
+        "gripper_state": 28.9,
+        "joint_dev_deg": {
+          "shoulder_pan": -8.199999809265137,
+          "shoulder_lift": -2.299999952316284,
+          "elbow_flex": 3.4000000953674316,
+          "wrist_flex": -5.400000095367432,
+          "wrist_roll": -42.900001525878906,
+          "gripper": 12.300000190734863
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.54
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_06",
+      "seed": 212003,
+      "oracle_episode": 203,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 78,
+      "oracle_steps": 233,
+      "oracle_events": {
+        "t_descend": 0,
+        "t_close": 232,
+        "grasp_z": 0.10253144066329452
+      },
+      "max_oracle_progress_phase": "descend",
+      "max_oracle_progress_frac": 0.5,
+      "mean_dev_cm": 1.32,
+      "divergence": null,
+      "oracle_close_offset_cm": {
+        "xy": 27.69,
+        "z": 8.21
+      },
+      "policy_close": null,
+      "tip": {
+        "step": 77,
+        "grasp_point_r_from_pot_axis_cm": 1.32,
+        "pot_inner_radius_cm": 4.2,
+        "pot_outer_radius_cm": 4.8,
+        "grasp_point_z_cm": 4.49,
+        "pot_height_cm": 5.5,
+        "where": "inside opening",
+        "aligned_oracle_phase": "descend",
+        "dev_from_oracle_path_cm": 2.42,
+        "gripper_cmd": 25.2,
+        "gripper_state": 25.1,
+        "joint_dev_deg": {
+          "shoulder_pan": 3.799999952316284,
+          "shoulder_lift": 2.0,
+          "elbow_flex": 6.699999809265137,
+          "wrist_flex": -11.399999618530273,
+          "wrist_roll": 6.599999904632568,
+          "gripper": 8.5
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.0
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_06",
+      "seed": 212004,
+      "oracle_episode": 204,
+      "success": false,
+      "failure": "pot_tipped_over",
+      "policy_steps": 94,
+      "oracle_steps": 228,
+      "oracle_events": {
+        "t_descend": 0,
+        "t_close": 227,
+        "grasp_z": 0.10228470634404849
+      },
+      "max_oracle_progress_phase": "descend",
+      "max_oracle_progress_frac": 0.511,
+      "mean_dev_cm": 2.14,
+      "divergence": {
+        "policy_step": 63,
+        "oracle_step": 111,
+        "phase": "descend",
+        "dev_cm": 2.77,
+        "joint_dev_deg": {
+          "shoulder_pan": -1.600000023841858,
+          "shoulder_lift": 3.5999999046325684,
+          "elbow_flex": 6.900000095367432,
+          "wrist_flex": -7.599999904632568,
+          "wrist_roll": -1.600000023841858,
+          "gripper": 9.699999809265137
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 31.19,
+        "z": 8.18
+      },
+      "policy_close": {
+        "step": 76,
+        "xy_to_target_cm": 1.73,
+        "z_to_target_cm": 0.75,
+        "aligned_phase": "descend"
+      },
+      "tip": {
+        "step": 93,
+        "grasp_point_r_from_pot_axis_cm": 2.89,
+        "pot_inner_radius_cm": 4.2,
+        "pot_outer_radius_cm": 4.8,
+        "grasp_point_z_cm": 4.69,
+        "pot_height_cm": 5.5,
+        "where": "inside opening",
+        "aligned_oracle_phase": "descend",
+        "dev_from_oracle_path_cm": 4.71,
+        "gripper_cmd": 0.5,
+        "gripper_state": 17.9,
+        "joint_dev_deg": {
+          "shoulder_pan": -7.0,
+          "shoulder_lift": 10.100000381469727,
+          "elbow_flex": 2.5999999046325684,
+          "wrist_flex": -11.699999809265137,
+          "wrist_roll": -1.100000023841858,
+          "gripper": 2.0
+        },
+        "oracle_min_r_from_pot_axis_cm_while_below_rim": 0.04
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_07",
+      "seed": 214000,
+      "oracle_episode": 240,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 195,
+      "oracle_events": {
+        "t_descend": 49,
+        "t_close": 64,
+        "grasp_z": 0.020155620310251213
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.531,
+      "mean_dev_cm": 6.4,
+      "divergence": {
+        "policy_step": 59,
+        "oracle_step": 85,
+        "phase": "carry",
+        "dev_cm": 2.15,
+        "joint_dev_deg": {
+          "shoulder_pan": 7.599999904632568,
+          "shoulder_lift": -11.600000381469727,
+          "elbow_flex": 7.300000190734863,
+          "wrist_flex": 1.7999999523162842,
+          "wrist_roll": 16.600000381469727,
+          "gripper": 29.700000762939453
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.12,
+        "z": 0.77
+      },
+      "policy_close": {
+        "step": 98,
+        "xy_to_target_cm": 2.27,
+        "z_to_target_cm": 0.79,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_07",
+      "seed": 214001,
+      "oracle_episode": 241,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 188,
+      "oracle_events": {
+        "t_descend": 51,
+        "t_close": 66,
+        "grasp_z": 0.020223392776115443
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.952,
+      "mean_dev_cm": 5.73,
+      "divergence": {
+        "policy_step": 72,
+        "oracle_step": 95,
+        "phase": "carry",
+        "dev_cm": 2.23,
+        "joint_dev_deg": {
+          "shoulder_pan": 0.4000000059604645,
+          "shoulder_lift": 9.0,
+          "elbow_flex": -11.300000190734863,
+          "wrist_flex": 0.20000000298023224,
+          "wrist_roll": 26.700000762939453,
+          "gripper": 29.799999237060547
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.03,
+        "z": 0.78
+      },
+      "policy_close": {
+        "step": 149,
+        "xy_to_target_cm": 0.9,
+        "z_to_target_cm": 0.74,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_07",
+      "seed": 214002,
+      "oracle_episode": 242,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 215,
+      "oracle_events": {
+        "t_descend": 55,
+        "t_close": 72,
+        "grasp_z": 0.01976678218766289
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.953,
+      "mean_dev_cm": 3.69,
+      "divergence": {
+        "policy_step": 74,
+        "oracle_step": 96,
+        "phase": "carry",
+        "dev_cm": 2.29,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.2000000476837158,
+          "shoulder_lift": 12.199999809265137,
+          "elbow_flex": 2.299999952316284,
+          "wrist_flex": -13.399999618530273,
+          "wrist_roll": 7.5,
+          "gripper": 29.799999237060547
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.04,
+        "z": 0.73
+      },
+      "policy_close": {
+        "step": 86,
+        "xy_to_target_cm": 0.41,
+        "z_to_target_cm": 0.72,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_07",
+      "seed": 214003,
+      "oracle_episode": 243,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 200,
+      "oracle_events": {
+        "t_descend": 53,
+        "t_close": 68,
+        "grasp_z": 0.02007179609741019
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.889,
+      "mean_dev_cm": 6.37,
+      "divergence": {
+        "policy_step": 41,
+        "oracle_step": 41,
+        "phase": "approach",
+        "dev_cm": 2.31,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.9000000953674316,
+          "shoulder_lift": -10.399999618530273,
+          "elbow_flex": 16.899999618530273,
+          "wrist_flex": -8.5,
+          "wrist_roll": -15.800000190734863,
+          "gripper": 1.7000000476837158
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.06,
+        "z": 0.76
+      },
+      "policy_close": {
+        "step": 87,
+        "xy_to_target_cm": 4.32,
+        "z_to_target_cm": 0.71,
+        "aligned_phase": "descend"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_07",
+      "seed": 214004,
+      "oracle_episode": 244,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 214,
+      "oracle_events": {
+        "t_descend": 59,
+        "t_close": 74,
+        "grasp_z": 0.020119217241977405
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.516,
+      "mean_dev_cm": 5.14,
+      "divergence": {
+        "policy_step": 21,
+        "oracle_step": 11,
+        "phase": "approach",
+        "dev_cm": 2.31,
+        "joint_dev_deg": {
+          "shoulder_pan": 3.0,
+          "shoulder_lift": 22.700000762939453,
+          "elbow_flex": -13.800000190734863,
+          "wrist_flex": 14.399999618530273,
+          "wrist_roll": 5.099999904632568,
+          "gripper": 8.699999809265137
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.15,
+        "z": 0.77
+      },
+      "policy_close": {
+        "step": 89,
+        "xy_to_target_cm": 4.29,
+        "z_to_target_cm": 0.7,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_08",
+      "seed": 216000,
+      "oracle_episode": 280,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 269,
+      "oracle_events": {
+        "t_descend": 70,
+        "t_close": 87,
+        "grasp_z": 0.020156094983598348
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.567,
+      "mean_dev_cm": 8.54,
+      "divergence": {
+        "policy_step": 31,
+        "oracle_step": 32,
+        "phase": "approach",
+        "dev_cm": 3.35,
+        "joint_dev_deg": {
+          "shoulder_pan": 0.30000001192092896,
+          "shoulder_lift": -8.100000381469727,
+          "elbow_flex": 9.899999618530273,
+          "wrist_flex": 4.5,
+          "wrist_roll": 17.399999618530273,
+          "gripper": 1.2000000476837158
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_08",
+      "seed": 216001,
+      "oracle_episode": 281,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 219,
+      "oracle_events": {
+        "t_descend": 67,
+        "t_close": 82,
+        "grasp_z": 0.020066517698557416
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.972,
+      "mean_dev_cm": 5.36,
+      "divergence": {
+        "policy_step": 29,
+        "oracle_step": 32,
+        "phase": "approach",
+        "dev_cm": 2.08,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.200000047683716,
+          "shoulder_lift": -5.400000095367432,
+          "elbow_flex": 5.699999809265137,
+          "wrist_flex": 3.200000047683716,
+          "wrist_roll": -6.599999904632568,
+          "gripper": 1.0
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_08",
+      "seed": 216002,
+      "oracle_episode": 282,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 176,
+      "oracle_events": {
+        "t_descend": 46,
+        "t_close": 61,
+        "grasp_z": 0.020126845586385562
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.554,
+      "mean_dev_cm": 15.14,
+      "divergence": {
+        "policy_step": 22,
+        "oracle_step": 11,
+        "phase": "approach",
+        "dev_cm": 2.19,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.2999999523162842,
+          "shoulder_lift": 23.5,
+          "elbow_flex": -11.600000381469727,
+          "wrist_flex": 9.600000381469727,
+          "wrist_roll": 2.0,
+          "gripper": 4.400000095367432
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_08",
+      "seed": 216003,
+      "oracle_episode": 283,
+      "success": false,
+      "failure": "wrong_cube_chosen",
+      "policy_steps": 201,
+      "oracle_steps": 214,
+      "oracle_events": {
+        "t_descend": 65,
+        "t_close": 80,
+        "grasp_z": 0.020077741592298397
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.258,
+      "mean_dev_cm": 8.42,
+      "divergence": {
+        "policy_step": 53,
+        "oracle_step": 54,
+        "phase": "approach",
+        "dev_cm": 2.72,
+        "joint_dev_deg": {
+          "shoulder_pan": -0.30000001192092896,
+          "shoulder_lift": 5.0,
+          "elbow_flex": 4.300000190734863,
+          "wrist_flex": -1.2999999523162842,
+          "wrist_roll": -10.699999809265137,
+          "gripper": -2.0999999046325684
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_08",
+      "seed": 216004,
+      "oracle_episode": 284,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 207,
+      "oracle_events": {
+        "t_descend": 53,
+        "t_close": 70,
+        "grasp_z": 0.0202055268006945
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.519,
+      "mean_dev_cm": 9.57,
+      "divergence": {
+        "policy_step": 41,
+        "oracle_step": 49,
+        "phase": "approach",
+        "dev_cm": 2.62,
+        "joint_dev_deg": {
+          "shoulder_pan": 0.800000011920929,
+          "shoulder_lift": -9.5,
+          "elbow_flex": 8.699999809265137,
+          "wrist_flex": 3.4000000953674316,
+          "wrist_roll": 17.5,
+          "gripper": -1.0
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_09",
+      "seed": 218000,
+      "oracle_episode": 320,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 378,
+      "oracle_events": {
+        "t_descend": 74,
+        "t_close": 90,
+        "grasp_z": 0.04974359205540396
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.992,
+      "mean_dev_cm": 3.88,
+      "divergence": {
+        "policy_step": 19,
+        "oracle_step": 21,
+        "phase": "approach",
+        "dev_cm": 2.16,
+        "joint_dev_deg": {
+          "shoulder_pan": -3.5999999046325684,
+          "shoulder_lift": -0.699999988079071,
+          "elbow_flex": 3.799999952316284,
+          "wrist_flex": 3.0,
+          "wrist_roll": -5.599999904632568,
+          "gripper": -0.4000000059604645
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.09,
+        "z": 0.88
+      },
+      "policy_close": {
+        "step": 103,
+        "xy_to_target_cm": 0.57,
+        "z_to_target_cm": 0.81,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_09",
+      "seed": 218001,
+      "oracle_episode": 321,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 426,
+      "oracle_events": {
+        "t_descend": 86,
+        "t_close": 102,
+        "grasp_z": 0.04974620255532532
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.318,
+      "mean_dev_cm": 3.93,
+      "divergence": {
+        "policy_step": 21,
+        "oracle_step": 8,
+        "phase": "approach",
+        "dev_cm": 2.89,
+        "joint_dev_deg": {
+          "shoulder_pan": -7.599999904632568,
+          "shoulder_lift": 33.0,
+          "elbow_flex": -16.899999618530273,
+          "wrist_flex": 11.100000381469727,
+          "wrist_roll": -4.0,
+          "gripper": 7.800000190734863
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.16,
+        "z": 0.88
+      },
+      "policy_close": {
+        "step": 129,
+        "xy_to_target_cm": 3.22,
+        "z_to_target_cm": 4.54,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_09",
+      "seed": 218002,
+      "oracle_episode": 322,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 415,
+      "oracle_events": {
+        "t_descend": 59,
+        "t_close": 75,
+        "grasp_z": 0.049749606523182235
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.986,
+      "mean_dev_cm": 2.43,
+      "divergence": {
+        "policy_step": 56,
+        "oracle_step": 101,
+        "phase": "carry",
+        "dev_cm": 2.34,
+        "joint_dev_deg": {
+          "shoulder_pan": -3.5,
+          "shoulder_lift": -9.199999809265137,
+          "elbow_flex": 12.0,
+          "wrist_flex": -2.0,
+          "wrist_roll": -2.5,
+          "gripper": 32.599998474121094
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.61,
+        "z": 0.88
+      },
+      "policy_close": {
+        "step": 94,
+        "xy_to_target_cm": 2.19,
+        "z_to_target_cm": 0.87,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_09",
+      "seed": 218003,
+      "oracle_episode": 323,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 408,
+      "oracle_events": {
+        "t_descend": 73,
+        "t_close": 89,
+        "grasp_z": 0.049737898815706415
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.3,
+      "mean_dev_cm": 4.08,
+      "divergence": {
+        "policy_step": 41,
+        "oracle_step": 43,
+        "phase": "approach",
+        "dev_cm": 2.29,
+        "joint_dev_deg": {
+          "shoulder_pan": -3.700000047683716,
+          "shoulder_lift": -8.899999618530273,
+          "elbow_flex": 9.899999618530273,
+          "wrist_flex": -0.10000000149011612,
+          "wrist_roll": 0.6000000238418579,
+          "gripper": -1.7999999523162842
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.1,
+        "z": 0.88
+      },
+      "policy_close": {
+        "step": 328,
+        "xy_to_target_cm": 2.38,
+        "z_to_target_cm": 0.94,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_09",
+      "seed": 218004,
+      "oracle_episode": 324,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 386,
+      "oracle_events": {
+        "t_descend": 56,
+        "t_close": 73,
+        "grasp_z": 0.04964604526113646
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.696,
+      "mean_dev_cm": 4.28,
+      "divergence": {
+        "policy_step": 60,
+        "oracle_step": 92,
+        "phase": "close",
+        "dev_cm": 2.15,
+        "joint_dev_deg": {
+          "shoulder_pan": 7.400000095367432,
+          "shoulder_lift": -0.6000000238418579,
+          "elbow_flex": 2.200000047683716,
+          "wrist_flex": -0.4000000059604645,
+          "wrist_roll": 7.800000190734863,
+          "gripper": 31.799999237060547
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.05,
+        "z": 0.87
+      },
+      "policy_close": {
+        "step": 107,
+        "xy_to_target_cm": 3.02,
+        "z_to_target_cm": 2.23,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_10",
+      "seed": 220000,
+      "oracle_episode": 360,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 208,
+      "oracle_events": {
+        "t_descend": 57,
+        "t_close": 72,
+        "grasp_z": 0.033725000381378045
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.512,
+      "mean_dev_cm": 6.43,
+      "divergence": {
+        "policy_step": 74,
+        "oracle_step": 95,
+        "phase": "carry",
+        "dev_cm": 2.17,
+        "joint_dev_deg": {
+          "shoulder_pan": 4.199999809265137,
+          "shoulder_lift": 4.0,
+          "elbow_flex": 3.0,
+          "wrist_flex": -2.4000000953674316,
+          "wrist_roll": -0.10000000149011612,
+          "gripper": 21.299999237060547
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.03,
+        "z": 1.13
+      },
+      "policy_close": {
+        "step": 89,
+        "xy_to_target_cm": 1.7,
+        "z_to_target_cm": -0.3,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_10",
+      "seed": 220001,
+      "oracle_episode": 361,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 223,
+      "oracle_events": {
+        "t_descend": 70,
+        "t_close": 84,
+        "grasp_z": 0.03358140918352916
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.613,
+      "mean_dev_cm": 9.37,
+      "divergence": {
+        "policy_step": 37,
+        "oracle_step": 38,
+        "phase": "approach",
+        "dev_cm": 2.2,
+        "joint_dev_deg": {
+          "shoulder_pan": 1.100000023841858,
+          "shoulder_lift": -6.599999904632568,
+          "elbow_flex": 2.799999952316284,
+          "wrist_flex": 7.300000190734863,
+          "wrist_roll": -9.399999618530273,
+          "gripper": 0.699999988079071
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.01,
+        "z": 1.11
+      },
+      "policy_close": {
+        "step": 119,
+        "xy_to_target_cm": 6.04,
+        "z_to_target_cm": 0.43,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_10",
+      "seed": 220002,
+      "oracle_episode": 362,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 240,
+      "oracle_events": {
+        "t_descend": 86,
+        "t_close": 101,
+        "grasp_z": 0.03431628969803398
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.64,
+      "mean_dev_cm": 6.45,
+      "divergence": {
+        "policy_step": 81,
+        "oracle_step": 123,
+        "phase": "carry",
+        "dev_cm": 2.25,
+        "joint_dev_deg": {
+          "shoulder_pan": 0.4000000059604645,
+          "shoulder_lift": -2.299999952316284,
+          "elbow_flex": 3.799999952316284,
+          "wrist_flex": 5.0,
+          "wrist_roll": 10.0,
+          "gripper": 18.799999237060547
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.12,
+        "z": 1.19
+      },
+      "policy_close": {
+        "step": 99,
+        "xy_to_target_cm": 2.61,
+        "z_to_target_cm": 1.36,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_10",
+      "seed": 220003,
+      "oracle_episode": 363,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 207,
+      "oracle_events": {
+        "t_descend": 59,
+        "t_close": 73,
+        "grasp_z": 0.03359677301311283
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.976,
+      "mean_dev_cm": 3.47,
+      "divergence": {
+        "policy_step": 54,
+        "oracle_step": 50,
+        "phase": "approach",
+        "dev_cm": 2.08,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.0999999046325684,
+          "shoulder_lift": -10.0,
+          "elbow_flex": 11.800000190734863,
+          "wrist_flex": -1.899999976158142,
+          "wrist_roll": 0.699999988079071,
+          "gripper": -0.20000000298023224
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.01,
+        "z": 1.12
+      },
+      "policy_close": {
+        "step": 84,
+        "xy_to_target_cm": 1.89,
+        "z_to_target_cm": 1.7,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_10",
+      "seed": 220004,
+      "oracle_episode": 364,
+      "success": false,
+      "failure": "timeout",
+      "policy_steps": 900,
+      "oracle_steps": 217,
+      "oracle_events": {
+        "t_descend": 56,
+        "t_close": 71,
+        "grasp_z": 0.03302411068487618
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.579,
+      "mean_dev_cm": 6.93,
+      "divergence": {
+        "policy_step": 90,
+        "oracle_step": 91,
+        "phase": "carry",
+        "dev_cm": 2.07,
+        "joint_dev_deg": {
+          "shoulder_pan": 2.0999999046325684,
+          "shoulder_lift": -5.400000095367432,
+          "elbow_flex": 10.800000190734863,
+          "wrist_flex": -6.599999904632568,
+          "wrist_roll": 9.600000381469727,
+          "gripper": 21.200000762939453
+        }
+      },
+      "oracle_close_offset_cm": {
+        "xy": 0.03,
+        "z": 1.06
+      },
+      "policy_close": {
+        "step": 90,
+        "xy_to_target_cm": 1.38,
+        "z_to_target_cm": 0.9,
+        "aligned_phase": "carry"
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_11",
+      "seed": 222002,
+      "oracle_episode": 400,
+      "success": false,
+      "failure": "wrong_order",
+      "policy_steps": 316,
+      "oracle_steps": 488,
+      "oracle_events": {
+        "t_descend": 60,
+        "t_close": 75,
+        "grasp_z": 0.04854909692658396
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.524,
+      "mean_dev_cm": 3.43,
+      "divergence": {
+        "policy_step": 63,
+        "oracle_step": 100,
+        "phase": "carry",
+        "dev_cm": 2.05,
+        "joint_dev_deg": {
+          "shoulder_pan": -7.0,
+          "shoulder_lift": -7.199999809265137,
+          "elbow_flex": 9.399999618530273,
+          "wrist_flex": -6.900000095367432,
+          "wrist_roll": -28.399999618530273,
+          "gripper": 17.799999237060547
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_11",
+      "seed": 222003,
+      "oracle_episode": 401,
+      "success": false,
+      "failure": "wrong_order",
+      "policy_steps": 54,
+      "oracle_steps": 526,
+      "oracle_events": {
+        "t_descend": 75,
+        "t_close": 90,
+        "grasp_z": 0.04866361584785377
+      },
+      "max_oracle_progress_phase": "approach",
+      "max_oracle_progress_frac": 0.103,
+      "mean_dev_cm": 2.02,
+      "divergence": {
+        "policy_step": 38,
+        "oracle_step": 46,
+        "phase": "approach",
+        "dev_cm": 2.16,
+        "joint_dev_deg": {
+          "shoulder_pan": -2.9000000953674316,
+          "shoulder_lift": -9.699999809265137,
+          "elbow_flex": 17.100000381469727,
+          "wrist_flex": -12.600000381469727,
+          "wrist_roll": -6.400000095367432,
+          "gripper": 2.0999999046325684
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_11",
+      "seed": 222005,
+      "oracle_episode": 402,
+      "success": false,
+      "failure": "wrong_order",
+      "policy_steps": 65,
+      "oracle_steps": 364,
+      "oracle_events": {
+        "t_descend": 72,
+        "t_close": 87,
+        "grasp_z": 0.04857609055685837
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.3,
+      "mean_dev_cm": 2.36,
+      "divergence": {
+        "policy_step": 48,
+        "oracle_step": 55,
+        "phase": "approach",
+        "dev_cm": 2.12,
+        "joint_dev_deg": {
+          "shoulder_pan": -1.100000023841858,
+          "shoulder_lift": -3.0,
+          "elbow_flex": 11.699999809265137,
+          "wrist_flex": -9.899999618530273,
+          "wrist_roll": 24.399999618530273,
+          "gripper": -0.8999999761581421
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_11",
+      "seed": 222006,
+      "oracle_episode": 403,
+      "success": false,
+      "failure": "wrong_order",
+      "policy_steps": 304,
+      "oracle_steps": 496,
+      "oracle_events": {
+        "t_descend": 72,
+        "t_close": 88,
+        "grasp_z": 0.04854383351219923
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.275,
+      "mean_dev_cm": 4.24,
+      "divergence": {
+        "policy_step": 101,
+        "oracle_step": 115,
+        "phase": "carry",
+        "dev_cm": 2.78,
+        "joint_dev_deg": {
+          "shoulder_pan": 8.699999809265137,
+          "shoulder_lift": -8.5,
+          "elbow_flex": 11.600000381469727,
+          "wrist_flex": -8.899999618530273,
+          "wrist_roll": 20.100000381469727,
+          "gripper": -13.699999809265137
+        }
+      }
+    },
+    {
+      "run": "evo1_rpsv2c_trainlayouts_v2scene_bf16_s8_n10",
+      "task": "task_11",
+      "seed": 222008,
+      "oracle_episode": 404,
+      "success": true,
+      "failure": "success",
+      "policy_steps": 570,
+      "oracle_steps": 521,
+      "oracle_events": {
+        "t_descend": 52,
+        "t_close": 67,
+        "grasp_z": 0.048762508490847636
+      },
+      "max_oracle_progress_phase": "carry",
+      "max_oracle_progress_frac": 0.187,
+      "mean_dev_cm": 5.92,
+      "divergence": {
+        "policy_step": 39,
+        "oracle_step": 94,
+        "phase": "carry",
+        "dev_cm": 2.24,
+        "joint_dev_deg": {
+          "shoulder_pan": -7.699999809265137,
+          "shoulder_lift": -9.600000381469727,
+          "elbow_flex": 9.699999809265137,
+          "wrist_flex": -5.400000095367432,
+          "wrist_roll": -2.200000047683716,
+          "gripper": 17.5
+        }
+      }
+    }
+  ]
+}

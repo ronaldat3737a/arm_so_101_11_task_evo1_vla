@@ -1,0 +1,147 @@
+{
+  "task": "task_10",
+  "profile": "position_wide",
+  "splits": {
+    "train": {
+      "episodes": 5,
+      "success": 5,
+      "success_rate": 1.0,
+      "rows": [
+        {
+          "seed": 950000,
+          "success": true,
+          "steps": 331,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "orange_block_b": [
+              0.1495,
+              0.1634,
+              -37.62
+            ],
+            "orange_block_a": [
+              0.2505,
+              0.0086,
+              -30.9786
+            ]
+          },
+          "layout_split": {
+            "orange_block_b": "train",
+            "orange_block_a": "train"
+          },
+          "sim_ms_per_step": 6.481461654616987,
+          "oracle_error": null
+        },
+        {
+          "seed": 950001,
+          "success": true,
+          "steps": 188,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "orange_block_b": [
+              0.1772,
+              0.0963,
+              -19.5952
+            ],
+            "orange_block_a": [
+              0.1287,
+              -0.0865,
+              -28.4091
+            ]
+          },
+          "layout_split": {
+            "orange_block_b": "train",
+            "orange_block_a": "train"
+          },
+          "sim_ms_per_step": 11.530564186420845,
+          "oracle_error": null
+        },
+        {
+          "seed": 950002,
+          "success": true,
+          "steps": 211,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "orange_block_b": [
+              0.1409,
+              0.1911,
+              42.7936
+            ],
+            "orange_block_a": [
+              0.209,
+              -0.0859,
+              35.4597
+            ]
+          },
+          "layout_split": {
+            "orange_block_b": "train",
+            "orange_block_a": "train"
+          },
+          "sim_ms_per_step": 16.185970667979163,
+          "oracle_error": null
+        },
+        {
+          "seed": 950003,
+          "success": true,
+          "steps": 236,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "orange_block_b": [
+              0.2317,
+              0.0922,
+              -19.9789
+            ],
+            "orange_block_a": [
+              0.1468,
+              -0.1659,
+              -0.7509
+            ]
+          },
+          "layout_split": {
+            "orange_block_b": "train",
+            "orange_block_a": "train"
+          },
+          "sim_ms_per_step": 14.120894973560913,
+          "oracle_error": null
+        },
+        {
+          "seed": 950004,
+          "success": true,
+          "steps": 342,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "orange_block_b": [
+              0.1282,
+              0.2012,
+              35.1286
+            ],
+            "orange_block_a": [
+              0.107,
+              -0.0961,
+              28.694
+            ]
+          },
+          "layout_split": {
+            "orange_block_b": "train",
+            "orange_block_a": "train"
+          },
+          "sim_ms_per_step": 10.698425142388595,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 1.03,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

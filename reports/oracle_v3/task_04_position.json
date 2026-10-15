@@ -1,0 +1,337 @@
+{
+  "task": "task_04",
+  "profile": "position",
+  "splits": {
+    "test": {
+      "episodes": 10,
+      "success": 9,
+      "success_rate": 0.9,
+      "rows": [
+        {
+          "seed": 1000,
+          "success": true,
+          "steps": 420,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "pot": [
+              0.1923,
+              0.1282,
+              31.8564
+            ],
+            "banana": [
+              0.177,
+              -0.1157,
+              52.0763
+            ],
+            "lid": [
+              0.0928,
+              -0.2455,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "banana": "test",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 28.987696624937513,
+          "oracle_error": null
+        },
+        {
+          "seed": 1001,
+          "success": true,
+          "steps": 366,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "pot": [
+              0.1922,
+              0.1329,
+              39.0592
+            ],
+            "banana": [
+              0.2678,
+              -0.0478,
+              67.1819
+            ],
+            "lid": [
+              0.0843,
+              -0.1485,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "banana": "test",
+            "lid": "test"
+          },
+          "sim_ms_per_step": 24.76465311206755,
+          "oracle_error": null
+        },
+        {
+          "seed": 1002,
+          "success": true,
+          "steps": 375,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "pot": [
+              0.1715,
+              0.1246,
+              55.4152
+            ],
+            "banana": [
+              0.2695,
+              -0.0104,
+              73.8525
+            ],
+            "lid": [
+              0.086,
+              -0.199,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "banana": "test",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 24.315291086832683,
+          "oracle_error": null
+        },
+        {
+          "seed": 1003,
+          "success": true,
+          "steps": 309,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "pot": [
+              0.1583,
+              0.1502,
+              52.138
+            ],
+            "banana": [
+              0.278,
+              -0.008,
+              71.7523
+            ],
+            "lid": [
+              0.2194,
+              -0.1491,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "banana": "test",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 33.357839368307864,
+          "oracle_error": null
+        },
+        {
+          "seed": 1004,
+          "success": false,
+          "steps": 399,
+          "failure_reason": null,
+          "unmet": "lid not on pot",
+          "collision_steps": 25,
+          "layout": {
+            "pot": [
+              0.1884,
+              0.1201,
+              47.1545
+            ],
+            "banana": [
+              0.2644,
+              -0.0426,
+              74.295
+            ],
+            "lid": [
+              0.0847,
+              -0.2053,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "banana": "test",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 24.20182933185931,
+          "oracle_error": null
+        },
+        {
+          "seed": 1005,
+          "success": true,
+          "steps": 436,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "pot": [
+              0.1815,
+              0.1363,
+              19.2761
+            ],
+            "banana": [
+              0.2054,
+              -0.1234,
+              72.431
+            ],
+            "lid": [
+              0.0863,
+              -0.2286,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "banana": "test",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 27.30412986300407,
+          "oracle_error": null
+        },
+        {
+          "seed": 1006,
+          "success": true,
+          "steps": 434,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "pot": [
+              0.185,
+              0.1381,
+              51.171
+            ],
+            "banana": [
+              0.2011,
+              -0.1443,
+              37.7339
+            ],
+            "lid": [
+              0.0939,
+              -0.246,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "banana": "test",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 33.122642798357845,
+          "oracle_error": null
+        },
+        {
+          "seed": 1007,
+          "success": true,
+          "steps": 387,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "pot": [
+              0.1722,
+              0.1549,
+              50.5389
+            ],
+            "banana": [
+              0.2642,
+              -0.053,
+              65.5935
+            ],
+            "lid": [
+              0.1182,
+              -0.1609,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "banana": "test",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 26.085281864925253,
+          "oracle_error": null
+        },
+        {
+          "seed": 1008,
+          "success": true,
+          "steps": 412,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "pot": [
+              0.1817,
+              0.136,
+              56.7174
+            ],
+            "banana": [
+              0.184,
+              -0.1402,
+              50.5115
+            ],
+            "lid": [
+              0.0959,
+              -0.2596,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "banana": "test",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 35.64393346749463,
+          "oracle_error": null
+        },
+        {
+          "seed": 1009,
+          "success": true,
+          "steps": 347,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "pot": [
+              0.162,
+              0.1481,
+              27.6056
+            ],
+            "banana": [
+              0.1538,
+              -0.1463,
+              63.6981
+            ],
+            "lid": [
+              0.2757,
+              -0.0448,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "test",
+            "banana": "test",
+            "lid": "test"
+          },
+          "sim_ms_per_step": 27.011575204151164,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 1.019,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

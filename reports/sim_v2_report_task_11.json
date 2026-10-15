@@ -1,0 +1,739 @@
+{
+  "sim_config": "configs/simulation_v2.yaml",
+  "profile": "position_visual",
+  "split": "train",
+  "seed0": 211000,
+  "tasks": {
+    "task_11": {
+      "instruction": "Take out the blue cubes from shortest to tallest and place it on the table",
+      "kept": 40,
+      "attempted": 55,
+      "oracle_success_rate": 0.7272727272727273,
+      "attempts": [
+        {
+          "seed": 222000,
+          "success": false,
+          "steps": 561,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1105,
+              0.169,
+              154.4379
+            ]
+          }
+        },
+        {
+          "seed": 222001,
+          "success": false,
+          "steps": 535,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1399,
+              0.1634,
+              153.2496
+            ]
+          }
+        },
+        {
+          "seed": 222002,
+          "success": true,
+          "steps": 488,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1153,
+              0.1862,
+              157.5634
+            ]
+          }
+        },
+        {
+          "seed": 222003,
+          "success": true,
+          "steps": 526,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1221,
+              0.1354,
+              132.4279
+            ]
+          }
+        },
+        {
+          "seed": 222004,
+          "success": false,
+          "steps": 528,
+          "failure_reason": "wrong_order: ['blue_short', 'blue_tall']",
+          "layout": {
+            "sorter": [
+              0.1049,
+              0.1567,
+              151.7534
+            ]
+          }
+        },
+        {
+          "seed": 222005,
+          "success": true,
+          "steps": 364,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1201,
+              0.152,
+              130.5981
+            ]
+          }
+        },
+        {
+          "seed": 222006,
+          "success": true,
+          "steps": 496,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.133,
+              0.1802,
+              156.7479
+            ]
+          }
+        },
+        {
+          "seed": 222007,
+          "success": false,
+          "steps": 50,
+          "failure_reason": "wrong_order: ['blue_tall']",
+          "layout": {
+            "sorter": [
+              0.1482,
+              0.1641,
+              149.2474
+            ]
+          }
+        },
+        {
+          "seed": 222008,
+          "success": true,
+          "steps": 521,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1244,
+              0.1557,
+              132.1982
+            ]
+          }
+        },
+        {
+          "seed": 222009,
+          "success": true,
+          "steps": 494,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1438,
+              0.1694,
+              126.0116
+            ]
+          }
+        },
+        {
+          "seed": 222010,
+          "success": false,
+          "steps": 562,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1076,
+              0.172,
+              144.1656
+            ]
+          }
+        },
+        {
+          "seed": 222011,
+          "success": false,
+          "steps": 539,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.114,
+              0.1817,
+              156.3561
+            ]
+          }
+        },
+        {
+          "seed": 222012,
+          "success": false,
+          "steps": 543,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1471,
+              0.1576,
+              136.528
+            ]
+          }
+        },
+        {
+          "seed": 222013,
+          "success": true,
+          "steps": 529,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.099,
+              0.1529,
+              153.5032
+            ]
+          }
+        },
+        {
+          "seed": 222014,
+          "success": false,
+          "steps": 485,
+          "failure_reason": "wrong_order: ['blue_short', 'blue_tall']",
+          "layout": {
+            "sorter": [
+              0.1188,
+              0.1826,
+              158.4007
+            ]
+          }
+        },
+        {
+          "seed": 222015,
+          "success": true,
+          "steps": 504,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.115,
+              0.1842,
+              138.4038
+            ]
+          }
+        },
+        {
+          "seed": 222016,
+          "success": true,
+          "steps": 512,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1273,
+              0.1613,
+              131.4198
+            ]
+          }
+        },
+        {
+          "seed": 222017,
+          "success": true,
+          "steps": 469,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1196,
+              0.1913,
+              161.7046
+            ]
+          }
+        },
+        {
+          "seed": 222018,
+          "success": true,
+          "steps": 527,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1166,
+              0.1427,
+              148.2436
+            ]
+          }
+        },
+        {
+          "seed": 222019,
+          "success": true,
+          "steps": 531,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1036,
+              0.1492,
+              144.5765
+            ]
+          }
+        },
+        {
+          "seed": 222020,
+          "success": true,
+          "steps": 496,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.142,
+              0.1665,
+              127.0301
+            ]
+          }
+        },
+        {
+          "seed": 222021,
+          "success": false,
+          "steps": 525,
+          "failure_reason": "wrong_order: ['blue_short', 'blue_tall']",
+          "layout": {
+            "sorter": [
+              0.1132,
+              0.1706,
+              151.6725
+            ]
+          }
+        },
+        {
+          "seed": 222022,
+          "success": true,
+          "steps": 468,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1349,
+              0.1807,
+              141.8745
+            ]
+          }
+        },
+        {
+          "seed": 222023,
+          "success": true,
+          "steps": 522,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1203,
+              0.1345,
+              134.1245
+            ]
+          }
+        },
+        {
+          "seed": 222024,
+          "success": false,
+          "steps": 506,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.12,
+              0.193,
+              159.617
+            ]
+          }
+        },
+        {
+          "seed": 222025,
+          "success": true,
+          "steps": 514,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1432,
+              0.1437,
+              131.8278
+            ]
+          }
+        },
+        {
+          "seed": 222026,
+          "success": true,
+          "steps": 472,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1093,
+              0.1563,
+              147.5226
+            ]
+          }
+        },
+        {
+          "seed": 222027,
+          "success": false,
+          "steps": 455,
+          "failure_reason": "wrong_order: ['blue_short', 'blue_tall']",
+          "layout": {
+            "sorter": [
+              0.1611,
+              0.1626,
+              121.8798
+            ]
+          }
+        },
+        {
+          "seed": 222028,
+          "success": false,
+          "steps": 451,
+          "failure_reason": "wrong_order: ['blue_short', 'blue_tall']",
+          "layout": {
+            "sorter": [
+              0.1213,
+              0.1688,
+              143.1961
+            ]
+          }
+        },
+        {
+          "seed": 222029,
+          "success": true,
+          "steps": 524,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1286,
+              0.1577,
+              146.9368
+            ]
+          }
+        },
+        {
+          "seed": 222030,
+          "success": true,
+          "steps": 514,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1312,
+              0.1698,
+              149.8115
+            ]
+          }
+        },
+        {
+          "seed": 222031,
+          "success": true,
+          "steps": 515,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1151,
+              0.1713,
+              142.4817
+            ]
+          }
+        },
+        {
+          "seed": 222032,
+          "success": true,
+          "steps": 501,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1398,
+              0.1574,
+              125.9208
+            ]
+          }
+        },
+        {
+          "seed": 222033,
+          "success": false,
+          "steps": 543,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.122,
+              0.1706,
+              138.7061
+            ]
+          }
+        },
+        {
+          "seed": 222034,
+          "success": true,
+          "steps": 372,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1118,
+              0.1453,
+              135.6716
+            ]
+          }
+        },
+        {
+          "seed": 222035,
+          "success": true,
+          "steps": 532,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1077,
+              0.1445,
+              128.5276
+            ]
+          }
+        },
+        {
+          "seed": 222036,
+          "success": true,
+          "steps": 514,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1316,
+              0.1591,
+              130.8457
+            ]
+          }
+        },
+        {
+          "seed": 222037,
+          "success": true,
+          "steps": 524,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1058,
+              0.1678,
+              144.2501
+            ]
+          }
+        },
+        {
+          "seed": 222038,
+          "success": true,
+          "steps": 530,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1125,
+              0.1534,
+              142.0224
+            ]
+          }
+        },
+        {
+          "seed": 222039,
+          "success": true,
+          "steps": 470,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1343,
+              0.1823,
+              139.9814
+            ]
+          }
+        },
+        {
+          "seed": 222040,
+          "success": true,
+          "steps": 533,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1072,
+              0.1621,
+              150.1235
+            ]
+          }
+        },
+        {
+          "seed": 222041,
+          "success": true,
+          "steps": 466,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1354,
+              0.1825,
+              153.8006
+            ]
+          }
+        },
+        {
+          "seed": 222042,
+          "success": true,
+          "steps": 473,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1193,
+              0.194,
+              161.2622
+            ]
+          }
+        },
+        {
+          "seed": 222043,
+          "success": true,
+          "steps": 517,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1386,
+              0.1529,
+              135.3483
+            ]
+          }
+        },
+        {
+          "seed": 222044,
+          "success": false,
+          "steps": 501,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1593,
+              0.162,
+              143.2996
+            ]
+          }
+        },
+        {
+          "seed": 222045,
+          "success": true,
+          "steps": 519,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1025,
+              0.1728,
+              162.2916
+            ]
+          }
+        },
+        {
+          "seed": 222046,
+          "success": true,
+          "steps": 509,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1411,
+              0.1451,
+              122.2811
+            ]
+          }
+        },
+        {
+          "seed": 222047,
+          "success": true,
+          "steps": 500,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1518,
+              0.1601,
+              126.8992
+            ]
+          }
+        },
+        {
+          "seed": 222048,
+          "success": true,
+          "steps": 525,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1345,
+              0.1488,
+              122.9302
+            ]
+          }
+        },
+        {
+          "seed": 222049,
+          "success": true,
+          "steps": 475,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1485,
+              0.169,
+              129.159
+            ]
+          }
+        },
+        {
+          "seed": 222050,
+          "success": false,
+          "steps": 568,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1068,
+              0.1615,
+              156.784
+            ]
+          }
+        },
+        {
+          "seed": 222051,
+          "success": true,
+          "steps": 508,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1356,
+              0.1691,
+              147.8805
+            ]
+          }
+        },
+        {
+          "seed": 222052,
+          "success": true,
+          "steps": 516,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1429,
+              0.1583,
+              150.6149
+            ]
+          }
+        },
+        {
+          "seed": 222053,
+          "success": true,
+          "steps": 491,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1223,
+              0.1832,
+              132.0914
+            ]
+          }
+        },
+        {
+          "seed": 222054,
+          "success": true,
+          "steps": 490,
+          "failure_reason": null,
+          "layout": {
+            "sorter": [
+              0.1196,
+              0.1829,
+              143.6787
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "total_episodes": 40,
+  "total_frames": 19951,
+  "wall_time_s": 3804.0,
+  "resources": {
+    "peak_rss_gb": 1.847,
+    "peak_vram_alloc_gb": 0.0
+  },
+  "dataset_root": "datasets/sim_so101_v2/task_11"
+}

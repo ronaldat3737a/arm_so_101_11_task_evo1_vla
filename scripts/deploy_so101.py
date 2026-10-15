@@ -76,9 +76,17 @@ class ReplaySource:
         self.ds = LeRobotDataset("local/so101_11tasks", root=ROOT / "datasets" / "so101_11tasks", episodes=[self.ep], video_backend="pyav", download_videos=False)
         self.i = 0
 
+    def peek(self) -> dict:
+        """Current observation without advancing (used for the warm-up calls)."""
+        return self._get(self.i)
+
     def read(self) -> dict:
-        it = self.ds[min(self.i, len(self.ds) - 1)]
+        out = self._get(self.i)
         self.i += 1
+        return out
+
+    def _get(self, i: int) -> dict:
+        it = self.ds[min(i, len(self.ds) - 1)]
         return {
             "observation.state": it["observation.state"].numpy().astype(np.float32),
             "observation.images.top": (it["observation.images.top"].permute(1, 2, 0).numpy() * 255).astype(np.uint8),
@@ -126,6 +134,11 @@ def main() -> int:
     ap.add_argument("--workspace-limit", type=float, nargs=6, metavar=("XMIN", "YMIN", "ZMIN", "XMAX", "YMAX", "ZMAX"))
     ap.add_argument("--emergency-stop", default=None, help="stop file path (default from configs/deployment.yaml)")
     ap.add_argument("--max-steps", type=int)
+    ap.add_argument("--num-inference-timesteps", type=int, help="Evo-1 flow-matching sampling steps (official config field)")
+    ap.add_argument("--quant", choices=["bf16", "w8a8_vision"], help="torchao post-training quantization (default: none = BF16)")
+    ap.add_argument("--compile", action="store_true", help="torch.compile vision tower, language model and action head")
+    ap.add_argument("--warmup", type=int, default=None, help="network calls on the first observation before the control loop "
+                    "(nothing is sent); default 3 with --compile (compile + one recompile take ~20 s each), else 1")
     ap.add_argument("--deployment-config", default=str(ROOT / "configs" / "deployment.yaml"))
     ap.add_argument("--camera-config", default=str(ROOT / "configs" / "camera.yaml"))
     ap.add_argument("--calibration-file", help="default: $HF_LEROBOT_CALIBRATION/robots/so_follower/<id>.json")
@@ -175,9 +188,16 @@ def main() -> int:
             return 2
 
     estop = EStop(a.emergency_stop or dep["safety"]["stop_file"])
-    policy, pre, post, cfg = load_policy(ckpt, "cuda" if torch.cuda.is_available() else "cpu")
+    ov = {"num_inference_timesteps": a.num_inference_timesteps} if a.num_inference_timesteps else None
+    policy, pre, post, cfg = load_policy(ckpt, "cuda" if torch.cuda.is_available() else "cpu", ov)
     device = torch.device(cfg.device)
     use_amp = bool(getattr(cfg, "use_amp", False))
+    quant_info = None
+    if a.quant or a.compile:
+        from src.quantization.torchao_quant import apply, quantized_summary
+
+        quant_info = apply(policy, a.quant or "bf16", a.compile)
+        quant_info["int8_weight_tensors"] = quantized_summary(policy)
 
     robot = None
     source = None
@@ -194,7 +214,7 @@ def main() -> int:
             robot.bus.disable_torque()  # read-only: the arm can be moved by hand, nothing is commanded
 
     log = []
-    lat, acts = [], []
+    lat, acts, warm = [], [], []
     max_steps = a.max_steps or int(ctl["max_episode_s"] * ctl["fps"])
     period = 1.0 / ctl["fps"]
     reason = "max_steps"
@@ -209,6 +229,16 @@ def main() -> int:
                 if np.abs(cur - rest).max() < 2.0 or estop.active:
                     break
                 time.sleep(period)
+        # warm-up: full network calls on the current observation, nothing is sent (torch.compile compiles on the first
+        # call and recompiles once more; without this the inference watchdog would stop the run at the second chunk)
+        for _ in range(a.warmup if a.warmup is not None else (3 if a.compile else 1)):
+            obs0 = source.peek() if source else robot_obs(robot)
+            o0 = {k: v for k, v in obs0.items() if k.startswith("observation.")}
+            policy.reset()
+            t_w = time.perf_counter()
+            predict_action(o0, policy, device, pre, post, use_amp, task=instruction, robot_type="so_follower")
+            warm.append(round((time.perf_counter() - t_w) * 1000, 1))
+        print(f"warm-up network calls (ms): {warm}", flush=True)
         policy.reset()
         for step in range(max_steps):
             t0 = time.perf_counter()
@@ -257,6 +287,9 @@ def main() -> int:
         "time": dt.datetime.now().isoformat(), "mode": "real" if a.real else "dry-run", "source": a.source if a.dry_run else "robot",
         "checkpoint": str(ckpt), "checkpoint_hash": ck_hash, "calibration": calib_note if not calib.exists() else str(calib), "task": a.task, "instruction": instruction,
         "steps": len(log), "stop_reason": reason, "speed_scale": speed,
+        "model_config": {k: getattr(cfg, k, None) for k in ("chunk_size", "n_action_steps", "num_inference_timesteps", "vlm_num_layers", "use_amp")},
+        "quantization": quant_info, "warmup_ms": warm,
+        "chunk_latency_ms": sorted(x["latency_ms"] for x in log if x["step"] % cfg.n_action_steps == 0)[-3:] if log else None,
         "latency_ms": {"p50": float(np.percentile(lat, 50)) if lat else None, "p95": float(np.percentile(lat, 95)) if lat else None, "max": float(max(lat)) if lat else None},
         "action_range": {"min": A.min(0).round(2).tolist() if len(A) else None, "max": A.max(0).round(2).tolist() if len(A) else None},
         "joint_box": {"low": lo.round(2).tolist(), "high": hi.round(2).tolist()},

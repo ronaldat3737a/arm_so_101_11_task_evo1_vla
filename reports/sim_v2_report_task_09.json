@@ -1,0 +1,744 @@
+{
+  "sim_config": "configs/simulation_v2.yaml",
+  "profile": "position_visual",
+  "split": "train",
+  "seed0": 209000,
+  "tasks": {
+    "task_09": {
+      "instruction": "Pick up the red cube from the wooden board, put it into the orange hollow cube, then pick up the orange hollow cube and place it on the wooden board",
+      "kept": 40,
+      "attempted": 40,
+      "oracle_success_rate": 1.0,
+      "attempts": [
+        {
+          "seed": 218000,
+          "success": true,
+          "steps": 378,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1609,
+              0.1781,
+              18.5611
+            ],
+            "hollow_cube": [
+              0.2281,
+              -0.0986,
+              17.5927
+            ]
+          }
+        },
+        {
+          "seed": 218001,
+          "success": true,
+          "steps": 426,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1511,
+              0.1724,
+              3.2199
+            ],
+            "hollow_cube": [
+              0.1107,
+              -0.1036,
+              -6.8162
+            ]
+          }
+        },
+        {
+          "seed": 218002,
+          "success": true,
+          "steps": 415,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1468,
+              0.16,
+              16.8412
+            ],
+            "hollow_cube": [
+              0.1335,
+              -0.149,
+              12.1443
+            ]
+          }
+        },
+        {
+          "seed": 218003,
+          "success": true,
+          "steps": 408,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1561,
+              0.1846,
+              -18.9524
+            ],
+            "hollow_cube": [
+              0.1857,
+              -0.1072,
+              -3.7718
+            ]
+          }
+        },
+        {
+          "seed": 218004,
+          "success": true,
+          "steps": 386,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1286,
+              0.1442,
+              0.6864
+            ],
+            "hollow_cube": [
+              0.2242,
+              -0.0976,
+              12.7201
+            ]
+          }
+        },
+        {
+          "seed": 218005,
+          "success": true,
+          "steps": 392,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.151,
+              0.1763,
+              -10.6713
+            ],
+            "hollow_cube": [
+              0.2039,
+              -0.1486,
+              -7.1501
+            ]
+          }
+        },
+        {
+          "seed": 218006,
+          "success": true,
+          "steps": 404,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1365,
+              0.1526,
+              -13.153
+            ],
+            "hollow_cube": [
+              0.1287,
+              -0.1326,
+              -1.4452
+            ]
+          }
+        },
+        {
+          "seed": 218007,
+          "success": true,
+          "steps": 393,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1543,
+              0.1615,
+              -6.6279
+            ],
+            "hollow_cube": [
+              0.2048,
+              -0.1146,
+              -11.7149
+            ]
+          }
+        },
+        {
+          "seed": 218008,
+          "success": true,
+          "steps": 399,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1701,
+              0.1814,
+              18.4352
+            ],
+            "hollow_cube": [
+              0.2071,
+              -0.092,
+              -17.6959
+            ]
+          }
+        },
+        {
+          "seed": 218009,
+          "success": true,
+          "steps": 453,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1645,
+              0.1687,
+              17.4877
+            ],
+            "hollow_cube": [
+              0.1226,
+              -0.1355,
+              -9.6613
+            ]
+          }
+        },
+        {
+          "seed": 218010,
+          "success": true,
+          "steps": 405,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1286,
+              0.1519,
+              9.9786
+            ],
+            "hollow_cube": [
+              0.2099,
+              -0.1364,
+              6.9103
+            ]
+          }
+        },
+        {
+          "seed": 218011,
+          "success": true,
+          "steps": 396,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1468,
+              0.1481,
+              -1.671
+            ],
+            "hollow_cube": [
+              0.2247,
+              -0.1285,
+              15.7655
+            ]
+          }
+        },
+        {
+          "seed": 218012,
+          "success": true,
+          "steps": 386,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2113,
+              0.1207,
+              16.4442
+            ],
+            "hollow_cube": [
+              0.1299,
+              -0.1065,
+              -1.3642
+            ]
+          }
+        },
+        {
+          "seed": 218013,
+          "success": true,
+          "steps": 393,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1243,
+              0.1445,
+              1.2186
+            ],
+            "hollow_cube": [
+              0.1254,
+              -0.1147,
+              12.5004
+            ]
+          }
+        },
+        {
+          "seed": 218014,
+          "success": true,
+          "steps": 419,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1381,
+              0.1565,
+              9.0204
+            ],
+            "hollow_cube": [
+              0.2314,
+              -0.1163,
+              16.5377
+            ]
+          }
+        },
+        {
+          "seed": 218015,
+          "success": true,
+          "steps": 368,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1657,
+              0.1831,
+              14.7156
+            ],
+            "hollow_cube": [
+              0.2191,
+              -0.1389,
+              4.3283
+            ]
+          }
+        },
+        {
+          "seed": 218016,
+          "success": true,
+          "steps": 396,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1672,
+              0.1829,
+              -13.0311
+            ],
+            "hollow_cube": [
+              0.2154,
+              -0.1096,
+              -2.7362
+            ]
+          }
+        },
+        {
+          "seed": 218017,
+          "success": true,
+          "steps": 417,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1673,
+              0.1732,
+              -12.531
+            ],
+            "hollow_cube": [
+              0.1156,
+              -0.1362,
+              6.4794
+            ]
+          }
+        },
+        {
+          "seed": 218018,
+          "success": true,
+          "steps": 410,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1379,
+              0.1512,
+              18.0691
+            ],
+            "hollow_cube": [
+              0.1484,
+              -0.1488,
+              0.9608
+            ]
+          }
+        },
+        {
+          "seed": 218019,
+          "success": true,
+          "steps": 410,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1388,
+              0.1603,
+              18.0876
+            ],
+            "hollow_cube": [
+              0.134,
+              -0.1485,
+              6.5659
+            ]
+          }
+        },
+        {
+          "seed": 218020,
+          "success": true,
+          "steps": 419,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1591,
+              0.1774,
+              -14.0508
+            ],
+            "hollow_cube": [
+              0.1628,
+              -0.1648,
+              -2.9668
+            ]
+          }
+        },
+        {
+          "seed": 218021,
+          "success": true,
+          "steps": 410,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1535,
+              0.1553,
+              -19.467
+            ],
+            "hollow_cube": [
+              0.1093,
+              -0.1163,
+              14.3672
+            ]
+          }
+        },
+        {
+          "seed": 218022,
+          "success": true,
+          "steps": 384,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1434,
+              0.1645,
+              -6.8827
+            ],
+            "hollow_cube": [
+              0.228,
+              -0.1099,
+              3.3141
+            ]
+          }
+        },
+        {
+          "seed": 218023,
+          "success": true,
+          "steps": 373,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1619,
+              0.1774,
+              -7.7899
+            ],
+            "hollow_cube": [
+              0.2212,
+              -0.1014,
+              5.834
+            ]
+          }
+        },
+        {
+          "seed": 218024,
+          "success": true,
+          "steps": 416,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1502,
+              0.1507,
+              1.408
+            ],
+            "hollow_cube": [
+              0.2059,
+              -0.0994,
+              6.5279
+            ]
+          }
+        },
+        {
+          "seed": 218025,
+          "success": true,
+          "steps": 410,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1318,
+              0.1384,
+              -8.3105
+            ],
+            "hollow_cube": [
+              0.1402,
+              -0.154,
+              2.0767
+            ]
+          }
+        },
+        {
+          "seed": 218026,
+          "success": true,
+          "steps": 392,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1444,
+              0.1602,
+              4.6319
+            ],
+            "hollow_cube": [
+              0.1918,
+              -0.0906,
+              9.337
+            ]
+          }
+        },
+        {
+          "seed": 218027,
+          "success": true,
+          "steps": 383,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1657,
+              0.1709,
+              -14.8217
+            ],
+            "hollow_cube": [
+              0.2107,
+              -0.1072,
+              -6.3412
+            ]
+          }
+        },
+        {
+          "seed": 218028,
+          "success": true,
+          "steps": 408,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1402,
+              0.1529,
+              5.856
+            ],
+            "hollow_cube": [
+              0.1475,
+              -0.15,
+              13.9176
+            ]
+          }
+        },
+        {
+          "seed": 218029,
+          "success": true,
+          "steps": 409,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1443,
+              0.1488,
+              11.1069
+            ],
+            "hollow_cube": [
+              0.1356,
+              -0.1493,
+              -11.7511
+            ]
+          }
+        },
+        {
+          "seed": 218030,
+          "success": true,
+          "steps": 427,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1422,
+              0.1425,
+              12.4348
+            ],
+            "hollow_cube": [
+              0.1654,
+              -0.1797,
+              1.2017
+            ]
+          }
+        },
+        {
+          "seed": 218031,
+          "success": true,
+          "steps": 418,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1695,
+              0.1695,
+              -3.823
+            ],
+            "hollow_cube": [
+              0.1957,
+              -0.0945,
+              14.3825
+            ]
+          }
+        },
+        {
+          "seed": 218032,
+          "success": true,
+          "steps": 375,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1585,
+              0.1734,
+              10.1895
+            ],
+            "hollow_cube": [
+              0.197,
+              -0.1609,
+              8.4934
+            ]
+          }
+        },
+        {
+          "seed": 218033,
+          "success": true,
+          "steps": 396,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1584,
+              0.1864,
+              16.7694
+            ],
+            "hollow_cube": [
+              0.1902,
+              -0.0899,
+              -3.5747
+            ]
+          }
+        },
+        {
+          "seed": 218034,
+          "success": true,
+          "steps": 400,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1393,
+              0.1534,
+              11.8913
+            ],
+            "hollow_cube": [
+              0.1688,
+              -0.0957,
+              11.3529
+            ]
+          }
+        },
+        {
+          "seed": 218035,
+          "success": true,
+          "steps": 392,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1598,
+              0.1659,
+              -9.637
+            ],
+            "hollow_cube": [
+              0.1386,
+              -0.0958,
+              -6.5813
+            ]
+          }
+        },
+        {
+          "seed": 218036,
+          "success": true,
+          "steps": 397,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1481,
+              0.1584,
+              -18.4311
+            ],
+            "hollow_cube": [
+              0.1236,
+              -0.1256,
+              -15.7938
+            ]
+          }
+        },
+        {
+          "seed": 218037,
+          "success": true,
+          "steps": 389,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1265,
+              0.15,
+              10.3396
+            ],
+            "hollow_cube": [
+              0.2296,
+              -0.1173,
+              3.9024
+            ]
+          }
+        },
+        {
+          "seed": 218038,
+          "success": true,
+          "steps": 444,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1336,
+              0.1567,
+              -3.902
+            ],
+            "hollow_cube": [
+              0.121,
+              -0.1227,
+              -1.415
+            ]
+          }
+        },
+        {
+          "seed": 218039,
+          "success": true,
+          "steps": 366,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2147,
+              0.1205,
+              2.0703
+            ],
+            "hollow_cube": [
+              0.1839,
+              -0.0941,
+              -14.7464
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "total_episodes": 40,
+  "total_frames": 16062,
+  "wall_time_s": 2307.0,
+  "resources": {
+    "peak_rss_gb": 1.763,
+    "peak_vram_alloc_gb": 0.0
+  },
+  "dataset_root": "datasets/sim_so101_v2/task_09"
+}

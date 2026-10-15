@@ -1,0 +1,117 @@
+{
+  "task": "task_11",
+  "profile": "position_wide",
+  "splits": {
+    "train": {
+      "episodes": 5,
+      "success": 3,
+      "success_rate": 0.6,
+      "rows": [
+        {
+          "seed": 950000,
+          "success": true,
+          "steps": 531,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1295,
+              0.1557,
+              149.9081
+            ]
+          },
+          "layout_split": {
+            "sorter": "train"
+          },
+          "sim_ms_per_step": 19.47072760084479,
+          "oracle_error": null
+        },
+        {
+          "seed": 950001,
+          "success": false,
+          "steps": 359,
+          "failure_reason": "wrong_order: ['blue_short', 'blue_tall']",
+          "unmet": "1 blocks still in the box",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1213,
+              0.1397,
+              125.819
+            ]
+          },
+          "layout_split": {
+            "sorter": "train"
+          },
+          "sim_ms_per_step": 20.00155953643714,
+          "oracle_error": null
+        },
+        {
+          "seed": 950002,
+          "success": false,
+          "steps": 404,
+          "failure_reason": "wrong_order: ['blue_short', 'blue_tall']",
+          "unmet": "1 blocks still in the box",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1683,
+              0.1824,
+              138.9846
+            ]
+          },
+          "layout_split": {
+            "sorter": "train"
+          },
+          "sim_ms_per_step": 29.040547880795923,
+          "oracle_error": null
+        },
+        {
+          "seed": 950003,
+          "success": true,
+          "steps": 527,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.1174,
+              0.1587,
+              142.089
+            ]
+          },
+          "layout_split": {
+            "sorter": "train"
+          },
+          "sim_ms_per_step": 19.673913886922584,
+          "oracle_error": null
+        },
+        {
+          "seed": 950004,
+          "success": true,
+          "steps": 538,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "sorter": [
+              0.0936,
+              0.1623,
+              146.6503
+            ]
+          },
+          "layout_split": {
+            "sorter": "train"
+          },
+          "sim_ms_per_step": 19.636941222010048,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 1.03,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

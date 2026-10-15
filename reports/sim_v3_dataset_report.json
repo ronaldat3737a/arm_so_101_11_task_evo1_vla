@@ -1,0 +1,25 @@
+{
+  "root": "datasets/sim_so101_v3_all",
+  "sim_config": "configs/simulation_v3.yaml",
+  "parts": [
+    "datasets/sim_so101_v3/task_01",
+    "datasets/sim_so101_v3/task_02",
+    "datasets/sim_so101_v3/task_03",
+    "datasets/sim_so101_v3/task_04",
+    "datasets/sim_so101_v3/task_05",
+    "datasets/sim_so101_v3/task_06",
+    "datasets/sim_so101_v3/task_07",
+    "datasets/sim_so101_v3/task_08",
+    "datasets/sim_so101_v3/task_09",
+    "datasets/sim_so101_v3/task_10",
+    "datasets/sim_so101_v3/task_11"
+  ],
+  "episodes": 1000,
+  "frames": 332710,
+  "expected_episodes": 1000,
+  "expected_frames": 332710,
+  "decode_checked_frames": 2000,
+  "decode_errors": [],
+  "instructions_exact": true,
+  "passed": true
+}

@@ -1,0 +1,177 @@
+{
+  "task": "task_05",
+  "profile": "position_wide",
+  "splits": {
+    "train": {
+      "episodes": 5,
+      "success": 4,
+      "success_rate": 0.8,
+      "rows": [
+        {
+          "seed": 950000,
+          "success": false,
+          "steps": 631,
+          "failure_reason": null,
+          "unmet": "blue_cube not on blue_cube_base (dxy=0.029 > 0.014)",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1187,
+              0.1803,
+              43.884
+            ],
+            "blue_cube_base": [
+              0.2071,
+              -0.1171,
+              -22.2224
+            ],
+            "banana": [
+              0.277,
+              0.0562,
+              -26.6476
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "blue_cube_base": "train",
+            "banana": "train"
+          },
+          "sim_ms_per_step": 12.389464914893196,
+          "oracle_error": null
+        },
+        {
+          "seed": 950001,
+          "success": true,
+          "steps": 225,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1402,
+              0.1789,
+              40.7345
+            ],
+            "blue_cube_base": [
+              0.1097,
+              -0.1491,
+              26.4556
+            ],
+            "banana": [
+              0.1914,
+              -0.165,
+              42.6914
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "blue_cube_base": "train",
+            "banana": "train"
+          },
+          "sim_ms_per_step": 23.093317879570854,
+          "oracle_error": null
+        },
+        {
+          "seed": 950002,
+          "success": true,
+          "steps": 234,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1129,
+              0.1389,
+              68.3047
+            ],
+            "blue_cube_base": [
+              0.1222,
+              -0.1836,
+              22.0856
+            ],
+            "banana": [
+              0.1679,
+              -0.1132,
+              -29.2006
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "blue_cube_base": "train",
+            "banana": "val"
+          },
+          "sim_ms_per_step": 21.471082654773678,
+          "oracle_error": null
+        },
+        {
+          "seed": 950003,
+          "success": true,
+          "steps": 216,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1369,
+              0.1495,
+              46.556
+            ],
+            "blue_cube_base": [
+              0.2296,
+              -0.1122,
+              -19.9789
+            ],
+            "banana": [
+              0.1294,
+              -0.1822,
+              -14.3979
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "blue_cube_base": "train",
+            "banana": "train"
+          },
+          "sim_ms_per_step": 20.53687638706631,
+          "oracle_error": null
+        },
+        {
+          "seed": 950004,
+          "success": true,
+          "steps": 230,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1072,
+              0.1615,
+              40.6081
+            ],
+            "blue_cube_base": [
+              0.2166,
+              -0.1273,
+              -1.7136
+            ],
+            "banana": [
+              0.2642,
+              0.107,
+              -34.9681
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "blue_cube_base": "train",
+            "banana": "val"
+          },
+          "sim_ms_per_step": 21.482814913210664,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 1.03,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

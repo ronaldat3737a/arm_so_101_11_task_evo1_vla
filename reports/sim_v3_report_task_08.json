@@ -1,0 +1,2633 @@
+{
+  "oracle_opts": {
+    "dart_prob": 0.5,
+    "dart_dxy": [
+      0.02,
+      0.04
+    ],
+    "dart_dyaw": 15.0,
+    "dart_steps": [
+      15,
+      25
+    ],
+    "hover_steps": 15,
+    "drop_height": [
+      0.02,
+      0.03
+    ]
+  },
+  "sim_config": "configs/simulation_v3.yaml",
+  "profile": "position_wide",
+  "split": "train",
+  "seed0": 300000,
+  "tasks": {
+    "task_08": {
+      "instruction": "Pick up the cube that makes the number of red and blue cubes on the wooden board equal, and place it in the empty corner of the wooden board.",
+      "kept": 84,
+      "attempted": 92,
+      "oracle_success_rate": 0.9130434782608695,
+      "attempts": [
+        {
+          "seed": 308000,
+          "success": true,
+          "steps": 257,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1311,
+              0.1735,
+              21.4564
+            ],
+            "table_red": [
+              0.1438,
+              -0.1525,
+              18.0994
+            ],
+            "table_blue": [
+              0.1982,
+              -0.1043,
+              38.9961
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.57,
+              "dir_deg": 131.9,
+              "dyaw_deg": 12.7,
+              "steps": 24,
+              "t_start": 49
+            }
+          ]
+        },
+        {
+          "seed": 308001,
+          "success": true,
+          "steps": 581,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1188,
+              0.1721,
+              -6.5208
+            ],
+            "table_red": [
+              0.1074,
+              -0.0932,
+              34.0145
+            ],
+            "table_blue": [
+              0.2506,
+              -0.1136,
+              -42.253
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.69,
+              "dir_deg": 238.3,
+              "dyaw_deg": 0.0,
+              "steps": 23,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 308002,
+          "success": true,
+          "steps": 213,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1038,
+              0.1772,
+              38.7069
+            ],
+            "table_red": [
+              0.2342,
+              0.0214,
+              -9.686
+            ],
+            "table_blue": [
+              0.2509,
+              -0.0803,
+              -30.6635
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.09,
+              "dir_deg": 122.0,
+              "dyaw_deg": 1.6,
+              "steps": 19,
+              "t_start": 30
+            }
+          ]
+        },
+        {
+          "seed": 308003,
+          "success": true,
+          "steps": 359,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0983,
+              0.1512,
+              35.0346
+            ],
+            "table_red": [
+              0.1261,
+              -0.0962,
+              -10.7642
+            ],
+            "table_blue": [
+              0.1447,
+              -0.17,
+              -20.872
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.74,
+              "dir_deg": 46.9,
+              "dyaw_deg": -7.3,
+              "steps": 16,
+              "t_start": 50
+            }
+          ]
+        },
+        {
+          "seed": 308004,
+          "success": true,
+          "steps": 244,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1268,
+              0.1569,
+              26.975
+            ],
+            "table_red": [
+              0.2164,
+              -0.1222,
+              -42.2461
+            ],
+            "table_blue": [
+              0.1205,
+              -0.0896,
+              30.2095
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.28,
+              "dir_deg": 39.3,
+              "dyaw_deg": -2.5,
+              "steps": 24,
+              "t_start": 38
+            }
+          ]
+        },
+        {
+          "seed": 308005,
+          "success": true,
+          "steps": 313,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1201,
+              0.1945,
+              -39.7914
+            ],
+            "table_red": [
+              0.1668,
+              -0.0937,
+              -35.2243
+            ],
+            "table_blue": [
+              0.2119,
+              -0.1856,
+              -23.4777
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.6,
+              "dir_deg": 342.2,
+              "dyaw_deg": 9.1,
+              "steps": 25,
+              "t_start": 34
+            }
+          ]
+        },
+        {
+          "seed": 308006,
+          "success": true,
+          "steps": 364,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.133,
+              0.1664,
+              27.7829
+            ],
+            "table_red": [
+              0.1932,
+              -0.0966,
+              10.4643
+            ],
+            "table_blue": [
+              0.1048,
+              -0.1046,
+              36.7306
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.59,
+              "dir_deg": 90.6,
+              "dyaw_deg": 3.0,
+              "steps": 15,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 308007,
+          "success": true,
+          "steps": 245,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1947,
+              0.1714,
+              18.2965
+            ],
+            "table_red": [
+              0.1232,
+              -0.0981,
+              4.1735
+            ],
+            "table_blue": [
+              0.255,
+              -0.1138,
+              19.9506
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.31,
+              "dir_deg": 1.5,
+              "dyaw_deg": -5.7,
+              "steps": 21,
+              "t_start": 40
+            }
+          ]
+        },
+        {
+          "seed": 308008,
+          "success": true,
+          "steps": 343,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1038,
+              0.1634,
+              36.2462
+            ],
+            "table_red": [
+              0.1088,
+              -0.1169,
+              -33.8391
+            ],
+            "table_blue": [
+              0.274,
+              0.0031,
+              -18.2457
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.38,
+              "dir_deg": 161.2,
+              "dyaw_deg": 12.1,
+              "steps": 21,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 308009,
+          "success": true,
+          "steps": 222,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0871,
+              0.1657,
+              -14.1924
+            ],
+            "table_red": [
+              0.109,
+              -0.115,
+              -7.5774
+            ],
+            "table_blue": [
+              0.2536,
+              -0.0764,
+              -22.9841
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308010,
+          "success": true,
+          "steps": 214,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1307,
+              0.1662,
+              23.7078
+            ],
+            "table_red": [
+              0.2073,
+              -0.0958,
+              -35.0167
+            ],
+            "table_blue": [
+              0.0798,
+              -0.125,
+              -22.9613
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308011,
+          "success": false,
+          "steps": 520,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2032,
+              0.1546,
+              5.7062
+            ],
+            "table_red": [
+              0.1321,
+              -0.0863,
+              -42.8339
+            ],
+            "table_blue": [
+              0.098,
+              -0.1338,
+              27.2946
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.8,
+              "dir_deg": 68.5,
+              "dyaw_deg": 13.0,
+              "steps": 15,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 308012,
+          "success": true,
+          "steps": 293,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1081,
+              0.1794,
+              -32.6984
+            ],
+            "table_red": [
+              0.1234,
+              -0.1997,
+              11.6123
+            ],
+            "table_blue": [
+              0.2412,
+              -0.0987,
+              -31.7411
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308013,
+          "success": true,
+          "steps": 830,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1296,
+              0.1986,
+              -35.941
+            ],
+            "table_red": [
+              0.2088,
+              -0.0837,
+              -13.7696
+            ],
+            "table_blue": [
+              0.2584,
+              0.0153,
+              17.9144
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308014,
+          "success": true,
+          "steps": 341,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1492,
+              0.1717,
+              34.9564
+            ],
+            "table_red": [
+              0.1222,
+              -0.1422,
+              -18.7797
+            ],
+            "table_blue": [
+              0.2067,
+              -0.1551,
+              -24.2722
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308015,
+          "success": true,
+          "steps": 241,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1394,
+              0.1724,
+              -30.1805
+            ],
+            "table_red": [
+              0.1146,
+              -0.1054,
+              -19.8886
+            ],
+            "table_blue": [
+              0.1746,
+              -0.0884,
+              20.5053
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.16,
+              "dir_deg": 178.1,
+              "dyaw_deg": -9.1,
+              "steps": 17,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 308016,
+          "success": true,
+          "steps": 202,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1145,
+              0.1279,
+              -22.1724
+            ],
+            "table_red": [
+              0.2258,
+              -0.1151,
+              2.8529
+            ],
+            "table_blue": [
+              0.2653,
+              -0.0804,
+              26.2888
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.6,
+              "dir_deg": 49.9,
+              "dyaw_deg": -7.7,
+              "steps": 15,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 308017,
+          "success": true,
+          "steps": 429,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0751,
+              0.1528,
+              -22.9129
+            ],
+            "table_red": [
+              0.104,
+              -0.0834,
+              -24.213
+            ],
+            "table_blue": [
+              0.2325,
+              -0.1627,
+              -12.4611
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.82,
+              "dir_deg": 75.2,
+              "dyaw_deg": 3.0,
+              "steps": 18,
+              "t_start": 43
+            }
+          ]
+        },
+        {
+          "seed": 308018,
+          "success": true,
+          "steps": 213,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2203,
+              0.1285,
+              -32.6558
+            ],
+            "table_red": [
+              0.1187,
+              -0.1413,
+              -25.8288
+            ],
+            "table_blue": [
+              0.2302,
+              -0.1485,
+              2.8352
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308019,
+          "success": true,
+          "steps": 491,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1415,
+              0.1573,
+              40.2357
+            ],
+            "table_red": [
+              0.2237,
+              -0.1431,
+              -14.5184
+            ],
+            "table_blue": [
+              0.0787,
+              -0.1055,
+              -23.0867
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.9,
+              "dir_deg": 218.2,
+              "dyaw_deg": -10.5,
+              "steps": 24,
+              "t_start": 45
+            }
+          ]
+        },
+        {
+          "seed": 308020,
+          "success": true,
+          "steps": 275,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1313,
+              0.1392,
+              11.4789
+            ],
+            "table_red": [
+              0.1343,
+              -0.138,
+              -32.0702
+            ],
+            "table_blue": [
+              0.1044,
+              -0.0877,
+              -7.639
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.06,
+              "dir_deg": 130.0,
+              "dyaw_deg": 8.2,
+              "steps": 21,
+              "t_start": 38
+            }
+          ]
+        },
+        {
+          "seed": 308021,
+          "success": true,
+          "steps": 222,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0846,
+              0.1716,
+              -25.9152
+            ],
+            "table_red": [
+              0.2211,
+              -0.1507,
+              -36.374
+            ],
+            "table_blue": [
+              0.2844,
+              0.0406,
+              7.2954
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.99,
+              "dir_deg": 255.1,
+              "dyaw_deg": 13.4,
+              "steps": 24,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 308022,
+          "success": true,
+          "steps": 181,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2114,
+              0.138,
+              -1.2759
+            ],
+            "table_red": [
+              0.2097,
+              -0.0984,
+              -44.2479
+            ],
+            "table_blue": [
+              0.1129,
+              -0.1744,
+              20.1266
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308023,
+          "success": true,
+          "steps": 191,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1236,
+              0.1775,
+              -20.7909
+            ],
+            "table_red": [
+              0.2287,
+              -0.0811,
+              -8.983
+            ],
+            "table_blue": [
+              0.2432,
+              -0.1334,
+              17.7181
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308024,
+          "success": true,
+          "steps": 250,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1576,
+              0.1971,
+              9.5458
+            ],
+            "table_red": [
+              0.1096,
+              -0.1506,
+              -0.0743
+            ],
+            "table_blue": [
+              0.2507,
+              0.0079,
+              -8.6027
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308025,
+          "success": true,
+          "steps": 233,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1234,
+              0.1459,
+              40.8304
+            ],
+            "table_red": [
+              0.1936,
+              -0.0859,
+              3.2161
+            ],
+            "table_blue": [
+              0.1082,
+              -0.1093,
+              37.9645
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308026,
+          "success": true,
+          "steps": 281,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1131,
+              0.149,
+              -9.0112
+            ],
+            "table_red": [
+              0.1048,
+              -0.1514,
+              -21.4762
+            ],
+            "table_blue": [
+              0.2855,
+              0.0252,
+              9.6501
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.36,
+              "dir_deg": 121.3,
+              "dyaw_deg": -6.2,
+              "steps": 23,
+              "t_start": 44
+            }
+          ]
+        },
+        {
+          "seed": 308027,
+          "success": true,
+          "steps": 452,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.13,
+              0.1595,
+              39.7864
+            ],
+            "table_red": [
+              0.094,
+              -0.1289,
+              18.5804
+            ],
+            "table_blue": [
+              0.1871,
+              -0.1672,
+              38.0239
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308028,
+          "success": true,
+          "steps": 230,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1296,
+              0.2041,
+              5.7147
+            ],
+            "table_red": [
+              0.2381,
+              0.0145,
+              -38.065
+            ],
+            "table_blue": [
+              0.1076,
+              -0.1148,
+              0.0626
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308029,
+          "success": true,
+          "steps": 461,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1517,
+              0.2094,
+              15.6992
+            ],
+            "table_red": [
+              0.1049,
+              -0.1745,
+              34.6369
+            ],
+            "table_blue": [
+              0.1072,
+              -0.1157,
+              8.6493
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308030,
+          "success": true,
+          "steps": 258,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1064,
+              0.1532,
+              -37.2867
+            ],
+            "table_red": [
+              0.1209,
+              -0.1316,
+              -20.9718
+            ],
+            "table_blue": [
+              0.247,
+              -0.0725,
+              11.3016
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.88,
+              "dir_deg": 222.8,
+              "dyaw_deg": 0.3,
+              "steps": 21,
+              "t_start": 46
+            }
+          ]
+        },
+        {
+          "seed": 308031,
+          "success": true,
+          "steps": 263,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1224,
+              0.1908,
+              20.7688
+            ],
+            "table_red": [
+              0.2576,
+              -0.1272,
+              37.322
+            ],
+            "table_blue": [
+              0.1686,
+              -0.1708,
+              -32.3604
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.35,
+              "dir_deg": 290.8,
+              "dyaw_deg": -4.3,
+              "steps": 17,
+              "t_start": 50
+            }
+          ]
+        },
+        {
+          "seed": 308032,
+          "success": true,
+          "steps": 194,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.129,
+              0.2019,
+              36.0117
+            ],
+            "table_red": [
+              0.2348,
+              0.0323,
+              7.8055
+            ],
+            "table_blue": [
+              0.1533,
+              -0.1753,
+              -32.7184
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308033,
+          "success": false,
+          "steps": 274,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1998,
+              0.1506,
+              21.472
+            ],
+            "table_red": [
+              0.148,
+              -0.1642,
+              -37.7766
+            ],
+            "table_blue": [
+              0.1958,
+              -0.1899,
+              -27.101
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.88,
+              "dir_deg": 282.1,
+              "dyaw_deg": -14.0,
+              "steps": 16,
+              "t_start": 42
+            }
+          ]
+        },
+        {
+          "seed": 308034,
+          "success": true,
+          "steps": 287,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0959,
+              0.1411,
+              17.5667
+            ],
+            "table_red": [
+              0.0971,
+              -0.0931,
+              -37.1148
+            ],
+            "table_blue": [
+              0.224,
+              -0.0903,
+              -11.8764
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.29,
+              "dir_deg": 134.9,
+              "dyaw_deg": -5.7,
+              "steps": 19,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 308035,
+          "success": true,
+          "steps": 219,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0933,
+              0.1702,
+              35.0907
+            ],
+            "table_red": [
+              0.2713,
+              0.0172,
+              37.9363
+            ],
+            "table_blue": [
+              0.1507,
+              -0.174,
+              -44.6627
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.01,
+              "dir_deg": 0.7,
+              "dyaw_deg": -8.2,
+              "steps": 16,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 308036,
+          "success": true,
+          "steps": 171,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0863,
+              0.1831,
+              24.8418
+            ],
+            "table_red": [
+              0.0765,
+              -0.1153,
+              21.8724
+            ],
+            "table_blue": [
+              0.2498,
+              0.041,
+              -2.0019
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308037,
+          "success": true,
+          "steps": 497,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2108,
+              0.139,
+              -16.638
+            ],
+            "table_red": [
+              0.0757,
+              -0.1118,
+              25.9294
+            ],
+            "table_blue": [
+              0.25,
+              -0.0791,
+              -44.148
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.27,
+              "dir_deg": 103.9,
+              "dyaw_deg": 9.6,
+              "steps": 19,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 308038,
+          "success": true,
+          "steps": 312,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1346,
+              0.1872,
+              -28.9277
+            ],
+            "table_red": [
+              0.0926,
+              -0.11,
+              -3.5635
+            ],
+            "table_blue": [
+              0.2299,
+              -0.085,
+              18.5286
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.96,
+              "dir_deg": 167.7,
+              "dyaw_deg": -13.6,
+              "steps": 15,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 308039,
+          "success": true,
+          "steps": 286,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0848,
+              0.1516,
+              -35.6592
+            ],
+            "table_red": [
+              0.091,
+              -0.1369,
+              -42.7858
+            ],
+            "table_blue": [
+              0.2541,
+              -0.1275,
+              -2.6941
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.68,
+              "dir_deg": 53.3,
+              "dyaw_deg": 0.9,
+              "steps": 15,
+              "t_start": 44
+            }
+          ]
+        },
+        {
+          "seed": 308040,
+          "success": true,
+          "steps": 234,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1428,
+              0.1518,
+              -35.0442
+            ],
+            "table_red": [
+              0.1333,
+              -0.0993,
+              -2.7869
+            ],
+            "table_blue": [
+              0.2652,
+              -0.0818,
+              -41.9354
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308041,
+          "success": true,
+          "steps": 479,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1026,
+              0.1571,
+              37.2031
+            ],
+            "table_red": [
+              0.2399,
+              0.0205,
+              -4.2766
+            ],
+            "table_blue": [
+              0.0785,
+              -0.1331,
+              -15.4103
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.73,
+              "dir_deg": 192.1,
+              "dyaw_deg": 6.2,
+              "steps": 23,
+              "t_start": 50
+            }
+          ]
+        },
+        {
+          "seed": 308042,
+          "success": true,
+          "steps": 257,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1358,
+              0.184,
+              -13.3439
+            ],
+            "table_red": [
+              0.2563,
+              0.0048,
+              -27.3842
+            ],
+            "table_blue": [
+              0.1166,
+              -0.154,
+              -22.1533
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.74,
+              "dir_deg": 304.4,
+              "dyaw_deg": 11.4,
+              "steps": 23,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 308043,
+          "success": true,
+          "steps": 200,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1312,
+              0.1568,
+              13.7343
+            ],
+            "table_red": [
+              0.2244,
+              -0.1546,
+              -33.8901
+            ],
+            "table_blue": [
+              0.0881,
+              -0.1415,
+              -25.5397
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308044,
+          "success": true,
+          "steps": 879,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1386,
+              0.1956,
+              -16.1726
+            ],
+            "table_red": [
+              0.1152,
+              -0.1212,
+              -33.4925
+            ],
+            "table_blue": [
+              0.2519,
+              -0.1071,
+              42.903
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.8,
+              "dir_deg": 184.4,
+              "dyaw_deg": -0.6,
+              "steps": 25,
+              "t_start": 34
+            }
+          ]
+        },
+        {
+          "seed": 308045,
+          "success": true,
+          "steps": 271,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1299,
+              0.133,
+              9.0117
+            ],
+            "table_red": [
+              0.1096,
+              -0.1053,
+              -39.4091
+            ],
+            "table_blue": [
+              0.2193,
+              -0.0901,
+              -38.1718
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.72,
+              "dir_deg": 34.7,
+              "dyaw_deg": 6.0,
+              "steps": 17,
+              "t_start": 41
+            }
+          ]
+        },
+        {
+          "seed": 308046,
+          "success": true,
+          "steps": 247,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1998,
+              0.1659,
+              -6.7817
+            ],
+            "table_red": [
+              0.232,
+              -0.1568,
+              6.5399
+            ],
+            "table_blue": [
+              0.1299,
+              -0.1037,
+              8.2363
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.9,
+              "dir_deg": 197.6,
+              "dyaw_deg": -3.4,
+              "steps": 22,
+              "t_start": 38
+            }
+          ]
+        },
+        {
+          "seed": 308047,
+          "success": true,
+          "steps": 251,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1144,
+              0.1309,
+              2.1044
+            ],
+            "table_red": [
+              0.2431,
+              -0.1526,
+              -30.1502
+            ],
+            "table_blue": [
+              0.1164,
+              -0.1227,
+              -6.4891
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.64,
+              "dir_deg": 250.0,
+              "dyaw_deg": 9.8,
+              "steps": 17,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 308048,
+          "success": true,
+          "steps": 206,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1667,
+              0.1696,
+              -18.0937
+            ],
+            "table_red": [
+              0.2238,
+              -0.0862,
+              -41.6215
+            ],
+            "table_blue": [
+              0.2724,
+              0.0297,
+              19.1765
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308049,
+          "success": true,
+          "steps": 234,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1403,
+              0.1713,
+              8.3119
+            ],
+            "table_red": [
+              0.23,
+              -0.1531,
+              19.2247
+            ],
+            "table_blue": [
+              0.2504,
+              0.0336,
+              -32.3261
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308050,
+          "success": true,
+          "steps": 236,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1519,
+              0.2109,
+              16.8748
+            ],
+            "table_red": [
+              0.0989,
+              -0.0845,
+              22.602
+            ],
+            "table_blue": [
+              0.1663,
+              -0.0894,
+              13.2636
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.12,
+              "dir_deg": 167.9,
+              "dyaw_deg": 7.5,
+              "steps": 18,
+              "t_start": 41
+            }
+          ]
+        },
+        {
+          "seed": 308051,
+          "success": true,
+          "steps": 188,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1728,
+              0.1744,
+              36.7376
+            ],
+            "table_red": [
+              0.1131,
+              -0.1445,
+              25.9432
+            ],
+            "table_blue": [
+              0.2601,
+              -0.1046,
+              31.2534
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.95,
+              "dir_deg": 293.8,
+              "dyaw_deg": -6.2,
+              "steps": 19,
+              "t_start": 42
+            }
+          ]
+        },
+        {
+          "seed": 308052,
+          "success": true,
+          "steps": 261,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.175,
+              0.1768,
+              28.7985
+            ],
+            "table_red": [
+              0.2421,
+              -0.1089,
+              -31.1144
+            ],
+            "table_blue": [
+              0.1524,
+              -0.162,
+              -18.5408
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308053,
+          "success": true,
+          "steps": 278,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2026,
+              0.1505,
+              33.4867
+            ],
+            "table_red": [
+              0.227,
+              -0.1276,
+              32.6347
+            ],
+            "table_blue": [
+              0.1914,
+              -0.1913,
+              -6.2409
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.36,
+              "dir_deg": 170.5,
+              "dyaw_deg": 9.8,
+              "steps": 22,
+              "t_start": 40
+            }
+          ]
+        },
+        {
+          "seed": 308054,
+          "success": true,
+          "steps": 401,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1228,
+              0.2118,
+              -17.2138
+            ],
+            "table_red": [
+              0.2253,
+              -0.0855,
+              36.0899
+            ],
+            "table_blue": [
+              0.0813,
+              -0.124,
+              42.6222
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308055,
+          "success": true,
+          "steps": 252,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.179,
+              0.1813,
+              5.2688
+            ],
+            "table_red": [
+              0.2418,
+              -0.1436,
+              -18.5614
+            ],
+            "table_blue": [
+              0.0988,
+              -0.0976,
+              -38.2633
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.2,
+              "dir_deg": 188.6,
+              "dyaw_deg": 8.9,
+              "steps": 16,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 308056,
+          "success": true,
+          "steps": 263,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1184,
+              0.1869,
+              -9.6173
+            ],
+            "table_red": [
+              0.1097,
+              -0.162,
+              14.6281
+            ],
+            "table_blue": [
+              0.2361,
+              -0.0851,
+              15.236
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.74,
+              "dir_deg": 32.1,
+              "dyaw_deg": 13.1,
+              "steps": 23,
+              "t_start": 41
+            }
+          ]
+        },
+        {
+          "seed": 308057,
+          "success": true,
+          "steps": 240,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1934,
+              0.1737,
+              -18.4352
+            ],
+            "table_red": [
+              0.2481,
+              -0.0935,
+              -5.2765
+            ],
+            "table_blue": [
+              0.2666,
+              0.0458,
+              35.4775
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.62,
+              "dir_deg": 124.6,
+              "dyaw_deg": 7.9,
+              "steps": 25,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 308058,
+          "success": true,
+          "steps": 199,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1081,
+              0.1848,
+              31.6976
+            ],
+            "table_red": [
+              0.1905,
+              -0.0939,
+              -0.9007
+            ],
+            "table_blue": [
+              0.2858,
+              0.0093,
+              40.0795
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308059,
+          "success": true,
+          "steps": 267,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.154,
+              0.1761,
+              -9.4933
+            ],
+            "table_red": [
+              0.2034,
+              -0.1945,
+              -18.4091
+            ],
+            "table_blue": [
+              0.0943,
+              -0.1274,
+              -35.1781
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.32,
+              "dir_deg": 350.3,
+              "dyaw_deg": 15.0,
+              "steps": 21,
+              "t_start": 47
+            }
+          ]
+        },
+        {
+          "seed": 308060,
+          "success": true,
+          "steps": 317,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1055,
+              0.1715,
+              -43.1727
+            ],
+            "table_red": [
+              0.1075,
+              -0.127,
+              -28.6989
+            ],
+            "table_blue": [
+              0.2188,
+              -0.1223,
+              24.4282
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.14,
+              "dir_deg": 145.4,
+              "dyaw_deg": 2.4,
+              "steps": 15,
+              "t_start": 48
+            }
+          ]
+        },
+        {
+          "seed": 308061,
+          "success": true,
+          "steps": 235,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1248,
+              0.1989,
+              -5.8086
+            ],
+            "table_red": [
+              0.279,
+              0.0252,
+              41.5486
+            ],
+            "table_blue": [
+              0.1288,
+              -0.1981,
+              7.3231
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308062,
+          "success": true,
+          "steps": 181,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1332,
+              0.1967,
+              35.5315
+            ],
+            "table_red": [
+              0.1473,
+              -0.1497,
+              27.7408
+            ],
+            "table_blue": [
+              0.2414,
+              0.0278,
+              29.2516
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308063,
+          "success": true,
+          "steps": 778,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0988,
+              0.1478,
+              -1.4531
+            ],
+            "table_red": [
+              0.2108,
+              -0.0779,
+              -16.1772
+            ],
+            "table_blue": [
+              0.1043,
+              -0.1465,
+              21.5282
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308064,
+          "success": true,
+          "steps": 232,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1067,
+              0.1612,
+              -1.0409
+            ],
+            "table_red": [
+              0.211,
+              -0.0952,
+              2.5441
+            ],
+            "table_blue": [
+              0.1189,
+              -0.143,
+              -37.8099
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.41,
+              "dir_deg": 93.5,
+              "dyaw_deg": -10.0,
+              "steps": 25,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 308065,
+          "success": true,
+          "steps": 205,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1387,
+              0.1995,
+              7.8513
+            ],
+            "table_red": [
+              0.096,
+              -0.1066,
+              -10.6949
+            ],
+            "table_blue": [
+              0.2293,
+              -0.0843,
+              8.5545
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.79,
+              "dir_deg": 98.2,
+              "dyaw_deg": 9.9,
+              "steps": 21,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 308066,
+          "success": true,
+          "steps": 226,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.123,
+              0.1975,
+              -4.2996
+            ],
+            "table_red": [
+              0.2105,
+              -0.0968,
+              -16.2654
+            ],
+            "table_blue": [
+              0.1418,
+              -0.1668,
+              -43.5535
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308067,
+          "success": true,
+          "steps": 429,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1367,
+              0.2113,
+              -39.3128
+            ],
+            "table_red": [
+              0.1209,
+              -0.0891,
+              9.7183
+            ],
+            "table_blue": [
+              0.1117,
+              -0.1771,
+              -32.911
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308068,
+          "success": true,
+          "steps": 247,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1066,
+              0.1673,
+              6.032
+            ],
+            "table_red": [
+              0.2146,
+              -0.1694,
+              3.5163
+            ],
+            "table_blue": [
+              0.1838,
+              -0.0885,
+              -9.9012
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308069,
+          "success": true,
+          "steps": 782,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1423,
+              0.2084,
+              -14.8922
+            ],
+            "table_red": [
+              0.2113,
+              -0.1133,
+              -10.432
+            ],
+            "table_blue": [
+              0.2508,
+              0.0425,
+              -10.3231
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308070,
+          "success": true,
+          "steps": 186,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1443,
+              0.1661,
+              27.4513
+            ],
+            "table_red": [
+              0.2784,
+              0.0269,
+              35.4128
+            ],
+            "table_blue": [
+              0.2211,
+              -0.1349,
+              10.8012
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308071,
+          "success": true,
+          "steps": 276,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1987,
+              0.158,
+              23.9895
+            ],
+            "table_red": [
+              0.1036,
+              -0.1084,
+              -36.2539
+            ],
+            "table_blue": [
+              0.1517,
+              -0.1845,
+              -35.2734
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.81,
+              "dir_deg": 116.6,
+              "dyaw_deg": -5.4,
+              "steps": 20,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 308072,
+          "success": false,
+          "steps": 282,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1549,
+              0.2067,
+              -30.5611
+            ],
+            "table_red": [
+              0.2358,
+              0.0202,
+              -8.2759
+            ],
+            "table_blue": [
+              0.0919,
+              -0.0937,
+              22.269
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308073,
+          "success": true,
+          "steps": 309,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0829,
+              0.1745,
+              -10.1197
+            ],
+            "table_red": [
+              0.1015,
+              -0.1667,
+              6.6831
+            ],
+            "table_blue": [
+              0.1532,
+              -0.1885,
+              9.7068
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.27,
+              "dir_deg": 268.8,
+              "dyaw_deg": -4.7,
+              "steps": 23,
+              "t_start": 45
+            }
+          ]
+        },
+        {
+          "seed": 308074,
+          "success": true,
+          "steps": 336,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1374,
+              0.1871,
+              39.0429
+            ],
+            "table_red": [
+              0.1226,
+              -0.1279,
+              17.0461
+            ],
+            "table_blue": [
+              0.2184,
+              -0.1829,
+              -27.6431
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308075,
+          "success": true,
+          "steps": 503,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1727,
+              0.1816,
+              -34.4539
+            ],
+            "table_red": [
+              0.1249,
+              -0.1353,
+              43.3473
+            ],
+            "table_blue": [
+              0.2256,
+              -0.1114,
+              41.171
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308076,
+          "success": false,
+          "steps": 449,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0884,
+              0.189,
+              37.9465
+            ],
+            "table_red": [
+              0.1697,
+              -0.1795,
+              37.7722
+            ],
+            "table_blue": [
+              0.2667,
+              0.0224,
+              -37.0525
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.08,
+              "dir_deg": 126.7,
+              "dyaw_deg": -0.3,
+              "steps": 24,
+              "t_start": 50
+            }
+          ]
+        },
+        {
+          "seed": 308077,
+          "success": true,
+          "steps": 459,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1351,
+              0.1877,
+              14.3023
+            ],
+            "table_red": [
+              0.0955,
+              -0.1303,
+              32.7493
+            ],
+            "table_blue": [
+              0.2208,
+              -0.1786,
+              -4.9733
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.5,
+              "dir_deg": 235.0,
+              "dyaw_deg": -1.4,
+              "steps": 15,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 308078,
+          "success": true,
+          "steps": 206,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0959,
+              0.1772,
+              37.9702
+            ],
+            "table_red": [
+              0.2014,
+              -0.1669,
+              24.7148
+            ],
+            "table_blue": [
+              0.2865,
+              0.0259,
+              -31.3584
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308079,
+          "success": false,
+          "steps": 259,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0875,
+              0.1673,
+              -8.0442
+            ],
+            "table_red": [
+              0.2696,
+              0.0178,
+              3.2331
+            ],
+            "table_blue": [
+              0.1008,
+              -0.115,
+              12.0299
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308080,
+          "success": true,
+          "steps": 178,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.149,
+              0.211,
+              41.3813
+            ],
+            "table_red": [
+              0.2819,
+              0.0163,
+              36.2785
+            ],
+            "table_blue": [
+              0.2252,
+              -0.1084,
+              27.8237
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308081,
+          "success": true,
+          "steps": 243,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1379,
+              0.1584,
+              -32.4181
+            ],
+            "table_red": [
+              0.2534,
+              -0.0768,
+              9.2486
+            ],
+            "table_blue": [
+              0.132,
+              -0.1643,
+              -36.8093
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308082,
+          "success": true,
+          "steps": 441,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1573,
+              0.2002,
+              -22.2811
+            ],
+            "table_red": [
+              0.1565,
+              -0.1886,
+              -12.7456
+            ],
+            "table_blue": [
+              0.2584,
+              -0.1259,
+              -24.7996
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.42,
+              "dir_deg": 283.6,
+              "dyaw_deg": 6.6,
+              "steps": 23,
+              "t_start": 52
+            }
+          ]
+        },
+        {
+          "seed": 308083,
+          "success": false,
+          "steps": 413,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1468,
+              0.2028,
+              33.3638
+            ],
+            "table_red": [
+              0.0941,
+              -0.1041,
+              8.6052
+            ],
+            "table_blue": [
+              0.2074,
+              -0.0813,
+              31.3316
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.98,
+              "dir_deg": 314.7,
+              "dyaw_deg": 12.5,
+              "steps": 20,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 308084,
+          "success": false,
+          "steps": 522,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1148,
+              0.1765,
+              -40.0352
+            ],
+            "table_red": [
+              0.0826,
+              -0.139,
+              20.3906
+            ],
+            "table_blue": [
+              0.2759,
+              0.0281,
+              -11.0995
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308085,
+          "success": true,
+          "steps": 389,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1477,
+              0.1938,
+              -41.5259
+            ],
+            "table_red": [
+              0.2585,
+              -0.0747,
+              43.6308
+            ],
+            "table_blue": [
+              0.102,
+              -0.154,
+              22.067
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308086,
+          "success": true,
+          "steps": 190,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1145,
+              0.1297,
+              7.2167
+            ],
+            "table_red": [
+              0.2181,
+              -0.1298,
+              -23.0997
+            ],
+            "table_blue": [
+              0.0941,
+              -0.1002,
+              40.3775
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308087,
+          "success": true,
+          "steps": 428,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1547,
+              0.1988,
+              -20.6149
+            ],
+            "table_red": [
+              0.2077,
+              -0.1106,
+              19.2758
+            ],
+            "table_blue": [
+              0.2318,
+              -0.1724,
+              -33.746
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.36,
+              "dir_deg": 153.7,
+              "dyaw_deg": -0.3,
+              "steps": 24,
+              "t_start": 46
+            }
+          ]
+        },
+        {
+          "seed": 308088,
+          "success": true,
+          "steps": 215,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1191,
+              0.1659,
+              18.4113
+            ],
+            "table_red": [
+              0.1165,
+              -0.0845,
+              4.0001
+            ],
+            "table_blue": [
+              0.2749,
+              -0.092,
+              -19.532
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308089,
+          "success": false,
+          "steps": 286,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1029,
+              0.183,
+              1.1553
+            ],
+            "table_red": [
+              0.0844,
+              -0.1079,
+              8.2316
+            ],
+            "table_blue": [
+              0.2606,
+              -0.0954,
+              13.1168
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308090,
+          "success": true,
+          "steps": 247,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.117,
+              0.1883,
+              24.1697
+            ],
+            "table_red": [
+              0.1776,
+              -0.0803,
+              36.958
+            ],
+            "table_blue": [
+              0.2169,
+              -0.1688,
+              35.5629
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 308091,
+          "success": true,
+          "steps": 322,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1522,
+              0.1841,
+              -23.3549
+            ],
+            "table_red": [
+              0.1671,
+              -0.0826,
+              -20.3364
+            ],
+            "table_blue": [
+              0.1139,
+              -0.1914,
+              40.6252
+            ]
+          },
+          "perturbations": []
+        }
+      ]
+    }
+  },
+  "total_episodes": 84,
+  "total_frames": 26061,
+  "wall_time_s": 4028.1,
+  "resources": {
+    "peak_rss_gb": 1.805,
+    "peak_vram_alloc_gb": 0.0
+  },
+  "dataset_root": "datasets/sim_so101_v3/task_08"
+}

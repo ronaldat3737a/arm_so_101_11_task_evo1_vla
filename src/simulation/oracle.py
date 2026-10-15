@@ -30,6 +30,7 @@ class Waypoint:
     correct: bool = False  # closed-loop correction of the grasp point after reaching the waypoint (free space only)
     cartesian: bool = False  # move the grasp point along a straight line (IK every <= 1 cm) instead of joint interpolation
     lowerable: bool = False  # IK may lower this target by up to 4 cm if unreachable (transport waypoints only)
+    perturbable: bool = False  # approach waypoint: may receive a DART perturbation (only when env.oracle_opts enables it)
 
 
 def _polar_lerp(a: np.ndarray, b: np.ndarray, t: float) -> np.ndarray:
@@ -46,6 +47,11 @@ class Oracle:
     def __init__(self, env):
         self.env = env
         self.ik = GripperIK(env.model)
+        # optional data-generation options (scripts/generate_sim_data.py sets env.oracle_opts / env.oracle_rng per episode);
+        # absent -> the original deterministic oracle
+        self.opts = getattr(env, "oracle_opts", None) or {}
+        self.prng = getattr(env, "oracle_rng", None)
+        self.perturbations: list[dict] = []
         # World-frame offset added to IK targets. The official model's shoulder actuator saturates (forcerange 3.35 N m)
         # and sags ~2 deg under gravity on an extended arm, so the oracle closes the loop on the measured grasp point.
         self.bias = np.zeros(3)
@@ -99,6 +105,36 @@ class Oracle:
         a[5] = self._grip(wp)
         return a
 
+    def _perturb(self, wp: Waypoint, cur: np.ndarray, q_seed: np.ndarray, obs_cb):
+        """DART-style perturbation during an approach: the EXECUTED command is pushed 2-4 cm sideways (random direction)
+        and +-yaw for a few steps, while the RECORDED action is the expert's correction from the executed command toward
+        the true approach target (rate limited). Teaches recovery without teaching the drift itself."""
+        env, o, rng = self.env, self.opts, self.prng
+        dxy = float(rng.uniform(*o["dart_dxy"]))
+        ang = float(rng.uniform(0, 2 * math.pi))
+        dyaw = float(rng.uniform(-o["dart_dyaw"], o["dart_dyaw"]))
+        steps = int(rng.integers(o["dart_steps"][0], o["dart_steps"][1] + 1))
+        gp = self.grasp_point()
+        p_pert = (gp[0] + dxy * math.cos(ang), gp[1] + dxy * math.sin(ang), gp[2])
+        tgt_p = self._target_joints(Waypoint(p_pert, wp.grip if wp.grip not in (None, KEEP) else self._last_grip, wp.yaw + math.radians(dyaw), lowerable=True), q_seed)
+        tgt_clean = self._target_joints(Waypoint(wp.pos, wp.grip if wp.grip not in (None, KEEP) else self._last_grip, wp.yaw, lowerable=wp.lowerable), q_seed)
+        dt = 1.0 / env.fps
+        lim = np.array([MAX_JOINT_SPEED_DEG * dt] * 5 + [6.0])
+        delta = tgt_p - cur
+        steps = max(steps, int(math.ceil(np.abs(delta[:5]).max() / (MAX_JOINT_SPEED_DEG * dt))))
+        info, a = {}, cur
+        for k in range(1, steps + 1):
+            a = cur + delta * (k / steps)
+            label = a + np.clip(tgt_clean - a, -lim, lim)  # what the expert would command from here
+            obs, _, term, trunc, info = env.step(a)
+            if obs_cb:
+                obs_cb(obs, label, info)
+            if term or trunc:
+                return a, canonical_to_sim(tgt_p), info, True
+        self.perturbations.append({"dxy_cm": round(dxy * 100, 2), "dir_deg": round(math.degrees(ang), 1), "dyaw_deg": round(dyaw, 1),
+                                   "steps": steps, "t_start": env.t - steps})
+        return a, canonical_to_sim(tgt_p), info, False
+
     def run(self, waypoints: list[Waypoint], obs_cb=None) -> tuple[bool, dict, int]:
         """Execute waypoints; returns (success, last info, steps)."""
         env = self.env
@@ -108,15 +144,33 @@ class Oracle:
         dt = 1.0 / env.fps
         q_seed = env.data.qpos[:6].copy()
         self._last_grip = cur[5]
+        def cart_segments(wp):
+            start = self.grasp_point()  # measured position
+            end = np.asarray(wp.pos)
+            n_seg = max(1, int(math.ceil(np.linalg.norm(end - start) / 0.01)))
+            g = self._grip(wp)
+            return [Waypoint(tuple(_polar_lerp(start, end, i / n_seg)), g, wp.yaw, lowerable=wp.lowerable) for i in range(1, n_seg + 1)]
+
         for wp in waypoints:
             segments = [wp]
             if wp.cartesian and wp.pos is not None:
-                start = self.grasp_point()  # measured position
-                end = np.asarray(wp.pos)
-                n_seg = max(1, int(math.ceil(np.linalg.norm(end - start) / 0.01)))
-                g = self._grip(wp)
-                segments = [Waypoint(tuple(_polar_lerp(start, end, i / n_seg)), g, wp.yaw, lowerable=wp.lowerable) for i in range(1, n_seg + 1)]
-            for seg in segments:
+                segments = cart_segments(wp)
+            k_pert = None
+            if wp.perturbable and wp.cartesian and self.prng is not None and self.opts.get("dart_prob", 0) > 0 and len(segments) >= 4 \
+                    and self.prng.random() < self.opts["dart_prob"]:
+                k_pert = int(len(segments) * self.prng.uniform(0.3, 0.7))
+            si = 0
+            while si < len(segments):
+                seg = segments[si]
+                if k_pert is not None and si == k_pert:
+                    k_pert = None
+                    cur, q_seed, info_p, done = self._perturb(wp, cur, q_seed, obs_cb)
+                    info = info_p or info
+                    if done:
+                        return info["success"], info, env.t
+                    segments, si = cart_segments(wp), 0  # recover: re-plan from the measured (perturbed) grasp point
+                    continue
+                si += 1
                 tgt = self._target_joints(seg, q_seed)
                 q_seed = canonical_to_sim(tgt)
                 delta = tgt - cur
@@ -171,6 +225,7 @@ def pick_place_waypoints(
     pre_grasp_height: float = PRE_GRASP_HEIGHT,
     open_pct: float = OPEN,
     half_width: float = 0.0125,
+    pre_grasp_hold: int = 0,
 ) -> list[Waypoint]:
     """Pick `obj` and release it with the grasp point at `place_xyz` (+ release_drop).
 
@@ -179,6 +234,8 @@ def pick_place_waypoints(
     open_pct: jaw opening before grasping; use a small opening (~25) to reach into containers.
     half_width: object half-width along the jaw closing axis. The IK grasp point centres a 25 mm object; wider objects
         are centred by shifting the target along the closing axis (moving-jaw side = +closing direction, measured).
+    pre_grasp_hold: steps to hover at the (closed-loop corrected) pre-grasp pose before descending (hover & align).
+    The approach waypoint is marked perturbable (DART recovery demos when enabled in env.oracle_opts).
     """
     p = np.asarray(grasp_point, dtype=np.float64) if grasp_point is not None else env.body_pos(obj) + np.array([0, 0, grasp_depth])
     yaw = math.radians(yaw_obj_deg)
@@ -190,7 +247,8 @@ def pick_place_waypoints(
     px, py, pz = place_xyz
     tz = max(transport_z, pz + 0.02, grasp_z + 0.03)
     return [
-        Waypoint((p[0], p[1], grasp_z + pre_grasp_height), open_pct, yaw, correct=True, lowerable=True, cartesian=True),
+        Waypoint((p[0], p[1], grasp_z + pre_grasp_height), open_pct, yaw, hold_steps=pre_grasp_hold, correct=True, lowerable=True,
+                 cartesian=True, perturbable=True),
         Waypoint((p[0], p[1], grasp_z), open_pct, yaw, hold_steps=5, cartesian=True),
         Waypoint((p[0], p[1], grasp_z), CLOSED, yaw, hold_steps=10),
         Waypoint((p[0], p[1], tz), CLOSED, yaw, cartesian=True, lowerable=True),

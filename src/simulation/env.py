@@ -11,6 +11,7 @@ are placed by the task (profile fixed / position / position_visual, restricted t
 
 from __future__ import annotations
 
+import dataclasses
 import json
 import math
 import os
@@ -30,8 +31,31 @@ ROBOT_BODIES = ("base", "shoulder", "upper_arm", "lower_arm", "wrist", "gripper"
 GRIPPER_BODIES = ("gripper", "moving_jaw_so101_v1")
 
 
+def apply_physics(objects: list, physics: dict | None) -> list:
+    """Optional object-physics overrides from the scene config (`physics:` section; absent = unchanged):
+      container_bottom_mass_fraction: share of a pot's mass in its bottom disk (thick steel base -> low centre of mass)
+      container_friction: sliding/torsional/rolling friction of pots and lids (steel on a wooden table); the containers get
+        contact priority 1 so this value is used against the table (finger pads also have priority 1 -> max rule, 1.5)"""
+    if not physics:
+        return objects
+    out = []
+    for o in objects:
+        if o.kind in ("pot", "lid"):
+            extra = dict(o.extra)
+            if o.kind == "pot" and "container_bottom_mass_fraction" in physics:
+                extra["bottom_mass_fraction"] = physics["container_bottom_mass_fraction"]
+            if "container_friction" in physics:
+                extra["contact_priority"] = 1  # so the container's friction (not max(container, table)) is used
+            fr = tuple(physics.get("container_friction", o.friction))
+            o = dataclasses.replace(o, friction=fr, extra=extra)
+        out.append(o)
+    return out
+
+
 def _load_cfg() -> dict:
-    return yaml.safe_load((ROOT / "configs" / "simulation.yaml").read_text())
+    # SO101_SIM_CONFIG selects an alternative scene config (e.g. configs/simulation_v2.yaml); default unchanged
+    path = os.environ.get("SO101_SIM_CONFIG") or str(ROOT / "configs" / "simulation.yaml")
+    return yaml.safe_load(Path(path).read_text())
 
 
 def _start_pose(task_id: str) -> np.ndarray:
@@ -56,7 +80,7 @@ class SO101Env:
             c = self.cfg["cameras"][name]
             cams.append(CameraSpec(name, c["width"], c["height"], c["fovy"], tuple(c["pos"]), target=tuple(c["target"]) if "target" in c else None, body=c.get("body"), quat=tuple(c["quat"]) if "quat" in c else None))
         self.camera_specs = cams
-        self.model, self.obj_info = build(self.task.objects(), cams, timestep=self.cfg["control"]["physics_timestep"])
+        self.model, self.obj_info = build(apply_physics(self.task.objects(), self.cfg.get("physics")), cams, timestep=self.cfg["control"]["physics_timestep"], appearance=self.cfg.get("appearance"))
         self.board_size = {o.name: tuple(o.size) for o in self.task.objects() if o.kind in ("board", "sorter_box")}
         self.data = mujoco.MjData(self.model)
         self.n_substeps = max(1, round((1.0 / self.fps) / self.model.opt.timestep))
@@ -178,6 +202,7 @@ class SO101Env:
         self.data.ctrl[:] = np.clip(q0, self.ctrl_lo, self.ctrl_hi)
         ws = self.cfg["workspace"]
         if self.profile["randomize_positions"]:
+            self.task.widen = self.profile.get("widen")  # optional wider position ranges (profile position_wide)
             self.layout = self.task.sample_layout(self.rng, self.grid, self.split, self.profile["yaw_range_deg"], ws["min_separation"], self.obj_info)
         else:
             self.layout = self.task.nominal_layout()

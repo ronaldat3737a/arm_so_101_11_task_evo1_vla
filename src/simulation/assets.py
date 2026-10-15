@@ -66,14 +66,20 @@ def build_box(body, spec: ObjectSpec):
 
 def build_pot(body, spec: ObjectSpec):
     """Open cylindrical pot: size = (outer_radius, height, wall_thickness). Bottom disk + ring of wall boxes + 2 handles.
+    extra["bottom_mass_fraction"] (optional): share of the mass in the bottom disk (default: uniform over the parts).
     Collision walls/bottom are at least 6 mm / 8 mm thick: thinner shells let a falling cube tunnel and get ejected."""
     r, h, t = spec.size
     t = max(t, 0.006)
     rgba = COLORS[spec.color]
     n = 20
     per = spec.mass / (n + 2)
+    m_bottom = per * 2
+    fb = spec.extra.get("bottom_mass_fraction")
+    if fb is not None:  # real stainless pots have a thick (encapsulated) base: most of the mass sits in the bottom
+        m_bottom = fb * spec.mass
+        per = (1.0 - fb) * spec.mass / (n + 2)  # walls + handles share the rest (same total mass)
     tb = 0.008
-    _geom(body, mujoco.mjtGeom.mjGEOM_CYLINDER, [r, tb / 2], pos=(0, 0, tb / 2), rgba=rgba, mass=per * 2, friction=spec.friction, name=f"{spec.name}_bottom")
+    _geom(body, mujoco.mjtGeom.mjGEOM_CYLINDER, [r, tb / 2], pos=(0, 0, tb / 2), rgba=rgba, mass=m_bottom, friction=spec.friction, name=f"{spec.name}_bottom")
     seg = 2 * r * math.tan(math.pi / n) * 1.05
     for i in range(n):
         a = 2 * math.pi * i / n
@@ -171,5 +177,10 @@ def add_object(spec_root: mujoco.MjSpec, obj: ObjectSpec) -> dict:
     j = body.add_freejoint()
     j.name = f"{obj.name}_free"
     info = BUILDERS[obj.kind](body, obj)
+    if obj.extra.get("contact_priority"):
+        # MuJoCo combines two geoms' friction with max(); a higher priority makes this object's own friction apply
+        # (e.g. a steel pot on the wooden table) without changing the table for every other object
+        for g in body.geoms:
+            g.priority = int(obj.extra["contact_priority"])
     info["kind"] = obj.kind
     return info

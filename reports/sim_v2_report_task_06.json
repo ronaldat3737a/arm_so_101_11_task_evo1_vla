@@ -1,0 +1,798 @@
+{
+  "sim_config": "configs/simulation_v2.yaml",
+  "profile": "position_visual",
+  "split": "train",
+  "seed0": 206000,
+  "tasks": {
+    "task_06": {
+      "instruction": "Take the red cube out of the steel pot and place it on the red cube",
+      "kept": 40,
+      "attempted": 43,
+      "oracle_success_rate": 0.9302325581395349,
+      "attempts": [
+        {
+          "seed": 212000,
+          "success": true,
+          "steps": 201,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1279,
+              0.164,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2349,
+              0.0018,
+              12.4013
+            ]
+          }
+        },
+        {
+          "seed": 212001,
+          "success": true,
+          "steps": 247,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1617,
+              0.1761,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1686,
+              -0.0805,
+              10.3979
+            ]
+          }
+        },
+        {
+          "seed": 212002,
+          "success": true,
+          "steps": 230,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1584,
+              0.1796,
+              0.0
+            ],
+            "red_cube_base": [
+              0.229,
+              -0.0879,
+              -14.1518
+            ]
+          }
+        },
+        {
+          "seed": 212003,
+          "success": true,
+          "steps": 233,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1127,
+              0.1711,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2259,
+              -0.0816,
+              18.59
+            ]
+          }
+        },
+        {
+          "seed": 212004,
+          "success": true,
+          "steps": 228,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1454,
+              0.1731,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2129,
+              -0.1318,
+              -10.7014
+            ]
+          }
+        },
+        {
+          "seed": 212005,
+          "success": true,
+          "steps": 248,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1379,
+              0.1708,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1346,
+              -0.1398,
+              -10.0717
+            ]
+          }
+        },
+        {
+          "seed": 212006,
+          "success": true,
+          "steps": 180,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1477,
+              0.1746,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2436,
+              0.0034,
+              -1.9294
+            ]
+          }
+        },
+        {
+          "seed": 212007,
+          "success": false,
+          "steps": 623,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1064,
+              0.1512,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1333,
+              -0.1461,
+              12.6119
+            ]
+          }
+        },
+        {
+          "seed": 212008,
+          "success": true,
+          "steps": 195,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1597,
+              0.1617,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2355,
+              -0.0688,
+              -17.6485
+            ]
+          }
+        },
+        {
+          "seed": 212009,
+          "success": false,
+          "steps": 100,
+          "failure_reason": "pot_tipped_over",
+          "layout": {
+            "pot": [
+              0.1568,
+              0.1748,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2462,
+              -0.0766,
+              -2.8179
+            ]
+          }
+        },
+        {
+          "seed": 212010,
+          "success": true,
+          "steps": 244,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1072,
+              0.1675,
+              0.0
+            ],
+            "red_cube_base": [
+              0.22,
+              -0.1378,
+              -17.1436
+            ]
+          }
+        },
+        {
+          "seed": 212011,
+          "success": true,
+          "steps": 205,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1354,
+              0.1466,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2432,
+              0.0047,
+              11.7102
+            ]
+          }
+        },
+        {
+          "seed": 212012,
+          "success": true,
+          "steps": 224,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1281,
+              0.1553,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2145,
+              -0.138,
+              9.5981
+            ]
+          }
+        },
+        {
+          "seed": 212013,
+          "success": true,
+          "steps": 236,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1235,
+              0.1511,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2048,
+              -0.1472,
+              -1.4173
+            ]
+          }
+        },
+        {
+          "seed": 212014,
+          "success": true,
+          "steps": 229,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1196,
+              0.1711,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1357,
+              -0.0952,
+              -2.1186
+            ]
+          }
+        },
+        {
+          "seed": 212015,
+          "success": true,
+          "steps": 204,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1309,
+              0.1401,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2354,
+              0.0186,
+              -6.7545
+            ]
+          }
+        },
+        {
+          "seed": 212016,
+          "success": true,
+          "steps": 215,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1229,
+              0.1565,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2348,
+              -0.0856,
+              -8.9659
+            ]
+          }
+        },
+        {
+          "seed": 212017,
+          "success": true,
+          "steps": 237,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1152,
+              0.1525,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1074,
+              -0.1275,
+              19.7021
+            ]
+          }
+        },
+        {
+          "seed": 212018,
+          "success": true,
+          "steps": 210,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1084,
+              0.1449,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1914,
+              -0.0865,
+              18.8706
+            ]
+          }
+        },
+        {
+          "seed": 212019,
+          "success": true,
+          "steps": 208,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1374,
+              0.192,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2342,
+              -0.067,
+              13.9251
+            ]
+          }
+        },
+        {
+          "seed": 212020,
+          "success": true,
+          "steps": 210,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1193,
+              0.1984,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2375,
+              0.0049,
+              -5.2218
+            ]
+          }
+        },
+        {
+          "seed": 212021,
+          "success": true,
+          "steps": 218,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1155,
+              0.1832,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2394,
+              -0.0852,
+              4.4177
+            ]
+          }
+        },
+        {
+          "seed": 212022,
+          "success": true,
+          "steps": 207,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1635,
+              0.1668,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1285,
+              -0.0957,
+              17.5307
+            ]
+          }
+        },
+        {
+          "seed": 212023,
+          "success": true,
+          "steps": 214,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1372,
+              0.1591,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1048,
+              -0.1095,
+              -1.7188
+            ]
+          }
+        },
+        {
+          "seed": 212024,
+          "success": true,
+          "steps": 254,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1215,
+              0.203,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2187,
+              -0.1299,
+              18.53
+            ]
+          }
+        },
+        {
+          "seed": 212025,
+          "success": true,
+          "steps": 226,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1303,
+              0.198,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1145,
+              -0.1181,
+              13.5909
+            ]
+          }
+        },
+        {
+          "seed": 212026,
+          "success": true,
+          "steps": 230,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.125,
+              0.165,
+              0.0
+            ],
+            "red_cube_base": [
+              0.229,
+              -0.0873,
+              -17.4493
+            ]
+          }
+        },
+        {
+          "seed": 212027,
+          "success": true,
+          "steps": 215,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1648,
+              0.1662,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1253,
+              -0.1481,
+              -14.0941
+            ]
+          }
+        },
+        {
+          "seed": 212028,
+          "success": true,
+          "steps": 223,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1266,
+              0.1418,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1481,
+              -0.1601,
+              5.3896
+            ]
+          }
+        },
+        {
+          "seed": 212029,
+          "success": true,
+          "steps": 222,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.142,
+              0.1667,
+              0.0
+            ],
+            "red_cube_base": [
+              0.182,
+              -0.0829,
+              -1.8051
+            ]
+          }
+        },
+        {
+          "seed": 212030,
+          "success": true,
+          "steps": 218,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1586,
+              0.1717,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1801,
+              -0.1013,
+              -6.5676
+            ]
+          }
+        },
+        {
+          "seed": 212031,
+          "success": true,
+          "steps": 213,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1279,
+              0.1754,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2391,
+              -0.0872,
+              7.8118
+            ]
+          }
+        },
+        {
+          "seed": 212032,
+          "success": true,
+          "steps": 224,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.108,
+              0.1603,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2064,
+              -0.1027,
+              -7.7621
+            ]
+          }
+        },
+        {
+          "seed": 212033,
+          "success": true,
+          "steps": 168,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1639,
+              0.1661,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2471,
+              0.0,
+              16.5918
+            ]
+          }
+        },
+        {
+          "seed": 212034,
+          "success": true,
+          "steps": 230,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1123,
+              0.176,
+              0.0
+            ],
+            "red_cube_base": [
+              0.149,
+              -0.0843,
+              19.9035
+            ]
+          }
+        },
+        {
+          "seed": 212035,
+          "success": true,
+          "steps": 213,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1124,
+              0.1819,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2411,
+              0.0045,
+              -6.4777
+            ]
+          }
+        },
+        {
+          "seed": 212036,
+          "success": true,
+          "steps": 211,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1248,
+              0.1522,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1833,
+              -0.0895,
+              10.2389
+            ]
+          }
+        },
+        {
+          "seed": 212037,
+          "success": true,
+          "steps": 242,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1219,
+              0.1861,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2058,
+              -0.1103,
+              -16.1487
+            ]
+          }
+        },
+        {
+          "seed": 212038,
+          "success": false,
+          "steps": 900,
+          "failure_reason": "timeout: red_cube not on red_cube_base (dxy=0.180 > 0.014)",
+          "layout": {
+            "pot": [
+              0.1208,
+              0.1529,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1818,
+              -0.1738,
+              -8.0287
+            ]
+          }
+        },
+        {
+          "seed": 212039,
+          "success": true,
+          "steps": 205,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1545,
+              0.1665,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1723,
+              -0.0896,
+              0.5014
+            ]
+          }
+        },
+        {
+          "seed": 212040,
+          "success": true,
+          "steps": 229,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1064,
+              0.1741,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2243,
+              -0.1121,
+              2.188
+            ]
+          }
+        },
+        {
+          "seed": 212041,
+          "success": true,
+          "steps": 220,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.129,
+              0.1989,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2574,
+              0.0056,
+              -19.5312
+            ]
+          }
+        },
+        {
+          "seed": 212042,
+          "success": true,
+          "steps": 206,
+          "failure_reason": null,
+          "layout": {
+            "pot": [
+              0.1294,
+              0.1439,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2406,
+              0.0108,
+              3.5014
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "total_episodes": 40,
+  "total_frames": 8772,
+  "wall_time_s": 1494.8,
+  "resources": {
+    "peak_rss_gb": 1.777,
+    "peak_vram_alloc_gb": 0.0
+  },
+  "dataset_root": "datasets/sim_so101_v2/task_06"
+}

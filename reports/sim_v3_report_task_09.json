@@ -1,0 +1,2810 @@
+{
+  "oracle_opts": {
+    "dart_prob": 0.5,
+    "dart_dxy": [
+      0.02,
+      0.04
+    ],
+    "dart_dyaw": 15.0,
+    "dart_steps": [
+      15,
+      25
+    ],
+    "hover_steps": 15,
+    "drop_height": [
+      0.02,
+      0.03
+    ]
+  },
+  "sim_config": "configs/simulation_v3.yaml",
+  "profile": "position_wide",
+  "split": "train",
+  "seed0": 300000,
+  "tasks": {
+    "task_09": {
+      "instruction": "Pick up the red cube from the wooden board, put it into the orange hollow cube, then pick up the orange hollow cube and place it on the wooden board",
+      "kept": 84,
+      "attempted": 102,
+      "oracle_success_rate": 0.8235294117647058,
+      "attempts": [
+        {
+          "seed": 309000,
+          "success": true,
+          "steps": 789,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1455,
+              0.1645,
+              35.0712
+            ],
+            "hollow_cube": [
+              0.1352,
+              -0.2005,
+              10.7762
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.87,
+              "dir_deg": 212.2,
+              "dyaw_deg": 8.7,
+              "steps": 23,
+              "t_start": 45
+            },
+            {
+              "dxy_cm": 3.81,
+              "dir_deg": 196.8,
+              "dyaw_deg": 5.3,
+              "steps": 55,
+              "t_start": 267
+            }
+          ]
+        },
+        {
+          "seed": 309001,
+          "success": true,
+          "steps": 646,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0892,
+              0.1564,
+              -41.2251
+            ],
+            "hollow_cube": [
+              0.2097,
+              -0.1544,
+              -32.6329
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.12,
+              "dir_deg": 156.7,
+              "dyaw_deg": 13.2,
+              "steps": 21,
+              "t_start": 48
+            },
+            {
+              "dxy_cm": 3.21,
+              "dir_deg": 39.1,
+              "dyaw_deg": -14.7,
+              "steps": 18,
+              "t_start": 268
+            }
+          ]
+        },
+        {
+          "seed": 309002,
+          "success": false,
+          "steps": 510,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1269,
+              0.1736,
+              24.1656
+            ],
+            "hollow_cube": [
+              0.2142,
+              -0.1606,
+              39.3193
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.48,
+              "dir_deg": 209.1,
+              "dyaw_deg": -8.9,
+              "steps": 25,
+              "t_start": 47
+            },
+            {
+              "dxy_cm": 2.23,
+              "dir_deg": 19.7,
+              "dyaw_deg": -2.7,
+              "steps": 20,
+              "t_start": 277
+            }
+          ]
+        },
+        {
+          "seed": 309003,
+          "success": true,
+          "steps": 399,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1516,
+              0.1921,
+              32.4205
+            ],
+            "hollow_cube": [
+              0.2071,
+              -0.1854,
+              29.0185
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.17,
+              "dir_deg": 205.9,
+              "dyaw_deg": 0.1,
+              "steps": 25,
+              "t_start": 45
+            },
+            {
+              "dxy_cm": 3.19,
+              "dir_deg": 226.1,
+              "dyaw_deg": -4.0,
+              "steps": 16,
+              "t_start": 231
+            }
+          ]
+        },
+        {
+          "seed": 309004,
+          "success": true,
+          "steps": 630,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1375,
+              0.18,
+              -39.5019
+            ],
+            "hollow_cube": [
+              0.1093,
+              -0.1238,
+              -38.0342
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.69,
+              "dir_deg": 300.1,
+              "dyaw_deg": -9.8,
+              "steps": 20,
+              "t_start": 243
+            }
+          ]
+        },
+        {
+          "seed": 309005,
+          "success": true,
+          "steps": 393,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0983,
+              0.1785,
+              16.8981
+            ],
+            "hollow_cube": [
+              0.2637,
+              0.0183,
+              -17.0029
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.76,
+              "dir_deg": 94.0,
+              "dyaw_deg": -3.3,
+              "steps": 18,
+              "t_start": 41
+            }
+          ]
+        },
+        {
+          "seed": 309006,
+          "success": false,
+          "steps": 900,
+          "failure_reason": "timeout: hollow cube not on the board",
+          "layout": {
+            "board": [
+              0.1156,
+              0.1434,
+              -21.137
+            ],
+            "hollow_cube": [
+              0.1103,
+              -0.1417,
+              23.5398
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.3,
+              "dir_deg": 110.9,
+              "dyaw_deg": 10.4,
+              "steps": 16,
+              "t_start": 276
+            }
+          ]
+        },
+        {
+          "seed": 309007,
+          "success": true,
+          "steps": 628,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1213,
+              0.1579,
+              -33.8779
+            ],
+            "hollow_cube": [
+              0.205,
+              -0.1492,
+              -44.8314
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.85,
+              "dir_deg": 261.8,
+              "dyaw_deg": -10.6,
+              "steps": 25,
+              "t_start": 37
+            },
+            {
+              "dxy_cm": 2.0,
+              "dir_deg": 56.6,
+              "dyaw_deg": -6.2,
+              "steps": 17,
+              "t_start": 266
+            }
+          ]
+        },
+        {
+          "seed": 309008,
+          "success": false,
+          "steps": 900,
+          "failure_reason": "timeout: hollow_cube still touching gripper",
+          "layout": {
+            "board": [
+              0.1444,
+              0.2242,
+              -21.9903
+            ],
+            "hollow_cube": [
+              0.2638,
+              -0.0726,
+              33.893
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309009,
+          "success": true,
+          "steps": 624,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1488,
+              0.21,
+              -44.9289
+            ],
+            "hollow_cube": [
+              0.0892,
+              -0.1269,
+              1.841
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.68,
+              "dir_deg": 221.5,
+              "dyaw_deg": -0.7,
+              "steps": 21,
+              "t_start": 235
+            }
+          ]
+        },
+        {
+          "seed": 309010,
+          "success": true,
+          "steps": 448,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1317,
+              0.2141,
+              -7.1666
+            ],
+            "hollow_cube": [
+              0.1133,
+              -0.1005,
+              22.0424
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.8,
+              "dir_deg": 343.1,
+              "dyaw_deg": -11.4,
+              "steps": 22,
+              "t_start": 50
+            }
+          ]
+        },
+        {
+          "seed": 309011,
+          "success": true,
+          "steps": 376,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1721,
+              0.1785,
+              -6.1672
+            ],
+            "hollow_cube": [
+              0.2523,
+              -0.1183,
+              -22.8733
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.39,
+              "dir_deg": 244.9,
+              "dyaw_deg": 9.2,
+              "steps": 15,
+              "t_start": 36
+            },
+            {
+              "dxy_cm": 2.83,
+              "dir_deg": 311.6,
+              "dyaw_deg": -3.9,
+              "steps": 23,
+              "t_start": 216
+            }
+          ]
+        },
+        {
+          "seed": 309012,
+          "success": true,
+          "steps": 435,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1043,
+              0.1551,
+              16.8355
+            ],
+            "hollow_cube": [
+              0.2694,
+              0.0451,
+              -35.532
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.68,
+              "dir_deg": 243.0,
+              "dyaw_deg": 9.0,
+              "steps": 25,
+              "t_start": 37
+            },
+            {
+              "dxy_cm": 2.76,
+              "dir_deg": 266.1,
+              "dyaw_deg": 3.2,
+              "steps": 25,
+              "t_start": 239
+            }
+          ]
+        },
+        {
+          "seed": 309013,
+          "success": true,
+          "steps": 414,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2116,
+              0.152,
+              -17.6803
+            ],
+            "hollow_cube": [
+              0.0852,
+              -0.1113,
+              -26.4606
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309014,
+          "success": true,
+          "steps": 410,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2157,
+              0.1496,
+              -1.4073
+            ],
+            "hollow_cube": [
+              0.1284,
+              -0.0901,
+              19.9796
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.39,
+              "dir_deg": 264.2,
+              "dyaw_deg": 6.3,
+              "steps": 15,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 309015,
+          "success": false,
+          "steps": 737,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.093,
+              0.1717,
+              4.4554
+            ],
+            "hollow_cube": [
+              0.1352,
+              -0.1389,
+              31.8432
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309016,
+          "success": true,
+          "steps": 369,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1408,
+              0.2198,
+              1.3574
+            ],
+            "hollow_cube": [
+              0.2527,
+              -0.0923,
+              -39.9394
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.38,
+              "dir_deg": 191.0,
+              "dyaw_deg": -4.6,
+              "steps": 24,
+              "t_start": 202
+            }
+          ]
+        },
+        {
+          "seed": 309017,
+          "success": false,
+          "steps": 501,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1276,
+              0.1742,
+              -21.4944
+            ],
+            "hollow_cube": [
+              0.2655,
+              0.0336,
+              23.4165
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 4.0,
+              "dir_deg": 327.9,
+              "dyaw_deg": -14.7,
+              "steps": 25,
+              "t_start": 38
+            }
+          ]
+        },
+        {
+          "seed": 309018,
+          "success": true,
+          "steps": 445,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1485,
+              0.2064,
+              34.5831
+            ],
+            "hollow_cube": [
+              0.2054,
+              -0.116,
+              -17.9279
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.79,
+              "dir_deg": 75.7,
+              "dyaw_deg": -2.7,
+              "steps": 21,
+              "t_start": 36
+            },
+            {
+              "dxy_cm": 2.11,
+              "dir_deg": 46.2,
+              "dyaw_deg": -3.0,
+              "steps": 16,
+              "t_start": 233
+            }
+          ]
+        },
+        {
+          "seed": 309019,
+          "success": true,
+          "steps": 456,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1446,
+              0.228,
+              -17.8484
+            ],
+            "hollow_cube": [
+              0.1271,
+              -0.1801,
+              -17.6256
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.16,
+              "dir_deg": 128.0,
+              "dyaw_deg": 5.3,
+              "steps": 18,
+              "t_start": 47
+            }
+          ]
+        },
+        {
+          "seed": 309020,
+          "success": true,
+          "steps": 458,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0837,
+              0.1703,
+              12.9633
+            ],
+            "hollow_cube": [
+              0.2293,
+              -0.1412,
+              33.5241
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309021,
+          "success": false,
+          "steps": 747,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.16,
+              0.1777,
+              0.9239
+            ],
+            "hollow_cube": [
+              0.1616,
+              -0.1655,
+              33.157
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.32,
+              "dir_deg": 166.9,
+              "dyaw_deg": -3.1,
+              "steps": 60,
+              "t_start": 260
+            }
+          ]
+        },
+        {
+          "seed": 309022,
+          "success": true,
+          "steps": 515,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1741,
+              0.2018,
+              22.5916
+            ],
+            "hollow_cube": [
+              0.1167,
+              -0.1499,
+              38.6235
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.26,
+              "dir_deg": 164.2,
+              "dyaw_deg": -3.1,
+              "steps": 16,
+              "t_start": 275
+            }
+          ]
+        },
+        {
+          "seed": 309023,
+          "success": true,
+          "steps": 617,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1053,
+              0.1472,
+              -36.4799
+            ],
+            "hollow_cube": [
+              0.2305,
+              -0.1399,
+              -41.7389
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.91,
+              "dir_deg": 347.1,
+              "dyaw_deg": 12.5,
+              "steps": 20,
+              "t_start": 41
+            }
+          ]
+        },
+        {
+          "seed": 309024,
+          "success": true,
+          "steps": 338,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1527,
+              0.2003,
+              -4.3964
+            ],
+            "hollow_cube": [
+              0.2479,
+              0.0634,
+              4.7339
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.76,
+              "dir_deg": 163.0,
+              "dyaw_deg": -11.0,
+              "steps": 21,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 309025,
+          "success": true,
+          "steps": 377,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1402,
+              0.1617,
+              43.4018
+            ],
+            "hollow_cube": [
+              0.247,
+              0.0293,
+              -38.7738
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.1,
+              "dir_deg": 259.1,
+              "dyaw_deg": -7.5,
+              "steps": 23,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 309026,
+          "success": true,
+          "steps": 656,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1604,
+              0.1992,
+              16.3473
+            ],
+            "hollow_cube": [
+              0.0805,
+              -0.1102,
+              5.0442
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.74,
+              "dir_deg": 170.2,
+              "dyaw_deg": -6.2,
+              "steps": 57,
+              "t_start": 235
+            }
+          ]
+        },
+        {
+          "seed": 309027,
+          "success": true,
+          "steps": 529,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1744,
+              0.1892,
+              24.9906
+            ],
+            "hollow_cube": [
+              0.114,
+              -0.1525,
+              29.7477
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.57,
+              "dir_deg": 248.9,
+              "dyaw_deg": 11.2,
+              "steps": 24,
+              "t_start": 271
+            }
+          ]
+        },
+        {
+          "seed": 309028,
+          "success": true,
+          "steps": 532,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1133,
+              0.1734,
+              3.2038
+            ],
+            "hollow_cube": [
+              0.0932,
+              -0.1406,
+              38.5633
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.96,
+              "dir_deg": 183.9,
+              "dyaw_deg": -14.4,
+              "steps": 18,
+              "t_start": 49
+            }
+          ]
+        },
+        {
+          "seed": 309029,
+          "success": true,
+          "steps": 801,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1077,
+              0.1587,
+              -20.7702
+            ],
+            "hollow_cube": [
+              0.1001,
+              -0.1426,
+              5.8513
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.3,
+              "dir_deg": 195.2,
+              "dyaw_deg": 5.4,
+              "steps": 16,
+              "t_start": 45
+            },
+            {
+              "dxy_cm": 3.9,
+              "dir_deg": 52.5,
+              "dyaw_deg": -5.9,
+              "steps": 22,
+              "t_start": 256
+            }
+          ]
+        },
+        {
+          "seed": 309030,
+          "success": true,
+          "steps": 521,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0795,
+              0.1641,
+              -25.6135
+            ],
+            "hollow_cube": [
+              0.1302,
+              -0.1947,
+              15.3816
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.97,
+              "dir_deg": 173.2,
+              "dyaw_deg": 11.9,
+              "steps": 16,
+              "t_start": 47
+            }
+          ]
+        },
+        {
+          "seed": 309031,
+          "success": true,
+          "steps": 412,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1731,
+              0.1995,
+              25.773
+            ],
+            "hollow_cube": [
+              0.251,
+              -0.0951,
+              24.3022
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.51,
+              "dir_deg": 149.5,
+              "dyaw_deg": -10.2,
+              "steps": 21,
+              "t_start": 31
+            },
+            {
+              "dxy_cm": 2.01,
+              "dir_deg": 143.7,
+              "dyaw_deg": -5.0,
+              "steps": 25,
+              "t_start": 213
+            }
+          ]
+        },
+        {
+          "seed": 309032,
+          "success": true,
+          "steps": 391,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1514,
+              0.1752,
+              39.7971
+            ],
+            "hollow_cube": [
+              0.2562,
+              0.0271,
+              -35.0203
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.58,
+              "dir_deg": 110.0,
+              "dyaw_deg": -8.6,
+              "steps": 20,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 309033,
+          "success": true,
+          "steps": 629,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1113,
+              0.1468,
+              -37.5837
+            ],
+            "hollow_cube": [
+              0.2055,
+              -0.1469,
+              28.2518
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.31,
+              "dir_deg": 284.4,
+              "dyaw_deg": -4.1,
+              "steps": 24,
+              "t_start": 240
+            }
+          ]
+        },
+        {
+          "seed": 309034,
+          "success": true,
+          "steps": 466,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.132,
+              0.1654,
+              7.6434
+            ],
+            "hollow_cube": [
+              0.1652,
+              -0.1666,
+              -22.5042
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.16,
+              "dir_deg": 214.8,
+              "dyaw_deg": -4.3,
+              "steps": 18,
+              "t_start": 42
+            }
+          ]
+        },
+        {
+          "seed": 309035,
+          "success": true,
+          "steps": 423,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0844,
+              0.1477,
+              5.3221
+            ],
+            "hollow_cube": [
+              0.2671,
+              -0.0727,
+              -14.5133
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.37,
+              "dir_deg": 115.4,
+              "dyaw_deg": 12.8,
+              "steps": 25,
+              "t_start": 34
+            }
+          ]
+        },
+        {
+          "seed": 309036,
+          "success": true,
+          "steps": 319,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1866,
+              0.1823,
+              -13.6761
+            ],
+            "hollow_cube": [
+              0.2601,
+              0.0398,
+              -18.7564
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.07,
+              "dir_deg": 140.9,
+              "dyaw_deg": 8.9,
+              "steps": 17,
+              "t_start": 41
+            }
+          ]
+        },
+        {
+          "seed": 309037,
+          "success": true,
+          "steps": 445,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1144,
+              0.1706,
+              -14.2428
+            ],
+            "hollow_cube": [
+              0.1227,
+              -0.1407,
+              -3.245
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.43,
+              "dir_deg": 259.5,
+              "dyaw_deg": 4.8,
+              "steps": 20,
+              "t_start": 45
+            }
+          ]
+        },
+        {
+          "seed": 309038,
+          "success": true,
+          "steps": 510,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0896,
+              0.1566,
+              16.8741
+            ],
+            "hollow_cube": [
+              0.1225,
+              -0.1854,
+              31.9431
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309039,
+          "success": false,
+          "steps": 470,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0958,
+              0.1478,
+              -4.9378
+            ],
+            "hollow_cube": [
+              0.2506,
+              0.024,
+              37.9851
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.52,
+              "dir_deg": 277.2,
+              "dyaw_deg": 15.0,
+              "steps": 21,
+              "t_start": 42
+            },
+            {
+              "dxy_cm": 2.5,
+              "dir_deg": 5.4,
+              "dyaw_deg": -4.3,
+              "steps": 24,
+              "t_start": 246
+            }
+          ]
+        },
+        {
+          "seed": 309040,
+          "success": true,
+          "steps": 499,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1036,
+              0.1434,
+              21.899
+            ],
+            "hollow_cube": [
+              0.166,
+              -0.17,
+              43.6609
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.84,
+              "dir_deg": 331.4,
+              "dyaw_deg": 4.0,
+              "steps": 17,
+              "t_start": 40
+            }
+          ]
+        },
+        {
+          "seed": 309041,
+          "success": true,
+          "steps": 415,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.107,
+              0.1321,
+              25.0119
+            ],
+            "hollow_cube": [
+              0.2313,
+              -0.1359,
+              -39.2692
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309042,
+          "success": true,
+          "steps": 847,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.106,
+              0.1376,
+              -22.4569
+            ],
+            "hollow_cube": [
+              0.2104,
+              -0.1455,
+              -4.5577
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.01,
+              "dir_deg": 30.7,
+              "dyaw_deg": -12.8,
+              "steps": 23,
+              "t_start": 38
+            },
+            {
+              "dxy_cm": 2.86,
+              "dir_deg": 227.7,
+              "dyaw_deg": 8.1,
+              "steps": 17,
+              "t_start": 261
+            }
+          ]
+        },
+        {
+          "seed": 309043,
+          "success": true,
+          "steps": 503,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1309,
+              0.2098,
+              41.6155
+            ],
+            "hollow_cube": [
+              0.2153,
+              -0.1311,
+              -4.6775
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.56,
+              "dir_deg": 7.7,
+              "dyaw_deg": -2.2,
+              "steps": 17,
+              "t_start": 51
+            },
+            {
+              "dxy_cm": 3.23,
+              "dir_deg": 357.4,
+              "dyaw_deg": 13.3,
+              "steps": 23,
+              "t_start": 275
+            }
+          ]
+        },
+        {
+          "seed": 309044,
+          "success": true,
+          "steps": 477,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1497,
+              0.1747,
+              10.1877
+            ],
+            "hollow_cube": [
+              0.2246,
+              -0.103,
+              38.1702
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.04,
+              "dir_deg": 82.5,
+              "dyaw_deg": 6.2,
+              "steps": 21,
+              "t_start": 254
+            }
+          ]
+        },
+        {
+          "seed": 309045,
+          "success": true,
+          "steps": 561,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0903,
+              0.1666,
+              -18.0792
+            ],
+            "hollow_cube": [
+              0.2746,
+              0.0064,
+              3.9142
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.77,
+              "dir_deg": 146.4,
+              "dyaw_deg": -8.9,
+              "steps": 19,
+              "t_start": 214
+            }
+          ]
+        },
+        {
+          "seed": 309046,
+          "success": true,
+          "steps": 390,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1066,
+              0.141,
+              3.0701
+            ],
+            "hollow_cube": [
+              0.1248,
+              -0.0901,
+              22.9696
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309047,
+          "success": true,
+          "steps": 426,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.172,
+              0.1771,
+              29.4459
+            ],
+            "hollow_cube": [
+              0.2064,
+              -0.1131,
+              15.6433
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309048,
+          "success": true,
+          "steps": 370,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1344,
+              0.2174,
+              35.2012
+            ],
+            "hollow_cube": [
+              0.2472,
+              0.0271,
+              -29.9669
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.5,
+              "dir_deg": 145.5,
+              "dyaw_deg": -8.6,
+              "steps": 21,
+              "t_start": 49
+            }
+          ]
+        },
+        {
+          "seed": 309049,
+          "success": false,
+          "steps": 505,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1193,
+              0.1718,
+              -5.5162
+            ],
+            "hollow_cube": [
+              0.2142,
+              -0.1509,
+              32.6056
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.39,
+              "dir_deg": 347.9,
+              "dyaw_deg": -7.8,
+              "steps": 19,
+              "t_start": 35
+            },
+            {
+              "dxy_cm": 2.27,
+              "dir_deg": 283.0,
+              "dyaw_deg": -12.7,
+              "steps": 22,
+              "t_start": 260
+            }
+          ]
+        },
+        {
+          "seed": 309050,
+          "success": false,
+          "steps": 433,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1315,
+              0.1468,
+              -10.9678
+            ],
+            "hollow_cube": [
+              0.1285,
+              -0.1014,
+              24.6107
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309051,
+          "success": false,
+          "steps": 699,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1787,
+              0.1951,
+              15.486
+            ],
+            "hollow_cube": [
+              0.0809,
+              -0.1255,
+              22.5619
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.01,
+              "dir_deg": 200.2,
+              "dyaw_deg": 7.0,
+              "steps": 18,
+              "t_start": 47
+            },
+            {
+              "dxy_cm": 2.08,
+              "dir_deg": 4.6,
+              "dyaw_deg": 12.1,
+              "steps": 19,
+              "t_start": 305
+            }
+          ]
+        },
+        {
+          "seed": 309052,
+          "success": true,
+          "steps": 358,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.122,
+              0.2066,
+              -0.2922
+            ],
+            "hollow_cube": [
+              0.2552,
+              0.0318,
+              -14.9577
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.69,
+              "dir_deg": 244.8,
+              "dyaw_deg": 1.8,
+              "steps": 18,
+              "t_start": 43
+            }
+          ]
+        },
+        {
+          "seed": 309053,
+          "success": false,
+          "steps": 652,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2243,
+              0.1409,
+              44.7734
+            ],
+            "hollow_cube": [
+              0.139,
+              -0.1937,
+              -40.0471
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.98,
+              "dir_deg": 163.9,
+              "dyaw_deg": -0.9,
+              "steps": 25,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 309054,
+          "success": false,
+          "steps": 470,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1581,
+              0.1662,
+              30.5364
+            ],
+            "hollow_cube": [
+              0.1058,
+              -0.102,
+              -42.9725
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309055,
+          "success": true,
+          "steps": 660,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0972,
+              0.1502,
+              -35.1372
+            ],
+            "hollow_cube": [
+              0.1494,
+              -0.1813,
+              13.4804
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.44,
+              "dir_deg": 302.4,
+              "dyaw_deg": 9.5,
+              "steps": 16,
+              "t_start": 36
+            },
+            {
+              "dxy_cm": 3.93,
+              "dir_deg": 211.8,
+              "dyaw_deg": 1.2,
+              "steps": 21,
+              "t_start": 261
+            }
+          ]
+        },
+        {
+          "seed": 309056,
+          "success": true,
+          "steps": 438,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1346,
+              0.1774,
+              40.0891
+            ],
+            "hollow_cube": [
+              0.2009,
+              -0.0944,
+              43.9364
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.99,
+              "dir_deg": 236.9,
+              "dyaw_deg": 12.7,
+              "steps": 22,
+              "t_start": 45
+            }
+          ]
+        },
+        {
+          "seed": 309057,
+          "success": true,
+          "steps": 431,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1095,
+              0.1366,
+              1.736
+            ],
+            "hollow_cube": [
+              0.2486,
+              -0.1187,
+              -4.7777
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 4.0,
+              "dir_deg": 152.8,
+              "dyaw_deg": -8.9,
+              "steps": 21,
+              "t_start": 40
+            }
+          ]
+        },
+        {
+          "seed": 309058,
+          "success": true,
+          "steps": 652,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0998,
+              0.1378,
+              20.5424
+            ],
+            "hollow_cube": [
+              0.1129,
+              -0.1224,
+              28.0965
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.8,
+              "dir_deg": 195.4,
+              "dyaw_deg": -13.2,
+              "steps": 20,
+              "t_start": 34
+            }
+          ]
+        },
+        {
+          "seed": 309059,
+          "success": false,
+          "steps": 835,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1275,
+              0.1291,
+              37.3297
+            ],
+            "hollow_cube": [
+              0.1248,
+              -0.136,
+              27.392
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.77,
+              "dir_deg": 320.3,
+              "dyaw_deg": -13.7,
+              "steps": 24,
+              "t_start": 40
+            },
+            {
+              "dxy_cm": 3.97,
+              "dir_deg": 137.9,
+              "dyaw_deg": 7.7,
+              "steps": 56,
+              "t_start": 252
+            }
+          ]
+        },
+        {
+          "seed": 309060,
+          "success": true,
+          "steps": 349,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1179,
+              0.1729,
+              -8.5024
+            ],
+            "hollow_cube": [
+              0.2609,
+              0.0455,
+              -16.3344
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309061,
+          "success": true,
+          "steps": 480,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1479,
+              0.1784,
+              -43.7022
+            ],
+            "hollow_cube": [
+              0.2298,
+              -0.1174,
+              22.3919
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.75,
+              "dir_deg": 73.5,
+              "dyaw_deg": 3.0,
+              "steps": 17,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 309062,
+          "success": true,
+          "steps": 436,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1827,
+              0.195,
+              -23.4388
+            ],
+            "hollow_cube": [
+              0.121,
+              -0.1877,
+              -1.7485
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309063,
+          "success": true,
+          "steps": 304,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1944,
+              0.168,
+              -25.7861
+            ],
+            "hollow_cube": [
+              0.2621,
+              0.0349,
+              3.4505
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309064,
+          "success": true,
+          "steps": 498,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.211,
+              0.1683,
+              39.7263
+            ],
+            "hollow_cube": [
+              0.1585,
+              -0.1815,
+              9.082
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.57,
+              "dir_deg": 330.2,
+              "dyaw_deg": 10.6,
+              "steps": 16,
+              "t_start": 43
+            },
+            {
+              "dxy_cm": 3.71,
+              "dir_deg": 54.6,
+              "dyaw_deg": -0.4,
+              "steps": 18,
+              "t_start": 207
+            }
+          ]
+        },
+        {
+          "seed": 309065,
+          "success": false,
+          "steps": 900,
+          "failure_reason": "timeout: hollow_cube still touching gripper",
+          "layout": {
+            "board": [
+              0.1341,
+              0.1459,
+              -28.4243
+            ],
+            "hollow_cube": [
+              0.1241,
+              -0.1629,
+              5.5471
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.5,
+              "dir_deg": 279.8,
+              "dyaw_deg": -2.1,
+              "steps": 25,
+              "t_start": 41
+            },
+            {
+              "dxy_cm": 2.98,
+              "dir_deg": 70.3,
+              "dyaw_deg": -13.7,
+              "steps": 18,
+              "t_start": 247
+            }
+          ]
+        },
+        {
+          "seed": 309066,
+          "success": true,
+          "steps": 345,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1437,
+              0.1629,
+              2.0205
+            ],
+            "hollow_cube": [
+              0.2643,
+              0.0549,
+              -25.6549
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.63,
+              "dir_deg": 203.4,
+              "dyaw_deg": -1.7,
+              "steps": 25,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 309067,
+          "success": true,
+          "steps": 481,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.144,
+              0.1766,
+              3.6512
+            ],
+            "hollow_cube": [
+              0.0895,
+              -0.1383,
+              -43.6462
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.39,
+              "dir_deg": 283.9,
+              "dyaw_deg": -9.5,
+              "steps": 21,
+              "t_start": 250
+            }
+          ]
+        },
+        {
+          "seed": 309068,
+          "success": true,
+          "steps": 332,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1374,
+              0.2124,
+              -19.7085
+            ],
+            "hollow_cube": [
+              0.2716,
+              0.023,
+              -29.6742
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.29,
+              "dir_deg": 59.8,
+              "dyaw_deg": 5.9,
+              "steps": 16,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 309069,
+          "success": true,
+          "steps": 539,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0816,
+              0.1494,
+              -37.8425
+            ],
+            "hollow_cube": [
+              0.093,
+              -0.0981,
+              -26.2948
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.27,
+              "dir_deg": 325.6,
+              "dyaw_deg": 5.5,
+              "steps": 16,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 309070,
+          "success": false,
+          "steps": 900,
+          "failure_reason": "timeout: hollow cube not on the board",
+          "layout": {
+            "board": [
+              0.1588,
+              0.2154,
+              36.3468
+            ],
+            "hollow_cube": [
+              0.1206,
+              -0.1413,
+              28.0961
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.21,
+              "dir_deg": 130.9,
+              "dyaw_deg": 5.2,
+              "steps": 19,
+              "t_start": 37
+            },
+            {
+              "dxy_cm": 2.5,
+              "dir_deg": 326.5,
+              "dyaw_deg": -11.9,
+              "steps": 20,
+              "t_start": 368
+            }
+          ]
+        },
+        {
+          "seed": 309071,
+          "success": true,
+          "steps": 422,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1542,
+              0.1944,
+              10.0736
+            ],
+            "hollow_cube": [
+              0.2032,
+              -0.1043,
+              27.6142
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.56,
+              "dir_deg": 284.5,
+              "dyaw_deg": -8.2,
+              "steps": 17,
+              "t_start": 221
+            }
+          ]
+        },
+        {
+          "seed": 309072,
+          "success": true,
+          "steps": 434,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1886,
+              0.1823,
+              -4.6885
+            ],
+            "hollow_cube": [
+              0.0882,
+              -0.1481,
+              -3.0333
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309073,
+          "success": true,
+          "steps": 456,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1456,
+              0.1657,
+              34.3613
+            ],
+            "hollow_cube": [
+              0.2131,
+              -0.1359,
+              27.7087
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.26,
+              "dir_deg": 334.8,
+              "dyaw_deg": 1.1,
+              "steps": 21,
+              "t_start": 43
+            },
+            {
+              "dxy_cm": 3.44,
+              "dir_deg": 74.4,
+              "dyaw_deg": -7.6,
+              "steps": 19,
+              "t_start": 256
+            }
+          ]
+        },
+        {
+          "seed": 309074,
+          "success": true,
+          "steps": 342,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1634,
+              0.1911,
+              -0.0214
+            ],
+            "hollow_cube": [
+              0.2667,
+              0.0339,
+              -21.0782
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.75,
+              "dir_deg": 306.2,
+              "dyaw_deg": -14.5,
+              "steps": 16,
+              "t_start": 178
+            }
+          ]
+        },
+        {
+          "seed": 309075,
+          "success": true,
+          "steps": 353,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1683,
+              0.1739,
+              -2.6669
+            ],
+            "hollow_cube": [
+              0.247,
+              -0.0768,
+              2.6225
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.93,
+              "dir_deg": 256.1,
+              "dyaw_deg": -7.8,
+              "steps": 23,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 309076,
+          "success": true,
+          "steps": 426,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1574,
+              0.1684,
+              44.9685
+            ],
+            "hollow_cube": [
+              0.2119,
+              -0.1178,
+              23.5164
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.82,
+              "dir_deg": 342.6,
+              "dyaw_deg": -8.1,
+              "steps": 20,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 309077,
+          "success": true,
+          "steps": 499,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.132,
+              0.1849,
+              -28.2006
+            ],
+            "hollow_cube": [
+              0.0921,
+              -0.1396,
+              12.8149
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309078,
+          "success": true,
+          "steps": 504,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1545,
+              0.1638,
+              35.6873
+            ],
+            "hollow_cube": [
+              0.1604,
+              -0.1735,
+              41.3765
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.95,
+              "dir_deg": 26.5,
+              "dyaw_deg": -9.8,
+              "steps": 24,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 309079,
+          "success": false,
+          "steps": 379,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2014,
+              0.1779,
+              26.9346
+            ],
+            "hollow_cube": [
+              0.2491,
+              0.0208,
+              30.4243
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.96,
+              "dir_deg": 351.2,
+              "dyaw_deg": -13.2,
+              "steps": 17,
+              "t_start": 43
+            },
+            {
+              "dxy_cm": 2.78,
+              "dir_deg": 146.4,
+              "dyaw_deg": -7.8,
+              "steps": 18,
+              "t_start": 201
+            }
+          ]
+        },
+        {
+          "seed": 309080,
+          "success": true,
+          "steps": 646,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.2026,
+              0.1771,
+              26.9879
+            ],
+            "hollow_cube": [
+              0.0975,
+              -0.1408,
+              9.2616
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.1,
+              "dir_deg": 195.3,
+              "dyaw_deg": -1.6,
+              "steps": 21,
+              "t_start": 43
+            }
+          ]
+        },
+        {
+          "seed": 309081,
+          "success": true,
+          "steps": 545,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1355,
+              0.1903,
+              -28.6442
+            ],
+            "hollow_cube": [
+              0.2358,
+              -0.1174,
+              -10.6597
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309082,
+          "success": true,
+          "steps": 424,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1405,
+              0.1436,
+              -17.7291
+            ],
+            "hollow_cube": [
+              0.1011,
+              -0.1502,
+              -38.2003
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309083,
+          "success": true,
+          "steps": 675,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1104,
+              0.1548,
+              35.8264
+            ],
+            "hollow_cube": [
+              0.1022,
+              -0.1677,
+              -13.356
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.09,
+              "dir_deg": 333.4,
+              "dyaw_deg": 6.5,
+              "steps": 20,
+              "t_start": 43
+            },
+            {
+              "dxy_cm": 3.16,
+              "dir_deg": 196.1,
+              "dyaw_deg": 5.7,
+              "steps": 16,
+              "t_start": 256
+            }
+          ]
+        },
+        {
+          "seed": 309084,
+          "success": true,
+          "steps": 351,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.218,
+              0.157,
+              -25.0434
+            ],
+            "hollow_cube": [
+              0.2328,
+              -0.1163,
+              -2.2815
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.63,
+              "dir_deg": 61.8,
+              "dyaw_deg": 10.4,
+              "steps": 16,
+              "t_start": 194
+            }
+          ]
+        },
+        {
+          "seed": 309085,
+          "success": true,
+          "steps": 479,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1149,
+              0.1907,
+              13.18
+            ],
+            "hollow_cube": [
+              0.1073,
+              -0.1815,
+              9.4289
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.24,
+              "dir_deg": 329.3,
+              "dyaw_deg": -7.7,
+              "steps": 21,
+              "t_start": 45
+            },
+            {
+              "dxy_cm": 3.09,
+              "dir_deg": 6.1,
+              "dyaw_deg": 8.0,
+              "steps": 24,
+              "t_start": 262
+            }
+          ]
+        },
+        {
+          "seed": 309086,
+          "success": true,
+          "steps": 603,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1901,
+              0.1827,
+              -44.2027
+            ],
+            "hollow_cube": [
+              0.1965,
+              -0.1821,
+              43.2788
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.43,
+              "dir_deg": 117.9,
+              "dyaw_deg": -5.7,
+              "steps": 19,
+              "t_start": 50
+            }
+          ]
+        },
+        {
+          "seed": 309087,
+          "success": true,
+          "steps": 363,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1455,
+              0.2068,
+              11.8776
+            ],
+            "hollow_cube": [
+              0.2558,
+              -0.0744,
+              26.646
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.74,
+              "dir_deg": 333.5,
+              "dyaw_deg": -1.6,
+              "steps": 22,
+              "t_start": 194
+            }
+          ]
+        },
+        {
+          "seed": 309088,
+          "success": true,
+          "steps": 460,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1598,
+              0.1694,
+              -17.8793
+            ],
+            "hollow_cube": [
+              0.1519,
+              -0.1663,
+              -0.055
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.6,
+              "dir_deg": 151.8,
+              "dyaw_deg": 1.3,
+              "steps": 18,
+              "t_start": 251
+            }
+          ]
+        },
+        {
+          "seed": 309089,
+          "success": true,
+          "steps": 597,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.11,
+              0.1772,
+              -32.3941
+            ],
+            "hollow_cube": [
+              0.2705,
+              0.0162,
+              35.9908
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.3,
+              "dir_deg": 291.5,
+              "dyaw_deg": -10.7,
+              "steps": 20,
+              "t_start": 233
+            }
+          ]
+        },
+        {
+          "seed": 309090,
+          "success": true,
+          "steps": 374,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1468,
+              0.2204,
+              23.0434
+            ],
+            "hollow_cube": [
+              0.2478,
+              -0.075,
+              -27.9433
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.13,
+              "dir_deg": 203.7,
+              "dyaw_deg": 0.7,
+              "steps": 24,
+              "t_start": 195
+            }
+          ]
+        },
+        {
+          "seed": 309091,
+          "success": true,
+          "steps": 373,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.232,
+              0.1349,
+              8.9027
+            ],
+            "hollow_cube": [
+              0.139,
+              -0.2028,
+              1.6354
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.5,
+              "dir_deg": 331.2,
+              "dyaw_deg": 3.1,
+              "steps": 18,
+              "t_start": 44
+            }
+          ]
+        },
+        {
+          "seed": 309092,
+          "success": true,
+          "steps": 736,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1873,
+              0.1923,
+              -24.5548
+            ],
+            "hollow_cube": [
+              0.1122,
+              -0.1202,
+              23.161
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.79,
+              "dir_deg": 119.2,
+              "dyaw_deg": -9.1,
+              "steps": 20,
+              "t_start": 41
+            },
+            {
+              "dxy_cm": 3.05,
+              "dir_deg": 239.3,
+              "dyaw_deg": -11.9,
+              "steps": 25,
+              "t_start": 252
+            }
+          ]
+        },
+        {
+          "seed": 309093,
+          "success": true,
+          "steps": 356,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1084,
+              0.1418,
+              28.0506
+            ],
+            "hollow_cube": [
+              0.2673,
+              0.0218,
+              37.1015
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.18,
+              "dir_deg": 57.5,
+              "dyaw_deg": -1.1,
+              "steps": 19,
+              "t_start": 38
+            }
+          ]
+        },
+        {
+          "seed": 309094,
+          "success": false,
+          "steps": 891,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1844,
+              0.1918,
+              -35.1658
+            ],
+            "hollow_cube": [
+              0.2565,
+              -0.0904,
+              -31.3741
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.91,
+              "dir_deg": 32.9,
+              "dyaw_deg": 13.9,
+              "steps": 21,
+              "t_start": 188
+            }
+          ]
+        },
+        {
+          "seed": 309095,
+          "success": true,
+          "steps": 465,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.097,
+              0.1423,
+              24.15
+            ],
+            "hollow_cube": [
+              0.1626,
+              -0.1817,
+              -9.451
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.95,
+              "dir_deg": 296.3,
+              "dyaw_deg": 8.4,
+              "steps": 25,
+              "t_start": 246
+            }
+          ]
+        },
+        {
+          "seed": 309096,
+          "success": false,
+          "steps": 651,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1166,
+              0.1243,
+              -36.0626
+            ],
+            "hollow_cube": [
+              0.2278,
+              -0.1476,
+              -41.7293
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.58,
+              "dir_deg": 230.7,
+              "dyaw_deg": 8.7,
+              "steps": 19,
+              "t_start": 246
+            }
+          ]
+        },
+        {
+          "seed": 309097,
+          "success": true,
+          "steps": 434,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1582,
+              0.1748,
+              -18.5061
+            ],
+            "hollow_cube": [
+              0.1372,
+              -0.0932,
+              -7.617
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.61,
+              "dir_deg": 282.9,
+              "dyaw_deg": -9.2,
+              "steps": 23,
+              "t_start": 219
+            }
+          ]
+        },
+        {
+          "seed": 309098,
+          "success": true,
+          "steps": 451,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1113,
+              0.1693,
+              33.5947
+            ],
+            "hollow_cube": [
+              0.1313,
+              -0.1459,
+              -38.8188
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309099,
+          "success": true,
+          "steps": 416,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0966,
+              0.1427,
+              -1.6817
+            ],
+            "hollow_cube": [
+              0.1604,
+              -0.1877,
+              -14.4311
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309100,
+          "success": true,
+          "steps": 485,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.0888,
+              0.1729,
+              8.9229
+            ],
+            "hollow_cube": [
+              0.1315,
+              -0.1825,
+              -36.1104
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 309101,
+          "success": true,
+          "steps": 435,
+          "failure_reason": null,
+          "layout": {
+            "board": [
+              0.1562,
+              0.1935,
+              0.1672
+            ],
+            "hollow_cube": [
+              0.1373,
+              -0.0973,
+              -19.1019
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.8,
+              "dir_deg": 287.3,
+              "dyaw_deg": 1.2,
+              "steps": 21,
+              "t_start": 34
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "total_episodes": 84,
+  "total_frames": 40296,
+  "wall_time_s": 7152.3,
+  "resources": {
+    "peak_rss_gb": 2.0,
+    "peak_vram_alloc_gb": 0.0
+  },
+  "dataset_root": "datasets/sim_so101_v3/task_09"
+}

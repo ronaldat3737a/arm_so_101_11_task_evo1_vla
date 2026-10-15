@@ -39,8 +39,9 @@ from src.utils.resources import ResourceMonitor  # noqa: E402
 class ShardStream:
     """Random order over shards; one shard (~256 MB) in RAM at a time; samples shuffled within the shard."""
 
-    def __init__(self, files: list[Path], seed: int):
+    def __init__(self, files: list[Path], seed: int, collate_fn=None):
         self.files, self.seed = files, seed
+        self.collate_fn = collate_fn or collate
         self.epoch, self.shard_pos, self.sample_pos = 0, 0, 0
         self._load()
 
@@ -69,7 +70,7 @@ class ShardStream:
             take = min(n - len(idx), len(self.perm) - self.sample_pos)
             idx += [(self.cur, self.off, int(j)) for j in self.perm[self.sample_pos : self.sample_pos + take]]
             self.sample_pos += take
-        return collate(idx)
+        return self.collate_fn(idx)
 
     def state(self):
         return {"epoch": self.epoch, "shard_pos": self.shard_pos, "sample_pos": self.sample_pos}
@@ -128,7 +129,7 @@ def main() -> int:
     a = ap.parse_args()
 
     torch.manual_seed(a.seed)
-    run_dir = Path(a.resume) if a.resume else ROOT / "outputs" / f"{a.name}_{dt.datetime.now():%Y%m%d_%H%M%S}"
+    run_dir = Path(a.resume).resolve() if a.resume else ROOT / "outputs" / f"{a.name}_{dt.datetime.now():%Y%m%d_%H%M%S}"
     if a.resume:
         a = argparse.Namespace(**{**vars(a), **json.loads((run_dir / "args.json").read_text()), "resume": a.resume})
     run_dir.mkdir(parents=True, exist_ok=True)

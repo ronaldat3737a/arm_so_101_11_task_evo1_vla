@@ -1,0 +1,177 @@
+{
+  "task": "task_04",
+  "profile": "position_wide",
+  "splits": {
+    "train": {
+      "episodes": 5,
+      "success": 4,
+      "success_rate": 0.8,
+      "rows": [
+        {
+          "seed": 950000,
+          "success": true,
+          "steps": 366,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 10,
+          "layout": {
+            "pot": [
+              0.1374,
+              0.1551,
+              28.6471
+            ],
+            "banana": [
+              0.2823,
+              0.0434,
+              75.346
+            ],
+            "lid": [
+              0.1723,
+              -0.1459,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "banana": "train",
+            "lid": "test"
+          },
+          "sim_ms_per_step": 25.6669071854138,
+          "oracle_error": null
+        },
+        {
+          "seed": 950001,
+          "success": true,
+          "steps": 564,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 25,
+          "layout": {
+            "pot": [
+              0.1304,
+              0.1405,
+              58.1755
+            ],
+            "banana": [
+              0.141,
+              -0.1967,
+              51.6041
+            ],
+            "lid": [
+              0.2889,
+              0.0029,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "banana": "train",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 20.179202370609797,
+          "oracle_error": null
+        },
+        {
+          "seed": 950002,
+          "success": false,
+          "steps": 408,
+          "failure_reason": null,
+          "unmet": "banana not in pot",
+          "collision_steps": 24,
+          "layout": {
+            "pot": [
+              0.1748,
+              0.1764,
+              55.0672
+            ],
+            "banana": [
+              0.2648,
+              0.0093,
+              99.4233
+            ],
+            "lid": [
+              0.1392,
+              -0.1813,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "banana": "train",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 26.179938924078847,
+          "oracle_error": null
+        },
+        {
+          "seed": 950003,
+          "success": true,
+          "steps": 474,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 24,
+          "layout": {
+            "pot": [
+              0.1248,
+              0.1598,
+              53.6316
+            ],
+            "banana": [
+              0.1235,
+              -0.1849,
+              58.8663
+            ],
+            "lid": [
+              0.2767,
+              -0.0831,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "banana": "train",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 26.301219493527956,
+          "oracle_error": null
+        },
+        {
+          "seed": 950004,
+          "success": true,
+          "steps": 540,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 23,
+          "layout": {
+            "pot": [
+              0.0994,
+              0.1664,
+              57.2282
+            ],
+            "banana": [
+              0.2343,
+              -0.1167,
+              32.998
+            ],
+            "lid": [
+              0.2754,
+              0.0476,
+              0.0
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "banana": "train",
+            "lid": "train"
+          },
+          "sim_ms_per_step": 21.111739564824987,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 1.03,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

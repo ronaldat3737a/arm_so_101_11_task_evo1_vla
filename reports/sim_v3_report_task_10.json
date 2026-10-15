@@ -1,0 +1,2273 @@
+{
+  "oracle_opts": {
+    "dart_prob": 0.5,
+    "dart_dxy": [
+      0.02,
+      0.04
+    ],
+    "dart_dyaw": 15.0,
+    "dart_steps": [
+      15,
+      25
+    ],
+    "hover_steps": 15,
+    "drop_height": [
+      0.02,
+      0.03
+    ]
+  },
+  "sim_config": "configs/simulation_v3.yaml",
+  "profile": "position_wide",
+  "split": "train",
+  "seed0": 300000,
+  "tasks": {
+    "task_10": {
+      "instruction": "Pick up one orange block and stack it neatly on top of the other orange block",
+      "kept": 84,
+      "attempted": 96,
+      "oracle_success_rate": 0.875,
+      "attempts": [
+        {
+          "seed": 310000,
+          "success": true,
+          "steps": 237,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2064,
+              0.1095,
+              -11.394
+            ],
+            "orange_block_a": [
+              0.0939,
+              -0.1348,
+              -39.3982
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310001,
+          "success": true,
+          "steps": 236,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1843,
+              0.0899,
+              8.3455
+            ],
+            "orange_block_a": [
+              0.172,
+              -0.1756,
+              -42.6226
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310002,
+          "success": true,
+          "steps": 197,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1021,
+              0.1471,
+              -12.926
+            ],
+            "orange_block_a": [
+              0.1293,
+              -0.0826,
+              -11.5718
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310003,
+          "success": true,
+          "steps": 197,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1305,
+              0.2205,
+              44.3733
+            ],
+            "orange_block_a": [
+              0.2472,
+              0.0279,
+              -19.1779
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310004,
+          "success": true,
+          "steps": 187,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1874,
+              0.1685,
+              -22.083
+            ],
+            "orange_block_a": [
+              0.2092,
+              -0.1456,
+              1.9326
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310005,
+          "success": true,
+          "steps": 394,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.162,
+              0.1885,
+              -37.2427
+            ],
+            "orange_block_a": [
+              0.2334,
+              -0.1347,
+              44.9537
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310006,
+          "success": true,
+          "steps": 412,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1369,
+              0.1889,
+              -39.7916
+            ],
+            "orange_block_a": [
+              0.2143,
+              -0.0974,
+              39.8046
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310007,
+          "success": true,
+          "steps": 335,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2502,
+              0.0314,
+              16.6197
+            ],
+            "orange_block_a": [
+              0.1216,
+              -0.0964,
+              44.9482
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.75,
+              "dir_deg": 108.9,
+              "dyaw_deg": 12.9,
+              "steps": 19,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 310008,
+          "success": true,
+          "steps": 207,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2495,
+              0.004,
+              -26.859
+            ],
+            "orange_block_a": [
+              0.2445,
+              -0.0964,
+              38.1452
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310009,
+          "success": true,
+          "steps": 399,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.0999,
+              0.1378,
+              -43.3054
+            ],
+            "orange_block_a": [
+              0.1136,
+              -0.16,
+              -31.6235
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.01,
+              "dir_deg": 197.6,
+              "dyaw_deg": -3.1,
+              "steps": 16,
+              "t_start": 51
+            }
+          ]
+        },
+        {
+          "seed": 310010,
+          "success": true,
+          "steps": 329,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2035,
+              0.0876,
+              42.7522
+            ],
+            "orange_block_a": [
+              0.1056,
+              -0.0947,
+              -20.0296
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.73,
+              "dir_deg": 265.0,
+              "dyaw_deg": 14.5,
+              "steps": 20,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 310011,
+          "success": true,
+          "steps": 269,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1463,
+              0.1693,
+              -0.7541
+            ],
+            "orange_block_a": [
+              0.1045,
+              -0.1721,
+              -22.397
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.16,
+              "dir_deg": 216.7,
+              "dyaw_deg": 13.6,
+              "steps": 16,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 310012,
+          "success": true,
+          "steps": 186,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1766,
+              0.2,
+              0.7239
+            ],
+            "orange_block_a": [
+              0.263,
+              0.0245,
+              -18.0166
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.36,
+              "dir_deg": 233.4,
+              "dyaw_deg": -2.0,
+              "steps": 24,
+              "t_start": 30
+            }
+          ]
+        },
+        {
+          "seed": 310013,
+          "success": true,
+          "steps": 235,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2583,
+              0.0618,
+              6.864
+            ],
+            "orange_block_a": [
+              0.0891,
+              -0.1418,
+              -15.0054
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.9,
+              "dir_deg": 173.0,
+              "dyaw_deg": -4.4,
+              "steps": 17,
+              "t_start": 42
+            }
+          ]
+        },
+        {
+          "seed": 310014,
+          "success": true,
+          "steps": 471,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1514,
+              0.1954,
+              -8.7347
+            ],
+            "orange_block_a": [
+              0.1099,
+              -0.1566,
+              40.9059
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.85,
+              "dir_deg": 321.3,
+              "dyaw_deg": -12.2,
+              "steps": 24,
+              "t_start": 47
+            }
+          ]
+        },
+        {
+          "seed": 310015,
+          "success": true,
+          "steps": 272,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1635,
+              0.1756,
+              15.601
+            ],
+            "orange_block_a": [
+              0.1148,
+              -0.194,
+              -33.9673
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310016,
+          "success": true,
+          "steps": 200,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1648,
+              0.206,
+              -18.2593
+            ],
+            "orange_block_a": [
+              0.2239,
+              -0.1629,
+              33.9929
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310017,
+          "success": true,
+          "steps": 260,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1236,
+              0.1005,
+              29.9569
+            ],
+            "orange_block_a": [
+              0.1954,
+              -0.1878,
+              -5.7922
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.81,
+              "dir_deg": 97.0,
+              "dyaw_deg": -0.7,
+              "steps": 16,
+              "t_start": 48
+            }
+          ]
+        },
+        {
+          "seed": 310018,
+          "success": true,
+          "steps": 206,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1972,
+              0.0833,
+              -41.4118
+            ],
+            "orange_block_a": [
+              0.2786,
+              0.0097,
+              20.21
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.57,
+              "dir_deg": 93.4,
+              "dyaw_deg": -5.9,
+              "steps": 17,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 310019,
+          "success": true,
+          "steps": 178,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1433,
+              0.2257,
+              13.7334
+            ],
+            "orange_block_a": [
+              0.2218,
+              -0.1038,
+              12.8375
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310020,
+          "success": true,
+          "steps": 451,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1853,
+              0.0914,
+              -1.6149
+            ],
+            "orange_block_a": [
+              0.1201,
+              -0.1545,
+              42.4018
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.45,
+              "dir_deg": 213.0,
+              "dyaw_deg": 2.5,
+              "steps": 17,
+              "t_start": 43
+            }
+          ]
+        },
+        {
+          "seed": 310021,
+          "success": true,
+          "steps": 391,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1096,
+              0.1686,
+              -28.1134
+            ],
+            "orange_block_a": [
+              0.1779,
+              -0.0907,
+              14.768
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.92,
+              "dir_deg": 263.1,
+              "dyaw_deg": 5.2,
+              "steps": 18,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 310022,
+          "success": true,
+          "steps": 217,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1802,
+              0.0874,
+              -11.6642
+            ],
+            "orange_block_a": [
+              0.1621,
+              -0.082,
+              -30.2641
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.26,
+              "dir_deg": 172.0,
+              "dyaw_deg": -6.9,
+              "steps": 16,
+              "t_start": 31
+            }
+          ]
+        },
+        {
+          "seed": 310023,
+          "success": true,
+          "steps": 202,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.257,
+              0.0439,
+              9.0951
+            ],
+            "orange_block_a": [
+              0.2584,
+              -0.0932,
+              -22.7349
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.63,
+              "dir_deg": 190.1,
+              "dyaw_deg": 1.3,
+              "steps": 16,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 310024,
+          "success": true,
+          "steps": 204,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2382,
+              0.0028,
+              23.1765
+            ],
+            "orange_block_a": [
+              0.2532,
+              -0.0998,
+              -3.0237
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.77,
+              "dir_deg": 2.7,
+              "dyaw_deg": -8.7,
+              "steps": 23,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 310025,
+          "success": true,
+          "steps": 196,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2644,
+              0.0161,
+              2.4687
+            ],
+            "orange_block_a": [
+              0.1129,
+              -0.0893,
+              -29.3649
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310026,
+          "success": true,
+          "steps": 229,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1632,
+              0.2028,
+              27.1544
+            ],
+            "orange_block_a": [
+              0.1803,
+              -0.1756,
+              10.7876
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310027,
+          "success": true,
+          "steps": 177,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1396,
+              0.2192,
+              -19.6466
+            ],
+            "orange_block_a": [
+              0.2268,
+              -0.094,
+              -33.0033
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310028,
+          "success": true,
+          "steps": 353,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1939,
+              0.1804,
+              37.9547
+            ],
+            "orange_block_a": [
+              0.1313,
+              -0.1516,
+              21.0213
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310029,
+          "success": false,
+          "steps": 272,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1204,
+              0.1341,
+              44.797
+            ],
+            "orange_block_a": [
+              0.2147,
+              -0.1594,
+              -9.4974
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310030,
+          "success": false,
+          "steps": 623,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1304,
+              0.1672,
+              27.9568
+            ],
+            "orange_block_a": [
+              0.0904,
+              -0.109,
+              30.6483
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.37,
+              "dir_deg": 183.9,
+              "dyaw_deg": 10.4,
+              "steps": 18,
+              "t_start": 34
+            }
+          ]
+        },
+        {
+          "seed": 310031,
+          "success": true,
+          "steps": 268,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1111,
+              0.1483,
+              11.894
+            ],
+            "orange_block_a": [
+              0.1256,
+              -0.1615,
+              -23.8472
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.23,
+              "dir_deg": 118.0,
+              "dyaw_deg": -2.8,
+              "steps": 20,
+              "t_start": 43
+            }
+          ]
+        },
+        {
+          "seed": 310032,
+          "success": true,
+          "steps": 199,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1413,
+              0.1572,
+              -19.359
+            ],
+            "orange_block_a": [
+              0.2503,
+              -0.1036,
+              30.2663
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310033,
+          "success": false,
+          "steps": 485,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.157,
+              0.1619,
+              41.915
+            ],
+            "orange_block_a": [
+              0.1024,
+              -0.1033,
+              21.3961
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.85,
+              "dir_deg": 200.5,
+              "dyaw_deg": 6.8,
+              "steps": 24,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 310034,
+          "success": true,
+          "steps": 248,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1161,
+              0.1962,
+              44.5334
+            ],
+            "orange_block_a": [
+              0.2053,
+              -0.1719,
+              -0.5197
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310035,
+          "success": true,
+          "steps": 238,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1473,
+              0.0838,
+              -19.4981
+            ],
+            "orange_block_a": [
+              0.2428,
+              -0.1311,
+              34.185
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.51,
+              "dir_deg": 249.5,
+              "dyaw_deg": 12.8,
+              "steps": 17,
+              "t_start": 45
+            }
+          ]
+        },
+        {
+          "seed": 310036,
+          "success": true,
+          "steps": 221,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1404,
+              0.2292,
+              31.2209
+            ],
+            "orange_block_a": [
+              0.2219,
+              -0.1143,
+              -31.1136
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310037,
+          "success": true,
+          "steps": 225,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.221,
+              0.1311,
+              -13.1224
+            ],
+            "orange_block_a": [
+              0.2408,
+              -0.142,
+              35.406
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.11,
+              "dir_deg": 352.5,
+              "dyaw_deg": -2.4,
+              "steps": 16,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 310038,
+          "success": true,
+          "steps": 272,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2134,
+              0.146,
+              12.9773
+            ],
+            "orange_block_a": [
+              0.1052,
+              -0.1762,
+              -39.1713
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.86,
+              "dir_deg": 58.9,
+              "dyaw_deg": -5.5,
+              "steps": 22,
+              "t_start": 43
+            }
+          ]
+        },
+        {
+          "seed": 310039,
+          "success": true,
+          "steps": 229,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2152,
+              0.1233,
+              -34.5134
+            ],
+            "orange_block_a": [
+              0.1144,
+              -0.1892,
+              -30.4413
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310040,
+          "success": true,
+          "steps": 214,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2104,
+              0.1149,
+              13.6216
+            ],
+            "orange_block_a": [
+              0.2491,
+              -0.1012,
+              3.5455
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.87,
+              "dir_deg": 140.0,
+              "dyaw_deg": -13.2,
+              "steps": 15,
+              "t_start": 43
+            }
+          ]
+        },
+        {
+          "seed": 310041,
+          "success": true,
+          "steps": 257,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1316,
+              0.1385,
+              21.5177
+            ],
+            "orange_block_a": [
+              0.136,
+              -0.1478,
+              -29.6305
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.53,
+              "dir_deg": 234.5,
+              "dyaw_deg": 5.1,
+              "steps": 20,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 310042,
+          "success": true,
+          "steps": 330,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1559,
+              0.1988,
+              34.4228
+            ],
+            "orange_block_a": [
+              0.0902,
+              -0.1239,
+              -12.3537
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310043,
+          "success": true,
+          "steps": 335,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1397,
+              0.1443,
+              -40.8909
+            ],
+            "orange_block_a": [
+              0.2444,
+              0.025,
+              -39.8569
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310044,
+          "success": true,
+          "steps": 275,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.224,
+              0.1505,
+              -17.4922
+            ],
+            "orange_block_a": [
+              0.1219,
+              -0.1698,
+              9.9461
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.35,
+              "dir_deg": 158.5,
+              "dyaw_deg": 7.6,
+              "steps": 20,
+              "t_start": 48
+            }
+          ]
+        },
+        {
+          "seed": 310045,
+          "success": true,
+          "steps": 227,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1325,
+              0.0849,
+              3.9549
+            ],
+            "orange_block_a": [
+              0.1942,
+              -0.0906,
+              26.7002
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.29,
+              "dir_deg": 182.3,
+              "dyaw_deg": -8.0,
+              "steps": 21,
+              "t_start": 34
+            }
+          ]
+        },
+        {
+          "seed": 310046,
+          "success": true,
+          "steps": 232,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1331,
+              0.0963,
+              16.0187
+            ],
+            "orange_block_a": [
+              0.1132,
+              -0.1482,
+              -13.8713
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310047,
+          "success": false,
+          "steps": 536,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.125,
+              0.1318,
+              26.1034
+            ],
+            "orange_block_a": [
+              0.0999,
+              -0.1074,
+              29.781
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.83,
+              "dir_deg": 175.8,
+              "dyaw_deg": 14.9,
+              "steps": 16,
+              "t_start": 41
+            }
+          ]
+        },
+        {
+          "seed": 310048,
+          "success": true,
+          "steps": 258,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1234,
+              0.1934,
+              -1.2255
+            ],
+            "orange_block_a": [
+              0.1591,
+              -0.1756,
+              23.4019
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310049,
+          "success": true,
+          "steps": 352,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.15,
+              0.172,
+              22.4609
+            ],
+            "orange_block_a": [
+              0.099,
+              -0.1681,
+              -19.4858
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310050,
+          "success": true,
+          "steps": 257,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2253,
+              0.091,
+              -24.4916
+            ],
+            "orange_block_a": [
+              0.0998,
+              -0.0834,
+              -34.3869
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.15,
+              "dir_deg": 97.3,
+              "dyaw_deg": 8.6,
+              "steps": 17,
+              "t_start": 40
+            }
+          ]
+        },
+        {
+          "seed": 310051,
+          "success": true,
+          "steps": 218,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.245,
+              0.0518,
+              16.2532
+            ],
+            "orange_block_a": [
+              0.1111,
+              -0.1719,
+              -25.1019
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310052,
+          "success": true,
+          "steps": 354,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1805,
+              0.0982,
+              -11.351
+            ],
+            "orange_block_a": [
+              0.1206,
+              -0.1503,
+              31.8667
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.77,
+              "dir_deg": 87.8,
+              "dyaw_deg": 10.0,
+              "steps": 22,
+              "t_start": 45
+            }
+          ]
+        },
+        {
+          "seed": 310053,
+          "success": true,
+          "steps": 256,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1612,
+              0.1619,
+              9.6008
+            ],
+            "orange_block_a": [
+              0.1198,
+              -0.187,
+              -32.4362
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.08,
+              "dir_deg": 297.2,
+              "dyaw_deg": 3.2,
+              "steps": 22,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 310054,
+          "success": true,
+          "steps": 182,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1937,
+              0.1606,
+              -37.5213
+            ],
+            "orange_block_a": [
+              0.2724,
+              0.0443,
+              -32.7212
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.06,
+              "dir_deg": 269.6,
+              "dyaw_deg": -13.4,
+              "steps": 16,
+              "t_start": 41
+            }
+          ]
+        },
+        {
+          "seed": 310055,
+          "success": false,
+          "steps": 249,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1187,
+              0.1024,
+              -26.5401
+            ],
+            "orange_block_a": [
+              0.2298,
+              -0.1473,
+              -28.995
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310056,
+          "success": true,
+          "steps": 238,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1901,
+              0.0913,
+              32.6417
+            ],
+            "orange_block_a": [
+              0.1907,
+              -0.0937,
+              -35.2012
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.68,
+              "dir_deg": 133.6,
+              "dyaw_deg": 11.5,
+              "steps": 17,
+              "t_start": 37
+            }
+          ]
+        },
+        {
+          "seed": 310057,
+          "success": true,
+          "steps": 187,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2559,
+              0.0034,
+              -44.1822
+            ],
+            "orange_block_a": [
+              0.2036,
+              -0.1151,
+              -9.1818
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.94,
+              "dir_deg": 307.8,
+              "dyaw_deg": 12.7,
+              "steps": 25,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 310058,
+          "success": true,
+          "steps": 231,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2042,
+              0.0994,
+              -38.1564
+            ],
+            "orange_block_a": [
+              0.1395,
+              -0.189,
+              10.3852
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310059,
+          "success": true,
+          "steps": 243,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1418,
+              0.1648,
+              -4.7686
+            ],
+            "orange_block_a": [
+              0.1329,
+              -0.1383,
+              -0.957
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.92,
+              "dir_deg": 38.2,
+              "dyaw_deg": 0.7,
+              "steps": 19,
+              "t_start": 34
+            }
+          ]
+        },
+        {
+          "seed": 310060,
+          "success": true,
+          "steps": 223,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2617,
+              0.0152,
+              2.481
+            ],
+            "orange_block_a": [
+              0.1142,
+              -0.1132,
+              -44.7835
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310061,
+          "success": false,
+          "steps": 267,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2449,
+              0.0389,
+              2.9716
+            ],
+            "orange_block_a": [
+              0.1061,
+              -0.0979,
+              21.7739
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.1,
+              "dir_deg": 73.4,
+              "dyaw_deg": 7.1,
+              "steps": 24,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 310062,
+          "success": true,
+          "steps": 273,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2237,
+              0.1057,
+              -26.9248
+            ],
+            "orange_block_a": [
+              0.1444,
+              -0.18,
+              8.4502
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.07,
+              "dir_deg": 131.6,
+              "dyaw_deg": -7.4,
+              "steps": 21,
+              "t_start": 40
+            }
+          ]
+        },
+        {
+          "seed": 310063,
+          "success": true,
+          "steps": 233,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2209,
+              0.0978,
+              -20.0349
+            ],
+            "orange_block_a": [
+              0.0966,
+              -0.1317,
+              -14.8919
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310064,
+          "success": true,
+          "steps": 209,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2219,
+              0.1033,
+              14.3362
+            ],
+            "orange_block_a": [
+              0.2219,
+              -0.1701,
+              15.5614
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.49,
+              "dir_deg": 311.8,
+              "dyaw_deg": 10.5,
+              "steps": 22,
+              "t_start": 47
+            }
+          ]
+        },
+        {
+          "seed": 310065,
+          "success": true,
+          "steps": 248,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2605,
+              0.0421,
+              -30.9965
+            ],
+            "orange_block_a": [
+              0.1072,
+              -0.1602,
+              12.2521
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.58,
+              "dir_deg": 162.2,
+              "dyaw_deg": -8.6,
+              "steps": 20,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 310066,
+          "success": true,
+          "steps": 199,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1246,
+              0.1364,
+              23.1975
+            ],
+            "orange_block_a": [
+              0.2201,
+              -0.1312,
+              8.3232
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310067,
+          "success": true,
+          "steps": 461,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2216,
+              0.097,
+              -14.8444
+            ],
+            "orange_block_a": [
+              0.0854,
+              -0.1417,
+              28.4037
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.17,
+              "dir_deg": 149.8,
+              "dyaw_deg": 4.9,
+              "steps": 15,
+              "t_start": 51
+            }
+          ]
+        },
+        {
+          "seed": 310068,
+          "success": true,
+          "steps": 224,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1862,
+              0.092,
+              18.4506
+            ],
+            "orange_block_a": [
+              0.1623,
+              -0.1737,
+              23.8159
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310069,
+          "success": true,
+          "steps": 248,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1292,
+              0.1797,
+              38.0319
+            ],
+            "orange_block_a": [
+              0.1401,
+              -0.0863,
+              -2.8126
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.04,
+              "dir_deg": 218.6,
+              "dyaw_deg": -8.1,
+              "steps": 19,
+              "t_start": 34
+            }
+          ]
+        },
+        {
+          "seed": 310070,
+          "success": false,
+          "steps": 869,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2411,
+              0.0439,
+              11.5722
+            ],
+            "orange_block_a": [
+              0.1418,
+              -0.1853,
+              31.3434
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310071,
+          "success": false,
+          "steps": 424,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2182,
+              0.1121,
+              3.1085
+            ],
+            "orange_block_a": [
+              0.0943,
+              -0.1036,
+              27.9183
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.08,
+              "dir_deg": 314.7,
+              "dyaw_deg": 12.4,
+              "steps": 23,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 310072,
+          "success": true,
+          "steps": 190,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2383,
+              0.0233,
+              12.7545
+            ],
+            "orange_block_a": [
+              0.1148,
+              -0.1057,
+              6.4516
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310073,
+          "success": true,
+          "steps": 201,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2197,
+              0.1556,
+              36.9761
+            ],
+            "orange_block_a": [
+              0.2369,
+              -0.1447,
+              2.8004
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.68,
+              "dir_deg": 27.5,
+              "dyaw_deg": -6.9,
+              "steps": 19,
+              "t_start": 47
+            }
+          ]
+        },
+        {
+          "seed": 310074,
+          "success": false,
+          "steps": 356,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1216,
+              0.1628,
+              25.3323
+            ],
+            "orange_block_a": [
+              0.088,
+              -0.1061,
+              6.949
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310075,
+          "success": false,
+          "steps": 728,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1548,
+              0.1797,
+              -32.8805
+            ],
+            "orange_block_a": [
+              0.1053,
+              -0.1461,
+              -39.4901
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.71,
+              "dir_deg": 272.1,
+              "dyaw_deg": 0.7,
+              "steps": 17,
+              "t_start": 49
+            }
+          ]
+        },
+        {
+          "seed": 310076,
+          "success": true,
+          "steps": 157,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2626,
+              0.0304,
+              -3.8786
+            ],
+            "orange_block_a": [
+              0.2131,
+              -0.0846,
+              -18.2566
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310077,
+          "success": false,
+          "steps": 262,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1203,
+              0.0938,
+              -15.3256
+            ],
+            "orange_block_a": [
+              0.2529,
+              -0.1101,
+              -25.7605
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.91,
+              "dir_deg": 304.8,
+              "dyaw_deg": -6.6,
+              "steps": 25,
+              "t_start": 39
+            }
+          ]
+        },
+        {
+          "seed": 310078,
+          "success": true,
+          "steps": 237,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.11,
+              0.1061,
+              -5.4992
+            ],
+            "orange_block_a": [
+              0.1042,
+              -0.0917,
+              -40.9478
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.1,
+              "dir_deg": 255.3,
+              "dyaw_deg": -14.1,
+              "steps": 19,
+              "t_start": 30
+            }
+          ]
+        },
+        {
+          "seed": 310079,
+          "success": true,
+          "steps": 201,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1757,
+              0.0955,
+              -23.5964
+            ],
+            "orange_block_a": [
+              0.2306,
+              -0.1138,
+              29.4243
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310080,
+          "success": true,
+          "steps": 188,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2582,
+              0.0356,
+              9.8269
+            ],
+            "orange_block_a": [
+              0.226,
+              -0.0987,
+              -42.2819
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310081,
+          "success": true,
+          "steps": 194,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1929,
+              0.1597,
+              -7.0933
+            ],
+            "orange_block_a": [
+              0.2424,
+              -0.0857,
+              -30.642
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310082,
+          "success": true,
+          "steps": 212,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.0962,
+              0.143,
+              -16.939
+            ],
+            "orange_block_a": [
+              0.2384,
+              -0.1027,
+              -30.8439
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.05,
+              "dir_deg": 42.3,
+              "dyaw_deg": -2.3,
+              "steps": 16,
+              "t_start": 43
+            }
+          ]
+        },
+        {
+          "seed": 310083,
+          "success": true,
+          "steps": 252,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2075,
+              0.1505,
+              19.6193
+            ],
+            "orange_block_a": [
+              0.1146,
+              -0.1253,
+              -12.8422
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.01,
+              "dir_deg": 75.0,
+              "dyaw_deg": 7.1,
+              "steps": 23,
+              "t_start": 38
+            }
+          ]
+        },
+        {
+          "seed": 310084,
+          "success": true,
+          "steps": 241,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1267,
+              0.1079,
+              23.1381
+            ],
+            "orange_block_a": [
+              0.21,
+              -0.166,
+              -12.6385
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.15,
+              "dir_deg": 329.3,
+              "dyaw_deg": 7.2,
+              "steps": 19,
+              "t_start": 33
+            }
+          ]
+        },
+        {
+          "seed": 310085,
+          "success": true,
+          "steps": 406,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1398,
+              0.1687,
+              -40.5529
+            ],
+            "orange_block_a": [
+              0.236,
+              -0.1177,
+              -35.2593
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.31,
+              "dir_deg": 75.5,
+              "dyaw_deg": -4.0,
+              "steps": 15,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 310086,
+          "success": true,
+          "steps": 210,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1804,
+              0.0874,
+              14.4095
+            ],
+            "orange_block_a": [
+              0.175,
+              -0.0956,
+              -36.1897
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310087,
+          "success": true,
+          "steps": 212,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2338,
+              0.0878,
+              -7.8307
+            ],
+            "orange_block_a": [
+              0.1405,
+              -0.0865,
+              -16.5191
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310088,
+          "success": true,
+          "steps": 247,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.112,
+              0.1726,
+              15.9523
+            ],
+            "orange_block_a": [
+              0.2121,
+              -0.1824,
+              21.8255
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.44,
+              "dir_deg": 198.2,
+              "dyaw_deg": -8.3,
+              "steps": 22,
+              "t_start": 35
+            }
+          ]
+        },
+        {
+          "seed": 310089,
+          "success": true,
+          "steps": 232,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2619,
+              0.0191,
+              3.2427
+            ],
+            "orange_block_a": [
+              0.0966,
+              -0.1292,
+              -10.2993
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310090,
+          "success": true,
+          "steps": 265,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.131,
+              0.2089,
+              -17.4592
+            ],
+            "orange_block_a": [
+              0.1357,
+              -0.1668,
+              9.5839
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.46,
+              "dir_deg": 4.6,
+              "dyaw_deg": 1.4,
+              "steps": 23,
+              "t_start": 48
+            }
+          ]
+        },
+        {
+          "seed": 310091,
+          "success": true,
+          "steps": 259,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1496,
+              0.1677,
+              18.8679
+            ],
+            "orange_block_a": [
+              0.1463,
+              -0.1883,
+              -33.3246
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310092,
+          "success": true,
+          "steps": 161,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1965,
+              0.1608,
+              -26.9485
+            ],
+            "orange_block_a": [
+              0.2394,
+              0.022,
+              5.4934
+            ]
+          },
+          "perturbations": []
+        },
+        {
+          "seed": 310093,
+          "success": true,
+          "steps": 242,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2462,
+              0.0158,
+              -43.2696
+            ],
+            "orange_block_a": [
+              0.1102,
+              -0.1895,
+              -28.0112
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 2.68,
+              "dir_deg": 245.5,
+              "dyaw_deg": -13.6,
+              "steps": 18,
+              "t_start": 47
+            }
+          ]
+        },
+        {
+          "seed": 310094,
+          "success": false,
+          "steps": 373,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.2365,
+              0.0192,
+              37.2074
+            ],
+            "orange_block_a": [
+              0.1604,
+              -0.1885,
+              23.2676
+            ]
+          },
+          "perturbations": [
+            {
+              "dxy_cm": 3.65,
+              "dir_deg": 35.0,
+              "dyaw_deg": -9.6,
+              "steps": 23,
+              "t_start": 36
+            }
+          ]
+        },
+        {
+          "seed": 310095,
+          "success": true,
+          "steps": 210,
+          "failure_reason": null,
+          "layout": {
+            "orange_block_b": [
+              0.1411,
+              0.2154,
+              34.0787
+            ],
+            "orange_block_a": [
+              0.2241,
+              -0.1287,
+              -0.6843
+            ]
+          },
+          "perturbations": []
+        }
+      ]
+    }
+  },
+  "total_episodes": 84,
+  "total_frames": 21208,
+  "wall_time_s": 3642.1,
+  "resources": {
+    "peak_rss_gb": 1.803,
+    "peak_vram_alloc_gb": 0.0
+  },
+  "dataset_root": "datasets/sim_so101_v3/task_10"
+}

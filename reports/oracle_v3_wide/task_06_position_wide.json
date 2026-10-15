@@ -1,0 +1,147 @@
+{
+  "task": "task_06",
+  "profile": "position_wide",
+  "splits": {
+    "train": {
+      "episodes": 5,
+      "success": 2,
+      "success_rate": 0.4,
+      "rows": [
+        {
+          "seed": 950000,
+          "success": false,
+          "steps": 521,
+          "failure_reason": null,
+          "unmet": "red_cube not on red_cube_base (dxy=0.298 > 0.014)",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1139,
+              0.1791,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2112,
+              -0.1097,
+              -22.2224
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "red_cube_base": "train"
+          },
+          "sim_ms_per_step": 11.807306256724411,
+          "oracle_error": null
+        },
+        {
+          "seed": 950001,
+          "success": false,
+          "steps": 413,
+          "failure_reason": null,
+          "unmet": "red_cube not on red_cube_base (dxy=0.327 > 0.014)",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.135,
+              0.1799,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1108,
+              -0.1483,
+              26.4556
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "red_cube_base": "train"
+          },
+          "sim_ms_per_step": 13.645158264307941,
+          "oracle_error": null
+        },
+        {
+          "seed": 950002,
+          "success": true,
+          "steps": 205,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.159,
+              0.1629,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2565,
+              -0.1002,
+              -36.551
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "red_cube_base": "train"
+          },
+          "sim_ms_per_step": 23.13964192460223,
+          "oracle_error": null
+        },
+        {
+          "seed": 950003,
+          "success": true,
+          "steps": 217,
+          "failure_reason": null,
+          "unmet": "",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1295,
+              0.149,
+              0.0
+            ],
+            "red_cube_base": [
+              0.2338,
+              -0.103,
+              -19.9789
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "red_cube_base": "train"
+          },
+          "sim_ms_per_step": 18.035706287155502,
+          "oracle_error": null
+        },
+        {
+          "seed": 950004,
+          "success": false,
+          "steps": 526,
+          "failure_reason": "pot_tipped_over",
+          "unmet": "red_cube not on red_cube_base (dxy=0.302 > 0.014)",
+          "collision_steps": 0,
+          "layout": {
+            "pot": [
+              0.1012,
+              0.1577,
+              0.0
+            ],
+            "red_cube_base": [
+              0.1851,
+              -0.1027,
+              31.2865
+            ]
+          },
+          "layout_split": {
+            "pot": "train",
+            "red_cube_base": "train"
+          },
+          "sim_ms_per_step": 5.521634685675908,
+          "oracle_error": null
+        }
+      ]
+    }
+  },
+  "resources": {
+    "peak_rss_gb": 1.03,
+    "peak_vram_alloc_gb": 0.0
+  }
+}

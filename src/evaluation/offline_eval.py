@@ -1,4 +1,5 @@
-"""Offline action-quality evaluation on held-out REAL episodes (val/test of reports/split_manifest.json).
+"""Offline action-quality evaluation on REAL episodes (held-out val/test of reports/split_manifest.json; train only as an
+underfitting diagnostic).
 
 For sampled frames of each held-out episode, the policy predicts an action chunk from the real observation (both
 cameras + state + instruction). The chunk is compared with the recorded future actions, in canonical units
@@ -25,23 +26,40 @@ AGGR_ROOT = ROOT / "datasets" / "so101_11tasks"
 JOINTS = ["shoulder_pan", "shoulder_lift", "elbow_flex", "wrist_flex", "wrist_roll", "gripper"]
 
 
-def evaluate_offline(checkpoint: str, tasks: list[str], split: str = "test", frames_per_episode: int = 8, horizon: int | None = None, device: str = "cuda") -> dict:
+def evaluate_offline(checkpoint: str, tasks: list[str], split: str = "test", frames_per_episode: int = 8, horizon: int | None = None, device: str = "cuda", overrides: dict | None = None, quant: str | None = None, compile: bool = False,
+                     dataset_root: str | None = None, episodes_per_task: int | None = None) -> dict:
+    """dataset_root (optional): evaluate on another LeRobotDataset with the same schema (e.g. generated sim data):
+    its first `episodes_per_task` episodes of each task (by task_index order) are used instead of the real split."""
     from lerobot.datasets.lerobot_dataset import LeRobotDataset
 
     sm = json.loads((ROOT / "reports" / "split_manifest.json").read_text())
     mon = ResourceMonitor()
     with mon:
-        policy, pre, post, cfg = load_policy(checkpoint, device)
+        policy, pre, post, cfg = load_policy(checkpoint, device, overrides)
+        quant_info = None
+        if quant:
+            from src.quantization.torchao_quant import apply
+
+            quant_info = apply(policy, quant, compile)
         chunk = int(getattr(cfg, "chunk_size", 1))
         H = min(horizon or chunk, chunk)
         dev = torch.device(device)
         per_task = {}
         lat = []
+        root = Path(dataset_root) if dataset_root else AGGR_ROOT
+        if dataset_root:
+            from src.simulation.tasks import INSTRUCTIONS
+
+            tmeta = LeRobotDataset("local/eval", root=root, download_videos=False, video_backend="pyav").meta
+            ep_task = {int(e): tmeta.episodes["tasks"][e][0] for e in range(tmeta.total_episodes)}
         for t in tasks:
-            s = sm["tasks"][t]
-            eps = [s["global_episode_offset"] + e for e in s[split]]
-            ds = LeRobotDataset("local/so101_11tasks", root=AGGR_ROOT, episodes=eps, download_videos=False, video_backend="pyav",
-                                delta_timestamps={"action": [i / 30 for i in range(H)]})
+            if dataset_root:
+                eps = [e for e, tt in ep_task.items() if tt == INSTRUCTIONS[t]][: episodes_per_task or None]
+            else:
+                s = sm["tasks"][t]
+                eps = [s["global_episode_offset"] + e for e in s[split]]
+            ds = LeRobotDataset("local/eval" if dataset_root else "local/so101_11tasks", root=root, episodes=eps, download_videos=False,
+                                video_backend="pyav", delta_timestamps={"action": [i / 30 for i in range(H)]})
             errs, first, grip, cos, smooth, hold = [], [], [], [], [], []
             a2r = ds.absolute_to_relative_idx  # episode-filtered dataset: absolute frame index -> row
             for ge in eps:
@@ -91,7 +109,7 @@ def evaluate_offline(checkpoint: str, tasks: list[str], split: str = "test", fra
             print(f"[offline] {t} {split}: action MAE {per_task[t]['action_mae']:.2f} deg (hold-state baseline {per_task[t]['hold_state_baseline_mae']:.2f}), gripper {per_task[t]['gripper_mae']:.2f}, cos {per_task[t]['delta_cosine']:.3f}", flush=True)
     allm = [v["action_mae"] for v in per_task.values()]
     return {
-        "checkpoint": str(checkpoint), "policy_type": cfg.type, "split": split, "horizon": H, "frames_per_episode": frames_per_episode,
+        "checkpoint": str(checkpoint), "dataset_root": str(root), "overrides": overrides or {}, "quantization": quant_info, "policy_type": cfg.type, "split": split, "horizon": H, "frames_per_episode": frames_per_episode,
         "per_task": per_task, "mean_action_mae": float(np.mean(allm)),
         "mean_hold_state_baseline_mae": float(np.mean([v["hold_state_baseline_mae"] for v in per_task.values()])),
         "latency_ms": {"p50": float(np.percentile(lat, 50)), "p95": float(np.percentile(lat, 95)), "n": len(lat)},
